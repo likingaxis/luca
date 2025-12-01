@@ -14,7 +14,7 @@ appunti del corso:[[ANNO 2/ALGORITMI 1/ALGORITMI INDICE\|ALGORITMI INDICE]]
  - esercizi ❌
 
  ## LINGUAGGI </>
- appunti del corso:[[ANNO 2/LINGUAGGI/LINGUAGGI INDICE\|LINGUAGGI INDICE]]
+ appunti del corso:[[LINGUAGGI INDICE\|LINGUAGGI INDICE]]
  - riassunti✅
  - esercizi ❌
 
