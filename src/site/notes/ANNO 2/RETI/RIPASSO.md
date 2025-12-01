@@ -35,7 +35,7 @@
 			- indica il percorso che viene fatto da una serie di router per arrivare a destinazione da una radice
 			- fatto attraverso algoritmi
 	- viene calcolato instradamento e poi inoltro
-![Pasted image 20250705102609.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250705102609.png)
+![Pasted image 20250705102609.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250705102609.png)
 - **sicurezza di internet**
 	- una interfaccia di rete, quindi collegata alla rete
 		- può vedere tutti i pacchetti che ci passano
@@ -56,7 +56,7 @@
 	- *Fisico*
 		- Trasferimento di bit veri e propri su link
 - **incapsulamento dei dati tra i vari livelli**
-![Pasted image 20250705103837.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250705103837.png)
+![Pasted image 20250705103837.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250705103837.png)
 
 
 
@@ -100,7 +100,7 @@
 				- *Porta*
 					- identifica l'applicazione 
 					- alcune porte sono già standardizzate per alcune applicazioni
-![Pasted image 20250318133006.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318133006.png)
+![Pasted image 20250318133006.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318133006.png)
 
 - **protocollo del livello di applicazione**
 	- si dividono in 2 tipi
@@ -151,12 +151,12 @@
 			- i messaggi venivano inviati alternati tra loro divisi in frame, invio interlacciato
 		- 3.0
 			- usa UDP con QUIC al livello di applicazione per gestire problemi di sicurezza e perdita dei messaggi
-![Pasted image 20250318183006.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318183006.png)
+![Pasted image 20250318183006.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318183006.png)
 
 - **RTT**
 	- tempo che impiega un pacchetto per andare dal client al server e dal server al client
 	- variabile in base a eventuali congestioni ecc...
-![Pasted image 20250318151455.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318151455.png)
+![Pasted image 20250318151455.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318151455.png)
 
 - **Codici di stato**
 	- per ogni errore esiste un codice di stato che si trova nell'intestazione dei messaggi
@@ -171,7 +171,7 @@
 		- i cookie sono codici identificativi per client
 		- i cookie dopo la prima connessione effettuata vengono scambiati nell'header delle richieste HTTP
 		- essi vengono salvati in un database dei server e vengono forniti al client, il client salverà il proprio cookie ad esempio nel browser
-![Pasted image 20250318185425.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318185425.png)
+![Pasted image 20250318185425.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318185425.png)
 
 - **Web Cache**
 	- intermediario tra client e server
@@ -179,7 +179,7 @@
 	- ogni risorsa ha un TTL time to live
 	- può essere locale, interna al host client oppure un server come i proxy che fanno da client
 	- vengono usate per migliorare l'efficienza dei server e evitare congestioni
-![Pasted image 20250318192553.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318192553.png)
+![Pasted image 20250318192553.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318192553.png)
 
 - **Posta elettronica**
 	- applicazione che simula lo scambio di lettere attraverso user agent e mail server
@@ -194,7 +194,7 @@
 	- HTTP VS SMTP
 		- HTTP è di tipo pull, il client riceve dei dati solo se li richiede
 		- SMTP è di tipo push, il client riceve dei dati anche se non li richiede(server mail del destinatario)
-![Pasted image 20250321183245.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321183245.png)
+![Pasted image 20250321183245.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321183245.png)
 
 - **DNS**
 	- Servizio di rete decentralizzato(con più server) che consente la conversione di indirizzi URL in IP attraverso un Database 
@@ -210,8 +210,8 @@
 			- i server DNS a partire da quello locale si risolvono da soli interrogandosi a vicenda
 		- iterativa
 			- il server DNS locale interroga i vari Server DNS personalmente
-![Pasted image 20250321190924.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321190924.png)
-![Pasted image 20250321192921.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321192921.png)
+![Pasted image 20250321190924.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321190924.png)
+![Pasted image 20250321192921.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321192921.png)
 
 - **URL**
 	- indirizzo che contiene sito di riferimento che poi dovrà essere convertito in IP
@@ -242,8 +242,8 @@
 				- vengono creare socket passive
 			- senza
 				- è sufficiente IP+porta
-![ms-teams_hVpBKBk0sN.png|300](/img/user/ANNO%202/RETI/fotret/ms-teams_hVpBKBk0sN.png)
-![ms-teams_j0jUvWaTsw.png|300](/img/user/ANNO%202/RETI/fotret/ms-teams_j0jUvWaTsw.png)
+![ms-teams_hVpBKBk0sN.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/ms-teams_hVpBKBk0sN.png)
+![ms-teams_j0jUvWaTsw.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/ms-teams_j0jUvWaTsw.png)
 
 ##### UDP
 - **definizione**
@@ -261,10 +261,10 @@
 	- il mittente calcola la checksum e la invia al destinatario
 	- il destinatario calcola a sua volta la checksum e la confronta con quella inviata dal mittente
 		- se tutti i bit sono a 1 allora non vi sono errori
-![Pasted image 20250406160244.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406160244.png)
+![Pasted image 20250406160244.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406160244.png)
 
 ##### Modello teorico RDT
-![Pasted image 20250406162511.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406162511.png)
+![Pasted image 20250406162511.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406162511.png)
 
 - **affidabilità con RDT**
 	- RDT Reliable Data Transfer, modello astratto che indica come gestire un canale inaffidabile per garantire la corretta trasmissione dei dati è diviso in versioni 
@@ -291,32 +291,32 @@
 - **trasferimento dati con stop and wait  vs pipeline**
 	- <font color="#f79646">stop and wait</font> viene inviato un segmento e si attende un riscontro per esso
 	- <font color="#f79646">pipeline</font>, vengono inviati in sequenza i segmenti e poi vengono accumulati su una pipe i rispettivi ACK, nel caso del mittente, per il destinatario i veri e propri segmenti
-![Pasted image 20250406184132.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406184132.png)
+![Pasted image 20250406184132.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406184132.png)
 
 - **GBN**
 	- protocollo teorico che prevede utilizzo di finestre 
 		- per tenere conto dei segmenti confermati, in attesa di conferma, ancora da inviare
 		- se in una sequenza di N segmenti un segmento non viene confermato, il mittente dovrà, dopo il timeout rinviare tutti da quel segmento in poi
-![Pasted image 20250406185245.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406185245.png)
+![Pasted image 20250406185245.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406185245.png)
 
 - **con ripetizione selettiva**
 	- migliora la GBN
 	- ogni segmento è una istanza a se numerata, non devo reinviare tutta la sequenza ma solo il singolo interessato
-![Pasted image 20250406193400.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406193400.png)
+![Pasted image 20250406193400.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406193400.png)
 #### TCP
 - **introduzione**
 	- protocollo di trasporto affidabile basato su connessione tra gli host e correzione di errori
 - **dettagli sul segmento MSS e MTU**
 	- MSS rappresenta la massima dimensione di un segmento, escludendo l'intestazione
 	- MTU rappresenta la massima dimensione di un datagramma del protocollo IP che racchiude anche il segmento
-![Pasted image 20250408124654.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408124654.png)
+![Pasted image 20250408124654.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408124654.png)
 
 - **segmento PDU del TCP**
 	- si divide in 
 		- intestazione
 			- numeri di porta origine e destinazione checksum, ack, numero di sequenza, receive window
 		- corpo, i dati effettivi
-![Pasted image 20250408130449.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408130449.png)
+![Pasted image 20250408130449.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408130449.png)
 
 - **numero di sequenza e ACK**
 	- ogni byte è numerato sequenzialmente
@@ -329,7 +329,7 @@
 	- TCP permette al mittente di gestire il flusso di dati che può ricevere il buffer  del destinatario, per evitare saturazioni del buffer
 	- receive window
 		- campo dell'intestazione TCP per definire quanti byte può ancora ricevere il buffer del destinatario
-![Pasted image 20250408135957.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408135957.png)
+![Pasted image 20250408135957.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408135957.png)
 
 - **TCP con handshake**
 	- procedura che instaura un collegamento sicuro tra due host 
@@ -352,8 +352,8 @@
 			- Viene inviato un Finbit=1
 			- il destinatario invierà un Finbit=1+ACK
 			- il mittente invia un ACK e basta
-![Pasted image 20250408142333.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408142333.png)
-![Pasted image 20250408142831.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408142831.png)
+![Pasted image 20250408142333.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408142333.png)
+![Pasted image 20250408142831.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408142831.png)
 
 - **attacco Syn flood**
 	- vengono inviate molteplici richieste di handshake per far crashare un server
@@ -366,7 +366,7 @@
 	- breve descrizione
 		- router con buffer illimitato, ogni coppia mittente/destinatario ha il suo collegamento al router
 		- se aumenta il troughput più di R/2 si presentano rallentamenti
-![Pasted image 20250410175431.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410175431.png)
+![Pasted image 20250410175431.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250410175431.png)
 - **scenario 2**
 	- breve descrizione
 		- buffer del router limitato 
@@ -380,8 +380,8 @@
 			- caso 3, timeout prematuro
 				- timeout non impostato correttamente
 				- duplicazioni
-![Pasted image 20250410180557.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410180557.png)
-![Pasted image 20250410181647.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410181647.png)
+![Pasted image 20250410180557.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250410180557.png)
+![Pasted image 20250410181647.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250410181647.png)
 - **scenario 3**
 	- breve descrizione
 		- 4 host 
@@ -389,7 +389,7 @@
 		- timeout e ritrasmissioni
 	- problematiche
 		- host adiacenti a router prendono tutta la banda possibile
-![Pasted image 20250410182434.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250410182434.png)
+![Pasted image 20250410182434.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250410182434.png)
 
 - **controllo della congestione 2 approcci**
 	- *end-to-end*
@@ -407,7 +407,7 @@
 		- questo concetto regola dinamicamente gli MSS
 		- Maximum Segment Size, ovvero regola quanti segmenti può inviare prima di attendere una ricezione
 		- inizia da 1 aumenta additivamente ad ogni RTT e appena avviene un fault gli cwnd vengono dimezzati
-![Pasted image 20250411162431.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411162431.png)
+![Pasted image 20250411162431.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250411162431.png)
 
 - **fasi di gestione del tasso di invio**
 	- *slow start*
@@ -449,7 +449,7 @@
 				- le invia il destinatario al mittente
 				- 1 se c'è
 				- 0 se non c'è
-![Pasted image 20250411183520.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250411183520.png)
+![Pasted image 20250411183520.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250411183520.png)
 - **fairness di TCP e UDP**
 	- TCP è fair perché il troughput è dato da $R/K$
 		- ovvero il numero la capacità del collegamento fratto il numero delle connessioni
@@ -480,7 +480,7 @@
 	- **DATAGRAMMA IP**
 		- intestazione con indirizzi IP sorgente e destinazione, lunghezza totale del datagramma versione e TTL, protocollo usato al livello superiore, checksum
 		- corpo dati
-![Pasted image 20250418131749.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131749.png)
+![Pasted image 20250418131749.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131749.png)
 - **FRAMMENTAZIONE DATAGRAMMI**
 	- se un datagramma supera la MTU(Maximum Transmission Unit)
 	- viene frammentato con stesso identificatore 
@@ -516,14 +516,14 @@
 		- usata per *rappresentare* le *tabelle di inoltro*
 		- TCAM è una memoria speciale che permette di trovare la riga con l'IP adeguato in un tempo ridotto
 		- quando ci sono più indirizzi IP simili, entra in gioco il *priority encoder* che sceglierà quello con la priorità più alta
-![Pasted image 20250418125759.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418125759.png)
+![Pasted image 20250418125759.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418125759.png)
 
 - **divisione in 2 del livello di rete**
 	- *piano dei dati*
 		- funzione locale dei router che decide come inoltrare un datagramma
 	- *piano di controllo*
 		- si occupa della logica globale della rete
-![Pasted image 20250417214312.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214312.png)
+![Pasted image 20250417214312.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214312.png)
 - **SDN(Software-Defined Networking)***
 	- architettura dove il *piano di controllo è centralizzato* in un unico *server* per tutta la rete 
 		- router esecutori il controller calcola lui le *tabelle di inoltro*
@@ -531,7 +531,7 @@
 		- abbiamo il *piano dei dati* con i vari router e le AS
 		- poi a un livello *intermedio* abbiamo le SDN con il controller
 		- ancora sopra abbiamo *il piano di controllo* con le varie *applicazioni* di gestione della rete
-![Pasted image 20250503150640.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150640.png)
+![Pasted image 20250503150640.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503150640.png)
 - come è fatto il controller delle SDN
 	- è diviso in
 		- *Livello di interfaccia* con le applicazioni
@@ -541,9 +541,9 @@
 		- *Comunicazione con i dispositivi che controlla*
 			- Attraverso protocolli come **Open Flow** comunica con i vari dispositivi della rete come switch ecc...
 			- questo **insieme di protocolli** è detto **Southbound API**
-![Pasted image 20250503150921.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150921.png)
+![Pasted image 20250503150921.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503150921.png)
 
-![Pasted image 20250417214551.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214551.png)
+![Pasted image 20250417214551.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214551.png)
 
 
 
@@ -571,7 +571,7 @@
 		- **accodamento in entrata e in uscita**
 			- in entrata potrei avere problemi di HOL 
 			- in uscita potrei avere problemi di buffer troppo pieno e quindi scarti
-![Pasted image 20250417215033.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215033.png)
+![Pasted image 20250417215033.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215033.png)
 
 - **Commutazione***
 - componente del router che permette di instradare i datagrammi da una porta di ingresso a una di uscita
@@ -594,7 +594,7 @@
 					- matrice di bus
 				- <font color="#c00000">multistage</font>
 					- piccoli switch tra le due porte che indirizzano il tutto
-![Pasted image 20250706171108.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250706171108.png)
+![Pasted image 20250706171108.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250706171108.png)
 
 
 - **Gestione del buffer***
@@ -617,7 +617,7 @@
 		- *WFQ Weighted Fair Queuing*
 			- ogni priorità ha un suo spazio di banda per mantenere le cose fair
 
-![Pasted image 20250418131504.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131504.png)
+![Pasted image 20250418131504.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131504.png)
 
 #### Indirizzi IP e gestioni varie
 - **Sottorete**
@@ -641,7 +641,7 @@
 		- suggerisce quale Server DNS usare
 		- Router First-Hop da usare
 			- ovvero router gateway, colui che si collega ad altre reti non interne facendo da tramite
-![Pasted image 20250418153930.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418153930.png)
+![Pasted image 20250418153930.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418153930.png)
 
 - **Come si ottengono IP pubblici/privati da condividere con la tua rete**
 	- ISP ha un grande blocco di indirizzi che assegnerà a sua volta ad ogni rete che ne richiede
@@ -665,7 +665,7 @@
 		- i dispositivi della rete avranno un indirizzo IP privato
 		- il router NAT dovrà ogni volta cambiare le varie intestazioni dei datagrammi mettendo l'IP pubblico, i dispositivi esterni alla rete vedranno solo il router NAT come dispositivo nella rete e poi dovrà essere lui a condividere i datagrammi corretti nella rete interna al dispositivo corretto
 		- per ricordarsi a chi deve condividere quel datagramma utilizza una tabella NAT con salvate le varie occorrenze
-![Pasted image 20250421191015.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421191015.jpg)
+![Pasted image 20250421191015.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421191015.jpg)
 
 - **IPv6**
 	- descrizione
@@ -677,7 +677,7 @@
 			- ho un datagramma IPv6 che deve passare in una rete IPv4, per farlo incapsulo IPv6 in IPv4 e poi de capsulo il tutto
 	- cosa avviene nella frammentazione
 		- frammentazione non presente, scopro la MTU del datagramma IPv6 con PMTUD 
-![Pasted image 20250421193837.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421193837.jpg)
+![Pasted image 20250421193837.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421193837.jpg)
 
 - **Tabella dei flussi o di inoltro**
 	- per capire dove inoltrare i vari datagrammi esiste questa tabella
@@ -687,7 +687,7 @@
 			- inoltro, scarto, modifica e se siamo in un SDN può essere inviato al controller
 		- da qui nasce Match+ Action che è la vera e propria tabella
 		- se due Match hanno due action diverse viene data una priorità alle Action  vince quella con priorità maggiore
-![Pasted image 20250421201640.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421201640.jpg)
+![Pasted image 20250421201640.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421201640.jpg)
 
 - **Open flow**
 	- concetto
@@ -699,7 +699,7 @@
 			- Contatore dei byte o dei pacchetti, che tiene conto di quelli che hanno usato una certa regola
 	- protocollo
 		- protocollo utilizzato dai dispositivi OpenFlow come router ecc... che permette di comunicare con il server controller della SDN
-![Pasted image 20250503151241.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151241.png)
+![Pasted image 20250503151241.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503151241.png)
 
 - **Load Balancing**
 	- caratteristica dell'inoltro generalizzato
@@ -745,7 +745,7 @@
 	- *inter-AS*
 		- insieme dove deve essere effettuato un routing tra AS differenti, attraverso dei router gateway che appunto li collegano tra di loro
 
-![Pasted image 20250503124817.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503124817.png)
+![Pasted image 20250503124817.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503124817.png)
 - protocolli usati nell'*intra-AS*
 	- RIP
 	- EIGRP
@@ -762,7 +762,7 @@
 			- per reti senza SDN viene usato *OSPF*, permettendo di scambiare informazioni utili per effettuare instradamenti corretti senza uso di SDN
 			- MPLS-TE protocollo che consente di evitare congestione
 
-![Pasted image 20250503131511.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503131511.png)
+![Pasted image 20250503131511.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503131511.png)
 #### BGP protocollo usato nella inter-AS
 - definizione
 	- permette di far comunicare tra loro i vari router gateway si divide in due modalità
@@ -812,7 +812,7 @@
 - definizione
 	- più server con stesso indirizzo IP pubblico, il client avrà scambi con quello più vicino
 	- offrono stessi contenuti o servizi
-![Pasted image 20250503143925.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503143925.png)
+![Pasted image 20250503143925.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503143925.png)
 #### Ingegneria del traffico
 - definizione
 	- insieme di tecniche che consentono di modulare e ottimizzare il traffico della rete
@@ -847,12 +847,12 @@
 	- 4.*TTL expired(8)*
 		- serve per quando imposti un determinato limite di hop utilizzando un contatore TTL che decrementa ad ogni hop
 		- se arriva a 0 invia questo segnale
-![Pasted image 20250505192401.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192401.png)
+![Pasted image 20250505192401.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505192401.png)
 
 - **Traceroute**
 	- strumento di diagnostica per capire quanti hop deve effettuare un pacchetto sonda per raggiungere un determinato punto di destinazione
 	- di volta in volta si incrementano i TTL
-![Pasted image 20250505192939.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192939.png)
+![Pasted image 20250505192939.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505192939.png)
 
 - **nuova versione ICMPv6**
 	- adattato ai nuovi router che non fanno troppa frammentazione
@@ -925,7 +925,7 @@
 				- gestisce anche lui trasferimento affidabile e flusso
 				- estrae il datagramma dal frame
 			- la CPU in questo caso prende i dati e li passa ai livelli superiori rete trasporto ecc...
-![Pasted image 20250508223125.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508223125.png)
+![Pasted image 20250508223125.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508223125.png)
 
 #### Rilevazione degli errori
 - introduzione alla rilevazione degli errori
@@ -935,7 +935,7 @@
 		- una volta generato viene inviato al destinatario
 		- il destinatario adesso riceve questi dati $D$ ci riapplica la funzione e vede se corrisponde a EDC precedente 
 		- non é super affidabile e in più c'è overhead 
-![Pasted image 20250508224352.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508224352.png)
+![Pasted image 20250508224352.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508224352.png)
 
 - 3 tecniche utilizzate per fare controllo sugli errori migliori di EDC
 	- *Bit di parità*
@@ -993,11 +993,11 @@
 			- ogni nodo ha il suo timeslot
 			- in quel timeslot ha accesso completo
 			- gli slot inutilizzati si dicono idle
-![Pasted image 20250521112454.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521112454.png)
+![Pasted image 20250521112454.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521112454.png)
 - **FDMA**
 	- il canale viene suddiviso in spettri di frequenze diverse interna un cavo FDM
 	- ogni nodo trasmette sulla sua frequenza non alla massima velocità
-![Pasted image 20250521112857.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521112857.png)
+![Pasted image 20250521112857.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521112857.png)
 
 - Quelli ad *Accesso casuale*
 	- **SLOTTED ALOHA**
@@ -1008,7 +1008,7 @@
 		- possono esserci collisioni frequenti o inutilizzi di slot temporali
 		- i nodi devono essere sincronizzati
 		- un nodo può utilizzare il canale in modo efficace con una probabilità del 37% del tempo
-![Pasted image 20250521114843.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521114843.png)
+![Pasted image 20250521114843.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521114843.png)
 - **UNSLOTTED ALOHA**
 	- senza sincronizzazione tra nodi 
 		- trasmettono finché non avviene una collisione 
@@ -1028,17 +1028,17 @@
 		- si interrompe la trasmissione dei nodi coinvoli nella collisione
 		- viene segnalata
 		- e poi viene assegnato un tempo casuale di accesso ad ogni nodo coinvolto e si riprende così il tutto
-![Pasted image 20250521120825.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521120825.png)
+![Pasted image 20250521120825.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521120825.png)
 
 - Quelli a *Taking Turns*
 	- **POLLING**
 		- è presente un controllore centralizzato che dice ai nodi quanti frame possono trasmettere al massimo per un dato turno
 		- il fatto che ci sia un controllore aumenta il ritardo ma allo stesso tempo si riducono collisioni o slot inutilizzati
 		- usato nel Bluetooth
-![Pasted image 20250521122639.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521122639.png)
+![Pasted image 20250521122639.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521122639.png)
 - **Token Passing**
 	- Token che viene passato per ogni nodo, chi lo ha può usare il collegamento
-![Pasted image 20250521122744.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521122744.png)
+![Pasted image 20250521122744.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521122744.png)
 
 - Gestione via cavo di 
 	- *downstream*
@@ -1056,7 +1056,7 @@
 	- Per identificare un dispositivo di rete ad esempio una scheda di rete per effettuare uno scambio dei frame abbiamo bisogno di un indirizzo MAC, è a 48 bit ed è memorizzato nella ROM della NIC Network Interface Card
 - **come vengono scelti IEE**
 	- ente internazionale che ha lo scopo di gestire e fornire indirizzi MAC ai vari produttori di NIC
-![Pasted image 20250521180754.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521180754.png)
+![Pasted image 20250521180754.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521180754.png)
 - **Da IP a MAC**
 	- Viene utilizzato un protocollo ARP che ha una tabella ARP dove sono presenti 
 		- Ogni nodo IP nella LAN con le sue interfacce e il suo Indirizzo MAC con anche un TTL per la validità dell'informazione
@@ -1086,7 +1086,7 @@
 		- *Dati*
 		- Codici di controllo errori *CRC*
 	- Tutti gli standard di Ethernet usano stesso frame 
-![Pasted image 20250522155625.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522155625.png)
+![Pasted image 20250522155625.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522155625.png)
 - **sicurezza di ethernet**
 	- è senza handshake 
 	- vengono gestiti accessi multipli come ad esempio con CSMA/CD
@@ -1116,7 +1116,7 @@
 - **Differenze con i router**
 	- gli switch lavorano sul livello di collegamento i router no
 	- gli switch possono lavorare con pochi dispositivi perché usano una tabella normale
-![Pasted image 20250522173215.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522173215.png)
+![Pasted image 20250522173215.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522173215.png)
 
 #### VLAN
 - cosa sono
@@ -1126,7 +1126,7 @@
 - **versione basata sulle porte**
 	- un singolo switch viene usato come due switch differenti per mantenere la sicurezza
 	- uno switch viene diviso a metà virtualmente
-![Pasted image 20250522175052.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522175052.png)
+![Pasted image 20250522175052.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522175052.png)
 
 - **versione con più switch**
 	- viene usata una porta trunk per collegare in serie più switch 
@@ -1158,19 +1158,19 @@
 - **con infrastruttura**
 	- Sono presenti stazioni base che hanno il compito di offrire servizi di rete
 	- avvengono operazioni di handoff, quando un dispositivo si sposta dall'area di copertura e cambia punto di accesso
-![Pasted image 20250528104430.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528104430.png)
+![Pasted image 20250528104430.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528104430.png)
 
 - **senza infrastruttura**
 	- reti senza stazione base con host che comunicano tra di loro
 	- devono provvedere da se per fornire servizi di instradamento
-![Pasted image 20250528105453.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528105453.png)
+![Pasted image 20250528105453.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528105453.png)
 #### Caratteristiche dei collegamenti wireless
 ##### Concetto di attenuazione
 - il **segnale** può essere *assorbito* o *attenuato* a seconda della presenza di determinati ostacoli o anche solo dalla distanza
 - l'attenuazione con spazio libero si calcola con 
 	- $(frequenza⋅distanza)^2=(fd)^2$
 	- Più **alta** è la frequenza o più **lontano** è il ricevitore, più **rapidamente** si perde il segnale.
-![Pasted image 20250528111841.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528111841.png)
+![Pasted image 20250528111841.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528111841.png)
 
 ##### Tempo di coerenza
 - Tempo che ci indica se all'arrivo di un segnale ne possono arrivare *degli altri uguali* a causa di possibili *riflessioni* a distanza di un determinato tempo
@@ -1199,13 +1199,13 @@
 - Architettura delle LAN 802.11
 	- gli host wireless comunicano con una stazione base detta anche **Access Point**
 	- le singole infrastrutture wireless sono dette *BSS* e hanno vari host punto di accesso ecc...
-![Pasted image 20250528123119.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528123119.png)
+![Pasted image 20250528123119.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528123119.png)
 
 - **Divisione dei canali**
 	- *tecnica* che consente la *modulazione di frequenze* per creare una divisione dei canali di comunicazione
 	- ciò comunque non riduce a zero le interferenze
 	- questi canali vengono scelti dal *AP admin*
-![Pasted image 20250528123601.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528123601.png)
+![Pasted image 20250528123601.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528123601.png)
 
 - **ingresso di un dispositivo nella rete**
 	- un host in arrivo su una BSS deve essere associato a un AP e per farlo si hanno due modalità
@@ -1216,7 +1216,7 @@
 				- al loro interno hanno un MAC e un identificativo dell'AP il SSID
 	- dopo aver instaurato questo collegamento con accessi sicuri attraverso ad esempio WPA2
 	- l'host può inviare un DHCP discover che sarà passato all'AP e poi al server DHCP
-![Pasted image 20250528124155.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124155.png)
+![Pasted image 20250528124155.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528124155.png)
 
 - **collisioni nelle reti wireless**
 	- *CSMA/CA*
@@ -1249,7 +1249,7 @@
 			- **Paging**
 				- il master invita un dispositivo specifico a entrare quando lo conosce
 					- viene successivamente comunicato l'indirizzo di partecipazione e altre informazioni utili
-![Pasted image 20250529120105.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529120105.png)
+![Pasted image 20250529120105.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529120105.png)
 
 - **Reti 4G/5G**
 	- definizione
@@ -1284,7 +1284,7 @@
 	- **migliorie del 5G**
 		- maggiore velocità
 		- potrebbero esserci *problemi* di *distanza di banda*
-![Pasted image 20250529180732.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529180732.png)
+![Pasted image 20250529180732.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529180732.png)
 
 - **Rete LTE**
 	- definizione
@@ -1300,7 +1300,7 @@
 			- 2. una volta raggiunto invece il *passaggio di tunneling* dove i dati passano tra i vari Gateway attraverso un tunnel
 				- la comunicazione avviene attraverso u n protocollo *GTP-U*
 				- che impacchetta i dati in un pacchetto **UDP** per poi spedire i dati al P-GW passando per l'S-GW
-![Pasted image 20250529190918.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529190918.png)
+![Pasted image 20250529190918.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529190918.png)
 
 - **problema della mobilità**
 	- definizione
@@ -1320,7 +1320,7 @@
 				- i mittenti che vogliono mandare i messaggi all'UE non inviano più le informazioni all'Home agent ma *al nuovo router della base station*
 					- **veloce ed efficiente** ma i mittenti devono capire il tutto
 
-![Pasted image 20250530164917.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250530164917.png)
+![Pasted image 20250530164917.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250530164917.png)
 
 - **Le reti si dividono in**
 	- *home network*
@@ -1328,4 +1328,4 @@
 	- *visited network*
 		- **rete gestita da altri operatori**
 		- viene concessa attraverso il **roaming**
-![Pasted image 20250601113458.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601113458.jpg)
+![Pasted image 20250601113458.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601113458.jpg)

@@ -30,7 +30,7 @@ Esistono standard per garantire portabilità dei file system, così le chiavette
 #### Roadmap
 Descrive il processo di accesso ai file a un Sistema Operativo
 
-![Pasted image 20241212190804.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241212190804.png)
+![Pasted image 20241212190804.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241212190804.png)
 - possiamo vedere qui un esempio dove lo user chiede un determinato file
 -  il sistema operativo interagisce con il file system per localizzare e leggere quel file
 	- il **<font color="#4f81bd">virtual file system</font>** ci consente di vedere ogni file system in modo virtuale così che esso sia astratto e uguale per ogni implementazione
@@ -55,7 +55,7 @@ Linux se ne fotte ed e a carico nostro aprire una app corrispondente a quel file
 - <font color="#f79646">b)</font> una sequenza strutturata di Byte che andavano lette una alla volta in memoria(Nastri) 
 	- supporto in cui erano scritti i vari record
 - <font color="#f79646">c)</font> Struttura organizzata, i dati venivano visti come record organizzati da una struttura ad albero, ogni record aveva le sue chiavi, principalmente usato nei mainframe
-![Pasted image 20241212193435.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241212193435.png)
+![Pasted image 20241212193435.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241212193435.png)
 ##### DI COSA ABBIAMO BISOGNO PER GESTIRE TUTTA STA MERDA?
 - file e cartelle normali(Come ASCII e Binari)
 	- file di uso comune dagli utenti come foto video ecc 
@@ -69,7 +69,7 @@ Linux se ne fotte ed e a carico nostro aprire una app corrispondente a quel file
 File speciali che contengono una sequenza di byte eseguibile dal sistema operativo con formati specifici
 Come è fatto?
 
-![Pasted image 20241212194542.png|200](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241212194542.png)
+![Pasted image 20241212194542.png|200](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241212194542.png)
 - **Intestazione (Header)**
 	- **Numero magico**: specifica il tipo di file e se è eseguibile o meno 
 	- **Dimensioni varie** (testo, dati, BSS, ecc.)
@@ -84,7 +84,7 @@ Come è fatto?
 ##### File di archivio
 Un **file di archivio** come quelli creati con **`tar`** (acronimo di "tape archive") è un contenitore che raccoglie più file e directory in un unico file
 
-![Pasted image 20241212195906.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241212195906.png)
+![Pasted image 20241212195906.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241212195906.png)
 Intestazioni dei moduli: 
 - nome
 - data di creazione
@@ -102,7 +102,7 @@ Ci sono due modi:
 
 ##### ATTributi dei file
 ogni file ha i suoi attributi e metadati che indicano diverse informazioni
-![Pasted image 20241212201056.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241212201056.png)
+![Pasted image 20241212201056.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241212201056.png)
 
 ## Operazioni su file
 
@@ -139,13 +139,13 @@ directory di lavoro dove sono le cartelle
 Sono file che tengono traccia di altri file in un file system
 ##### DIVISIONE A DUE LIVELLI:
 ##### A livello singolo:
-![Pasted image 20241213102805.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241213102805.png)
+![Pasted image 20241213102805.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241213102805.png)
 Una sola directory detta ROOT che contiene tutti i file
 usata nei dispositivi embedded
 ##### Multilivello:
 Per motivi organizzativi si è deciso di creare una struttura gerarchica con cartelle e sottocartelle così da raggruppare e individuare meglio i file 
 Esiste una ROOT directory che rappresenta l'inizio di ogni directory
-![Pasted image 20241213104047.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241213104047.png)
+![Pasted image 20241213104047.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241213104047.png)
 
 ### Come cazzo si trova una cartella?
 #### Nomi di percorso assoluto Iniziano dalla root e conducono al file, <span style="background:rgba(240, 200, 0, 0.2)">sono unici per ogni file</span>.

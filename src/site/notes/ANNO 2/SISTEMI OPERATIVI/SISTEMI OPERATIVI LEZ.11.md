@@ -313,12 +313,12 @@ void consumer() {
 ## BARRIERE
 Le barriere sono utilizzate per sincronizzare i processi e per fare in modo che quando un processo raggiunge una barriera deve aspettare che tutti gli altri processi la raggiungano
 - si utilizzano per fare calcoli paralleli
-![Pasted image 20241114182540.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241114182540.png)
+![Pasted image 20241114182540.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241114182540.png)
 
 ### INVERSIONE DI PRIORITÀ READ-COPY-UPDATE
 
 #### IL MARS PATHFINDER
-![Pasted image 20241114184659.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241114184659.png)
+![Pasted image 20241114184659.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241114184659.png)
 Il mars pathfinder su Marte usava un sistema operativo real-time con 3 attività
 - attività ad alta priorità: analizzava dati scientifici importanti
 - attività a media priorità: esegue le comunicazioni o altre operazioni
@@ -358,11 +358,11 @@ l'idea è di separare lettori e scrittori attraverso un meccanismo che non li bl
 2. **la copia** avviene quando uno scrittore deve modificare la struttura e la copia prima di modificarla così non interferiscono con i lettori
 3. **update** aggiorna la struttura sostituendo la vecchia con la nuova in determinati nodi ecc...
 ##### AGGIUNGERE UN NODO
-![Pasted image 20241114191857.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241114191857.png)
+![Pasted image 20241114191857.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241114191857.png)
 - inizializzo X e connetto E a X così A e E che si leggevano insieme 
 - Quando ho finito di mettere roba in X lo metto tra A e E, quelli che prima stavano leggendo leggeranno per un po' roba vecchia
 ##### TOGLIERE NODI
-![Pasted image 20241114191923.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241114191923.png)
+![Pasted image 20241114191923.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241114191923.png)
 - aspettiamo che tutti i lettori smettano di leggere su B e C eliminando così il tutto
 >[!question]- come capire quando una memoria è liberata dai lettori?
 >il GRACE PERIOD è un meccanismo utilizzato per determinare quanto una vecchia versione di dati può essere liberata in sicurezza

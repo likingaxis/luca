@@ -27,7 +27,7 @@ Il sistema operativo è uno strato di software della macchina ha lo scopo di for
 - Il s.o. maschera gli elementi sottostanti della macchina
 - Il s.o. consente la gestione di esecuzioni in parallelo
 - Il s.o. è un gestore delle risorse e ne facilita l'utilizzo
-![Pasted image 20241010161716.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241010161716.jpg)
+![Pasted image 20241010161716.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241010161716.jpg)
 In mezzo abbiamo un s.o. che traduce le operazioni dall'alto verso le componenti in basso
 ##### Librerie
 Una persona che vuole creare un software non si deve reinventare le interazioni con i livelli sottostanti bensì utilizzerà Librerie ovvero estratti di codice da implementare per accedere alle componenti sottostanti
@@ -45,7 +45,7 @@ La gestione delle risorse del sistema operativo include il discorso di Multiplex
 Ci sono 5 generazioni
 1) anni 50 le macchine avevano solo uno scopo utilizzo di schede perforate e filamenti, se volevi cambiarne l'uso dovevi buttarla giù e ricostruirla, es: colossus
 2) anni 60 macchine anche chiamate ***mainframe*** con uso dei transistor che consentiva di cambiare le operazioni da far svolgere alla macchina attraverso dei programmi su schede forate e uso del sistema batch ovvero un insieme di job(programmi) ed un sistema che permetteva di eseguire le varie operazioni che necessitavano più macchine con  una organizzazione simile a una pipeline
-![Pasted image 20241010173030.jpg|450](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241010173030.jpg)
+![Pasted image 20241010173030.jpg|450](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241010173030.jpg)
 3) anni 70 primi sistemi operativi come MULTICS e UNIX con multiprogrammazione, una macchina che consentiva più programmi contemporaneamente così da soddisfare i clienti ad esempio la 7094 della ibm 360 con strumenti scientifici e commerciali. POSIX chiamate a sistema che devono essere in ogni sistema operativo
 4) anni 80 i personal computer di oggi con le loro peculiarità e i loro sistemi operativi
 5) anni 90 i computer mobili di oggi come telefoni ecc
@@ -61,21 +61,21 @@ Ricordare almeno i registri:
 Concetto di multiplexing delle operazioni nel tempo pipeline
 Cache nella CPU
 
-![Pasted image 20241010180055.jpg|450](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241010180055.jpg)
+![Pasted image 20241010180055.jpg|450](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241010180055.jpg)
 ### memorie
 Più  una memoria e' veloce più costa e di solito e' meno capiente
-![Pasted image 20241010180415.jpg|450](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241010180415.jpg)
+![Pasted image 20241010180415.jpg|450](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241010180415.jpg)
 ### dispositivi di I/O
 Sono costituiti da due parti un controller che gestisce il dispositivo e il dispositivo stesso
 Il controller fa da interfaccia per il sistema operativo
 La CPU parla con un controller del disco che parla poi a sua volta con un controller e quest'ultimo parla con la CPU
 
-![Pasted image 20241010180537.jpg|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241010180537.jpg)
+![Pasted image 20241010180537.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241010180537.jpg)
 ##### DMA
 E' un chip che consente l'accesso diretto tra un controller di un dispositivo e la memoria senza mettere in mezzo la CPU che dovrà solo comunicare la dimensione di byte che si possono scambiare i due
 ### bus
 Sono una serie di fili che consentono la comunicazione tra dispositivi, se il bus e' di scarsa qualità il sistema avrà un collo di bottiglia
-![Pasted image 20241010183402.jpg](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241010183402.jpg)
+![Pasted image 20241010183402.jpg](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241010183402.jpg)
 ## AVVIO DEL SISTEMA
 
 Ogni PC ha una motherboard con un BIOS ovvero un software di I/O di basso livello ora risiede in una piccola memoria flash non volatile nella mobo e gestisce varie cose del device

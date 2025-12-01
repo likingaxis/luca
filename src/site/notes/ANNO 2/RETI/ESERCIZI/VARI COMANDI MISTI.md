@@ -5,11 +5,11 @@
 # COMANDI LIVELLO DI TRASPORTO
 ## ss -s statistiche sulle socket
 - mostra quali socket sono all'attivo per determinati protocolli
-![Pasted image 20250706161153.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250706161153.png)
+![Pasted image 20250706161153.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250706161153.png)
 ## ss-u -ua
 - u specifica socket UDP
 - ua specifica anche le socket che non hanno connessioni all'attivo
-![Pasted image 20250706161524.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250706161524.png)
+![Pasted image 20250706161524.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250706161524.png)
 ## altri comandi di ss
  - - n toglie le traduzioni automatiche delle porte
 	quindi indirizzo:http  ora si vedrà come indirizzo:80
@@ -18,7 +18,7 @@
 
 ## dig
 effettua richiesta un server DNS
-![Pasted image 20250706162626.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250706162626.png)
+![Pasted image 20250706162626.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250706162626.png)
 ## Wireshark
 analizza i pacchetti inviati e ricevuti nella rete
 - ha dei filtri che consentono di vedere determinati pacchetti

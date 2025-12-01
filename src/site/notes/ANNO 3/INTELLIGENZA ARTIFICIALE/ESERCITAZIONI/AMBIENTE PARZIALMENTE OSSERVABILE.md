@@ -35,4 +35,4 @@ function RUN-ENV(Update-Fn, state, agent, Performance-Fn) returns score
 - PROGRAMMA AGENTE -> identico ma l'algoritmo di ricerca è **HILL CLIMBING**
 - ALGORITMO RICERCA -> **HILL CLIMBING**
 
-![Pasted image 20251028152145.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028152145.png)
+![Pasted image 20251028152145.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251028152145.png)

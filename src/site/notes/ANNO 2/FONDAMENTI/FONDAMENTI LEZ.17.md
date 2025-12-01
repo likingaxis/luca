@@ -38,7 +38,7 @@ ora bisogna solo capire se è propria o meno
 >variano v e x perché le altre sono prese come parti fisse della parola
 
 >[!tip]- Perché $P_L$ esiste? 
->![Pasted image 20250412095720.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250412095720.png)
+>![Pasted image 20250412095720.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250412095720.png)
 ##### Da qui viene usato il teorema di ***Bar-Hillel***
 Definisce che i 4 punti visti prima sono sufficienti per formare un linguaggio context-free
 - ma non lo rendono obbligatorio
@@ -72,8 +72,8 @@ e **tutti e tre** devono essere **uguali**.
 >E quindi $G_{2} \subset G_{1}$ (non uguale)
 
 >[!question]- perché le grammatiche context-free possono gestire una sola dipendenza per volta?
->![Pasted image 20250413161421.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250413161421.png)
->![Pasted image 20250413161443.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250413161443.png)
+>![Pasted image 20250413161421.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250413161421.png)
+>![Pasted image 20250413161443.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250413161443.png)
 
 
 ### Unione e Intersezione di due linguaggi context-free
@@ -83,7 +83,7 @@ Siano $L^{1}, L^{2} \in G_{2}$
 >$$L^{1} \cup L^{2} \in G_{2}$$
 
 >[!example] Risposta: SI
->![Pasted image 20250413161734.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250413161734.png)
+>![Pasted image 20250413161734.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250413161734.png)
 >semplicemente genera una grammatica con l'unione dei vari stati non terminali e terminali e le varie produzioni ecc...
 
 
@@ -94,7 +94,7 @@ Siano $L^{1}, L^{2} \in G_{2}$
 
 
 >[!example] Risposta: NON È DETTO
->![Pasted image 20250413162543.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250413162543.png)
+>![Pasted image 20250413162543.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250413162543.png)
 
 
  
@@ -205,10 +205,10 @@ cioè:
 >- la testina sul primo nastro rimane ferma
 >- il nuovo stato dell'automa è $(a \ x, \ 𝛽 \ 𝛾, \ q_{2})$
 
-![Pasted image 20250413170024.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250413170024.png)
+![Pasted image 20250413170024.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250413170024.png)
 Da un determinato **input** (configurazione), possiamo avere **diversi output** (transizioni possibili)
 ###### ESEMPIO CON FOTO
-![Pasted image 20250413170355.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250413170355.png)
+![Pasted image 20250413170355.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250413170355.png)
 qui in questa foto mi sa che c'è un errore perché anche nella scritta blu dovrebbe esserci solo B
 
 >[!tip] OSSERVAZIONI

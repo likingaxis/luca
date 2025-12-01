@@ -8,7 +8,7 @@ Chomsky definì 3 tipi di grammatiche:
 - $G_1$
 - $G_2$
 - $G_3$
-![Pasted image 20250402174545.png|300](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402174545.png)
+![Pasted image 20250402174545.png|300](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402174545.png)
 
 Ogni grammatica interna è sottoinsieme di quella esterna
 $$G3 ⊆ G2 ⊆ G1⊆ G0$$
@@ -40,26 +40,26 @@ aggiungiamo quindi un nuovo non terminale $S’$ che assumerà il ruolo di assio
 inseriamo poi la produzione S’ → $\epsilon$ inseriamo la produzione$S’ \rightarrow S$
 procediamo a dimostrare 
 ### Teorema per G1
-![Pasted image 20250402194448.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402194448.png)
+![Pasted image 20250402194448.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402194448.png)
 Una epsilon produzione è quando abbiamo una produzione nella forma $\alpha \rightarrow \epsilon$ 
 quindi praticamente dice che non posso avere $\alpha \rightarrow S$ perché non rispetterebbe le regole
 ciò però non ci vieta di togliere questa limitazione per ogni t>1
 ## Teorema per G2
-![Pasted image 20250402195403.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402195403.png)
+![Pasted image 20250402195403.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402195403.png)
 praticamente quello che dice è che se rimuoviamo le epsilon produzioni dalla grammatica otteniamo una grammatica normalissima con il tipo t>1 allora significa che possiamo estendere con epsilon quindi rispondiamo alla cosa detta prima
 Questo teorema non si applica a G1 perché non si rispetterebbe la regola del <=
 
 ## Teorema G3
-![Pasted image 20250402201529.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402201529.png)
+![Pasted image 20250402201529.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402201529.png)
 
 
 # ESEMPIO 4
 
-![Pasted image 20250402201656.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402201656.png)
+![Pasted image 20250402201656.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402201656.png)
 Quindi praticamente dobbiamo generare tutte parole uguali una a fianco dell'altra
 con tali produzioni
-![Pasted image 20250402201712.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402201712.png)
-![Pasted image 20250402201732.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402201732.png)
+![Pasted image 20250402201712.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402201712.png)
+![Pasted image 20250402201732.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402201732.png)
 
 # ESERCIZIO
-![Pasted image 20250402201610.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250402201610.png)
+![Pasted image 20250402201610.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250402201610.png)

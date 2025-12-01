@@ -46,11 +46,11 @@ oppure
 >- il busy waiting riguarda il controllo di variabili o dispositivi
 >- il cycle stealing riguarda un dispositivo che ruba cicli alla CPU per accedere ai bus di trasferimento dati al posto di farlo usare dalla CPU
 
-![Pasted image 20250114160131.jpg|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250114160131.jpg)
+![Pasted image 20250114160131.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250114160131.jpg)
 
 ### Codice che usa stampante 1
 
-![Pasted image 20250114160453.jpg](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250114160453.jpg)
+![Pasted image 20250114160453.jpg](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250114160453.jpg)
 
 - devo copiare dal buffer utente al buffer kernel `copy_from_user()`
 - controllo e attendo disponibilita della stampante con un while che confronta il registro
@@ -59,8 +59,8 @@ oppure
 >il while crea un busy waiting
 
 ### Codice che usa stampante 2
-![Pasted image 20250114165521.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250114165521.jpg)
-![Pasted image 20250114165545.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250114165545.jpg)
+![Pasted image 20250114165521.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250114165521.jpg)
+![Pasted image 20250114165545.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250114165545.jpg)
 Questo codice ottimizza le cose 
 - copio il buffer utente in uno del kernel
 - abilito gli interrupt che verranno utilizzati dalla stampante
@@ -87,12 +87,12 @@ il DMA prende il buffer dal kernel
 restituisce allo `scheduler()`
 il DMA invia un interrupt una volta finito 
 fa i vari unblock ecc...
-![Pasted image 20250114190440.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250114190440.png)
+![Pasted image 20250114190440.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250114190440.png)
 >[!tip]- chiarimento spicciolo
 >in poche parole questo processo sposta il buffer nel kernel e fa fare tutto al DMA una volta che il DMA ha finito dice al processo che l'ha chiamato e restituisce tutto il controllo alla CPU
 
 #### Struttura del software di I/O
-![Pasted image 20250114191202.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250114191202.png)
+![Pasted image 20250114191202.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250114191202.png)
 ho quattro livelli che caratterizzano il software di I/O
 ora studieremo i gestori degli interrupt -> 
 ### Gestori degli interrupt
@@ -142,7 +142,7 @@ I driver di solito sono al livello Kernel per accedere meglio ai vari registri d
 >- MA sono più lenti (devono passare allo spazio Kernel per ogni operazione)
 
 #### Funzionalità e interfaccia dei driver dispositivo
-![Pasted image 20250116163956.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250116163956.png)
+![Pasted image 20250116163956.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250116163956.png)
 
 I driver per essere installati vengono visti come dei veri e propri dispositivi
 e vengono classificati in:
@@ -188,7 +188,7 @@ Le sue funzioni chiave includono:
 >Avere un'interfaccia standard aumenta notevolmente l'efficienza.
 >- (a) INTERFACCE DIVERSE
 >- (b) INTERFACCE UNIFORMI
->![Pasted image 20250116165456.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250116165456.png)
+>![Pasted image 20250116165456.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250116165456.png)
 ### Implementazione e gestione dell'interfaccia dei driver
 sono fondamentali per la comunicazione tra SO e dispositivi hardware
 i driver contengono una tabella che ha riferimenti a funzioni specifiche 
@@ -198,7 +198,7 @@ Ogni dispositivo ha un nome simbolico (es. `/dev/disk0` in UNIX)
 - per garantire la sicurezza vengono usati permessi tipo quelli dei file
 il SO fornisce una interfaccia standard per i driver facilitando l'integrazione con nuovi dispositivi
 ### Buffering
-![Pasted image 20250116170331.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250116170331.png)
+![Pasted image 20250116170331.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250116170331.png)
 
 ##### Diversi scenari
 il buffering è fondamentale e lo capiamo dall'esempio
@@ -237,7 +237,7 @@ Esistono azioni che possono dipendere dal contesto
 >è una tecnica per gestire i dispositivi dedicati in ambienti multiprogrammati evitando blocchi da parte di un solo processo
 >- in poche parole serve per sincronizzarli in modo armonioso
 >in modo pratico uso un daemon e una directory di spooling per ordinare e gestire i lavori di stampa
->![Pasted image 20250116174346.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250116174346.png)
+>![Pasted image 20250116174346.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250116174346.png)
 >tutti questi sono i livelli del sistema di I/O
 >le frecce indicano i flussi di controllo che attraversano i livelli
 

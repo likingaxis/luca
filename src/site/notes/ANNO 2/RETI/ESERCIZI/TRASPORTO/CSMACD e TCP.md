@@ -15,13 +15,13 @@ tra due interfacce.
 		- distanza/velocità
 
 ### ESERCIZIO 2
-![Pasted image 20250710191022.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250710191022.png)
+![Pasted image 20250710191022.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250710191022.png)
 - Capire che gli ACK sono cumulativi
 - qui viene inviato un ACK corretto per il secondo segmento quindi si implica che anche il primo è stato inviato correttamente
 - disegna le finestre di ricezione così
-![Pasted image 20250710191120.png|350](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250710191120.png)
+![Pasted image 20250710191120.png|350](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250710191120.png)
 ### ESERCIZIO 3
-![Pasted image 20250710191157.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250710191157.png)
+![Pasted image 20250710191157.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250710191157.png)
 - Analizza i casi
 	- **se si ha una crescita esponenziale**
 		- Slow Start

@@ -27,7 +27,7 @@ La domanda della prof che poi ci porta a creare delle cose concrete nella lezion
 >questo ci serve per capire se abbiamo $C1\subset C2$ oppure continuiamo ad avere $C1 \subseteq C2$
 >
 
->[!tip] ![Pasted image 20250507174234.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250507174234.png)
+>[!tip] ![Pasted image 20250507174234.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250507174234.png)
 
 ## Potremmo forse realizzare questo sogno con le riduzioni?
 Le riduzioni sono un argomento vecchio ma che ci può tornare utile
@@ -133,7 +133,7 @@ Trovare un problema completo (come L) è utile perché:
 - Se **non appartiene a C1**, allora **C1 ≠ C2**
 
 >[!tip]- precisazioni su problemi completi, ovvero i più difficili
->![Pasted image 20250507192021.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250507192021.png)
+>![Pasted image 20250507192021.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250507192021.png)
 
 #### Teorema 6.20
 Hai due classi di problemi:
@@ -152,7 +152,7 @@ Se per caso trovassimo un linguaggio L C2–completo rispetto a una qualche ridu
 > 
 > **L è in C₀ se e solo se C = C₀**
 
-![Pasted image 20250507192212.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250507192212.png)
+![Pasted image 20250507192212.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250507192212.png)
 ### una particolare $\pi-riduzione$ la **riduzione polinomiale**
 una $\pi$ greco riduzione in un esempio fatto prima prevedeva una funzione che doveva essere calcolata in $|x|$
 - ora facciamo un esempio di $\pi -riduzione$ che lo fa in tempo polinomiale
@@ -288,7 +288,7 @@ In sintesi:
 > Se trasformi un problema in un altro in tempo polinomiale, e l’altro è in P, allora anche il primo è in P..
 
 Anche per altre classi non deterministiche
-![Pasted image 20250507212513.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250507212513.png)
+![Pasted image 20250507212513.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250507212513.png)
 
 ### I linguaggi NP-completi_
 

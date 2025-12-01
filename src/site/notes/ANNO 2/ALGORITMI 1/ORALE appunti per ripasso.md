@@ -49,7 +49,7 @@
 #### Binary Search
 - algoritmo ordinato costo $O(logn)$ 
 #### Equazioni di ricorrenza
-![Pasted image 20241023132417.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241023132417.png)
+![Pasted image 20241023132417.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241023132417.png)
 #### Selection Sort 
 Ci scorriamo il nostro array e ad ogni elemento facciamo un controllo su qual è l'elemento più piccolo in quella determinata posizione
 - $O(n^2)$ 
@@ -178,8 +178,8 @@ Ci scorriamo il nostro array e ad ogni elemento facciamo un controllo su qual è
 - ci serve per definire che sono sempre alti logn
 - Per dimostrarlo prendo il caso limite di sbilanciamento, gli alberi di fibonacci
 	- se tolgo un nodo rischio sbilanciamento e modifica di altezza
-	- quindi abbiamo che il numero di nodi nh di un albero Th è uguale a ![Pasted image 20250628160718.png|300](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020250628160718.png)
-	- ![Pasted image 20250628160849.png|200](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020250628160849.png)
+	- quindi abbiamo che il numero di nodi nh di un albero Th è uguale a ![Pasted image 20250628160718.png|300](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020250628160718.png)
+	- ![Pasted image 20250628160849.png|200](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020250628160849.png)
 
 - search sono sicuro che costi logn
 - insert

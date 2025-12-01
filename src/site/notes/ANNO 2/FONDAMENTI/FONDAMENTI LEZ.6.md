@@ -10,13 +10,13 @@ caratterizzata principalmente dagli ultimi 3
 che ha come parola ovvero l'input dato i vari stati separati da un - e tutte le varie quintuple una di seguito all'altra
 questa parola in input definisce completamente una macchina T
 - con i vari stati e parole
-![Pasted image 20250315111106.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250315111106.png)
+![Pasted image 20250315111106.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250315111106.png)
 L'insieme delle quintuple non è una funzione totale poiché manca il caso in cui la lunghezza è dispari e la parola è palindroma
 si possono aggiungere queste quintuple 
 〈qa1 , ◻, ◻, qR , F〉,〈 qb1 , ◻, ◻, qR , F〉
 ma comunque manca il caso in cui una parola è dispari ma palindroma 
 Ci torneremo poi
-![Pasted image 20250315111629.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250315111629.png)
+![Pasted image 20250315111629.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250315111629.png)
 #### Macchina di Turing presa come parola
 quindi possiamo definire una vera e propria macchina di Turing come se fosse una parola completa costituita da
 $Q \cup \Sigma \cup \{-\} \cup \{ \langle \} \cup \{ \rangle \} \cup \{ \square \}$
@@ -29,7 +29,7 @@ U cosa deve fare per simulare ciò che fa T?
 2) Al secondo l'input effettivo
 3) Sul terzo nastro U copia lo stato iniziale di T (primo simbolo di $p_t$)
 4) Sul quarto nastro U copia lo stato di accettazione di T dopo il primo simbolo dopo il -
-![Pasted image 20250315113137.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250315113137.png)
+![Pasted image 20250315113137.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250315113137.png)
 $N_3$ non cambierà mai 
 $N_4$ contiene lo stato attuale della macchina di T (non U)
 #### U ripeterà i seguenti passaggi
@@ -39,16 +39,16 @@ $N_4$ contiene lo stato attuale della macchina di T (non U)
   ( $\rangle \ poi \square$) confronta così il terzo nastro con il 4 se sono uguali accetta altrimenti rigetta
 ### Prime due fasi nel dettaglio
 ##### FASE 1
-![Pasted image 20250315114838.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250315114838.png)
+![Pasted image 20250315114838.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250315114838.png)
 ##### FASE 2
-![Pasted image 20250315114847.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250315114847.png)
+![Pasted image 20250315114847.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250315114847.png)
 
 ### Definire correttamente l'alfabeto
 >[!bug] Problema:
 >  l'alfabeto deve essere finito e quindi lo codifichiamo in binario per renderlo finito
 
-![Pasted image 20250315115409.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250315115409.png)
-![Pasted image 20250315115422.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250315115422.png)
+![Pasted image 20250315115409.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250315115409.png)
+![Pasted image 20250315115422.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250315115422.png)
 Ovviamente ciò cambia un po di cose ma solo in termini di lettura tutto qui
 ovvero verranno lette sequenze di bit e non più lettere dell'alfabeto
 

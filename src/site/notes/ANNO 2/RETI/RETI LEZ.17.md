@@ -9,7 +9,7 @@ le terminologie che vengono spesso usate sono:
 - I vari canali di comunicazione che collegano i nodi adiacenti tra loro sono i COLLEGAMENTI(LINK)
 	- tipo cavi o wireless
 - Pacchetto che viene gestito al livello 2 sono i frame, incapsula i datagrammi
-![Pasted image 20250508220204.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508220204.png)
+![Pasted image 20250508220204.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508220204.png)
 
 - Possiamo notare come i livelli di tipo 2 aggiungono dettagli al formato della rete
 - Prima con il livello di rete non avevamo visione sugli switch ma solo sui router
@@ -18,10 +18,10 @@ le terminologie che vengono spesso usate sono:
 	- oltretutto anche su collegamenti di tipo differenti
 	- reti cavi ecc
 - dopo parleremo dei vari servizi che hanno i protocolli di collegamento ma si può tipo pensare a servizi come trasferimenti affidabili ecc
-![Pasted image 20250508220655.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508220655.png)
+![Pasted image 20250508220655.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508220655.png)
 
 ##### Metafora con i trasporti 
-![Pasted image 20250508220710.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508220710.png)
+![Pasted image 20250508220710.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508220710.png)
 
 
 #### Servizi aggiuntivi del livello di collegamento
@@ -56,7 +56,7 @@ le terminologie che vengono spesso usate sono:
 	- **Half-duplex**: trasmissione alternata nei due sensi.
 	- **Full-duplex**: trasmissione simultanea in entrambe le direzioni.
 
-![Pasted image 20250508222101.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508222101.png)
+![Pasted image 20250508222101.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508222101.png)
 #### Implementazione del livello di collegamento negli host
 negli host i livelli che abbiamo visto ora erano di tipo software
 - quello di collegamento invece è tra hardware e software
@@ -67,10 +67,10 @@ negli host i livelli che abbiamo visto ora erano di tipo software
     - Si collega al **bus di sistema** (es. PCI).
 - È una **combinazione di hardware, software e firmware**.
 
-![Pasted image 20250508223125.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508223125.png)
+![Pasted image 20250508223125.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508223125.png)
 
 ###### come è fatto non troppo nei dettagli un adattatore di rete negli host
-![Pasted image 20250508223425.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508223425.png)
+![Pasted image 20250508223425.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508223425.png)
 mittente vs ricevente
 ###### parte del mittente
 🔧 Il **controller** (nella scheda di rete) si occupa di:
@@ -103,7 +103,7 @@ Per applicare un meccanismo di rilevazione degli errori ciò che faccio è utili
 		- dopo aver scambiato i dati su un collegamento a potenziali errori
 		- controlliamo D' e gli applichiamo la stessa funzione
 			- se ci da EDC' uguale a EDC precedente ecco fatto nessun errore
-![Pasted image 20250508224352.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250508224352.png)
+![Pasted image 20250508224352.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250508224352.png)
 
 - non usiamo funzioni troppo complesse perché aumenterebbero troppo overhead
 >[!bug] possibili problemi
@@ -120,7 +120,7 @@ ovviamente più si aumentano i bit di rilevazione più è facile rilevare errori
 - Il ricevente **ricalcola la parità** e la **confronta** con quella ricevuta:
     - se **coincidono** → nessun errore rilevato;
     - se **divergono** → errore rilevato.
-![Pasted image 20250510121732.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510121732.png)
+![Pasted image 20250510121732.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510121732.png)
 ⚠️ Può **rilevare solo un numero dispari di errori** → se gli errori sono 2, 4, ecc. non li vede!
 
 ###### Esempi con bit di parità in due dimensione:
@@ -129,7 +129,7 @@ ovviamente più si aumentano i bit di rilevazione più è facile rilevare errori
 - ✅ Permette di:
     - rilevare **tutte le combinazioni fino a 3 errori**,
     - **correggere 1 errore singolo** (incrociando la riga e la colonna con parità errata).
-![Pasted image 20250510122149.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510122149.png)
+![Pasted image 20250510122149.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510122149.png)
 
 >[!warning] Limiti del controllo di parità: gli errori a burst
 >Il **controllo di parità (singolo bit)** è adatto se:
@@ -139,19 +139,19 @@ ovviamente più si aumentano i bit di rilevazione più è facile rilevare errori
 > - **Gli errori reali tendono a essere “a burst”**:
 >     - più bit consecutivi vengono alterati insieme (es. interferenza elettromagnetica).
 > - In questo caso, **un singolo bit di parità può fallire** nel rilevarli.
->![Pasted image 20250510124225.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510124225.png)
+>![Pasted image 20250510124225.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510124225.png)
 
 ### ESEMPI
-![Pasted image 20250510130301.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510130301.png)
+![Pasted image 20250510130301.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510130301.png)
 ad una riga viene rilevato un errore di parità ma non si riesce a capire a quale colonna corrisponde per correggerlo
 - ci sono 3 errori e non 1 che son fuori
-![Pasted image 20250510130403.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510130403.png)
+![Pasted image 20250510130403.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510130403.png)
 anche qui non sa quale correggere
-![Pasted image 20250510130712.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510130712.png)
-![Pasted image 20250510130719.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510130719.png)
-![Pasted image 20250510130725.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510130725.png)
-![Pasted image 20250510130738.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510130738.png)
-![Pasted image 20250510130747.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250510130747.png)
+![Pasted image 20250510130712.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510130712.png)
+![Pasted image 20250510130719.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510130719.png)
+![Pasted image 20250510130725.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510130725.png)
+![Pasted image 20250510130738.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510130738.png)
+![Pasted image 20250510130747.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250510130747.png)
 
 
 Quando ci sono più righe e più colonne non riesce a correggere e rilevare l'errore

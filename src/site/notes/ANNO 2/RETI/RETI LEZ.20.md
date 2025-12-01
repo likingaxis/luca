@@ -21,10 +21,10 @@
 	- elemento che funge da ripetitore, relay al livello di collegamento
 	- di solito essa è connessa ad una rete cablata
 	- es: access point o tower delle reti cellulari
-![Pasted image 20250528104430.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528104430.png)
+![Pasted image 20250528104430.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528104430.png)
 
 ### Differenze tra raggio di copertura e velocità dei collegamenti wireless su una tabella
-![Pasted image 20250528104630.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528104630.png)
+![Pasted image 20250528104630.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528104630.png)
 ##### Modalità differenti
 si dividono principalmente in 2 tipologie
 - con infrastruttura
@@ -33,16 +33,16 @@ si dividono principalmente in 2 tipologie
 	- handoff
 		- azione che avviene quando un host si sposta dall'area di copertura e cambia punto di accesso con una rete più ampia
 		- può addirittura cambiare sottorete
-![Pasted image 20250528104430.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528104430.png)
+![Pasted image 20250528104430.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528104430.png)
 - Reti ad hoc, senza infrastruttura
 	- senza stazioni base
 	- gli host condividono solo ad altri nodi entro la loro copertura
 	- gli host provvedono da se per fornire servizi di instradamento e altro ancora
-![Pasted image 20250528105453.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528105453.png)
+![Pasted image 20250528105453.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528105453.png)
 
 ###### Tassonomia delle due modalità differenti
 tabella con hop multipli e non
-![Pasted image 20250528110720.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528110720.png)
+![Pasted image 20250528110720.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528110720.png)
 
 #### Caratteristiche dei collegamenti wireless
 ##### Concetto di attenuazione
@@ -53,15 +53,15 @@ tabella con hop multipli e non
 si può derivare una piccola formula
 $(frequenza⋅distanza)^2=(fd)^2$
 - Più **alta** è la frequenza o più **lontano** è il ricevitore, più **rapidamente** si perde il segnale.
-![Pasted image 20250528111841.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528111841.png)
+![Pasted image 20250528111841.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528111841.png)
 
 ##### Propagazione wireless su cammini differenti
 - quando un segnale viene riflesso su diversi elementi che ci circondano, possono modificarne il loro tempo di arrivo o addirittura possono arrivare stessi pacchetti con tempi diversi
-![Pasted image 20250528112517.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528112517.png)
+![Pasted image 20250528112517.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528112517.png)
 Per questo viene aggiunto il tempo di coerenza
 - è un tempo per cui all'arrivo di un impulso ne possono arrivare altri da eventuali riflessi
 - i tempi di coerenza non possono sovrapporsi quindi questo fa variare le velocità di trasmissione
-![Pasted image 20250528113426.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528113426.png)
+![Pasted image 20250528113426.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528113426.png)
 
 
 ##### Interferenze da parte di altre sorgenti
@@ -84,12 +84,12 @@ Questo garantisce:
 - Consumo energetico controllato
 - Minori errori
 L'immagine qua sotto fa vedere diverse tipologie di modulazioni
-![Pasted image 20250528120030.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528120030.png)
+![Pasted image 20250528120030.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528120030.png)
 
 #### Terminali nascosti dei collegamenti delle reti wireless
 A e C possono mandare a B ma non si comunicano tra di loro quindi non si sa se ci sono collisioni
 ci sono due scenari dove abbiamo un terminale nascosto
-![Pasted image 20250528120217.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528120217.png)
+![Pasted image 20250528120217.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528120217.png)
 
 ### Protocollo di accesso multiplo per le reti wireless
 
@@ -113,23 +113,23 @@ invece poi per fare la decodifica chi riceve il segnale deve
     1. Divide i dati ricevuti in blocchi di M
     2. Calcola il **prodotto scalare** con il codice dell’utente
     3. Divide per M → ottiene il bit originale
-![Pasted image 20250528122813.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528122813.png)
-![Pasted image 20250528122827.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528122827.png)
+![Pasted image 20250528122813.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528122813.png)
+![Pasted image 20250528122827.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528122827.png)
 >[!tip]- dimostrazione del perché funziona
->![Pasted image 20250528122901.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528122901.png)
+>![Pasted image 20250528122901.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528122901.png)
 >
 
 
 ## Reti Wi-Fi con uno standard chiamato (802.11)
 #### 802.11 Canali utilizzati
-![Pasted image 20250528123002.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528123002.png)
+![Pasted image 20250528123002.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528123002.png)
 #### 802.11 architettura di queste LAN
 qui gli host wireless comunicano con la stazione base come un access point
 Una BSS è una infrastruttura che contiene:
 - host wireless
 - punto di accesso AP
 - modalità ad hoc in cui i dispositivi comunicano tra loro direttamente 
-![Pasted image 20250528123119.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528123119.png)
+![Pasted image 20250528123119.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528123119.png)
 
 #### Canali del 802.11 ovvero il Wi-Fi
 - i canali sono la suddivisione di questo spettro di frequenze differenti
@@ -137,7 +137,7 @@ Una BSS è una infrastruttura che contiene:
 	- potrebbero esserci interferenze
 		- un altro AP la vicino può scegliere lo stesso canale
 
-![Pasted image 20250528123601.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528123601.png)
+![Pasted image 20250528123601.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528123601.png)
 #### 802.11 Associazione
 - un host in arrivo nella BSS deve essere associato a un AP per farlo deve
 	- scansionare gli AP vicini prendendo i vari frame beacon, ovvero quei frame che mandano periodicamente gli access point per farsi rilevare
@@ -145,9 +145,9 @@ Una BSS è una infrastruttura che contiene:
 	- l'host deve sceglierne uno e accedervi rispettando le varie protezioni come WPA2
 	- Una volta associato e autenticato, l’host invia un messaggio **DHCP Discover** per ottenere un indirizzo IP.
 	- Questo messaggio passa **attraverso l’AP**, che lo inoltra nella sottorete.
-![Pasted image 20250528123942.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528123942.png)
+![Pasted image 20250528123942.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528123942.png)
 #### Scansione attiva vs passiva
-![Pasted image 20250528124155.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124155.png)
+![Pasted image 20250528124155.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528124155.png)
 #### Wi-Fi con accesso multiplo
 Abbiamo bisogno di un protocollo per evitare collisioni nell'uso della rete Wi-Fi
 - In questo caso ne vedremo uno con accesso casuale
@@ -174,7 +174,7 @@ Abbiamo bisogno di un protocollo per evitare collisioni nell'uso della rete Wi-F
 ###### Da parte del destinatario
 Invia un ACK dopo un intervallo SIFS 
 IMPORTANTE: non entro nel canale appena si libera ma aspetto il tempo di backoff, perché non ci sono CD, le collisioni possono comunque esserci
-![Pasted image 20250528144451.jpg|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528144451.jpg)
+![Pasted image 20250528144451.jpg|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528144451.jpg)
 ### Ricapitolando
 nelle reti wireless non posso avere Collision Detection, questo perché è tutto su frequenze alterne e oltretutto non tutto è visibile da tutti allo stesso modo
 - inoltre la potenza di segnale trasmessa è sicuramente più forte di quella che dovresti sentire per rilevare se il canale è libero o meno
@@ -199,7 +199,7 @@ il mittente deve prenotare il canale
 	- sostanzialmente tutti i nodi ricevono questo pacchetto Clear To Send dopo che un nodo ha inviato un pacchetto Request To Send
 	- tutti gli altri dovranno rimandare eventuali trasmissioni
 Foto esempio:
-![Pasted image 20250528144419.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528144419.jpg)
+![Pasted image 20250528144419.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528144419.jpg)
 1. **A → AP: RTS (Request To Send)**  
     Il nodo **A** invia un messaggio RTS per “prenotare il canale”.
 2. **B → AP: RTS (collisione!)**  
@@ -212,22 +212,22 @@ Foto esempio:
     L’AP invia conferma della ricezione del frame.
 
 #### 802.11 i frame in particolare l'indirizzamento
-![Pasted image 20250528124604.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124604.png)
+![Pasted image 20250528124604.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528124604.png)
 
 
 #### Come cambia il frame da Ethernet a Wi-Fi?
 Viene aggiunto l'indirizzo MAC dell'AP
-![Pasted image 20250528124717.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124717.png)
+![Pasted image 20250528124717.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528124717.png)
 Il router R1 **non sa** che H1 è collegato via Wi-Fi
 quando il passaggio invece è da Wi-Fi a Ethernet si ha il contrario
-![Pasted image 20250528124918.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528124918.png)
+![Pasted image 20250528124918.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528124918.png)
 
 ##### Frame di indirizzamento con dei dettagli su
 - la durata della trasmissione
 - il numero di quel determinato frame
 - il campo frame control si divide nei campi della foto sotto
 - con tipologia del frame
-![Pasted image 20250528125140.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528125140.png)
+![Pasted image 20250528125140.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528125140.png)
 #### Mobilità nella stessa sottorete 
 - quando un host si sposta da un AP a un altro però mantenendo stesso indirizzo IP
 	- inevitabilmente per avere stesso indirizzo IP sono collegati tutti e due dallo stesso switch
@@ -236,7 +236,7 @@ quando il passaggio invece è da Wi-Fi a Ethernet si ha il contrario
 		- riceve un frame da H1 e si ricorderà quale porta usare per raggiungerlo
 		- il nuovo AP invia un frame in broadcast con mittente H1 per far vedere allo switch dove si trova
 		- lo standard 802.11f definisce un protocollo inter-AP per affrontare questi tipi di problemi e tanti altri
-![Pasted image 20250528125422.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250528125422.png)
+![Pasted image 20250528125422.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250528125422.png)
 
 #### Funzionalità avanzate del 802.11
 - la stazione base e la stazione mobile possono cambiare dinamicamente il tasso trasmissivo

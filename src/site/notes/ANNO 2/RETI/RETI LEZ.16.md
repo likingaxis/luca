@@ -9,7 +9,7 @@
 è incapsulato dentro IP, ma non viene considerato un protocollo di trasporto perché non ha quello come scopo
 - i messaggi di ICMP sono nello stesso datagramma di IP
 Informazioni su come è strutturato:
-![Pasted image 20250505192401.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192401.png)
+![Pasted image 20250505192401.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505192401.png)
 - **Tipo (8 bit)**: identifica il tipo di messaggio (es. richiesta echo, host non raggiungibile, ecc.)
 - **Codice (8 bit)**: specifica il significato dettagliato del tipo.
 - **Checksum (16 bit)**: per il controllo degli errori.
@@ -48,7 +48,7 @@ Questi sono tutti i messaggi possibili, se scendi giù c'è un focus sui più ut
 - Serve per “mappare” i router intermedi tra sorgente e destinazione.
 
 #### Focus su Traceroute e ICMP
-![Pasted image 20250505192939.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505192939.png)
+![Pasted image 20250505192939.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505192939.png)
 con Traceroute possiamo tracciare il percorso di un pacchetto
 - posso inviare un pacchetto "sonda" con UDP o ICMP
 - invio questo pacchetto con TTL=1 time to live=1
@@ -104,7 +104,7 @@ Una rete è:
 	- Il server lo usa per interrogare e comandare.
 	- I dispositivi lo usano per inviare aggiornamenti e notifiche.
 	- Esempi di protocolli: **SNMP**, **NetConf**, **RESTCONF**.
-![Pasted image 20250505194010.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505194010.png)
+![Pasted image 20250505194010.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505194010.png)
 ### Come si gestisce una rete?
 Spieghiamo diversi modi per gestire una rete 
 - se sei tipo uno che lavora per modificarle ecc...
@@ -150,14 +150,14 @@ nella foto qua sotto puoi vedere come sono strutturate delle variabili MIB
 
 La MIB è come un “dizionario” di tutti i dati che un dispositivo di rete può rendere disponibili o modificabili via SNMP.
 
-![Pasted image 20250505195919.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505195919.png)
+![Pasted image 20250505195919.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505195919.png)
 
 la **MIB ha una struttura ad albero**, gerarchica:
 - Gli oggetti sono **nidificati** in rami (es. `system` → `sysDescr`, `sysUpTime`, ecc.).
 - Ogni voce è **indicizzata da un OID** (Object Identifier), ad esempio `.1.3.6.1.2.1.1.1` per `sysDescr`.
 Questo vuol dire che quando chiedi un dato a un dispositivo con SNMP, **gli indichi un OID** per sapere esattamente quale parametro vuoi leggere o modificare.
 📍 Esempio: per sapere il nome del dispositivo, potresti chiedere `.1.3.6.1.2.1.1.5` (che corrisponde a `sysName`).
-![Pasted image 20250505204310.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505204310.png)
+![Pasted image 20250505204310.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505204310.png)
 - usa per il trasporto UDP
 	- vuole essere rapido
 
@@ -175,8 +175,8 @@ questi messaggi quindi vengono usati tipo per dire
 |Trap|Agente → Manager|Segnalare un evento inaspettato|
 
 #### Formati dei messaggi SNMP
-![Pasted image 20250708130045.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250708130045.png)
-![Pasted image 20250505204432.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505204432.png)
+![Pasted image 20250708130045.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250708130045.png)
+![Pasted image 20250505204432.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505204432.png)
 come è fatto un **messaggio SNMP** (PDU – Protocol Data Unit), cioè cosa si invia realmente tra server e dispositivi:
 
 ✅ Tipi di messaggi 0,1,2,3 (per get/set):
@@ -224,12 +224,12 @@ Il dialogo tipico tra server e dispositivo segue questi passaggi:
 2. Scambio di richieste `<rpc>` e risposte `<rpc-reply>`.
 3. Ricezione eventuale di `<notification>` (es. eventi, cambiamenti).
 4. Chiusura della sessione con `<close-session>`.
-![Pasted image 20250505205227.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505205227.png)
+![Pasted image 20250505205227.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505205227.png)
 ➡️ Tutti i messaggi sono in formato XML.
 
 
 ##### Esempio concreto in XML
-![Pasted image 20250505205406.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505205406.png)
+![Pasted image 20250505205406.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505205406.png)
 
 ##### YANG (usato con netconf) spiegato meglio
 (Yet Another Next Generation)**
@@ -241,11 +241,11 @@ Come abbiamo detto i comandi di NETCONF sono in XML ma le strutture dati che con
 - Permette di generare automaticamente la struttura XML dei messaggi NETCONF.
 - Garantisce **validità e coerenza** dei dati con vincoli tra campi (es. range, obbligatorietà, relazioni tra elementi).
 - Come lo SMI (usato con SNMP), **YANG descrive i dati**, ma in modo **più ricco e moderno**.
-![Pasted image 20250505205702.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505205702.png)
+![Pasted image 20250505205702.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505205702.png)
 
 
 ###### Esempio vero e proprio di YANG+NETCONF
-![Pasted image 20250505205735.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250505205735.png)
+![Pasted image 20250505205735.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250505205735.png)
 con yang:
 - **definisce la struttura dei dati** che il dispositivo può accettare o restituire.
 - È come dire: _“Nella configurazione del dispositivo ci sarà una sezione chiamata `system`, che contiene `login`, che a sua volta contiene un campo `message` (di tipo stringa)”_.

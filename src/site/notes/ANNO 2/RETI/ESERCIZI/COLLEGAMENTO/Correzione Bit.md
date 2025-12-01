@@ -46,7 +46,7 @@ Rispondere alle seguenti domande:
 - disponi prima i primi 8 bit su una riga e gli altri 8 bit in una seconda riga
 - poi prendi i primi 2 bit come bit di parità della riga 
 - usa il 3 byte come bit di parità della riga e quello globale a sx
-![Screenshot_2025-07-10-17-29-37-06_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/RETI/fotret/Screenshot_2025-07-10-17-29-37-06_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2025-07-10-17-29-37-06_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotret/Screenshot_2025-07-10-17-29-37-06_45415775811cea13943236d9369df411.jpg)
 ### ESERCIZIO 6
 Si considerino i dati forniti di seguito in formato binario
 `1101 1010 1001 0110 1011 1100 0011 0101 1011 1100 0011 0101`
@@ -59,7 +59,7 @@ checksum di Internet.
 - poi somma al risultato i successivi 16 bit della fine
 - compl a 1
 
-![Screenshot_2025-07-10-17-31-12-33_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/RETI/fotret/Screenshot_2025-07-10-17-31-12-33_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2025-07-10-17-31-12-33_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotret/Screenshot_2025-07-10-17-31-12-33_45415775811cea13943236d9369df411.jpg)
 
 ### ESERCIZIO 6b
 ricordati la conversione da esadecimale a decimale e poi da decimale a binario
@@ -78,7 +78,7 @@ Data la sequenza D di bit fornita di seguito in formato binario
 Si calcolino i bit di EDC (error detection and correction) secondo lo 
 schema di CRC usando il generatore CRC-8-CCITT (1 0000 0111).
 Quali sono i bit EDC da aggiungere?
-![Pasted image 20250710180234.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250710180234.png)
+![Pasted image 20250710180234.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250710180234.png)
 - aggiungo alla fine quanti zeri quanto il grado della CRC 
 - inizio da sx a fare lo XOR con il generatore
 	- ogni volta che ho uno o più 0 a sx procedo a portare giù le successive cifre da destra

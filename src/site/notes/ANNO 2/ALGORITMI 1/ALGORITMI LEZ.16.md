@@ -13,7 +13,7 @@ Rivediamo l'algoritmo DFS [[ANNO 2/ALGORITMI 1/ALGORITMI LEZ.15\|ALGORITMI LEZ.1
 - albero che verra riempito con tutti gli archi visitati
 
 #### Algoritmo DFS con aggiunta di clock
-![Pasted image 20241215114303.png|700](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215114303.png)
+![Pasted image 20241215114303.png|700](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215114303.png)
 questa aggiunta ci consente di tenere conto
 - il tempo di visita iniziale
 - il tempo che intercorre tra la visita iniziale e finale
@@ -24,13 +24,13 @@ questa aggiunta ci consente di tenere conto
 	- non li conta
 	- ci sono delle situazioni in cui invece conta visitarli quindi ora vedremo un codice modificato che visita tutti i vertici
 ##### Codice
-![Pasted image 20241215115449.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215115449.png)
+![Pasted image 20241215115449.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215115449.png)
 - lui si scorre prima tutti i nodi anche quelli non collegati 
 - poi fa la chiamata ricorsiva per ogni nodo $v$ che non è stato già marcato dalle precedenti chiamate
 >[!info]- esempio grafico un pò storto
->![Pasted image 20241215120643.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215120643.png)
+>![Pasted image 20241215120643.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215120643.png)
 ##### ESEMPIO GRAFICO
-![Pasted image 20241215120808.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215120808.png)
+![Pasted image 20241215120808.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215120808.png)
 ##### I contatori pre e post hanno delle proprietà particolari:
 prendiamo due nodi $u$ e $v$ e giochiamoci un po'
 - se prendiamo gli intervalli $[pre(u),post(u)]$ e  $[pre(v),post(v)]$
@@ -41,8 +41,8 @@ prendiamo due nodi $u$ e $v$ e giochiamoci un po'
 	- <font color="#00b050">in avanti</font>. quando un nodo v è compreso in uno v
 	- <font color="#00b0f0">indietro</font>, quando un grafo 
 	- <font color="#d99694">trasversali</font>, quando non si incrociano
-![Pasted image 20241215125015.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215125015.png)
-![Pasted image 20241215124008.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215124008.png)
+![Pasted image 20241215125015.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215125015.png)
+![Pasted image 20241215124008.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215124008.png)
 ##### RICONOSCERE UN CICLO IN UN GRAFO G
 - facciamo una visita DFS e capiamo se c'è un arco all'indietro
 >[!info] PROPRIETÀ
@@ -54,7 +54,7 @@ prendiamo due nodi $u$ e $v$ e giochiamoci un po'
 >visto che $v_k$ è uguale a $v_0$ significa proprio che abbiamo un ciclo
 >- supponiamo che $v_i$ sia il primo nodo che visitiamo, visto che $v_{i-1}$ è raggiungibile da $v_i$ allora prima del termine delle visite di $v_i$ 
 >- $v_{i-1}$ andrà da $v_i$ facendo verificare un arco all'indietro $(v_{i-1},v_i)$
->![Pasted image 20241215132138.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215132138.png)
+>![Pasted image 20241215132138.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215132138.png)
 
 ### ORDINAMENTO TOPOLOGICO UN'ALTRO UTILIZZO DEI DFS 
 ###### Definizione di DAG
@@ -69,7 +69,7 @@ La funzione σ  serve per assegnare un numero a ogni nodo in modo che rispetti l
 
 in poche parole mette gli archi in ordine dei vertici con le posizioni in ordine
 - il nodo deve essere in una posizione precedente di quelli con cui ha un arco
-![Pasted image 20241215133341.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215133341.png)
+![Pasted image 20241215133341.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215133341.png)
 >[!warning] Ricorda molto la roba delle dipendenze
 
 >[!success] infatti l'ordine topologico ci consente di vedere le dipendenze sfruttabili
@@ -94,16 +94,16 @@ così stiamo dimostrando che per ognuno di questi abbiamo un ordinamento topolog
 ALGORITMO 1
 - fai una visita DFS e ordina in modo decrescente rispetto ai tempi di fine visita post
 CODICE
-![Pasted image 20241215151129.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215151129.png)
+![Pasted image 20241215151129.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215151129.png)
 - ogni volta che finisce il primo vertice sarà quello più piccolo, quindi gli altri li aggiungiamo alla lista nello stesso tempo in cui finiscono
 ###### COSTA UGUALE ALLA VISITA IN PROFONDITA $\Theta(n+m)$
 ESEMPIO GRAFICO
-![Pasted image 20241215151855.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215151855.png)
+![Pasted image 20241215151855.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215151855.png)
 È CORRETTO?
 - Si ma non dobbiamo prendere i passi all'indietro ovviamente
 
 ###### Un algoritmo alternativo
-![Pasted image 20241215152909.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215152909.png)
+![Pasted image 20241215152909.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215152909.png)
 
 - troviamo un vertice senza archi entranti-> rimuoviamo tutti i suoi vertici incidenti 
 - troviamo il prossimo vertice senza archi entranti
@@ -111,7 +111,7 @@ ESEMPIO GRAFICO
 - ha il vantaggio di far capire meglio la sua correttezza
 - da implementare è piu difficile in tempo lineare
 #### Tempo $O(n+m)$
-![ezgif.com-animated-gif-maker 2.gif|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/ezgif.com-animated-gif-maker%202.gif)
+![ezgif.com-animated-gif-maker 2.gif|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/ezgif.com-animated-gif-maker%202.gif)
 
 
 ##### COMPONENTI FORTEMENTE CONNESSE
@@ -120,19 +120,19 @@ Un grafo è fortemente connesso se per ogni nodo v abbiamo una coppia $(u,v$) or
 Una componente fortemente connessa è una proprietà associabile a un grafo G con un insieme C di vertici che è massimale.
 Il numero massimo di vertici che formo con quei determinati nodi forma un insieme da mettere in C(i tratteggi)
 >[!info]- def del prof
->![Pasted image 20241215162958.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215162958.png)
+>![Pasted image 20241215162958.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215162958.png)
 
 - **CFC sorgente**: una componente che **non ha archi entranti da altre CFC**.
 - **CFC pozzo**: una componente che **non ha archi uscenti verso altre CFC**.
 
 <font color="#c0504d">massimale:</font> se tu all'istanza C aggiungi un nodo non risulta più vera la proprietà  della componente fortemente connessa
 
-![Pasted image 20241215162536.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215162536.png)
+![Pasted image 20241215162536.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215162536.png)
 
 **N.B E può raggiungere F ma F non E**
 
 Il grafo delle CFC **rappresenta un DAG**
-![Pasted image 20241215163513.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215163513.png)
+![Pasted image 20241215163513.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215163513.png)
 
 Questo problema per trovare tutte le CFC si può risolvere in O(n)
 #### Diverse proprietà
@@ -146,7 +146,7 @@ $post \ > \ di \ C'$
 - deve prima scorrersi tutto $C'$ e poi $C$ finirà
 - se partiamo da $C'$ non ci arriva mai in C
 
-![Pasted image 20241215164611.png|300](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215164611.png)
+![Pasted image 20241215164611.png|300](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215164611.png)
 ##### Proprietà 3:
 Ci basta vedere chi ha il post più grande della singola visita DFS su un insieme CFC per trovare una  componente di tipo sorgente
 
@@ -156,11 +156,11 @@ invertiamo le direzioni per ottimizzare le cose del componente puzzo
 Rimane tutto invariato in termini di proprietà 
 - abbiamo il Grafo G-> 
 	- ->creiamo il suo inverso $G^r$
-![Pasted image 20241215170213.png|700](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215170213.png)
+![Pasted image 20241215170213.png|700](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215170213.png)
 - Calcoliamo i valori di post visita e prendiamo il piu grande e ora troviamo la componente pozzo
 ##### ALGORITMO che mette insieme tute le idee
 CODICE lo fa vedere dopo la spiegazione grafica alle slide dopo
-![Pasted image 20241215170813.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215170813.png)
+![Pasted image 20241215170813.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215170813.png)
 - inverto il grafo(nelle foto sopra  è già invertito)costa lineare
 Fa una visita DFS completa del grafo $G^r$
 Andiamo a fare una visita partendo da H, andiamo a prendere quindi tutti i componenti del suo CFC
@@ -170,5 +170,5 @@ quindi tutto lineare
 
 
 ###### CODICE
-![Pasted image 20241215170347.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241215170347.png)
+![Pasted image 20241215170347.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241215170347.png)
 Il resto $\Theta(n+m)$

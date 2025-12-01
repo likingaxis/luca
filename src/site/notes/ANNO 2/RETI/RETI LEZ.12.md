@@ -3,7 +3,7 @@
 ---
 
 ## 🧭 **Cosa fa il livello di rete?**
-![Pasted image 20250414191945.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250414191945.png)
+![Pasted image 20250414191945.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250414191945.png)
 Il livello di rete si occupa di trasportare i segmenti (ossia i dati provenienti dal livello di trasporto, come TCP/UDP) da un host mittente a un host destinatario.
 - 🟢 **Mittente**
 	- Prende il segmento ricevuto dal livello di trasporto
@@ -23,7 +23,7 @@ Il livello di rete si occupa di trasportare i segmenti (ossia i dati provenienti
 >
 >Questo processo avviene hop-by-hop, ossia ogni router prende una decisione fino a raggiungere la destinazione finale
 
-![Pasted image 20250417213715.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417213715.png)
+![Pasted image 20250417213715.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417213715.png)
 ### 🚦 Le **due funzioni chiave** del livello di rete:
 1. 🔹**Inoltro (forwarding)**
 	È il lavoro fatto da ogni singolo router per instradare ogni pacchetto (il discorso che facevamo prima dello "scegliere la porta corretta").
@@ -38,7 +38,7 @@ Il livello di rete si occupa di trasportare i segmenti (ossia i dati provenienti
 			🧠 È gestito dal **piano di controllo**(dopo spiego meglio)
 	🟡 È una **pianificazione a lungo termine**, non si fa per ogni pacchetto.
 
-![Pasted image 20250417214114.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214114.png)
+![Pasted image 20250417214114.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214114.png)
 
 
 ### Le due parti del livello di rete
@@ -64,15 +64,15 @@ Funziona con algoritmi di routing che possono essere gestiti in due modi:
 	- la logica dell'instradamento è gestita da server esterni/remoti
 	- in questo modo i router ricevono le regole da un controller centrale
 
-![Pasted image 20250417214303.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214303.png)
-![Pasted image 20250417214312.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214312.png)
+![Pasted image 20250417214303.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214303.png)
+![Pasted image 20250417214312.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214312.png)
 
 
 ### **Software-Defined Networking (SDN)**
 #### 🧠 **Cos'è SDN?**
 Un'architettura in cui il piano di controllo non è più nei router ma viene centralizzato in un unico server remoto
 
-![Pasted image 20250417214551.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214551.png)
+![Pasted image 20250417214551.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214551.png)
 
 #### 🔧 Come funziona?
 - I router diventano semplici dispositivi "esecutori" (solo inoltro)
@@ -101,7 +101,7 @@ Qui si fa riferimento a più pacchetti consecutivi (es. una videochiamata)
 - 🔵 **Banda minima garantita**: la rete assicura una velocità certa (es. 2 Mbps)
 - 🔵 **Controllo della spaziatura**: i pacchetti non arrivano troppo distanziati
 
-![Pasted image 20250417214712.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214712.png)
+![Pasted image 20250417214712.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214712.png)
 
 >[!tip] 📌 Nota importante:
 > Il protocollo IP **non garantisce nulla di tutto questo**.  
@@ -111,7 +111,7 @@ Tutti questi modelli sono **esempi** di servizi che una rete **potrebbe offrire*
 ma **non sono presenti nel modello IP base** di Internet.
 
 #### Perché il modello "best-effort", per quanto non garantisca al 100%, funziona ed è diffuso?
-![Pasted image 20250417214753.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214753.png)
+![Pasted image 20250417214753.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214753.png)
 
 
 
@@ -119,7 +119,7 @@ ma **non sono presenti nel modello IP base** di Internet.
 
 ## **Router**
 #### 🧱 **Struttura del router: due piani**
-![Pasted image 20250417214823.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214823.png)
+![Pasted image 20250417214823.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214823.png)
 ##### 🔹 1. **<font color="#c0504d">Piano di controllo</font>**
 È gestito via software.
 
@@ -144,13 +144,13 @@ Funziona su scala molto rapida: nanosecondi.
 - Serve per **instradare velocemente** i pacchetti dall’ingresso all’uscita.
 
 ##### ANALOGIA AUTOMOBILISTICA
-![Pasted image 20250417214958.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417214958.png)
+![Pasted image 20250417214958.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417214958.png)
 
 ### Porte di ingresso
 ##### 🎯 **Obiettivo generale**
 L'idea è quella far sì che ogni porta di ingresso possa ricevere e processare i pacchetti il più velocemente possibile, idealmente alla velocità di linea (senza la conseguente perdita di pacchetti).
 
-![Pasted image 20250417215033.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215033.png)
+![Pasted image 20250417215033.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215033.png)
 ##### Passi in sequenza
 ###### 1️⃣ **<font color="#9bbb59">Terminazione di linea</font>** (verde)
 - riceve i bit "grezzi" che arrivano sul cavo o sul collegamento (LIVELLO FISICO)
@@ -217,14 +217,14 @@ Per farlo confronta l'IP con le voci nella tabella di inoltro.
 
 Qui abbiamo due casi 
 1.  gli indirizzi IP si dividono bene in blocchi -> la tabella è semplice da leggere e sfruttare, hanno un intervallo ben definito
-![Pasted image 20250417215742.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215742.png)
+![Pasted image 20250417215742.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215742.png)
 `192.168.0.0/16`
 Significa che tutti gli IP da 192.168.0.0 a 192.168.255.255 sono coperti da una sola riga nella tabella.
 ➡️ In questo caso: una riga = copertura perfetta
 Semplice da gestire.
 
 2. può succedere però che gli indirizzi non si allineino perfettamente, non hanno un intervallo eccezionale
-![Pasted image 20250417215751.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215751.png)
+![Pasted image 20250417215751.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215751.png)
 	Qui è necessario spezzare l'intervallo e inserire più righe nella tabella per coprire tutte le possibilità
 Supponiamo ora che tu debba coprire **solo un intervallo “strano”**, tipo:
 `da 192.168.0.0 a 192.168.2.255`
@@ -251,15 +251,15 @@ Ora hai **due righe** nella tabella per coprire quello che prima speravi di scri
 
 Quando un router trova più voci che "matchano" un IP si sceglie sempre quella con il prefisso più lungo (ossia quella che ha più bit uguali).
 ###### ESEMPIO
-![Pasted image 20250417215803.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215803.png)
+![Pasted image 20250417215803.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215803.png)
 - Proviamo la prima
-![Pasted image 20250417215813.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215813.png)
+![Pasted image 20250417215813.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215813.png)
 
 - Proviamo la terza
-![Pasted image 20250417215822.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215822.png)
+![Pasted image 20250417215822.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215822.png)
 
 - Proviamo la seconda 
-![Pasted image 20250417215831.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250417215831.png)
+![Pasted image 20250417215831.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250417215831.png)
 
 >[!example] La seconda ha più bit uguali -> viene scelta
 
@@ -284,7 +284,7 @@ Quando la TCAM trova più righe valide (quindi a "1") entra in gioco il **Priori
 ##### 📥 **3. RAM**
 Dopo aver scelto la porta giusta, il **Priority Encoder** restituisce il numero di quella riga **in binario** e lo passa al **Decoder** della RAM, che mappa quella riga a un'**interfaccia di uscita** (porta).
 
-![Pasted image 20250418125759.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418125759.png)
+![Pasted image 20250418125759.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418125759.png)
 
 
 ## 🏗️ **Struttura di commutazione (switching fabric)**
@@ -297,7 +297,7 @@ L'ideale sarebbe avere un tasso di trasferimento della struttura pari a $N \time
 - `R` = velocità di ogni singola linea
 
 #### **🔧 Le 3 tipologie di strutture di commutazione**
-![Pasted image 20250706171108.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250706171108.png)
+![Pasted image 20250706171108.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250706171108.png)
 
 
 ##### 1. **Commutazione in memoria** 🧠
@@ -305,20 +305,20 @@ L'ideale sarebbe avere un tasso di trasferimento della struttura pari a $N \time
 - Un router tradizionale usa la CPU per spostare i pacchetti da una parte all'altra
 - ogni pacchetto viene copiato in memoria, poi letto e infine inoltrato
 
-![Pasted image 20250418130051.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130051.png)
+![Pasted image 20250418130051.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130051.png)
 
 PROBLEMI
 - ❌ **Limite**: la velocità dipende dalla memoria del sistema → **non scala bene**.
 - ⚠️ Richiede **2 accessi alla memoria** per ogni pacchetto (scrittura e lettura).
 
 >🗨️ Va bene per router lenti o di piccole dimensioni, ma **non è adatto ad ambienti ad alta velocità**.
-![Pasted image 20250418130234.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130234.png)
+![Pasted image 20250418130234.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130234.png)
 ##### 2. **Commutazione tramite bus** 🚌
 Tutte le porte usano un bus condiviso per mandare pacchetti da input a output.
 - ✅ È più veloce della commutazione di memoria perché la CPU non viene coinvolta direttamente
 - ❌Ma c'è **bus contention**: solo una trasmissione per volta -> colli di bottiglia
 
-![Pasted image 20250418130100.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130100.png)
+![Pasted image 20250418130100.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130100.png)
 
 >🗨️ È più efficiente della memoria, ma scala poco: quando il traffico aumenta, il bus si satura.
 
@@ -328,18 +328,18 @@ Qui entra in gioco il parallelismo: vengono usati switch multipli collegati in m
 Abbiamo due approcci
 ###### a. **Crossbar (matrice di commutazione)**
 È una **griglia** $N \times N$: ogni input può essere connesso a ogni output, se non c'è conflitto.
-![Pasted image 20250418130119.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130119.png)
+![Pasted image 20250418130119.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130119.png)
 
 - ✅ Veloce e parallela.    
 - ❌ Ma costosa e complessa per grandi N.
 ###### b. **Multistage (reti Clos)**
 Si usano **più stadi di switch piccoli**, tipo 2x2 o 4x4, in cascata.
-![Pasted image 20250418130301.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130301.png)
+![Pasted image 20250418130301.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130301.png)
 
 - ✅ Molto scalabile e sfrutta meglio il parallelismo.
 - ✅ Permette la commutazione di **celle** (pacchetti frammentati) → più efficienza.
 
-![Pasted image 20250418130318.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130318.png)
+![Pasted image 20250418130318.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130318.png)
 
 ### **Accodamento sulle porte di ingresso**
 Come abbiamo visto prima i pacchetti, in un router, entrano in una porta di ingresso e vengono indirizzati verso una porta di uscita.
@@ -350,7 +350,7 @@ Può capitare però che si formino code in ingresso quando
 ##### ❌ **Problema: HOL blocking**
 È una situazione in cui **il primo pacchetto nella coda (in testa)** non può essere trasferito, e **impedisce anche agli altri** dietro di avanzare, **anche se andrebbero verso porte libere.**
 
-![Pasted image 20250418130500.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130500.png)
+![Pasted image 20250418130500.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130500.png)
 🔽 A sinistra:
 - due pacchetti (datagrammi) rossi vogliono uscire dalla stessa porta di uscita
 - MA solo uno può passare, l'altro rimane bloccato
@@ -378,13 +378,13 @@ Questo crea un **collo di bottiglia** e richiede un meccanismo di **buffering**,
 3. **Disciplina di scheduling (o schedulazione)**:
 	- Quando ci sono più pacchetti in coda, **quale viene trasmesso per primo?**
 	- Anche qui si possono applicare criteri diversi (vedremo sempre tra poco)
-![Pasted image 20250418130700.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418130700.png)
+![Pasted image 20250418130700.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418130700.png)
 ##### 📉 Cosa può succedere se il buffer non è ben gestito?
 - **Congestione**: troppi pacchetti si accumulano.
 - **Perdita di pacchetti**: il buffer si riempie e inizia a scartarli.
 - **Delay**: i pacchetti aspettano più tempo prima di uscire → aumenta la latenza.
 
-![Pasted image 20250418131039.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131039.png)
+![Pasted image 20250418131039.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131039.png)
 Qui se vedi i pacchetti rossi (a sinistra) entrano tutti dentro la stessa porta e se non viene gestita bene la situazione (a destra) sono cavoli!!
 
 
@@ -424,10 +424,10 @@ L'obiettivo moderno è
 
 
 ### Gestione del buffer
-![Pasted image 20250418131206.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131206.png)
+![Pasted image 20250418131206.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131206.png)
 
 Visto in modo astratto
-![Pasted image 20250418131214.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131214.png)
+![Pasted image 20250418131214.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131214.png)
 
 ##### 🚨 **Cosa succede se è pieno?**
 ###### 🟥 **Politica di scarto (drop policy):**
@@ -468,7 +468,7 @@ algoritmi che decidono come gestire i pacchetti da trasmettere
 **🚫 Limiti:**
 - **Starvation**: se arrivano **sempre pacchetti ad alta priorità**, quelli a bassa potrebbero **non uscire mai**.
 
-![Pasted image 20250418131504.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131504.png)
+![Pasted image 20250418131504.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131504.png)
 
 **📌 Nota**: All’interno di ogni coda si usa **FCFS**.
 
@@ -489,7 +489,7 @@ algoritmi che decidono come gestire i pacchetti da trasmettere
 **🚫 Limiti:**
 - Se una classe ha più pacchetti e altre ne hanno pochi, non riesce a sfruttare bene la banda.
 
-![Pasted image 20250418131528.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131528.png)
+![Pasted image 20250418131528.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131528.png)
 
 
 ##### ⚖️ **4. Weighted Fair Queuing (WFQ)**
@@ -505,7 +505,7 @@ dove $w_i$ è il peso della classe i.
 - **Più flessibile**: si possono garantire **quote minime di banda**.
 - Supporta **QoS (Quality of Service)** per servizi critici.
 
-![Pasted image 20250418131600.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131600.png)
+![Pasted image 20250418131600.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131600.png)
 
 **📌 Esempio:**
 - Se hai 3 code con pesi 5, 3 e 2, allora riceveranno rispettivamente il 50%, 30% e 20% della banda (più o meno).
@@ -520,10 +520,10 @@ dove $w_i$ è il peso della classe i.
 ---
 ## INTERNET AL LIVELLO DI RETE
 
-![Pasted image 20250418131725.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131725.png)
+![Pasted image 20250418131725.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131725.png)
 
 #### **🔧 Formato dei datagrammi IP**
-![Pasted image 20250418131749.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131749.png)
+![Pasted image 20250418131749.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131749.png)
 
 
 ### 🧩 **Frammentazione dei datagrammi IP**
@@ -546,12 +546,12 @@ Quando un datagramma IP è **troppo grande** per essere trasportato su un colleg
 
 
 #### ESEMPIO
-![Pasted image 20250418131923.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131923.png)
+![Pasted image 20250418131923.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131923.png)
 
 Spiegazione CHATGPT
-![Pasted image 20250418131942.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131942.png)
+![Pasted image 20250418131942.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131942.png)
 
-![Pasted image 20250418131952.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418131952.png)
+![Pasted image 20250418131952.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418131952.png)
 
 
 ### 🔚 **Frammentazione e Riassemblaggio IP – oggi**
@@ -592,10 +592,10 @@ Come già sappiamo, un indirizzo IP è un **identificatore univoco** a **32 bit*
 Un'interfaccia invece, è un **punto di connessione fisico o logico** attraverso cui un dispositivo (host o router) si collega a una rete.
 - Ogni **interfaccia ha un indirizzo IP**.
 
-![Pasted image 20250418132322.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132322.png)
+![Pasted image 20250418132322.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132322.png)
 
 >[!question] Come si collegano effettivamente le interfacce IP?
->![Pasted image 20250418132356.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132356.png)
+>![Pasted image 20250418132356.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132356.png)
 >
 Però, per ora, non c'è bisogno di preoccuparsi di come sono fisicamente collegate le interfacce (lo vedremo a livello di collegamento).
 
@@ -604,7 +604,7 @@ Però, per ora, non c'è bisogno di preoccuparsi di come sono fisicamente colleg
 ##### 🥅 **Cos'è una sottorete (subnet)?**
 Una **sottorete** è un gruppo di dispositivi (host e router) che possono comunicare **tra loro direttamente**, senza dover passare attraverso un router. Questo è importante per ridurre traffico e latenza, e per gestire meglio le risorse.
 
-![Pasted image 20250418132452.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132452.png)
+![Pasted image 20250418132452.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132452.png)
 questa rete è composta da 3 sottoreti
 
 📌 **In pratica**: tutti i dispositivi collegati allo stesso switch (fisico o virtuale) e con indirizzi IP simili fanno parte della stessa sottorete.
@@ -620,7 +620,7 @@ La **procedura** consiste nello “spezzare” una rete più grande in reti più
 
 Si fa “scollegando” logicamente le interfacce, così da creare “isole” di dispositivi separati tra loro dai router.
 
-![Pasted image 20250418132537.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132537.png)
+![Pasted image 20250418132537.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132537.png)
 
 📌 Le reti così ottenute:
 - hanno indirizzi IP simili (es. 223.1.1.1, 223.1.1.2... → stessa subnet),
@@ -628,7 +628,7 @@ Si fa “scollegando” logicamente le interfacce, così da creare “isole” d
 - **comunicano tramite router**.
 
 ### Esempio con una rete molto più grande
-![Pasted image 20250418132607.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132607.png)
+![Pasted image 20250418132607.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132607.png)
 
 
 ### Indirizzamento IP con CIDR
@@ -645,12 +645,12 @@ dove
 
 Esempio:  
 `200.23.16.0/23` → i **primi 23 bit** identificano la sottorete, i restanti bit sono per l’host.
-![Pasted image 20250418132640.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132640.png)
+![Pasted image 20250418132640.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132640.png)
 
 #### Metodo vecchio
-![Pasted image 20250418132714.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132714.png)
+![Pasted image 20250418132714.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132714.png)
 
-![Pasted image 20250418132730.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418132730.png)
+![Pasted image 20250418132730.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418132730.png)
 
 
 

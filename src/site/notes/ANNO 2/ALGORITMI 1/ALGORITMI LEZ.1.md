@@ -26,7 +26,7 @@
 >[!bug] vedi esercizio degli algoritmi delle monete di paperone alla slide 1 del prof a pagina 27 
 
 #### ESERCIZIO SULLE FRITTELLE
->[!bug]  ![Pasted image 20241008175847.jpg|200](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241008175847.jpg)
+>[!bug]  ![Pasted image 20241008175847.jpg|200](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241008175847.jpg)
 >Si devono cuocere n frittelle. Si ha a disposizione una padella che
 riesce a contenere due frittelle alla volta. Ogni frittella va cotta su
 tutte e due i lati e ogni lato richiede un minuto.

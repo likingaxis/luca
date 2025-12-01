@@ -34,11 +34,11 @@ ci sono tre modelli
 - a) OS in RAM(es. nei mainframe)
 - b) OS in ROM(es. sistemi embedded)
 - c) OS+ driver in ROM+RAM(es. primi pc)
-![Pasted image 20241120192034.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241120192034.png)
+![Pasted image 20241120192034.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241120192034.png)
 è possibile scambiare i programmi in esecuzione attraverso uno **swapping**
 - metto il processo da togliere in una memoria non volatile
 >[!bug]- esempio di conflitto di indirizzamenti
->![Pasted image 20241120195800.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241120195800.png)
+>![Pasted image 20241120195800.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241120195800.png)
 >- la memoria più grande sarà suddivisa da programma 1 e poi programma 2(figura c)
 >- il programma 1 fa un jump a riga 24 (freccia rossa)
 >- il programma 2 può andare dove gli pare e quindi andrà a intasare il programma 1 (freccia blu)
@@ -60,7 +60,7 @@ questo concetto prevede l'utilizzo di:
 >- Il registro limite viene usato per non far superare eventuali limiti di accesso
 
 >[!example]- esempio diretto
->![Pasted image 20241121093055.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121093055.png)
+>![Pasted image 20241121093055.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121093055.png)
 >riprendiamo l'esempio delle memorie non astratte
 >- stavolta effettuiamo dei controlli per verificare se rimaniamo nella nostra area di memoria
 >- il registro limit viene usato per definire il limite di dove può stare il processo
@@ -77,7 +77,7 @@ se la memoria viene riempita faccio
 i processi nel corso della loro esecuzione possono chiedere sempre più memoria.
 per questo motivo il s.o. potrebbe assegnare più del necessario per evitare problemi
 >[!quote] mi chiedi 10 ti do 14 dai ;)
->![Pasted image 20241121161639.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121161639.png)
+>![Pasted image 20241121161639.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121161639.png)
 
 la coperta però e corta quindi spreco memoria.
 Se termino la memoria faccio una di queste 3 cose
@@ -88,7 +88,7 @@ Se termino la memoria faccio una di queste 3 cose
 >- la ricompattazione di quei frammenti di memoria che si creano provoca un rallentamento del sistema
 >- una soluzione è quella citata prima ma non é troppo efficiente (quella del mi chiedi 10 ti do 14)
 >
->![Pasted image 20241121161540.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121161540.png)
+>![Pasted image 20241121161540.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121161540.png)
 
 ### GESTIONE DINAMICA DELLA MEMORIA
 Come gestisco la memoria libera?
@@ -110,10 +110,10 @@ prima di iniziare a spiegare i due metodi vorrei precisare una cosa:
 Questo metodo fa uso di una Bitmap per indicare dove sono presenti degli Hole(spazi vuoti) oppure dei Process(spazi pieni), si fa spesso uso anche di una linked list per rappresentarla
 - con la linked list possiamo vedere che non é granché efficiente perché per arrivare alla fine dobbiamo scorrerla tutta
 
-![Pasted image 20241121164525.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121164525.png)
+![Pasted image 20241121164525.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121164525.png)
 - è suggerito l'uso di una lista collegata da ambe le parti per ottimizzare le cose
 	-  tornare indietro è figo perché consente di guardarsi alle spalle senza ricominciare
-![Pasted image 20241121165040.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121165040.png)
+![Pasted image 20241121165040.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121165040.png)
 
 ### METODOLOGIE PER ANDARE AD ALLOCARE MEMORIA
 - First fit: Seleziona il primo spazio disponibile (usata in MINIX3 molto semplice)
@@ -129,15 +129,15 @@ Questo metodo fa uso di una Bitmap per indicare dove sono presenti degli Hole(sp
 - quando una allocazione di memoria viene rilasciata avviene una coalescenza e si riuniscono
 >[!question]- coalescenza?
 >è tipo agar.io oppure il merge.
->![LFZDzY.gif](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/LFZDzY.gif)
+>![LFZDzY.gif](/img/user/ANNO%202/FOTOANNO2/fotosop/LFZDzY.gif)
 
-![Pasted image 20241121172719.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121172719.png)
+![Pasted image 20241121172719.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121172719.png)
 - **a)** la memoria consiste in un unico pezzo da 64 blocchi
 	- appena un processo ha bisogno di tot blocchi di memoria li divide per 2 appena gli bastano
 - **b)** 32 ti bastano? no
 - **c)** 8 bastano? si va bene grazie ciao
 appena un processo termina viene ricompattata la cosa **(h->i)**
-![Pasted image 20241121172901.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121172901.png)
+![Pasted image 20241121172901.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121172901.png)
 
 ###### FRAMMENTAZIONE NEL BUDDY
 >[!bug] Il problema del buddy algorithm e che ho delle piccole frammentazioni di memoria (caccolette) che si possono formare e che sono difficili da riunire
@@ -146,7 +146,7 @@ appena un processo termina viene ricompattata la cosa **(h->i)**
 - il buddy allocator è il processo che fa avvenire l'allocazione
 ###### UNA SOLUZIONE: SLAB ALLOCATOR
 Se io dovessi allocare $65$ pagine con il buddy, dovrei richiederne $128$ e $63$ sarebbero inutilizzate
-![Pasted image 20241121173526.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121173526.png)
+![Pasted image 20241121173526.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121173526.png)
 Lo slab allocator usa l'algoritmo buddy per farsi allocare tot pagine di memoria e poi ci fa quello che vuole:
 se a un processo serve $1$ pagina di scarto lo slab ne prende $2$ e $1$ la da a quel processo
 - i piccoli blocchi di memoria vengono chiamati $slabs$ suddivisi in $chunk$
@@ -160,7 +160,7 @@ Gli **slab** sono classificati in 3 stati:
 - **Partial**: Alcuni chunk sono occupati, altri liberi.
 - **Empty**: Tutti i chunk sono liberi.
 
-![Pasted image 20241121175739.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121175739.png)
+![Pasted image 20241121175739.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121175739.png)
 ###### IL CACHING
 Quando un oggetto viene deallocato non viene immediatamente restituito alla memoria libera
 viene mantenuto nella cache così da soddisfare richieste nell'immediato senza sprecare troppe risorse
@@ -168,7 +168,7 @@ viene mantenuto nella cache così da soddisfare richieste nell'immediato senza s
 - puntatore che punta agli oggetti
 - un indice che indica il prossimo slot libero
 - `bufctl` è un array con gli indici dei prossimi oggetti liberi
-![Pasted image 20241121180749.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241121180749.png)
+![Pasted image 20241121180749.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241121180749.png)
 #### Concetto di memoria virtuale
 ogni programma ha un proprio spazio di indirizzi suddiviso in pagine
 page fault

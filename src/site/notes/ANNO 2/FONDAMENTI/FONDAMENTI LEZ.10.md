@@ -142,14 +142,14 @@ queste sono meta quintuple ovvero una serie di quintuple ma che si racchiudono i
 - le testine saranno su fermo perché prendiamo per scontato che si sia già mosso tutto nel mentre
 praticamente non conto le quintuple intermedie
 
-![Pasted image 20250326203305.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250326203305.png)
+![Pasted image 20250326203305.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250326203305.png)
 
 ### Conversioni di Quintuple effettive
 andiamo a creare delle quintuple che passano da stato in stato seguendo un classico esecutore di codici
 quindi partiamo dallo stato $q1$ per poi andare nello stato successivo $q_{i+1}$ 
 
 ### Quintupla di assegnazione
-![Pasted image 20250326203641.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250326203641.png)
+![Pasted image 20250326203641.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250326203641.png)
 
 #### Assegnazione con Array
 Se la riga contiene un'***istruzione di assegnazione che coinvolte una variabile A di tipo array***
@@ -157,7 +157,7 @@ Se la riga contiene un'***istruzione di assegnazione che coinvolte una variabile
 2) ci si posiziona sull'elemento nel nastro contenente $A$ (cosa che ti ho spiegato prima)
 3) si esegue l'assegnazione dopo la quale $T$ entra nello stato $q_{i+1}$
 	
-![Pasted image 20250326203708.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250326203708.png)
+![Pasted image 20250326203708.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250326203708.png)
 
 
 ### Quintupla di condizione if then
@@ -165,10 +165,10 @@ Quando la riga contiene un'istruzione `If (condizione) then...`, viene calcolata
 1) se è vera allora $T$ entra nello stato $q_{i+1}$, 
 2) altrimenti entra nello stato dell'istruzione da eseguire quando è falsa
 	
-![Pasted image 20250326203801.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250326203801.png)
+![Pasted image 20250326203801.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250326203801.png)
 
 ### Quintupla con ciclo loop while 
 Quando la riga contiene un'istruzione `While (condizione) do...`, viene calcolata la condizione
 1) se è vera $T$ entra nello stato $q_{i+1}$ e poi di seguito fino all'ultima istruzione del loop per poi rientrare in $q_i$ (in pratica una volta finito il loop ritorno nello stato iniziale del loop e quindi al punto `1)`)
 2) altrimenti entra nello stato corrispondente allo stato dell'istruzione da eseguire dopo il loop
-![Pasted image 20250326203816.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250326203816.png)
+![Pasted image 20250326203816.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250326203816.png)

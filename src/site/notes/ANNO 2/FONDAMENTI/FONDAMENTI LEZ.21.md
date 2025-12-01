@@ -23,7 +23,7 @@ Quindi
 - per ogni macchina di Turing deterministica T (riconoscitore o trasduttore) definita su un alfabeto $\Sigma$
 - e per ogni $x \in \Sigma^{*}$
 definiamo le due funzioni associate alla computazione `T(x)`
-![Pasted image 20250423191242.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423191242.png)
+![Pasted image 20250423191242.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423191242.png)
 
 >[!tip] OSSERVAZIONE 
 >Le due funzioni sono PARZIALI: non sono definite quando `T(x)` non termina
@@ -40,7 +40,7 @@ una classica macchina Universale U ma con un nastro in più che conta 1 ogni vol
 - ovviamente la simulazione avviene a scatola aperta
 	- OGNI quintupla deve essere modificata per mettere 1 e poi andare a destra
 	- dovremmo prendere tutte le quintuple di U e farlo
-![Pasted image 20250423191404.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423191404.png)
+![Pasted image 20250423191404.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423191404.png)
 	
 >[!example]- Dimostriamo che `dspace` è calcolabile
 > ### 🔧 Idea
@@ -77,7 +77,7 @@ Quindi
 - e per ogni $x \in \Sigma^{*}$
 	- tali che `NT(x)` ACCETTA
 definiamo le due funzioni seguenti
-![Pasted image 20250423191841.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423191841.png)
+![Pasted image 20250423191841.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423191841.png)
 
 >[!question] perché prendiamo il minimo?
 >possono esserci diverse computazioni che accettano con tempi diversi
@@ -103,13 +103,13 @@ definiamo le due funzioni seguenti
 #### Cambio delle definizioni `nspace` e `ntime`
 oltre a ciò che è stato detto prima aggiungiamo anche i casi di rigetto:
 
-![Pasted image 20250423193508.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423193508.png)
+![Pasted image 20250423193508.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423193508.png)
 
 >[!bug] possiamo notare che precedentemente le definizioni di entrambi non rispettavano gli assiomi di Blum visto che prendevamo in considerazione solo i casi di accettazione, non era definita per i casi di rigetto, ricordando ciò che diceva il primo assioma
 >==`c` è definita per TUTTE E SOLE le computazioni che terminano==
 >- possiamo quindi dire che in questo caso non era definita per i rigetti
 
-![Pasted image 20250423193945.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423193945.png)
+![Pasted image 20250423193945.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423193945.png)
 
 
 #### Procediamo a dimostrare se queste due funzioni rispettano gli assiomi
@@ -169,7 +169,7 @@ se in una sequenza di stati globali DISTINTI raggiungiamo K+1 significa che siam
 $SG_0 \rightarrow SG_1 \ ... SG_K \rightarrow SG_{K+1}$ 
 - K doveva essere l'ultimo stato
 - ma visto che siamo in K+1 siamo in un loop e allora non termina 
-![Pasted image 20250423205449.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423205449.png)
+![Pasted image 20250423205449.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423205449.png)
 Ma **noi sappiamo che T(x) termina** (è una computazione valida e finita),  
 quindi **non può entrare in loop**,  
 quindi **non può durare più di k(T,x)) passi**.
@@ -203,7 +203,7 @@ quindi...
 dspace(T,x)$\leq$ dtime(T,x)$\leq$ $H *|Q| *(|\Sigma| +1)^{dspace(T,x)}$ 
 
 per le non deterministiche è uguale ma scambi d con n
-![Pasted image 20250423205543.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423205543.png)
+![Pasted image 20250423205543.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423205543.png)
 la dimostrazione non è da fare
 
 

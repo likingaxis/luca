@@ -19,7 +19,7 @@ I passi che avvengono quando un dispositivo si connette a una rete
 3. MME ora deve configurare il tunnel per inoltro dei dati
 	- tunnel che passa dal dispositivo al **P-GW** (Packet Gateway) della home network, passando eventualmente dal **S-GW** (Serving Gateway) della visited network.
 4. Quando il dispositivo si sposta (es. cambia cella), viene eseguito l’**handover**, cioè il cambio del punto di connessione alla rete.
-![Pasted image 20250604191904.png|600](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604191904.png)
+![Pasted image 20250604191904.png|600](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604191904.png)
 
 #### Configurazione degli elementi del piano di controllo LTE
 Il piano di controllo è il “cervello” della rete, responsabile dell’autenticazione, del tracciamento del dispositivo, e della configurazione dei percorsi dati.
@@ -30,7 +30,7 @@ Il piano di controllo è il “cervello” della rete, responsabile dell’auten
 - l'MME sfrutta IMSI per capire la rete domestica del dispositivo, MME contatta HSS per informare la home network dove si trova il dispositivo e per scoprire le informazioni crittografiche che ha solo HSS
 - La BS e il dispositivo mobile si metteranno d'accordo per definire i parametri radio tra i due
 	- definisci frequenze ecc...
-![Pasted image 20250604193433.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604193433.png)
+![Pasted image 20250604193433.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604193433.png)
 
 #### Configurazione dei tunnel del piano dati per un cellulare
 Prima abbiamo visto quelli del piano di controllo ora per i veri e propri dati
@@ -45,15 +45,15 @@ Prima abbiamo visto quelli del piano di controllo ora per i veri e propri dati
 		- GTP incapsula i pacchetti del dispositivo dentro un altro pacchetto
 			- al suo interno avremo il vero e proprio UDP che dentro avrà a sua volta IP
 			- GTP ci permette di indirizzare adeguatamente i dati al nostro dispositivo mobile sempre in movimento
-![Pasted image 20250604194108.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604194108.png)
+![Pasted image 20250604194108.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604194108.png)
 ### processo di Handover tra BS nella stesa rete cellulare
 cosa succede quando un dispositivo si sposta da una cella all'altra **senza cambiare rete**
 il processo di Handover serve proprio a gestire casi come questi
 - il dispositivo si sposta ma rimane connesso alla rete
 #### Fase prima dell'handover
-![Pasted image 20250604194535.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604194535.png)
+![Pasted image 20250604194535.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604194535.png)
 ##### Richiesta di Handover e completamento dal dispositivo
-![Pasted image 20250604194638.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604194638.png)
+![Pasted image 20250604194638.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604194638.png)
 - 1) La source BS si accorge che il segnale dal dispositivo sta degradando questo perché:
 	- Le BS hanno varie statistiche come
 		- quante celle hanno libere
@@ -72,10 +72,10 @@ il processo di Handover serve proprio a gestire casi come questi
 	- L’**MME aggiorna la S-GW**, ordinando di cambiare il **punto finale del tunnel** verso la nuova BS
 - 6) La target BS invia un ACK finale alla source BS così che possa chiudere il canale radio e liberare la banda.
 Tutti i nuovi pacchetti ora fluiscono **direttamente** dal **P-GW → S-GW → target BS → dispositivo**, senza passare dalla BS precedente.
-![Pasted image 20250604195159.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604195159.png)
-![Pasted image 20250604195328.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604195328.png)
+![Pasted image 20250604195159.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604195159.png)
+![Pasted image 20250604195328.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604195328.png)
 - 7)Tutti i nuovi pacchetti ora fluiscono **direttamente** dal **P-GW → S-GW → target BS → dispositivo**, senza passare dalla BS precedente.
-![Pasted image 20250604195348.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250604195348.png)
+![Pasted image 20250604195348.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250604195348.png)
 
 esse potrebbero fare un operazione di handover per staccare quel dispositivo per farne cercare uno migliore
 Il dispositivo adesso si connetterà a una nuova BS target 

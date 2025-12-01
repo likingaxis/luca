@@ -9,23 +9,23 @@ Possiamo dire che un linguaggio L è <font color="#f79646">deciso</font> da una 
 - per ogni $x ∈ L$, la computazione $T(x)$ termina in $q_A$ 
 - per ogni $x ∉ L$, la computazione $T(x)$ termina in $q_R$
 #### Esempio Linguaggio di una macchina $T_{RPPAL}$
-![Pasted image 20250319184614.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319184614.png)
+![Pasted image 20250319184614.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319184614.png)
 Ebbene, TRPPAL decide il linguaggio LPPAL (Pari e PALindrome) seguente: $$L_{PPAL} = { x_1x_2… x_{2n} ∈\{a,b\}^*: n ∈ ℕ ∧ ∀ i ∈ {1, 2, ... , n} [ x_i = x_{2n-i+1} ] }$$
 $x_{2n}$ con 2 perché indica che l'ultima parola deve essere pari
 
 Il problema qui è che con certezza possiamo dire che se x appartiene a L allora termina e termina in $q_A$ 
 ma, se x non appartiene ad L, non è detto che T(x) termini in $q_R$ potrebbe anche non terminare
 - quindi non posso dire con certezza che nella computazione di quella parola essa non appartenga a L
-![Pasted image 20250319190506.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319190506.png)
+![Pasted image 20250319190506.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319190506.png)
 Qui vediamo  $T_{pal}$ che nel caso in cui  la parola sia palindroma ma dispari e al centro abbia 'a' la macchina non termina e va in loop<font color="#00b0f0">(vedi la quintupla azzurra)</font>
 
 Possiamo dire che $T_{pal1}$ accetta il linguaggio $L_{ppal}$  
 dove semplicemente se il linguaggio viene riconosciuto esso viene accettato ma se non viene riconosciuto potrebbe andare in rigetto
 - grazie alla modifica qui abbiamo un loop che lo rende accettabile e non decidibile
 ### Def 1 Decidibile
-![Pasted image 20250319192124.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319192124.png)
+![Pasted image 20250319192124.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319192124.png)
 ### Def 2 Accettabili
-![Pasted image 20250319192138.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319192138.png)
+![Pasted image 20250319192138.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319192138.png)
 #### La differenza tra le due
 nella prima def abbiamo dato un rigetto se non è nel linguaggio invece nella def 2 sicuramente non accetta ma non è certo che rigetti
 
@@ -33,7 +33,7 @@ se L è decidibile allora è anche accettabile ma non il contrario
 ### Linguaggio complemento $L^C$
 Il linguaggio complemento ci viene in aiuto quando stiamo lavorando su una macchina che lavora su un insieme $\Sigma$ definito e che non sa come comportarsi se ci troviamo al di fuori di esso ad esempio una parola in $\Sigma^*-L$ 
 definiamo perciò
-![Pasted image 20250319193429.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319193429.png)
+![Pasted image 20250319193429.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319193429.png)
 ### Def 3.1
 >[!lemma] $L$ $\subseteq$ $\Sigma^*$ è decidibile $\iff$ $L$ è accettabile $\land$ $L^{C}$ è accettabile.
 
@@ -72,7 +72,7 @@ Visto che stiamo coprendo entrambi i casi, $x \in L$ e $x \notin L$, allora prim
 se chiamiamo con D l'insieme dei linguaggi decidibile possiamo dire che D sottoinsieme A(linguaggi accettabili)
 
 ### ESERCIZI
-![Pasted image 20250319205027.png|500](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319205027.png)
+![Pasted image 20250319205027.png|500](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319205027.png)
 # Trasduttori
 I trasduttori ricordiamo che sono quelle macchine di Turing che hanno un solo nastro di output e che terminano in uno stato $Q_f$ vengono usati per svolgere funzioni
 il problema è quando una funzione non ha soluzioni tipo
@@ -85,20 +85,20 @@ visto che questa funzione con $n=4$ non si può svolgere noi dividiamo le funzio
 1) funzione classica dove calcoliamo nei punti definiti
 2) funzione TOTALE che sono definite per ogni x ∈ Σ1*
 ##### piccola definizione
-![Pasted image 20250319205941.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319205941.png)
+![Pasted image 20250319205941.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319205941.png)
 T(X)=f(X) si può scrivere anche come $oT(x)=f(x)$
 
 Qui definiamo il caso in cui x è definita ma come per quanto riguarda i casi in cui non è accettabile non abbiamo definito il caso in cui bisogna calcolare una x non definita
 ### funzione caratteristica
-![Pasted image 20250319210621.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319210621.png)
+![Pasted image 20250319210621.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319210621.png)
 dove quella x in realtà si chiama $\chi$ chi
 
 ### Teorema 3.2
 bho sta sulle dispense dice che una macchina $\chi_L$ deve per forza avere un linguaggio $L$ decidibile
 ### Due alfabeti che mi portano a una incognita risultato
-![Pasted image 20250319211945.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319211945.png)
+![Pasted image 20250319211945.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319211945.png)
 ### Teorema 3.3
-![Pasted image 20250319212052.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250319212052.png)
+![Pasted image 20250319212052.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250319212052.png)
 ### Teorema 3.4
 Una _funzione calcolabile_ è una funzione che può essere calcolata da una **macchina di Turing con output** (cioè una macchina che scrive un risultato su un nastro e termina la computazione).
 

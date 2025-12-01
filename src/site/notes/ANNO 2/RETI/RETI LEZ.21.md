@@ -23,7 +23,7 @@ L’ordine dei salti di frequenza è:
 - **M (Master Controller)**: dispositivo centrale che controlla la comunicazione.
 - **C (Client Device)**: dispositivi attivi che comunicano con il master.
 - **P (Parked Device)**: dispositivi registrati ma **inattivi** (non comunicano finché non vengono "risvegliati").
-![Pasted image 20250529120105.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529120105.png)
+![Pasted image 20250529120105.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529120105.png)
 
 Il Bluetooth non presenta infrastruttura fissa ma ha architettura ad hoc
 - i dispositivi si organizzano in modo dinamico ponendo master controller e client device
@@ -47,8 +47,8 @@ si può entrare in 2 modi
 		- L’**orologio (clock)**.
 		- L’**indirizzo di partecipazione**.
 #### Covid e Bluetooth
-![Pasted image 20250529122506.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529122506.png)
-![Pasted image 20250529122511.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529122511.png)
+![Pasted image 20250529122506.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529122506.png)
+![Pasted image 20250529122511.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529122511.png)
 
 
 ## Reti Cellulari 4G/5G
@@ -84,7 +84,7 @@ Rappresentano una soluzione diffusa e funzionale per avere internet mobile in wi
 	- quando cambi paese ed entri in roaming invece sei in una rete ospite, visited network
 
 ### Architettura 4G semplificata e i suoi elementi
-![Pasted image 20250529180732.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529180732.png)
+![Pasted image 20250529180732.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529180732.png)
 Ora spiegheremo per bene tutte queste cose qua sopra che cosa rappresentano
 ##### Esagono in alto a sx Mobile device e Base station
 - il Mobile device e  il dispositivo dell'utente dotato di abbonamento e SIM
@@ -146,13 +146,13 @@ Trasportare il **traffico IP vero e proprio**, cioè **quello che stai facendo s
 - Più **velocità**
 - Più **efficienza**
 - Il piano di controllo può cambiare (ad es. spostarti su un'altra antenna) **senza disturbare il traffico in corso**
-![Pasted image 20250529190918.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529190918.png)
+![Pasted image 20250529190918.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529190918.png)
 
 #### Pila protocollare del piano dei dati LTE
 ogni comunicazione segue una **struttura a strati** (chiamata _pila protocollare_)
 vediamo come è formato il livello di collegamento di questa pila nel first hop e nel tunneling core
 #### 1.  First hop
-![Pasted image 20250529191107.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250529191107.png)
+![Pasted image 20250529191107.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250529191107.png)
 è suddiviso in 3 sottolivelli
 - PDCP- Packet Data Convergence Protocol
 	- ha il compito di prendere ogni header dei pacchetti e di ridurle per occupare meno spazio attraverso compressioni
@@ -212,7 +212,7 @@ La rete LTE prevede nodi dormienti per ridurre il loro consumo energetico che si
 	- se si sposta serve una nuova associazione con la BS
 		- overhead aggiuntivo
 #### Rete cellulare globale una rete di reti IP
-![Pasted image 20250530164202.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250530164202.png)
+![Pasted image 20250530164202.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250530164202.png)
 ### 5G
 si è passati al 5G per tre scenari
 - eMBB (Enhanced Mobile Broadband): connessioni più veloci e ad alta capacità. 
@@ -227,7 +227,7 @@ il 5G ha un incremento delle velocità rispetto al 4G di 10x e capacità di traf
 >La mobilità è la capacità di un dispositivo di muoversi tra le reti mantenendo attive le comunicazioni in corso, senza perdere la connessione.
 
 #### Spettro della mobilità 
-![Pasted image 20250530164804.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250530164804.png)
+![Pasted image 20250530164804.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250530164804.png)
 
 
 | Livello di mobilità                                | Descrizione                                                                                                                                                                                    |
@@ -240,7 +240,7 @@ il 5G ha un incremento delle velocità rispetto al 4G di 10x e capacità di traf
 
 
 Il problema della mobilità è che se un dispositivo si sposta da una rete  all'altra come fa la rete vecchia a sapere che deve inoltrare i pacchetti alla rete nuova?
-![Pasted image 20250530164917.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250530164917.png)
+![Pasted image 20250530164917.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250530164917.png)
 
 ### Due approcci differenti al problema
 #### 1. Lasciare che i router gestiscano la cosa
@@ -264,10 +264,10 @@ si divide in 2 tecniche principali
 	- in poche parole i servizi che ti forniscono informazioni ti mandano i dati sul nuovo indirizzo IP che scambi ad ogni spostamento
 	- veloce ed efficiente
 
-![Pasted image 20250601112226.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601112226.jpg)
+![Pasted image 20250601112226.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601112226.jpg)
 ### Rete domestica, Rete visitata
 #### 4G/5G
-![Pasted image 20250601112519.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601112519.jpg)
+![Pasted image 20250601112519.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601112519.jpg)
 In sostanza ci sono due tipi di network
 - home network
 	- rete gestita dal tuo operatore con cui hai un contratto
@@ -275,11 +275,11 @@ In sostanza ci sono due tipi di network
 	- rete gestita da altri operatori con cui ti connetti in roaming
 	- funziona tramite accordi
 ### ISP/WI-FI
-![Pasted image 20250601113017.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601113017.jpg)
+![Pasted image 20250601113017.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601113017.jpg)
 Nel concetto ISP/WI-FI non c'è un discorso di home network, ogni rete è indipendente e l'utente deve accedere ad esse attraverso le credenziali salvate sul loro device
 - solo alcune reti hanno concetti di roaming come eduroam con un discorso simile
 ### Rete domestica/Rete visitata
-![Pasted image 20250601113458.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601113458.jpg)
+![Pasted image 20250601113458.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601113458.jpg)
 - il dispositivo mobile ha due identità 
 	- IMSI identificatore globale
 	- IP può essere permanente nella rete domestica e NAT nella rete visitata
@@ -291,7 +291,7 @@ Quando ti sposti in una rete diversa da quella del tuo operatore
 - la rete domestica deve sapere dove inoltrare i tuoi dati, questo processo si chiama registrazione
 
  🔁 Passaggi della registrazione
-![Pasted image 20250601114803.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601114803.jpg)
+![Pasted image 20250601114803.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601114803.jpg)
 
 1. **Il nodo mobile si associa al mobility manager della rete visitata**
     - Appena entra nella rete visitata, il dispositivo invia una richiesta al **Mobility Manager (MM)** locale.
@@ -311,7 +311,7 @@ Quando un dispositivo entra in una rete visitata non cambia il suo IP logico(dom
 	- la soluzione è il routing indiretto
 
 🔄 Fasi del routing indiretto
-![Pasted image 20250601115315.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601115315.jpg)
+![Pasted image 20250601115315.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601115315.jpg)
 
 1. Comunicazione in ingresso
 	- Il **corrispondente** (es. un server o un altro utente) invia un datagramma al dispositivo mobile usando l’**IP della rete domestica** (es. `128.119.40.186`).
@@ -333,11 +333,11 @@ Concetto di instradamento triangolare
 - il corrispondente invia i dati all'IP domestico del dispositivo
 - la rete domestica inoltra il tutto alla rete visitata tramite tunneling
 Se il corrispondente e il dispositivo sono vicini(tipo stesso paese), questo instradamento è altamente inefficiente
-![Pasted image 20250601120739.jpg|250](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601120739.jpg)
+![Pasted image 20250601120739.jpg|250](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601120739.jpg)
 Anche se l'IP del dispositivo cambia il corrispondente non se ne accorge e non vengono fermati inoltri dei dati
 ###### Routing diretto
 Nel routing diretto il corrispondente invia i pacchetti direttamente alla rete visitata dove si trova attualmente il dispositivo mobile, senza passare per reti domestiche
-![Pasted image 20250601121121.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250601121121.jpg)
+![Pasted image 20250601121121.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250601121121.jpg)
 
 🔄 Passaggi principali
 

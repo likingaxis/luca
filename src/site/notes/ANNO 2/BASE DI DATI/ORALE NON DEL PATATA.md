@@ -88,7 +88,7 @@ valore atomico= valore indivisibile se lo dividi non va bene
 è in BCNF se
 - per ogni dipendenza funzionale <font color="#f79646">non banale</font> A-> B A <font color="#f79646">risulta una super chiave</font>
 - Una dipendenza funzionale A→B è non banale se B non è un sottoinsieme di A.
-![Pasted image 20250614170653.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250614170653.png)
+![Pasted image 20250614170653.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250614170653.png)
 
 #### TIPOLOGIE DI DIPENDENZE FUNZIONALI
 def: è una relazione in cui un insieme di attributi determina un altro insieme di attributi 

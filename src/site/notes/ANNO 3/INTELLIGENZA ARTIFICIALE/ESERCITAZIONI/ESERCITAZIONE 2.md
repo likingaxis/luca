@@ -8,9 +8,9 @@
 - Il cavaliere, che vuole salvarla e riportarla a casa, deve entrare nella grotta, aggirare il drago dormiente, prendere la principessa in braccio e portarla all’uscita.​
 - Il drago è spietato e non deve essere risvegliato, altrimenti mangerà in un solo boccone il cavaliere.​
 - Le luci sono accese, c’è una sola entrata/uscita.
-![Pasted image 20251024174023.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251024174023.png)
-![Pasted image 20251024174032.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251024174032.png)
-![Pasted image 20251024174045.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251024174045.png)
+![Pasted image 20251024174023.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251024174023.png)
+![Pasted image 20251024174032.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251024174032.png)
+![Pasted image 20251024174045.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251024174045.png)
 
 ### PEAS
 

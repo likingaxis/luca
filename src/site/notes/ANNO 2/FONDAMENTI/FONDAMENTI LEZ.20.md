@@ -3,7 +3,7 @@
 ---
 
 Dobbiamo continuare il discorso dell'ultima volta
-![Pasted image 20250423172024.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423172024.png)
+![Pasted image 20250423172024.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423172024.png)
 
 ## PASSO 2 (inverso)
 per inverso si intende che per una grammatica ci sarà un automi a stati finiti non deterministico che la riconosce
@@ -135,14 +135,14 @@ Struttura
 - la macchina non deterministica ha una w che è un insieme di stati perché deve simulare la macchina non deterministica che ovviamente ne ha più di uno
 	- è una sorta di stratagemma per avere più stati in una macchina deterministica
 
-![Pasted image 20250423174412.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423174412.png)
+![Pasted image 20250423174412.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423174412.png)
 
 	
 
 Ora che abbiamo definito A, dobbiamo dimostrare che $$x \in L(NA) \iff x \in L(A)$$ossia che la parola $x$ è accettata dall’automa non deterministico se e solo se è accettata da quello deterministico che abbiamo costruito.
 
 Lo vediamo informalmente
-![Pasted image 20250423175216.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423175216.png)
+![Pasted image 20250423175216.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423175216.png)
 
 Come vedi
 - a sinistra abbiamo la computazione dell'automa NON DETERMINISTICO, il quale può avere più scelte
@@ -277,7 +277,7 @@ Abbiamo un'espressione regolare se
 	- $r = (s \cdot t)$, oppure
 	- $r = s^{*}$
 
-![Pasted image 20250423180707.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423180707.png)
+![Pasted image 20250423180707.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423180707.png)
 
 >[!example]- Secondo esempio
 >Andiamo per parti
@@ -333,7 +333,7 @@ $$
 		- tutte le stringhe ottenute concatenando **1, 2, 3, ...** elementi di $L(s)$
 			così come, ad esempio, $Σ*$ è l’insieme delle parole che sono concatenazione di  (0 o più) caratteri di $Σ$
 
-![Pasted image 20250423181308.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250423181308.png)
+![Pasted image 20250423181308.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250423181308.png)
 
 
 >[!question] Ma possiamo definire un qualunque linguaggio mediante una espressione regolare?

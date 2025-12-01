@@ -5,7 +5,7 @@
 ## GREEDY
 - in ogni passo scegli la soluzione _migliore a breve termine_ (la scelta locale ottimale), sperando che porti anche alla soluzione globale ottimale.
 ### Interval scheduling
-![Pasted image 20250826114947.png|600](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826114947.png)
+![Pasted image 20250826114947.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826114947.png)
 
 #### definizione
 - Dati in input n intervalli: $I_1 ,...,I_n$
@@ -15,14 +15,14 @@
 ##### Soluzione greedy
 - ordina  gli intervalli per tempo di **fine**
 - Complessità: $O(n \ log n)$
-![Pasted image 20250826115641.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826115641.png)
+![Pasted image 20250826115641.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826115641.png)
 
 ##### *Teoremi*
-![Pasted image 20250828102548.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828102548.png)
-![Pasted image 20250828102600.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828102600.png)
+![Pasted image 20250828102548.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828102548.png)
+![Pasted image 20250828102600.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828102600.png)
 
 ### Interval partitioning
-![Pasted image 20250826115327.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826115327.png)
+![Pasted image 20250826115327.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826115327.png)
 
 
 #### definizione
@@ -32,15 +32,15 @@
 ##### Soluzione greedy
 - ordina per tempo di inizio $s_i$
 - Complessità: $O(n \ log n)$
-![Pasted image 20250826115655.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826115655.png)
+![Pasted image 20250826115655.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826115655.png)
 
 ##### *Teoremi*
-![Pasted image 20250828103419.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103419.png)
-![Pasted image 20250828103431.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103431.png)
-![Pasted image 20250828103440.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103440.png)
+![Pasted image 20250828103419.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103419.png)
+![Pasted image 20250828103431.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103431.png)
+![Pasted image 20250828103440.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103440.png)
 
 ### Union Find Struttura dati
-![Pasted image 20250826120227.png|450](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826120227.png)
+![Pasted image 20250826120227.png|450](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826120227.png)
 
 #### definizione
 - Mantenere una collezione di insiemi disgiunti contenenti elementi distinti durante l’esecuzione di una sequenza di operazioni del seguente tipo: 
@@ -48,7 +48,7 @@
 	- `Union(A,B)` = unisce gli insiemi `A, B` in un unico insieme di nome A (distrugge quelli vecchi) 
 	- `Find(x)` = restituisce il nome dell’insieme che contiene l’elemento `x` (si suppone di accedere direttamente all’elemento `x`)
 ### QuickFind
-![Pasted image 20250826120456.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826120456.png)
+![Pasted image 20250826120456.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826120456.png)
 
 Usiamo una **foresta di alberi** di altezza 1 per rappresentare gli insiemi disgiunti. In ogni albero: 
 - *Radice = nome dell’insieme*
@@ -66,17 +66,17 @@ Usiamo una **foresta di alberi** di altezza 1 per rappresentare gli insiemi disg
 >[!bug] troppi cambi di puntatori con troppe union fanno venire un costo complessivo di $O(n^2)$
 
 
-![Pasted image 20250826121503.png|250](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826121503.png)
+![Pasted image 20250826121503.png|250](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826121503.png)
 - Union by size
 	- Nell'unione degli insiemi A e B attacchiamo  gli elementi dell’insieme con cardinalità minore a quello di cardinalità maggiore e se necessario modifichiamo la radice dell’albero ottenuto
 	- si ottiene complessità $T_{amm}=O(log \ n)$ 
 ##### *Teoremi*
-![Pasted image 20250828103536.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103536.png)
-![Pasted image 20250828103545.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103545.png)
+![Pasted image 20250828103536.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103536.png)
+![Pasted image 20250828103545.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103545.png)
 
 
 ### QuickUnion
-![Pasted image 20250826122050.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826122050.png)
+![Pasted image 20250826122050.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826122050.png)
 #### definizione
 Usiamo una foresta di alberi di altezza anche maggiore di 1 per rappresentare gli insiemi disgiunti. In ogni albero: 
 - Radice = elemento rappresentativo dell’insieme 
@@ -86,16 +86,16 @@ Usiamo una foresta di alberi di altezza anche maggiore di 1 per rappresentare gl
 - `Union(A,B)` $= O(1)$
 - `Find(x)` $= O(n)$
 #### QuickUnion con Union-By-Size
-![Pasted image 20250826122247.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826122247.png)
+![Pasted image 20250826122247.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826122247.png)
 
 - la find costa $O(n)$ per risolverlo applichiamo l'euristica *UBS*
 Nell'unione degli insiemi A e B, rendiamo la radice dell’albero con meno nodi figlia della radice dell’albero con più nodi e cambiamo il nome se necessario 
 - L'operazione find richiede tempo $O(log n)$
 #### QuickUnion con Union-By-Size+ Compressione dei Cammini
-![Pasted image 20250826122321.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826122321.png)
+![Pasted image 20250826122321.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826122321.png)
 - Quando eseguo find e attraverso il cammino da x alla radice, comprimo il cammino, ovvero rendo tutti i nodi del cammino figli della radice
 ### Minimum spanning tree
-![Pasted image 20250826122636.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826122636.png)
+![Pasted image 20250826122636.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826122636.png)
 #### definizione
 - Dato un grafo connesso e non orientato $G=(V,E,W)$, pesato sugli archi. 
 - un MST è un sottoinsieme di archi $T \subseteq E$ tale che ci sia
@@ -117,8 +117,8 @@ Nell'unione degli insiemi A e B, rendiamo la radice dell’albero con meno nodi 
 	- Sia $C$ un qualsiasi ciclo  e sia $f$ l’arco appartenente al ciclo di peso massimo. rispetto agli archi che appartengono a quel ciclo
 		- *Allora esiste un MST che non contiene f*
 ##### *Teoremi*
-![Pasted image 20250828103619.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103619.png)
-![Pasted image 20250828103629.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103629.png)
+![Pasted image 20250828103619.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103619.png)
+![Pasted image 20250828103629.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103629.png)
 
 ### Kruskal
 - algoritmo che risolve MST
@@ -130,11 +130,11 @@ Nell'unione degli insiemi A e B, rendiamo la radice dell’albero con meno nodi 
 - Qui entra in gioco la **Cycle Property**: se un arco è il più pesante in un ciclo, non serve prenderlo. Kruskal infatti “scarta” implicitamente questi archi perché, quando un arco formerebbe un ciclo, non lo aggiunge.
 ##### Soluzione greedy
 - tempo $O(m\ log \ n)$
-![Pasted image 20250826151632.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826151632.png)
+![Pasted image 20250826151632.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826151632.png)
 ##### *Teoremi*
-![Pasted image 20250828103647.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103647.png)
-![Pasted image 20250828103656.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103656.png)
-![Pasted image 20250828103714.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103714.png)
+![Pasted image 20250828103647.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103647.png)
+![Pasted image 20250828103656.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103656.png)
+![Pasted image 20250828103714.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103714.png)
 #### Correttezza di Kruskal
 - **Cut property**
     - Dato un qualsiasi cut (partizione dei vertici in due insiemi), l’arco di peso minimo che attraversa quel cut appartiene a _tutti_ gli MST.
@@ -163,25 +163,25 @@ Nell'unione degli insiemi A e B, rendiamo la radice dell’albero con meno nodi 
 	- Parte da un nodo e costruisce l’albero estendendolo passo passo.
 	- Ad ogni passo sceglie l’arco **più leggero che attraversa il taglio** tra i vertici già inclusi e quelli ancora fuori.
 	- Qui si usa la **Cut Property**: l’arco più leggero che attraversa un taglio appartiene sempre a qualche MST, quindi è sicuro includerlo.
-![Pasted image 20250826152512.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826152512.png)
+![Pasted image 20250826152512.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826152512.png)
 - $O(m+nlogn)$ 
 ### Clustering
 
-![Pasted image 20250826153353.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826153353.png)
+![Pasted image 20250826153353.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826153353.png)
 
 #### definizione
 - Dato un insieme $U$ di $n$ elementi etichettati $p_1,....,p_n$ e un intero $k$, dividere gli oggetti in $k$ sottoinsiemi non vuoti affinché lo spacing sia massimo 
 - Spacing = distanza minima tra una qualsiasi coppia di punti in cluster diversi  
 - La distanza viene espressa da una funzione
-![Pasted image 20250828163427.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828163427.png)
+![Pasted image 20250828163427.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828163427.png)
 ##### Soluzione greedy
 - La procedura è corrispondente all’algo di Kruskal, solo che poi bisogna togliere i $k-1$ archi più pesanti dal grafo
-![Pasted image 20250904170558.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250904170558.png)
+![Pasted image 20250904170558.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250904170558.png)
 
 ## Programmazione dinamica
 - dividi il problema in _sotto-problemi sovrapposti_ e usa i risultati salvati (memoization/tabulation) per evitare ricalcoli.
 #### Independent Set
-![Pasted image 20250826154450.png|400](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826154450.png)
+![Pasted image 20250826154450.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826154450.png)
 #### definizione
 - Dato un cammino $G$ di $n$ nodi. Ogni nodo $v_i$ ha peso $w_i$
 - Trovare un insieme indipendente di peso massimo ovvero un insieme $S$ tale che: 
@@ -195,13 +195,13 @@ Nell'unione degli insiemi A e B, rendiamo la radice dell’albero con meno nodi 
 	- $OPT[1] = w_1 ; OPT[2] = max\{ w_1 , w_2\}$
 	- $OPT[j] = max\{ OPT[ j-1], w_j+OPT[ j-2]\}$
 
-![Pasted image 20250826155927.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826155927.png)
+![Pasted image 20250826155927.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826155927.png)
 
 ##### Ricostruire la soluzione
-![Pasted image 20250826155909.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826155909.png)
+![Pasted image 20250826155909.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826155909.png)
 
 ### Interval scheduling con peso
-![Pasted image 20250826160255.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826160255.png)
+![Pasted image 20250826160255.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826160255.png)
 
 #### definizione
 - Dati $n$ intervalli chiamati job $j_1,...,j_n$ 
@@ -220,18 +220,18 @@ $OPT[ j ]$ = peso massimo di un qualsiasi sottoinsieme di job compatibili costit
 	- Colleziona il costo di $w_j$ 
 	- Non può usare i job incompatibili $\{ p(j) +1, p(j)+2, ..., j-1\}$.
 	- Deve contenere una soluzione ottima per i job compatibili rimanenti $1, 2 , .., p(j)$
-![Pasted image 20250826161344.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826161344.png)
-![Pasted image 20250826161442.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826161442.png)
+![Pasted image 20250826161344.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826161344.png)
+![Pasted image 20250826161442.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826161442.png)
 - $O(n\ log \ n)$ 
-![Pasted image 20250826161704.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826161704.png)
+![Pasted image 20250826161704.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826161704.png)
 **In pratica**:
 - Top-down può essere più veloce su input piccoli o quando molte scelte vengono potate.
 - Bottom-up è più prevedibile e sicuro per input grandi.
 ##### *Teoremi*
-![Pasted image 20250828103813.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103813.png)
+![Pasted image 20250828103813.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103813.png)
 
 ### Longest increasing subsequences
-![Pasted image 20250826162254.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826162254.png)
+![Pasted image 20250826162254.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826162254.png)
 
 #### definizione
 - Data una sequenza di $n$ oggetti $i_1,..., i_n$  
@@ -242,20 +242,20 @@ $OPT[ j ]$ = peso massimo di un qualsiasi sottoinsieme di job compatibili costit
 - $OPT[ j ] =$ lunghezza della longest increasing subsequence di $S[1] , ... , S[j]$ che termina con $S[j]$
 - La soluzione cercata è il $max_{i=1,2,..,n} OPT[i]$
 - Il caso base è $OPT[1]$
-![Pasted image 20250826162406.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826162406.png)
+![Pasted image 20250826162406.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826162406.png)
 - such that=tale che
-![Pasted image 20250826162413.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826162413.png)
+![Pasted image 20250826162413.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826162413.png)
 - $O(n^2)$
 
 ### Segmented least squares
-![Pasted image 20250826163210.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826163210.png)
-![Pasted image 20250826163630.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826163630.png)
+![Pasted image 20250826163210.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826163210.png)
+![Pasted image 20250826163630.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826163630.png)
 
 #### definizione di least Squares
 Dati $n$ punti sul piano: $(x_1,y_1),...,(x_n,y_n)$
 Trovare una retta $y= ax+b$ che minimizza la somma degli errori quadratici:
-![Pasted image 20250826163507.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826163507.png)
-![Pasted image 20250826163513.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826163513.png)
+![Pasted image 20250826163507.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826163507.png)
+![Pasted image 20250826163513.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826163513.png)
 #### definizione di SEGMENTED least Squares
 - I punti si trovano approssimativamente  su una sequenza di diversi segmenti 
 - Dati $n$ punti sul piano: $(x_1,y_1),...,(x_n,y_n) \ con\  x_1<x_2<...<x_n$ 
@@ -270,14 +270,14 @@ $f(x) = E + c L$ per una qualche costante $c>0$, dove: 
 Per calcolare $OPT[ j ]$ : 
 - L'ultimo segmento utilizza i punti $p_i, p_{i+1}, ..., p_j$ per qualche $i<j$
 - Costo = $e_{ij} + c + OPT[ j-1 ]$
-![Pasted image 20250826164023.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826164023.png)
-![Pasted image 20250826164028.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826164028.png)
+![Pasted image 20250826164023.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826164023.png)
+![Pasted image 20250826164028.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826164028.png)
 Precalcolando le sommatorie della formula di sopra il tempo diventa $O( n^2)$ altrimenti è $O( n^3)$
 ##### *Teoremi*
-![Pasted image 20250828103945.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828103945.png)
+![Pasted image 20250828103945.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828103945.png)
 
 #### Knapsack problem
-![Pasted image 20250826164212.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826164212.png)
+![Pasted image 20250826164212.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826164212.png)
 #### definizione
 - Dati $n$ elementi: 
 - L'elemento $i$ fornisce un valore $v_i$ e pesa $w_i$ 
@@ -294,21 +294,21 @@ Goal: $OPT[ n, W]$
 	- Colleziona il valore $v_i$  
 	- Nuovo peso limite = $w-w_i$   
 	- $OPT[ i, w ]$ seleziona i migliori $\{1,2,...i-1\}$ con nuovo peso limite
-![Pasted image 20250826165200.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826165200.png)
-![Pasted image 20250826165213.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826165213.png)
+![Pasted image 20250826165200.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826165200.png)
+![Pasted image 20250826165213.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826165213.png)
 - $O(nW)$ tempo e spazio
 ##### Soluzione per il recupero
-![Pasted image 20250826165346.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250826165346.png)
+![Pasted image 20250826165346.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250826165346.png)
 - *trace back* parte dalla fine della matrice dove si ha la soluzione ottima e prende di volta in volta la condizione massima tenendo conto che può prendere oppure no quel determinato peso
-![Pasted image 20250905111050.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250905111050.png)
+![Pasted image 20250905111050.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250905111050.png)
 
 ##### *Teoremi*
-![Pasted image 20250828104011.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104011.png)
+![Pasted image 20250828104011.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104011.png)
 
 #### Sequence Alignment
-![Pasted image 20250827100012.png|400](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827100012.png)
+![Pasted image 20250827100012.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827100012.png)
 
-![Pasted image 20250827100003.png|500](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827100003.png)
+![Pasted image 20250827100003.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827100003.png)
 #### definizione
 **definizione di edit distance**
 - operazioni di allineamento che portano a un costo minimo che include
@@ -318,7 +318,7 @@ Goal: $OPT[ n, W]$
 - Date 2 stringhe  $x_1x_2...x_n \ e \  y_1y_2...y_n$ trovare un allineamento di costo minimo  
 - Un allineamento $M$ è un insieme di coppie ordinate $x_i-y_ij$ affinché ogni carattere appaia al massimo in una coppia e senza incroci 
 - Il costo di un allineamento $M$ è:
-![Pasted image 20250827100507.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827100507.png)
+![Pasted image 20250827100507.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827100507.png)
 ##### Soluzione dinamica
 **definisco sotto-problemi**
 $OPT[ i,j ]$ = costo minimo di allineamento delle stringhe di prefisso $x_1x_2...x_i$ e $y_1y_2...y_j$
@@ -330,19 +330,19 @@ Caso 2a. $OPT[ i,j ]$ lascia $x_i$ non matchata 
 - Paga gap per $x_i$ + costo minimo per allineare   $x_1x_2...x_{i-1}$ e $y_1y_2...y_j$   
 Caso 2b. $OPT[ i,j ]$ lascia $y_j$ non matchata 
 - Paga gap per $y_j$ + costo minimo per allineare  $x_1x_2...x_i$ e $y_1y_2...y_{j-1}$
-![Pasted image 20250827101219.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827101219.png)
-![Pasted image 20250827101235.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827101235.png)
+![Pasted image 20250827101219.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827101219.png)
+![Pasted image 20250827101235.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827101235.png)
 - $O(mn)$ 
 ##### Soluzione per il recupero
-![Pasted image 20250827101447.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827101447.png)
+![Pasted image 20250827101447.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827101447.png)
 per il recupero si limita a partire dal punto `m,n` ovvero entrambi alla lettera finale e da li si risale effettuando il traceback, si termina una volta raggiunto `0,0`
 se vai ↑ o a ← devi pagare la gap penalty
 invece se vai in diagonale no
 ##### migliorie con Hirschberg's algorithm
 - si può ridurre il costo spaziale in $O(m+n)$ 
-![Pasted image 20250827103510.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827103510.png)
-![Pasted image 20250827103859.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827103859.png)
-![Pasted image 20250827103843.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827103843.png)
+![Pasted image 20250827103510.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827103510.png)
+![Pasted image 20250827103859.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827103859.png)
+![Pasted image 20250827103843.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827103843.png)
 - per calcolare $OPT[m,n]$ ci basta utilizzare due colonne per volta
 - l'algoritmo inizia scegliendo la metà della stringa $Y$
 - calcola in forward con $f(*,j)$ e poi in backward invertendo gli archi calcola $g(*,j)$ 
@@ -354,10 +354,10 @@ invece se vai in diagonale no
 	-  $x_{q+1},...x_m$ e $y_{j+1},....,y_n$ 
 ##### Teorema
 
-![Pasted image 20250828104030.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104030.png)
+![Pasted image 20250828104030.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104030.png)
 
 ### Shortest paths with negative weights
-![Pasted image 20250827113117.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827113117.png)
+![Pasted image 20250827113117.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827113117.png)
 #### definizione
 - Dato un grafo diretto $G = (V,E)$, con lunghezza degli archi arbitraria $l_{vw}$ ( può essere anche negativa) trovare un cammino minimo da un nodo sorgente $s$ o un nodo destinazione $t$
 **Definizione di vari lemma**
@@ -373,8 +373,8 @@ $OPT[ i, v]$ = lunghezza del cammino minimo $v↝t$ che usa $≤ i$ archi
 - Se $(v,w)$ è il primo arco nel cammino minimo $v↝t$ comporta un costo di $l_{vw}$ 
 	- quindi $w$ è adiacente a $v$
 - Poi seleziona il miglior cammino $w↝t$ che usa $≤ i-1$ archi
-![Pasted image 20250827115700.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827115700.png)
-![Pasted image 20250827115717.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827115717.png)
+![Pasted image 20250827115700.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827115700.png)
+![Pasted image 20250827115717.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827115717.png)
 - complessità $O( m n )$  tempo e $O( n^2)$ spazio
 
 ### Bellman-Ford-Moore algorithm
@@ -384,51 +384,51 @@ $OPT[ i, v]$ = lunghezza del cammino minimo $v↝t$ che usa $≤ i$ archi
 - $successor[v]$ = prossimo nodo nel cammino $v↝t$
 *Ottimizzazione della performance:* 
 Se $d[w]$ non viene aggiornato nella passata $i-1$, non c’è motivo di considerare gli archi entranti in w nella passata i.
-![Pasted image 20250827120522.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827120522.png)
+![Pasted image 20250827120522.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827120522.png)
 ✅ **convenzione implicita**.  
 Il codice non lo dice, ma la logica del ciclo assicura che a iterazione $i$ stai effettivamente usando distanze valide fino a $i−1 \ archi$
 - ad ogni passata aggiorni i nodi che si trovano a quel determinato numero i di archi
 - costo $O( m n)$ tempo e $O(n)$ spazio
-![Pasted image 20250827132634.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827132634.png)
+![Pasted image 20250827132634.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827132634.png)
 
 
 ### Bellman-Ford-Moore algorithm con controllo dei cicli negativi
 
-![Pasted image 20250827132951.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827132951.png)
+![Pasted image 20250827132951.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827132951.png)
 #### Vari *teoremi* e lemmi
 Lemma
 1. Se qualche cammino $v↝t$ contiene un ciclo negativo allora non esiste un cammino minimo $v↝t$
-![Pasted image 20250830124531.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124531.png)
+![Pasted image 20250830124531.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124531.png)
 
 2. Se $G$ non ha cicli negativi allora esiste un cammino minimo $v↝t$ che è un cammino semplice (ed ha $≤ n-1$ archi)
-![Pasted image 20250830124546.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124546.png)
+![Pasted image 20250830124546.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124546.png)
 
 3. Per ogni nodo $v : d[v]$ è la stima della lunghezza di qualche cammino  $v↝t$
 4. Per ogni nodo $v : d[v]$ è monotona non crescente
 	- viene aggiornata solo per valori minori
 5. Dopo la passata $i$, $d[v] ≤ lunghezza$ del cammino minimo $v↝t$ che usa $≤ i$ archi
-![Pasted image 20250830124643.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124643.png)
-![Pasted image 20250830124630.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124630.png)
+![Pasted image 20250830124643.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124643.png)
+![Pasted image 20250830124630.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124630.png)
 6. Ogni ciclo diretto $W$ nel grafo dei successori è un ciclo negativo
-![Pasted image 20250830124707.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124707.png)
-![Pasted image 20250830124721.png|400](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124721.png)
+![Pasted image 20250830124707.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124707.png)
+![Pasted image 20250830124721.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124721.png)
 
 7. Se esiste un ciclo negativo l'ultimo algoritmo realizzato lo segnala
-![Pasted image 20250830124738.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124738.png)
-![Pasted image 20250830124757.png|400](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124757.png)
+![Pasted image 20250830124738.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124738.png)
+![Pasted image 20250830124757.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124757.png)
 
 
 Teorema
 1. sulla complessità
-![Pasted image 20250830124833.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124833.png)
+![Pasted image 20250830124833.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124833.png)
 
 2. Assumendo che non ci siano cicli negativi, Bellman-Ford-Moore calcola la lunghezza del cammino minimo in $O( m n)$ tempo e $O(n)$ spazio
 	- Lemma 2+Lemma 5
 3. Assumendo che non ci siano cicli negativi, Bellman-Ford-Moore calcola il cammino più corto per tutti i nodi in $O( m n)$ tempo e $O(n)$ spazio
-![Pasted image 20250830124913.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830124913.png)
+![Pasted image 20250830124913.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830124913.png)
 
 #### Max-flow e min-cut
-![Pasted image 20250827152136.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827152136.png)
+![Pasted image 20250827152136.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827152136.png)
 
 
 #### definizione
@@ -439,15 +439,15 @@ per risolvere questo problema dobbiamo definire cosa sono
 - *st-cut*
 	- partizione $(A,B)$ di nodi con $s ∈ A$  e $t ∈ B$
 	- La *capacità* di un st-cut è la somma delle capacità degli archi che vanno da A in B
-![Pasted image 20250901123055.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250901123055.png)
+![Pasted image 20250901123055.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250901123055.png)
 - *min-cut*
 	- Trovare un taglio di capacità minima
 	- Il **min-cut** è quello che fornisce il limite più stretto, cioè il collo di bottiglia minimo del grafo.
 - *st-flow*
 	- Un st-flow $f$ è una funzione che soddisfa: 
-![Pasted image 20250827152718.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827152718.png)
+![Pasted image 20250827152718.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827152718.png)
 - *il valore di un st-flow* è 
-![Pasted image 20250827153032.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827153032.png)
+![Pasted image 20250827153032.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827153032.png)
 
 - *max-flow*
 	- problema dove si vuole trovare un flusso dal valore massimo
@@ -459,7 +459,7 @@ per risolvere questo problema dobbiamo definire cosa sono
 	- *Arco al contrario* $e^{reverse}$ = $(v,u)$
 		- undo del flusso inviato
 	- *residual capacity:*
-![Pasted image 20250827153432.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827153432.png)
+![Pasted image 20250827153432.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827153432.png)
 - *Residual network.* $G_f =(V,E_f , s, t, c_f)$ 
 	- $E_f = { e : f(e) < c(e)} \ \   U \ \  {e : f(e^{reverse}) > 0}$
 	- Proprietà chiave : $f′$ è un flusso valido  in $G_f$ se $f+f′$ è un flusso valido in $G$
@@ -470,18 +470,18 @@ per risolvere questo problema dobbiamo definire cosa sono
 - La capacità di bottleneck di un cammino aumentante  $P$ è la capacità minima residua di un arco in $P$ 
 Proprietà chiave: 
 Sia $f$ un flusso e $P$  un cammino aumentante in $G_f$ allora, dopo aver chiamato $f’ ← AUGMENT( f,c,P)$, l’$f’$ risultante è un flusso e $val(f’) = val(f) + bottleneck(Gf,P$) 
-![Pasted image 20250827154208.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827154208.png)
+![Pasted image 20250827154208.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827154208.png)
 
 #### Ford-Fulkerson
 - Inizia con $f(e) = 0$ per ogni arco $e ∈ E$ 
 - Trova un cammino $s↝t$ $P$ nella rete residua $G_f$  
 - Aumenta il flusso lungo il cammino $P$ 
 - **continua a cercare cammini aumentanti nel grafo residuo$G_f$**, e aggiorna il flusso lungo quei cammini, **finché non esistono più cammini da s a t nel grafo residuo**.
-![Pasted image 20250827154218.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827154218.png)
+![Pasted image 20250827154218.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827154218.png)
 
 - *Lemma del valore del flusso.* 
 	- Sia f un flusso qualsiasi e sia $(A,B)$ un taglio qualsiasi. Allora, il valore del flusso f è uguale al flusso netto attraversante il taglio $(A,B)$
-![Pasted image 20250827153032.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827153032.png)
+![Pasted image 20250827153032.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827153032.png)
 
 
 - *Dualità debole:* 
@@ -500,7 +500,7 @@ Sia $f$ un flusso e $P$  un cammino aumentante in $G_f$ allora, dopo aver chiam
 - *Teorema:* 
 	- Dato un qualsiasi max flow f, possiamo calcolare il min cut (A,B)  in O(m) tempo
 >[!danger]- ALTRA COSA FONDAMENTALE: il numero di cammini aumentanti può essere **ESPONENZIALE** rispetto all'input. 
->![Pasted image 20250830172252.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830172252.png)
+>![Pasted image 20250830172252.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830172252.png)
 
 L'obiettivo principale è **scegliere dei cammini aumentanti** tali che
 - possano essere **trovati in modo efficiente** (quindi in $O(m)$),
@@ -516,23 +516,23 @@ Per farlo possiamo sceglierli con
 - Usiamo un **parametro** $\Delta$ -> è un valore grande,
 - Costruisco un **sottografo** $G_{f}(\Delta)$ contenente SOLO gli archi che hanno capacità $\ge \Delta$,
 - In questo modo ogni cammino aumentante nel nuovo grafo ha una **bottleneck capacity** $\ge \Delta$
-![Pasted image 20250830172854.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830172854.png)
+![Pasted image 20250830172854.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830172854.png)
 ,
 
 ###### PSEUDOCODICE 
-![Pasted image 20250830172918.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830172918.png)
+![Pasted image 20250830172918.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830172918.png)
 - COSTO 
-![Pasted image 20250830173134.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830173134.png)
+![Pasted image 20250830173134.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830173134.png)
 
 Come scegliere il successivo cammino aumentante in Ford-Fulkerson? Scegli quello che usa meno archi (il più corto) -> usa la BFS. >Scegliendo i più corti saturi velocemente gli archi "colli di bottiglia" 
-![Pasted image 20250830173214.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830173214.png)
-![Pasted image 20250830173227.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250830173227.png)
+![Pasted image 20250830173214.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830173214.png)
+![Pasted image 20250830173227.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250830173227.png)
 
 
 #### Max-flow Min-cut theorem
-![Pasted image 20250908095623.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250908095623.png)
-![Pasted image 20250908095631.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250908095631.png)
-![Pasted image 20250908095639.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250908095639.png)
+![Pasted image 20250908095623.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250908095623.png)
+![Pasted image 20250908095631.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250908095631.png)
+![Pasted image 20250908095639.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250908095639.png)
 
 ## Algoritmi di approssimazione
 #### definizione
@@ -544,7 +544,7 @@ Come scegliere il successivo cammino aumentante in Ford-Fulkerson? Scegli quello
 - $α ≤ 1$ 
 - Per ogni soluzione restituita $x$, $value(x) ≥ α OPT(x)$
 ### Load balancing
-![Pasted image 20250827162647.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827162647.png)
+![Pasted image 20250827162647.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827162647.png)
 #### definizione
 Date $m$ identiche macchine, $n ≥ m$ jobs, job $j$ ha processing time $t_j$. 
 - Job $j$ deve essere eseguito contiguamente su una macchina 
@@ -560,31 +560,31 @@ Date $m$ identiche macchine, $n ≥ m$ jobs, job $j$ ha processing time $t_j$. 
 - Considera i job in un qualche ordine fisso 
 - Assegna il job $j$ alla macchina $i$ il cui carico è finora il più piccolo
 
-![Pasted image 20250827163130.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827163130.png)
+![Pasted image 20250827163130.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827163130.png)
 - Complessità: 
 	- $O(n log n)$ 
 	- Usando una coda con priorità per i carichi $L[k]$ 
 ##### Dimostrazioni e lemma
 
-![Pasted image 20250828104129.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104129.png)
-![Pasted image 20250906111359.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250906111359.png)
-![Pasted image 20250906111345.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250906111345.png)
-![Pasted image 20250828104137.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104137.png)
-![Pasted image 20250828104146.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104146.png)
-![Pasted image 20250828104212.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104212.png)
+![Pasted image 20250828104129.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104129.png)
+![Pasted image 20250906111359.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250906111359.png)
+![Pasted image 20250906111345.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250906111345.png)
+![Pasted image 20250828104137.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104137.png)
+![Pasted image 20250828104146.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104146.png)
+![Pasted image 20250828104212.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104212.png)
 ### Load balancing LPT(Longest Processing Time)
 #### definizione
 - Ordina $n$ jobs in ordine decrescente di tempo di processione
 - ciò lo rende molto più vicino alla soluzione ottima
 
-![Pasted image 20250828104357.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104357.png)
+![Pasted image 20250828104357.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104357.png)
 ##### *Teoremi*
-![Pasted image 20250828104447.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104447.png)
-![Pasted image 20250828104454.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250828104454.png)
+![Pasted image 20250828104447.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104447.png)
+![Pasted image 20250828104454.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250828104454.png)
 
 
 ### k-center problem 2-approximation
-![Pasted image 20250827163451.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827163451.png)
+![Pasted image 20250827163451.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827163451.png)
 #### definizione
 ## Problema dei k-centri (2-approximation)
 ***DEFINIZIONE***
@@ -601,10 +601,10 @@ Date $m$ identiche macchine, $n ≥ m$ jobs, job $j$ ha processing time $t_j$. 
  
 #### Algoritmo greedy
 Sceglie `k` volte il sito più lontano da qualsiasi centro finora creato, e lo usa come prossimo centro.
-![Pasted image 20250827163816.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250827163816.png)
+![Pasted image 20250827163816.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250827163816.png)
 
 
->[!lemma] ![Pasted image 20250910171611.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250910171611.png)
+>[!lemma] ![Pasted image 20250910171611.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250910171611.png)
 >L'algoritmo greedy potrebbe non essere ottimo ma la sua soluzione non si discosta più del doppio rispetto all'ottimo.
 >
 >DIMOSTRAZIONE
@@ -646,10 +646,10 @@ Si scrive:
 #### 1. Independent Set con Vertex Cover
 - descriviamo prima il problema dell'indipendent set
 **Independent Set (IS)**: Dato un grafo $G=(V,E)$ e un intero $k$, esiste un sottoinsieme di $k$ vertici non adiacenti tra loro?
-![Pasted image 20250902125926.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250902125926.png)
+![Pasted image 20250902125926.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250902125926.png)
 - problema del Vertex Cover
 **Vertex Cover (VC)**: Dato $G=(V,E)$ e un intero $k$, esiste un sottoinsieme di $k$ vertici che copre tutti gli archi?
-![Pasted image 20250902130038.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250902130038.png)
+![Pasted image 20250902130038.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250902130038.png)
 #### Vogliamo dimostrare che $IS \equiv_P IS$.
 ### (⇒) Da Independent Set a Vertex Cover
 
@@ -670,7 +670,7 @@ Si scrive:
 #### 2. Set Cover con Vertex Cover
 - descriviamo prima il problema del Set Cover
 - **Set Cover (SC)**: Dato un insieme universo $U$, una collezione di sottoinsiemi $S_1, ..., S_m$​, e un intero $k$, esistono al più $k$ sottoinsiemi che coprono tutto $U$?
-![Pasted image 20250902160112.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250902160112.png)
+![Pasted image 20250902160112.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250902160112.png)
 #### Vogliamo dimostrare che $VC \leq_P SC$.
 ## Costruzione della riduzione
 Dato un grafo $G=(V,E)$ e un intero $k$:
@@ -694,11 +694,11 @@ Così otteniamo un’istanza di Set Cover $(U, \mathcal{S}, k)$
 - Poiché ogni arco $e$ appartiene ad almeno un sottoinsieme $S_v$, significa che $v \in X$ copre quell’arco.
 - Quindi $X$ è un VC di dimensione $k$.
 
-![Pasted image 20250902160308.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250902160308.png)
+![Pasted image 20250902160308.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250902160308.png)
 #### 3. 3-SAT con Independent Set
 - descriviamo prima il problema del 3-SAT
 - **3-SAT**: Formula booleana in CNF con clausole di 3 letterali ciascuna. La formula è soddisfacibile?
-![Pasted image 20250902161354.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250902161354.png)
+![Pasted image 20250902161354.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250902161354.png)
 #### Vogliamo dimostrare che $3-SAT \leq_P IS$.
 ## Costruzione della riduzione
 
@@ -728,7 +728,7 @@ Così otteniamo un’istanza di Set Cover $(U, \mathcal{S}, k)$
 - Dunque $\Phi$ è soddisfacibile.
 
 
-![Pasted image 20250902161504.png](/img/user/ANNO%202/ALGORITMI%202/fotoalg2/Pasted%20image%2020250902161504.png)
+![Pasted image 20250902161504.png](/img/user/ANNO%202/FOTOANNO2/fotoalg2/Pasted%20image%2020250902161504.png)
 
 - **Transitività**: Se $X \leq_P Y \ X≤P​Y \ e \ Y≤_PZ \ Y \leq_P Z$.  
     → Esempio:

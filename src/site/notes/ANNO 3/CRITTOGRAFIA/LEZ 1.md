@@ -68,7 +68,7 @@ Oscar, anche se intercetta $y$, non può risalire a $x$ senza conoscere la chiav
 ### 📊 **Figura 2.1 – Il canale di comunicazione**
 
 L’immagine descrive graficamente questo processo:
-![Pasted image 20251007185235.png](/img/user/ANNO%203/CRITTOGRAFIA/CRITTOFOTO/Pasted%20image%2020251007185235.png)
+![Pasted image 20251007185235.png](/img/user/ANNO%203/FOTOANNO3/CRITTOFOTO/Pasted%20image%2020251007185235.png)
 
 
 ---
@@ -231,12 +231,12 @@ Per la chiave $K = 3$, il sistema prende il nome di **Cifrario di Cesare**, perc
 
 ### 🔠 **Corrispondenza lettere–numeri**
 
-![Pasted image 20251007185620.png](/img/user/ANNO%203/CRITTOGRAFIA/CRITTOFOTO/Pasted%20image%2020251007185620.png)
+![Pasted image 20251007185620.png](/img/user/ANNO%203/FOTOANNO3/CRITTOFOTO/Pasted%20image%2020251007185620.png)
 
 ---
 
 ## ✉️ **Esempio 2.1**
-![Pasted image 20251007185822.png](/img/user/ANNO%203/CRITTOGRAFIA/CRITTOFOTO/Pasted%20image%2020251007185822.png)
+![Pasted image 20251007185822.png](/img/user/ANNO%203/FOTOANNO3/CRITTOFOTO/Pasted%20image%2020251007185822.png)
 ## 🔍 **Sicurezza e crittoanalisi**
 
 Perché un sistema sia pratico, deve avere:
@@ -326,7 +326,7 @@ Per decifrare, si applica la **permutazione inversa**, che riporta ogni lettera 
 ### 🔤 **Esempio di permutazione**
 
 La tabella seguente mostra una possibile chiave casuale (cioè una permutazione dell’alfabeto):
-![Pasted image 20251007191055.png](/img/user/ANNO%203/CRITTOGRAFIA/CRITTOFOTO/Pasted%20image%2020251007191055.png)
+![Pasted image 20251007191055.png](/img/user/ANNO%203/FOTOANNO3/CRITTOFOTO/Pasted%20image%2020251007191055.png)
 
 Esempi:
 
@@ -340,7 +340,7 @@ $$
 
 Per decifrare, bisogna **invertire la mappa**.  
 La seconda tabella mostra la **permutazione inversa**:
-![Pasted image 20251007191113.png](/img/user/ANNO%203/CRITTOGRAFIA/CRITTOFOTO/Pasted%20image%2020251007191113.png)
+![Pasted image 20251007191113.png](/img/user/ANNO%203/FOTOANNO3/CRITTOFOTO/Pasted%20image%2020251007191113.png)
 
 Esempi:
 

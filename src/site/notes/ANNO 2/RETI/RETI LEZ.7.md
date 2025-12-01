@@ -10,17 +10,17 @@
 🔸 URN — **Uniform Resource Name**
 - indica il nome identificativo univoco della risorsa ma non dice dove sta
 
-![Pasted image 20250327164800.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327164800.png)
+![Pasted image 20250327164800.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327164800.png)
 
 ### Architettura Peer-to-peer
 architettura che si basa su più dispositivi che fungono sia da client che da server
 per avere la definizione perfetta vai a vederti [[ANNO 2/RETI/RETI LEZ.4#peer-to-peer\|questo]] 
 #### Esempio Distribuzione file client server P2P
 Se ho <font color="#4f81bd">N</font> peer quanto impiego a trasferire un file di dimensione <font color="#c0504d">F</font>?
-![Pasted image 20250327165158.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327165158.png)
+![Pasted image 20250327165158.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327165158.png)
 ## Client-server vs P2P
 ### Esempio con Client-Server
-![Pasted image 20250327165442.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327165442.png)
+![Pasted image 20250327165442.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327165442.png)
 Il server: Deve inviare N copie in sequenza con
 - un tempo per singola copia di $F/u_s$ 
 - tempo per N copie $N*F/u_s$ 
@@ -29,7 +29,7 @@ il client: Ogni utilizzatore del servizio deve scaricare una copia del file con:
 - tenere ben presente un dato 
 	- la banda minima di un determinato client segnata da $F/d_{min}$
 Quindi avremmo:
-![Pasted image 20250327165929.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327165929.png)
+![Pasted image 20250327165929.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327165929.png)
 
 ### Esempio con P2P
 Trasmissione via server: Esso deve inviare almeno una copia così che entri in circolo tra i client con un tempo di
@@ -38,18 +38,18 @@ client: ogni client deve scaricare la copia una volta con tempo
 - $F/d_{min}$
 i client dopo aver scaricato: loro devono caricare $NF$ bit
 - con una capacità di upload che è $u_s+\sum u_i$ 
-![Pasted image 20250327170707.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327170707.png)
+![Pasted image 20250327170707.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327170707.png)
 
 
 ## Grafico P2P VS Client-server
-![Pasted image 20250327172614.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327172614.png)
+![Pasted image 20250327172614.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327172614.png)
 ## tracker e torrent
 possiamo innanzitutto dire che i file sono divisi in(chunk) che vengono scambiati tra peer
 - Per sapere la lista dei peer a me vicino utilizzo il tracker che tiene traccia di tutti i peer che partecipano al torrent
 -  Per torrent si indica il gruppo di peer che partecipano alla distribuzione di un file
 	- Quindi quando scarichi un file .torrent hai tutti i metadati che ti rimandano al tracker e sai la dimensione e il nome dei chunk e dei file
 ### Esempio nella prospettiva di un peer
-![Pasted image 20250327171936.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327171936.png)
+![Pasted image 20250327171936.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327171936.png)
 ### Richiesta e invio di chunk file(BitTorrent)
 ##### Come avviene la richiesta dei chunk:
 c'è innanzitutto da precisare che ogni peer di solito non ha la totalità dei chunk bensì una parte
@@ -63,7 +63,7 @@ c'è innanzitutto da precisare che ogni peer di solito non ha la totalità dei c
 - Ogni 30 secondi ne sceglie uno a caso tra i vicini e gli inizia a inviare i chunk 
 	- esso è detto optimistically unchoked
 	- esso può rientrare nella top 4
-![Pasted image 20250327173213.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327173213.png)
+![Pasted image 20250327173213.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327173213.png)
 # Streaming e Video CDN
 Lo streaming video rappresenta circa l'80% del traffico Internet. I video in genere sono registrati e memorizzati su server a disposizione degli utenti su richiesta on demand.
 
@@ -77,7 +77,7 @@ Esistono codifiche per ridurre la ridondanza di informazioni all'interno di imma
 Esiste la:
 codifica spaziale: vale per la singola immagine
 temporale: si applica tra più immagini
-![Pasted image 20250327173806.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327173806.png)
+![Pasted image 20250327173806.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327173806.png)
 ## Gestione del bitrate nei video 
 CBR - Constant Bit Rate 
 - Bitrate fisso, usa sempre la stessa quantità di dati per ogni secondo di video. 
@@ -96,13 +96,13 @@ Semplicemente abbiamo un server video che ha il video registrato e che attravers
 bisogna però tenere conto di 2 complicazioni principali:
 - la larghezza di banda tra server e client varia nel tempo a causa di eventuali congestioni della rete
 - scarsa qualità del video o ritardi del video
-![Pasted image 20250327174235.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327174235.png)
+![Pasted image 20250327174235.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327174235.png)
 In teoria il tempo di invio del server dovrebbe essere costante verso il client così che il contenuto può essere visto in maniera fluida, ciò però è impossibile perché potrebbero esserci dei jitter(ritardi di rete), perciò il client dovrà utilizzare dei buffer per immagazzinare un po' le informazioni per avvantaggiarsi
 Altri problemi potrebbero essere legati al fatto che:
 - il client può muoversi avanti indietro mettere in pausa andare alla fine ecc..
 - pacchetti persi da dover ritrasmettere al client
 
-![Pasted image 20250327174541.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250327174541.png)
+![Pasted image 20250327174541.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250327174541.png)
 Qui possiamo notare tutte le varie compensazioni per ridurre questi problemi
 - abbiamo un buffer video
 - andiamo a riprodurre leggermente in ritardo sul client(caricamento)
@@ -163,8 +163,8 @@ Memorizzo più copie video in punti diversi distribuiti geograficamente
 Akamai è una azienda che conta centinaia di migliaia di server
 
 ##### Esempio con BOB
-![Pasted image 20250401121556.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250401121556.png)
+![Pasted image 20250401121556.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250401121556.png)
 
 #### Esempio con NETFLIX
-![Pasted image 20250401121619.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250401121619.png)
-![Pasted image 20250401121629.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250401121629.png)
+![Pasted image 20250401121619.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250401121619.png)
+![Pasted image 20250401121629.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250401121629.png)

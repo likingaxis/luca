@@ -35,17 +35,17 @@ La macchina può terminare se <font color="#f79646">non ha quintuple</font> da e
 Data una parola binaria con una sola x progettare una macchina a un solo nastro che analizza e cancella via via i valori sul nastro
 - termina nello stato $q_f$ se x contiene un numero pari di 1 e scrive P sul nastro
 - termina in $q_f$ se x contiene un numero dispari di 1 e scrive D sul nastro
-![Screenshot_2025-03-06-19-29-04-36_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/FONDAMENTI/fotofond/Screenshot_2025-03-06-19-29-04-36_45415775811cea13943236d9369df411.jpg)
-![Pasted image 20250306193134.png|600](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250306193134.png)
+![Screenshot_2025-03-06-19-29-04-36_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotofond/Screenshot_2025-03-06-19-29-04-36_45415775811cea13943236d9369df411.jpg)
+![Pasted image 20250306193134.png|600](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250306193134.png)
 # ESERCIZIO
 Progettare una macchina di Turing a due nastri che, avendo sul primo nastro due numeri interi della stessa lunghezza, calcola il valore della loro somma scrivendo il risultato sul secondo nastro – ossia, si richiede di progettare una macchina di Turing che esegua la somma “in riga” di due numeri
-![Pasted image 20251015120203.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020251015120203.png)
+![Pasted image 20251015120203.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020251015120203.png)
 
-![Screenshot_2025-03-06-20-23-20-26_45415775811cea13943236d9369df411.jpg|600](/img/user/ANNO%202/FONDAMENTI/fotofond/Screenshot_2025-03-06-20-23-20-26_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2025-03-06-20-23-20-26_45415775811cea13943236d9369df411.jpg|600](/img/user/ANNO%202/FOTOANNO2/fotofond/Screenshot_2025-03-06-20-23-20-26_45415775811cea13943236d9369df411.jpg)
 
 # Una serie di definizioni
 $\Sigma ^*$ sono tutte le parole dell'alfabeto, tutte le sequenze di caratteri combinate tra loro
-![Pasted image 20251015121442.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020251015121442.png)
+![Pasted image 20251015121442.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020251015121442.png)
 
 # Stato globale
 È una "fotografia" della macchina a un certo istante
@@ -53,11 +53,11 @@ lo stato globale rappresenta lo stato interno della macchina:
 - il contenuto del nastro
 	- tutti i vari caratteri non blank $\square$
 - la posizione della testina
-![Pasted image 20250306210339.png|300](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250306210339.png)
+![Pasted image 20250306210339.png|300](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250306210339.png)
 Ecco come si scrive lo stato globale ad esempio di questo:
 è sostanzialmente una parola dove rappresenta lo stato attuale di una macchina con il testo del nastro
 ecco due esempi:
-![Pasted image 20250306210439.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250306210439.png)
+![Pasted image 20250306210439.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250306210439.png)
 <font color="#c0504d">lo Stato è iniziale quando siamo su q0 a b c d</font>
 <font color="#c0504d">si dice finale quando abbiamo qf</font>
 # transizione
@@ -65,7 +65,7 @@ avviene tra due stati globali
 SG1->SG2 
 SG1 non deve essere uno stato globale finale
 È il passaggio tra uno stato globale a un altro tramite l'esecuzione di una quintupla
-![Pasted image 20250306210934.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250306210934.png)
+![Pasted image 20250306210934.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250306210934.png)
 # computazione
 Esecuzione della macchina di Turing applicata a un input
 SG0 ->Sg1->SG2->($SG_f$ oppure errore e termina in uno stato non definito)
@@ -74,7 +74,7 @@ sono una serie di transizioni
 possiamo dire quindi che formalmente una computazione è una sequenza di transizioni di vari stati Globali partendo da un SG0 con stato interno $q_0$ 
 se esiste una h tale che un SGh non ha transizioni allora significa che è uno stato di terminazione
 mentre invece tutti gli altri che hanno transizioni sono definite tra 0 e h-1
-![Pasted image 20250306211435.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250306211435.png)
+![Pasted image 20250306211435.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250306211435.png)
 # 2 tipi di macchine di Turing
 # Trasduttori
 Calcolano il valore di una funzione e la scrivono su nastro

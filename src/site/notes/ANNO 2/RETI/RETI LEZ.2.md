@@ -15,20 +15,20 @@ Il router riceve il pacchetto su un'interfaccia di ingresso e, tramite una tabel
 La tabelle sono uniche per ogni router.
 
 Prendiamo questa tabella
-![Pasted image 20250315162624.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315162624.png)
+![Pasted image 20250315162624.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315162624.png)
 - l'intestazione rappresenta l'identificativo di un pacchetto
 - l'uscita indica, al singolo router, dove "instradare" quel pacchetto
 
 ###### 2. Instradamento (Routing)
 È un'azione globale che riguarda l'intero percorso dalla sorgente alla radice.
 Si occupa di determinare il percorso migliore possibile tra i router della rete e per farlo i router utilizzano algoritmi di instradamento che calcolano le migliori rotte in base a parametri (es. distanza, velocità del collegamento, ecc.).
-![Pasted image 20250315163121.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315163121.png)
+![Pasted image 20250315163121.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315163121.png)
 
 ### Commutazione di pacchetto: store-and-forward
 Ricordando che servono $\frac L R$ secondi per trasmettere (***transmit***) un pacchetto di $L$ bit attraverso un collegamento di $R$ bps.
 Un router deve aspettare che TUTTO il pacchetto arrivi prima di poterlo trasmettere collegamento in uscita (store-and-forward).
 
-![Pasted image 20250315164118.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315164118.png)
+![Pasted image 20250315164118.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315164118.png)
 
 
 ###### Con un pacchetto
@@ -58,30 +58,30 @@ Il trasferimento dei dati avviene a velocità costante e garantita.
 L'intero spettro di frequenza del collegamento viene suddiviso in bande di frequenza e ogni utente ha la propria banda dedicata.
 	PRO: più utenti possono essere trasmessi in parallelo
 	CONTRO: la velocità di banda è ridotta
-![Pasted image 20250315164844.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315164844.png)
+![Pasted image 20250315164844.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315164844.png)
 	
 >[!question]- Ma se due utenti trasmettono contemporaneamente, come faccio a capire chi ha trasmesso?
 >La luce è un'onda elettromagnetica, la cui frequenza è connessa ad un colore.
 >Ogni combinazione di colori ha un risultato differente, quindi partendo da un colore possiamo risalire alla combinazione che l'ha generato.
->![Pasted image 20250315165033.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315165033.png)
+>![Pasted image 20250315165033.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315165033.png)
 
 ###### 2. Multiplexing a Divisione di Tempo (TDM)
 Il tempo viene suddiviso in frame, che a loro volta contengono slot temporali.
 	PRO: utilizzi tutta la larghezza di banda del circuito
 	CONTRO: puoi trasmettere solo nel tuo slot dedicato  
-![Pasted image 20250315165206.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315165206.png)
+![Pasted image 20250315165206.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315165206.png)
 
 ##### Commutazione di circuito VS commutazione di pacchetto
-![Pasted image 20250315165302.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315165302.png)
+![Pasted image 20250315165302.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315165302.png)
 Quindi
-![Pasted image 20250315165323.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315165323.png)
+![Pasted image 20250315165323.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315165323.png)
 
 ### Come si verificano ritardi e perdite?
 I pacchetti si accodano nei buffer del router, aspettando il proprio turno per la trasmissione.
 La perdita di pacchetti si verifica quando la memoria che contiene la coda dei pacchetti si riempie.
-![Pasted image 20250315165446.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315165446.png)
+![Pasted image 20250315165446.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315165446.png)
 #### Quattro cause principali
-![Pasted image 20250315165457.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315165457.png)
+![Pasted image 20250315165457.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315165457.png)
 (`d` sta per **delay**).
 Dove
 - $d_{elab}$ : elaborazione di nodo
@@ -104,7 +104,7 @@ Dove
 	- `v`: velocità di propagazione ($\sim 2 \times 10^{8}$)
 
 #### Analogia della carovana
-![Pasted image 20250315170329.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315170329.png)
+![Pasted image 20250315170329.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315170329.png)
 
 
 Quindi il ritardo totale è dato dalla somma dei ritardi che subisce ogni pacchetto ad ogni nodo, ossia $$d_{end-to-end} = \sum_{i} \left( d_{elab_i} + d_{acc_i} + d_{trasm_i} + d_{prop_i} \right)$$
@@ -122,27 +122,27 @@ Abbiamo tre casi
 - Se $\frac {L \times a} R > 1$
 	- I pacchetti arrivano più velocemente di quanto possano essere trasmessi; in questo caso il ritardo tende all'infinito e la rete diventa congestionata
 
-![Pasted image 20250315170428.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315170428.png)
+![Pasted image 20250315170428.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315170428.png)
 
 
 ## Perdita di pacchetti
 La coda (buffer) che precede un collegamento ha capacità finita e quando il pacchetto trova la coda piena, viene scartato.
-![Pasted image 20250315170613.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315170613.png)
+![Pasted image 20250315170613.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315170613.png)
 
 #### Throughput
 Il throughput è la frequenza ($\frac {bit} {unità \ di \ tempo}$) alla quale i bit sono trasferiti tra mittente e ricevente. 
 Abbiamo due tipi
 - istantaneo: in un determinato istante
 - medio: in un periodo di tempo più lungo (es. un file di $F$ bit in $T$ secondi è $\frac F T$ bps)
-![Pasted image 20250315170546.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315170546.png)
+![Pasted image 20250315170546.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315170546.png)
 
 Guarda questa immagine
-![Pasted image 20250315170503.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315170503.png)
+![Pasted image 20250315170503.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315170503.png)
 
 In entrambi i casi abbiamo un collo di bottiglia che vincola il throughput end to end
 
 ### Scenario di internet
-![Pasted image 20250315170516.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250315170516.png)
+![Pasted image 20250315170516.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250315170516.png)
 Ovviamente abbiamo due casi
 - se il traffico non è interessato (sto usando solo io la connessione) allora $$throughput \approx min\{R_j\}$$
 	dove $R_{j}$ è la velocità di trasmissione dell'i-esimo collegamento

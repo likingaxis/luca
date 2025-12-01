@@ -17,7 +17,7 @@
 >[!question]- cosa è il trashing?
 >si verifica quando il processore occupa più tempo a fare operazioni di paging piuttosto che eseguire i processi stessi
 ##### Esempio
-![Pasted image 20241205165157.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241205165157.png)
+![Pasted image 20241205165157.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241205165157.png)
 
 #### Gestione memoria dei processi proporzionale o equa
 - Allocazione equa
@@ -33,7 +33,7 @@ Page Fault Frequency:
 
 Trova un trade off del grafico tra una situazione in cui ho troppi page fault e troppi pochi
 quindi si tratta di una cosa dinamica
-![Pasted image 20241205172944.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241205172944.png)
+![Pasted image 20241205172944.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241205172944.png)
 >[!quote] il discorso non è quale pagina togliere per metterne un'altra ma quante pagine aggiungere
 >tante volte conviene assegnare piu pagine per ridurre eventuali overhead causati dagli eccesivi swap
 
@@ -91,7 +91,7 @@ per essere ottimale la nostra $p=\sqrt{2se}$
 
 #### Problemi di progettazione 
 in passato alcuni sistemi avevano uno spazio di indirizzamento delle istruzioni separato da quello dei dati
-![Pasted image 20241205183402.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241205183402.png)
+![Pasted image 20241205183402.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241205183402.png)
 
 #### Condivisione delle pagine nei sistemi multiprogrammati
 Esiste un concetto di riutilizzo delle stesse risorse:
@@ -112,7 +112,7 @@ D-space: Data space
 
 DLL- Dynamic Link Libraries-> risparmio di spazio perché condivido librerie comuni
 
-![Pasted image 20241205184426.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241205184426.png)
+![Pasted image 20241205184426.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241205184426.png)
 >[!bug] per utilizzare questi meccanismi abbiamo bisogno di indirizzi relativi e non assoluti
 
 ##### usare un file mappato in memoria (slide stand-by)
@@ -170,13 +170,13 @@ l'area di swap è quello spazio, in memoria non volatile che ha al suo interno t
 abbiamo anche lì una tabella che ci dice dove sono posizionate queste pagine
 ci sono due scenari di gestione di queste due realtà:
 #### SCENARIO 1, rapporto 1:1
-![Pasted image 20241206125033.png|200](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206125033.png)
+![Pasted image 20241206125033.png|200](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206125033.png)
 Abbiamo un rapporto 1:1 tra area di swap e effettiva posizione delle pagine in memoria principale.
 - Ogni pagina ha la sua posizione e deve solo essere spostata nella sua Area di scambio
 - Quando è necessario ricaricarla, il sistema operativo può ripristinarla direttamente dalla posizione specifica nello spazio di swap.
 - occupa molta memoria 
 #### SCENARIO 2, Dinamico
-![Pasted image 20241206125348.png|250](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206125348.png)
+![Pasted image 20241206125348.png|250](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206125348.png)
 Utilizzo una mappa del disco che mi dice le varie posizioni nell'area di scambio
 - più dinamica e leggera
 - più difficile da implementare
@@ -186,7 +186,7 @@ Utilizzo una mappa del disco che mi dice le varie posizioni nell'area di scambio
 
 #### LA SEGMENTAZIONE
 ###### SISTEMA DI MEMORIA MONODIMENSIONALE
-![Pasted image 20241206140707.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206140707.png)
+![Pasted image 20241206140707.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206140707.png)
 - La memoria è vista come un unico blocco lineare, un unico spazio contiguo di indirizzi.
 - Ogni processo ha un solo segmento di memoria assegnato, che rappresenta tutto il suo spazio di esecuzione (codice, dati, stack, ecc.).
 - Gli indirizzi sono gestiti come una sequenza univoca (monodimensionale).
@@ -194,7 +194,7 @@ Utilizzo una mappa del disco che mi dice le varie posizioni nell'area di scambio
 
 >[!success] per risolvere creo dei segmenti, piu sequenze di indirizzi
 ###### SISTEMA DI MEMORIA A SEGMENTAZIONE
-![Pasted image 20241206141007.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206141007.png)
+![Pasted image 20241206141007.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206141007.png)
 - L'idea del segmento consente ai processi di avere più sequenze di indirizzi per evitare collisioni
 - Ogni segmento ha un suo spazio di indirizzi
 - la loro dimensione è variabile
@@ -220,7 +220,7 @@ Utilizzo una mappa del disco che mi dice le varie posizioni nell'area di scambio
 | Perché fu inventata questa tecnica?               | Per avere uno spazio degli indirizzi lineare grande senza dover acquistare ulteriore memoria fisica. | Per consentire a programmi e dati di essere spezzati in spazi degli indirizzi logicamente indipendenti e per facilitare la condivisione e la protezione. |
 
 ### ESEMPIO
-![Pasted image 20241206142620.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206142620.png)
+![Pasted image 20241206142620.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206142620.png)
 
 
 #### MULTICS AVEVA LA SEGMENTAZIONE
@@ -228,21 +228,21 @@ Gli indirizzi funzionano a 34 bit
 - i segmenti venivano trattati come spazi di memoria virtuali indipendenti
 - ogni programma poteva avere $2^{18}$ segmenti
 - Ogni segmento punta alle loro tabelle delle pagine
-![Pasted image 20241206142809.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206142809.png)
+![Pasted image 20241206142809.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206142809.png)
 
 ##### COME ERANO DIVISI I SEGMENTI
 - c'è una tabella dei segmenti che ha i vari descrittori dei segmenti
 Come è fatto un descrittore del segmento?
 un descrittore ha $36$ bit
 - Vero e proprio puntatore che punta alla tabella delle pagine(18 bit) che è suddiviso a sua volta cosi ha un offset da sommare e il numero delle pagine
-![Pasted image 20241206143624.png|200](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206143624.png)
+![Pasted image 20241206143624.png|200](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206143624.png)
 - la lunghezza di quel segmento
 - un bit di protezione
 - altre info
-![Pasted image 20241206143004.png|600](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206143004.png)
+![Pasted image 20241206143004.png|600](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206143004.png)
 
 ##### Conversione di un indirizzo
-![Pasted image 20241206144912.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206144912.png)
+![Pasted image 20241206144912.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206144912.png)
 - **Trovare il descrittore del segmento**
     
     - Il numero del segmento viene utilizzato per individuare il descrittore del segmento nella memoria.
@@ -262,10 +262,10 @@ un descrittore ha $36$ bit
     - Avviene l'operazione desiderata (lettura o scrittura) sulla posizione della memoria principale corrispondente.
 #### Per ottimizzare le prestazioni si usava una TLB personalizzata
 Addirittura già si utilizzava una TLB se pur piccola:
-![Pasted image 20241206145038.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206145038.png)
+![Pasted image 20241206145038.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206145038.png)
 
 ##### Comando free
 con -h li vediamo convertiti in formati decenti ci porta a vedere le informazioni sulla memoria ram e sullo swap
-![Pasted image 20241206145136.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206145136.png)
+![Pasted image 20241206145136.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206145136.png)
 Noi lo usiamo con -h così vediamo le cose non in bit
-![Pasted image 20241206145240.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241206145240.png)
+![Pasted image 20241206145240.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241206145240.png)

@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/anno-2/reti/esercizi/collegamento/esercitazione-arp/"}
 ---
 
-![Pasted image 20250710194121.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250710194121.png)
+![Pasted image 20250710194121.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250710194121.png)
 1. per identificarle raccogli i vari dispositivi di rete tranne gli host e raccogli nello stesso insieme se non ci sono router
 2. da H1 viene inviato un messaggio broadcast che raggiunge H2 e S1
 	- da S1 viene rifatta la stessa cosa e arriva a S2

@@ -3,7 +3,7 @@
 ---
 
 ## Descrizione dell'halting problem 
-![Pasted image 20250324182059.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324182059.png)
+![Pasted image 20250324182059.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324182059.png)
 ### Dimostrazione per assurdo TEOREMA 5.5
 mettiamo per assurdo che $L_H$ è decidibile ricordiamo che per essere decidibile esiste una macchina T per cui per ogni $(i,x)$ la macchina:
 - $T(i,x)$ accetta se $(i,x)$ ∈ LH 
@@ -13,10 +13,10 @@ mettiamo per assurdo che $L_H$ è decidibile ricordiamo che per essere decidibil
 - $T’(i,x)$ rigetta se (i,x) ∈ LH
 $T'$ viene creata a scatola chiusa perché semplicemente prende l'output di $T$ e lo cambia
 ##### Creazione macchina $T''$
-![Pasted image 20250324184055.png|600](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324184055.png)
+![Pasted image 20250324184055.png|600](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324184055.png)
 Creiamo una macchina che sostanzialmente accetta il linguaggio ma non lo decide
 #### In teoria dovrebbe funzionare anche con la diagonale
-![Pasted image 20250324184614.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324184614.png)
+![Pasted image 20250324184614.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324184614.png)
 ##### Creazione macchina $T^*$
 Creiamo una macchina $T*(i)$ che lavora con un solo input in modo che il risultato sia uguale a $T''(i,i)$ 
 Ossia, se $i$ è la codifica di una macchina di Turing, allora
@@ -85,7 +85,7 @@ E quindi… ❌ **Contraddizione!**
 ### SIMULARE A SCATOLA CHIUSA
 Sostanzialmente posso sempre modificare l'input per facilitare le cose senza fare scatola aperta
 se ho una macchina che vuole vedere Palindromia per 1 e 2 posso sfruttare quella di ab semplicemente mettendo che una volta ricevuto l'input ab esso viene modificato in 12 direttamente sul nastro
-![Pasted image 20250324193309.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324193309.png)
+![Pasted image 20250324193309.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324193309.png)
 
 ## RIDUZIONI MANY-to-ONE(Da sapere a memoria)
 Abbiamo progettato una funzione $f : \{1,2\}^* → \{a,b\}^*$ tale che
@@ -112,11 +112,11 @@ $∀ x ∈ {1,2}* [ x ∈ L_{P12} ⟷ f(x) ∈ L_{PPAL} ]$
 🔸 E si dice che $L_{P12}$ è riducibile a $L_{PPAL}$ e si scrive:  $L_{P12}$ ≼ $L_{PPAL}$
 
 #### Generalizzazione della riducibilità
-![Pasted image 20250324195226.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324195226.png)
+![Pasted image 20250324195226.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324195226.png)
 ### Come possiamo sfruttarla
 possiamo sfruttare la cosa della riduzione per dire che un linguaggio è decidibile o accettabile basta solo dimostrare la riducibilità tra due linguaggi
 poi dice che due linguaggi hanno praticamente stesso input e stesso output solo con indici diversi
-![Pasted image 20250324200913.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324200913.png)
-![Pasted image 20250324211313.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324211313.png)
-![Pasted image 20250324211325.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324211325.png)
-![Pasted image 20250324211419.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250324211419.png)
+![Pasted image 20250324200913.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324200913.png)
+![Pasted image 20250324211313.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324211313.png)
+![Pasted image 20250324211325.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324211325.png)
+![Pasted image 20250324211419.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250324211419.png)

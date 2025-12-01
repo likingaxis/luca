@@ -8,7 +8,7 @@ Ci sono vari tipi di modelli di calcolo come la macchina di Turing ma è troppo 
 
 Vedremo invece una RAM, macchina a registri come modello di calcolo che è una astrazione della macchina di Von Neumann
 
-![Pasted image 20241015192441.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015192441.jpg)
+![Pasted image 20241015192441.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015192441.jpg)
 - Ognuna di queste risorse della RAM viene usata per svolgere le istruzioni del programma finito 
 ### ANALISI DI UN ALGORITMO
 Si basa su un concetto di passo elementare ad esempio(nella RAM):
@@ -54,7 +54,7 @@ Ignoro
 
 $T(n)$ è il numero di passi elementari eseguiti su una RAM nel caso peggiore su una Istanza di dimensioni n
 ### ESEMPIO DI NOTAZIONE ASINTOTICA
-![Pasted image 20241015204847.jpg|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015204847.jpg)
+![Pasted image 20241015204847.jpg|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015204847.jpg)
 Visto che siamo nel caso peggiore prenderemo la n più grande 
 Quindi T(n) è asintoticamente proporzionale e a $n^2$
 >[!bug] Carrellata di esempi sulle slide a pagina 17-18
@@ -63,35 +63,35 @@ Quindi T(n) è asintoticamente proporzionale e a $n^2$
 
 1) $O$
 >[!info]- Notazione asintotica  Serve per dare degli upper-bound
->![Pasted image 20241015210315.jpg|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015210315.jpg)
+>![Pasted image 20241015210315.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015210315.jpg)
 
 2) $\Omega$
 >[!info]-  lower-bound
->![Pasted image 20241015211050.jpg|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015211050.jpg)
+>![Pasted image 20241015211050.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015211050.jpg)
 
 3) $\Theta$
 >[!info]-  doppio confronto quindi uguali
->![Pasted image 20241015211751.jpg|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015211751.jpg)
+>![Pasted image 20241015211751.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015211751.jpg)
 
 4) $o$ 
 >[!info]- rapp tra infiniti con 0 notare che 
 >$o \subset O$
->![Pasted image 20241015212020.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015212020.jpg)
+>![Pasted image 20241015212020.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015212020.jpg)
 
 5)$\omega$ 
 >[!info]-  infiniti con inf con 
 >$\omega \subset \Omega$
->![Screenshot 2024-10-15 220807.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot%202024-10-15%20220807.png)
+>![Screenshot 2024-10-15 220807.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot%202024-10-15%20220807.png)
 
 ###### PROPRIETÀ NOTAZIONE ASINTOTICA (non devi saperle tutte )
 
-![Pasted image 20241015213617.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015213617.jpg)
+![Pasted image 20241015213617.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015213617.jpg)
 
-![Pasted image 20241015214625.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015214625.jpg)
+![Pasted image 20241015214625.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015214625.jpg)
 
 ## Usare la Notazione asintotica nelle analisi
-![Pasted image 20241015215836.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015215836.jpg)
-![Pasted image 20241015215907.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241015215907.jpg)
+![Pasted image 20241015215836.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015215836.jpg)
+![Pasted image 20241015215907.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241015215907.jpg)
 ## Notazione asintotica perchè è da fighi
 - Ti da una misura indipendente da quelle della macchina utilizzata
 - I dettagli sono poco rilevanti si semplifica tutto

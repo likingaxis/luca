@@ -25,7 +25,7 @@ ad esempio:
 Ciascuna interfaccia in una LAN ha un suo indirizzo MAC e indirizzo IP
 - entrambi univoci
 
-![Pasted image 20250521180754.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521180754.png)
+![Pasted image 20250521180754.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521180754.png)
 
 ## Come vengono scelti gli indirizzi IEEE
 - L’**IEEE** (ente internazionale) si occupa di **gestire lo spazio degli indirizzi MAC** per garantire che siano **univoci** nel mondo.
@@ -43,11 +43,11 @@ Utilizzo un protocollo chiamato ARP che ha una tabella chiamata ARP
 			- di solito 20 min
 
 #### Questo protocollo in azione
-![Pasted image 20250521214402.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521214402.png)
+![Pasted image 20250521214402.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521214402.png)
 1. A invia un messaggio in broadcast chiedendo chi è B
-![Pasted image 20250521214436.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521214436.png)
+![Pasted image 20250521214436.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521214436.png)
 2. B risponde e invia il suo indirizzo MAC
-![Pasted image 20250521214459.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521214459.png)
+![Pasted image 20250521214459.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521214459.png)
 3. A può popolare la sua tabella 
 
 #### ARP SPOOFING o POISONING
@@ -64,13 +64,13 @@ Un attaccante ora può:
     - Può **intercettare**, **modificare** o **registrare** i dati,
     - Poi **li inoltra al vero destinatario**, così nessuno si accorge dell'attacco.
 ##### Scenario dove voglio inviare il datagramma a un nodo esterno della sottorete
-![Pasted image 20250521220219.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220219.png)
+![Pasted image 20250521220219.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521220219.png)
 - DHCP era quel server che prevedeva che appena un dispositivo si connette a una rete gli viene assegnato un indirizzo IP ecc...
-![Pasted image 20250521220227.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220227.png)
-![Pasted image 20250521220234.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220234.png)
-![Pasted image 20250521220242.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220242.png)
-![Pasted image 20250521220253.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220253.png)
-![Pasted image 20250521220301.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521220301.png)
+![Pasted image 20250521220227.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521220227.png)
+![Pasted image 20250521220234.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521220234.png)
+![Pasted image 20250521220242.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521220242.png)
+![Pasted image 20250521220253.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521220253.png)
+![Pasted image 20250521220301.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521220301.png)
 ## Ethernet
 - Utilizzata per le reti LAN cablate
 - nel tempo si è evoluta e ora può raggiungere fino a 400 Gbps
@@ -86,10 +86,10 @@ Un attaccante ora può:
 	- usata oggi
 	- uno switch di livello 2 al centro
 	- ognuno ha un suo protocollo ethernet, i nodi non si scontrano tra loro
-![Pasted image 20250522154942.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522154942.png)
+![Pasted image 20250522154942.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522154942.png)
 #### Un frame ethernet
 Quando un dispositivo (es. un PC) vuole inviare dati (es. un datagramma IP), **la scheda di rete incapsula quei dati in un frame Ethernet**, con queste sezioni:
-![Pasted image 20250522155625.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522155625.png)
+![Pasted image 20250522155625.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522155625.png)
 
 
 | **Campo**            | **Dimensione** | **Contenuto**                       | **Funzione**                                                        |
@@ -128,7 +128,7 @@ Vi è anche il concetto di dominio di collisione
 - se vi è un ritardo troppo grande tra andata e ritorno il sistema che controlla le collisioni potrebbe perdere lo slot time e quindi andare alla prossima interfaccia e fregarsene di eventuali errori
 in questa foto possiamo vedere come ci sono degli standard al livello fisico che si differenziano in base al tipo di doppino in rame o fibra
 mentre invece nella parte di collegamento viene tutto visto come un unico frame
-![Pasted image 20250522163855.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522163855.png)
+![Pasted image 20250522163855.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522163855.png)
 ### Tempi di rilevazione delle collisioni
 Nella rete Ethernet, le collisioni sono rilevabili solo **entro un certo tempo massimo**. Questo limite è di **512 bit time**, che equivale a:
 - 512 bit / 100 Mbps = **5,12 microsecondi** (cioè il tempo per trasmettere 512 bit)
@@ -139,15 +139,15 @@ Per calcolare se la collisione viene rilevata per tempo vengono presi da questa 
 - eventuali ripetitori con un ritardo di 140
 - sommando tutto possiamo vedere che fa sotto i 512 bit time quindi va bene
 NOTA: i bit time indicano quanto tempo ci vuole a inviare un solo bit
-![Pasted image 20250522165448.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522165448.png)
+![Pasted image 20250522165448.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522165448.png)
 
-![Pasted image 20250522164909.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522164909.png)
+![Pasted image 20250522164909.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522164909.png)
 #### Nella tabella sopra abbiamo detto che
 un cavo di 100m UTP(**Unshielded Twisted Pair**) cat.5 ha un round trip delay di 111.2 bit time dimostriamolo con un po' di calcoli
 - per round trip delay si intende che se un cavo é di 100m allora il tempo di andata e di ritorno del cavo è su 200m
-![Pasted image 20250522165949.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522165949.png)
+![Pasted image 20250522165949.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522165949.png)
 
-![Pasted image 20250522170111.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522170111.png)
+![Pasted image 20250522170111.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522170111.png)
 ### Switch Ethernet
 il router lavora sul livello di rete mentre invece lo switch lavora sul livello di collegamento
 - esso ha un ruolo attivo:
@@ -167,14 +167,14 @@ Gli host hanno ognuno una connessione dedicata a questi switch
 ##### Full duplex o Half duplex
 sostanzialmente per Full duplex si intende quando un dispositivo può sia inviare che ricevere contemporaneamente mentre invece è Half quando può fare una sola cosa per volta
 - nel caso di Half è necessario regolare il tutto con gestione di collisioni
-![Pasted image 20250522172116.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522172116.png)
+![Pasted image 20250522172116.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522172116.png)
 in questa foto le due A possono parlare senza collisioni e anche le due B
 invece A-> A' e C-> A' non può avvenire perché avverrebbe una collisione
-![Pasted image 20250522172142.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522172142.png)
+![Pasted image 20250522172142.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522172142.png)
 #### Come fa lo switch a sapere quali nodi sono raggiungibili a quale interfaccia?
-![Pasted image 20250522172336.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522172336.png)
+![Pasted image 20250522172336.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522172336.png)
 #### Lo switch impara da solo le varie tabelle(infatti è pul-and-play)
-![Pasted image 20250522172406.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522172406.png)
+![Pasted image 20250522172406.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522172406.png)
 
 ### Filtraggio e inoltro dei frame dallo Switch
 Cosa fa lo switch quando riceve un frame:
@@ -185,9 +185,9 @@ Cosa fa lo switch quando riceve un frame:
 5. se è da un'altra porta lo inoltra facendo lo switching selettivo
 6. se non lo conosce fa una operazione di flood, invia a tutte le porte tranne quella del mittente per dire "chi sei?"
 #### Esempio di autoapprendimento fatto dal prof
-![Pasted image 20250522173215.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522173215.png)
-![Pasted image 20250522173221.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522173221.png)
-![Pasted image 20250522173255.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522173255.png)
+![Pasted image 20250522173215.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522173215.png)
+![Pasted image 20250522173221.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522173221.png)
+![Pasted image 20250522173255.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522173255.png)
 ### Switch vs Router
 - Entrambi lavorano in modalità store and forward
 	- uno si interfaccia con i dispositivi del livello di rete
@@ -205,27 +205,27 @@ Numero di nodi:
 Isolamento del traffico:
 - i router non fanno broadcast tra reti diverse, inoltrano pacchetti indirizzati solo se la rete è conosciuta nella tabella di routing, le reti quindi sono isolate e più sicure
 - gli switch se non conoscono l'indirizzo MAC di destinazione inviano frame in modalità broadcast su tutte le porte, questo crea problematiche come connessioni a effetto valanga se ci sono altri switch collegati
-![Pasted image 20250522173427.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522173427.png)
+![Pasted image 20250522173427.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522173427.png)
 #### VLAN
 
 Cosa succede se i dispositivi di una rete LAN aumentano e sono solo collegate da uno switch?
 - tutti i dispositivi sono su un unico dominio di broadcast, se avviene un broadcast tutti lo ricevono
 - decrescita della sicurezza e della privacy
-![Pasted image 20250522174522.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522174522.png)
+![Pasted image 20250522174522.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522174522.png)
 Soluzione: Le VLAN
 - le Virtual Local Area Network permettono
 - di rimanere nella stessa rete
 	- ma creare delle indipendenze logiche usando switch diversi
 - Questo semplifica la gestione con più dispositivi e concede maggiore flessibilità
-![Pasted image 20250522174934.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522174934.png)
+![Pasted image 20250522174934.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522174934.png)
 ### VLAN basate sulle porte
 Gli switch che supportano le funzionalità VLAN possono essere configurati per definire più LAN virtuali ma su una unica infrastruttura fisica, usando un singolo switch come se però ce ne fosse più di uno
 - questo concede isolamento del traffico e le varie porte possono essere assegnate in modo dinamico
 - **due dispositivi su VLAN diverse non possono comunicare direttamente**, nemmeno se collegati allo stesso switch: serve **un router (o uno switch di livello 3)** che si occupi di instradare i pacchetti tra le due VLAN, proprio come se fossero due reti distinte.
-![Pasted image 20250522175052.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522175052.png)
+![Pasted image 20250522175052.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522175052.png)
 ### VLAN su più switch
 connettere tra di loro due reti che appartengono alla stesa VLAN ma non presenta troppa scalabilità perché ogni switch che colleghiamo toglie una porta allo switch principale
-![Pasted image 20250522175240.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522175240.png)
+![Pasted image 20250522175240.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522175240.png)
 Una **porta trunk** è una porta speciale che collega **due switch** e permette loro di:
 - **scambiarsi frame Ethernet appartenenti a più VLAN diverse**
 - mantenendo l’informazione su **quale VLAN appartiene ogni frame**
@@ -234,10 +234,10 @@ Di default i frame ethernet non hanno come dettaglio l'ID VLAN
 - identificativo che dice a quale VLAN stai
 - esso viene aggiunto da un protocollo che aggiunge al frame un tag VLAN che dice proprio a quale ID appartiene un determinato frame
 - il frame ora si chiama VLAN 802.1Q
-![Pasted image 20250522175930.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522175930.png)
+![Pasted image 20250522175930.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522175930.png)
 
 #### EVPN
-![Pasted image 20250522180154.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250522180154.png)
+![Pasted image 20250522180154.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250522180154.png)
 È una **tecnologia di tunneling** che permette di:
 - **Collegare reti Layer 2 (Ethernet)** che si trovano in luoghi fisicamente diversi (es. data center a Sunnyvale e a Bangalore).
 - Usare una **rete IP Layer 3 preesistente** (chiamata _underlay_) come mezzo di trasporto.

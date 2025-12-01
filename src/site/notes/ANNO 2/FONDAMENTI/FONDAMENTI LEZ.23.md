@@ -25,7 +25,7 @@ Delle lezioni precedenti mancano ancora delle cose da precisare
 
 #### Teorema 6.16 per risolvere
 >[!tip] Teorema 6.16
->![Pasted image 20250430194713.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250430194713.png)
+>![Pasted image 20250430194713.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250430194713.png)
 
 - come sempre andiamo a dimostrare solo nel tempo perché lo spazio è analogo
 	- solo che avrà al posto delle istruzioni le celle e tutte le cose con space
@@ -33,7 +33,7 @@ Delle lezioni precedenti mancano ancora delle cose da precisare
 Questo teorema dice
 - se `f` è <font color="#f79646">time-constructible</font> e $L$ è in $NTIME[f(n)]$, allora una modifica della macchina $NT$ **che accetta le parole `x` di L eseguendo $O(f(|x|))$ istruzioni** è anche capace di rigettare le parole **non in $L$** eseguendo **O(f(|x|))** istruzioni;
 Per dimostrarlo, ci avvaliamo del [[ANNO 2/FONDAMENTI/FONDAMENTI LEZ.21#Teorema 6.2\|teorema 6.2]] molto simile
-![Pasted image 20250430195159.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250430195159.png)
+![Pasted image 20250430195159.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250430195159.png)
 
 La dimostrazione è divisa in 2 parti
 ##### Parte 1
@@ -98,7 +98,7 @@ Supponiamo di avere un linguaggio $$L \in NTIME[f(n)]$$cioè: esiste una macchin
 
 #### Teorema 6.17
 >[!tip] Teorema 2
->![Pasted image 20250430203836.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250430203836.png)
+>![Pasted image 20250430203836.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250430203836.png)
 
 Cioè:  
 >  Se un linguaggio è **decidibile in tempo non deterministico $f(n)$**, allora è anche decidibile **deterministicamente** in **tempo esponenziale** in $f(n)$.
@@ -107,7 +107,7 @@ Cioè:
 > Questo teorema ti risponde: **al massimo tempo $2^{O(f(n))}$**.  
 > (Non sappiamo se basta meno, ma almeno abbiamo un limite superiore!)
 
-![Pasted image 20250502115345.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250502115345.png)
+![Pasted image 20250502115345.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250502115345.png)
 Precisazioni sulla foto sopra:
 - creiamo una macchina che accetta L
 - usiamo una costante h per porre un limite entro in quale un ramo di una macchina non deterministica termini per forza
@@ -258,7 +258,7 @@ solo 2 uguaglianze sono state trovate
 #### Grazie al teorema di Gerarchia temporale
 
 >[!tip] Teorema 6.15
->![Pasted image 20250502122804.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250502122804.png)
+>![Pasted image 20250502122804.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250502122804.png)
 
 ✅ Significato:
 - Esiste un linguaggio $L$ che è **decidibile in tempo** $f(n)$ ma **non** in $g(n)$.

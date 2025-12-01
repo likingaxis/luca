@@ -122,7 +122,7 @@ l'idea era di prendere l'AVL ordinato per valori
 - Una volta preso l'intervallo max si andavano a decrementare il secondo campo satellite (di fine sequenza) di tutti i nodi che rientravano nel suo stesso intervallo
 - Una volta raggiunta la somma finale di tutti gli intervalli, quindi giunti a fine corsa, si sarebbe effettuato un return della somma totale delle monete
 
-![Pasted image 20241213225922.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241213225922.png)
+![Pasted image 20241213225922.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241213225922.png)
 
 
 

@@ -32,10 +32,10 @@ Un albero che ha tutti i nodi interni con al _**più**_ d figli
 > - LIVELLI, nodi paralleli
 > - ALTEZZA, cammino più lungo partendo dalla foglia fino alla radice contando le freccette
 
-![Pasted image 20241104122453.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241104122453.png)
+![Pasted image 20241104122453.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241104122453.png)
 
 **Albero Completo**=Albero che ha nodi interni con d figli e non al più
-![Pasted image 20241104123245.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241104123245.png)
+![Pasted image 20241104123245.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241104123245.png)
 #### Specifichiamo meglio la **struttura dati** che useremo per l'heap
 - Abbiamo una struttura dati associata a un insieme di elementi S (i numeri disordinati)
 - Deve essere **COMPLETO** fino al penultimo livello
@@ -43,7 +43,7 @@ Un albero che ha tutti i nodi interni con al _**più**_ d figli
 - Gli elementi di S sono memorizzati singolarmente in ogni nodo $v$
 - deve esserci questa proprietà $chiave(padre(v))\geq chiave(v)$ $\forall \ nodo \ eccetto \ v$
 >[!info]- esempio
->![Pasted image 20241104125906.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241104125906.png)
+>![Pasted image 20241104125906.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241104125906.png)
 
 se questo albero ha n nodi la sua altezza non puo essere tantissima
 #### 3 proprieta salienti
@@ -55,9 +55,9 @@ se questo albero ha n nodi la sua altezza non puo essere tantissima
 - metto 1+ perchè rappresenta il nodo che deve essere almeno 1 della parte rafforzata
 - il numero di nodi deve essere maggiore dell'altezza
 - la sua altezza deve essere più piccola della sua larghezza
-![Pasted image 20241104131658.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241104131658.png)
+![Pasted image 20241104131658.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241104131658.png)
  
-![Screenshot_2024-11-04-13-40-10-43_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-11-04-13-40-10-43_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2024-11-04-13-40-10-43_45415775811cea13943236d9369df411.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-11-04-13-40-10-43_45415775811cea13943236d9369df411.jpg)
 #### Dimostrazione punto 3
 dimostriamo che sia sufficiente un array lungo $n$ applicando queste regolette mentre inseriamo gli elementi dell'albero dall'alto verso il basso
 - la posizione 0 non la usiamo
@@ -65,15 +65,15 @@ dimostriamo che sia sufficiente un array lungo $n$ applicando queste regolette m
 - il nodo a destra verrà posizionato nella posizione doppia a $i+1$ quindi $2i+1$
 - ogni padre si posiziona in $\lfloor i/2 \rfloor$
 - nello pseudocodice verrà indicato con $heapsize([A])$
-![Pasted image 20241104151542.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241104151542.png)
+![Pasted image 20241104151542.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241104151542.png)
 
 >[!info]- se si ha bisogno di vedere un'altro esempio
->![Pasted image 20241104151826.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241104151826.png)
+>![Pasted image 20241104151826.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241104151826.png)
 #### Funzione **FixHeap**
 Quando abbiamo un albero che ha una radice più piccola non abbiamo un heap
 - per albero si intende anche eventuali sotto alberi
 - per risolverlo usiamo FixHeap
-![Pasted image 20241104153417.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241104153417.png)
+![Pasted image 20241104153417.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241104153417.png)
 ##### PSEUDOCODICE FixHeap
 ``` scss
 fixHeap(nodo v, heap H)
@@ -110,7 +110,7 @@ fixHeap(nodo v, heap H)
 >- se massimo è stato cambiato scambio le due posizioni e richiamo la funzione ricorsiva prendendo il ramo più grande
 
 >[!info]- animazione **FixHeap**
->![ezgif.com-speed_4 1.gif|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/ezgif.com-speed_4%201.gif)
+>![ezgif.com-speed_4 1.gif|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/ezgif.com-speed_4%201.gif)
 #### Complessità FixHeap
 $O(log_n)$
 #### Algoritmo per trovare il massimo
@@ -118,7 +118,7 @@ $O(log_n)$
 - scambiamo la radice dell'albero con l'ultima posizione a destra dell'albero
 - togliamo la foglia(la radice) e la mettiamo da parte
 - Applichiamo FixHeap per riordinare il tutto
-![ezgif.com-animated-gif-maker 1.gif|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/ezgif.com-animated-gif-maker%201.gif)
+![ezgif.com-animated-gif-maker 1.gif|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/ezgif.com-animated-gif-maker%201.gif)
 #### Complessità Trovare il massimo
 $O(log_n)$
 
@@ -145,9 +145,9 @@ quindi se l'albero ha $n$ elementi noi avremo $n'\geq n$ e sia un ipotetico heap
 - ci sarà la seguente considerazione
 	- $T(n)\leq T(n')$
 visto che $n$ rappresenta l'heap rafforzato e $n'$ rappresenta solo $n$ ma con i nodi in più per renderlo completo, inevitabilmente avrò che $n'\leq 2n$
-![Screenshot_2024-11-04-17-53-49-53_45415775811cea13943236d9369df411.jpg|707](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-11-04-17-53-49-53_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2024-11-04-17-53-49-53_45415775811cea13943236d9369df411.jpg|707](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-11-04-17-53-49-53_45415775811cea13943236d9369df411.jpg)
 ###### Applico [[ANNO 2/ALGORITMI 1/ALGORITMI LEZ.5#teorema master enunciato(easy)\|Teorema Master]]
-![Screenshot_2024-11-04-17-54-11-10_45415775811cea13943236d9369df411.jpg|300](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-11-04-17-54-11-10_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2024-11-04-17-54-11-10_45415775811cea13943236d9369df411.jpg|300](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-11-04-17-54-11-10_45415775811cea13943236d9369df411.jpg)
 
 $$T(n) \le T(n') = O(n') = O(2n) = O(n)$$
 visto che prima abbiamo detto che $n'\leq 2n$ allora inevitabilmente $2n$ lo posso scrivere come $n$  e fine.
@@ -176,7 +176,7 @@ heapSort(A)
 6.     fixHeap(1, A)  // devo riordinare l'array perché ora ho il min in cima 
                       // all'albero e non va bene
 ```
-![heapsort-600.gif|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/heapsort-600.gif)
+![heapsort-600.gif|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/heapsort-600.gif)
 
 >[!lemma] TEOREMA 
 >L’algoritmo HeapSort ordina in loco un array di lunghezza n in tempo O(n log n) nel caso peggiore.

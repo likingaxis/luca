@@ -127,7 +127,7 @@ E quindi, un *problema decisionale* è descritto da una tripla $$\langle \ 𝕴,
 
 ### Problemi decisionali: esempi
 #### Esempio 1
-![Pasted image 20250512212752.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250512212752.png)
+![Pasted image 20250512212752.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250512212752.png)
 Descrizione
 ##### 1. Insieme delle **istanze** $𝕴$
 ```

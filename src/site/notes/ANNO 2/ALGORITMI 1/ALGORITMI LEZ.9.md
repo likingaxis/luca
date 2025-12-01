@@ -34,7 +34,7 @@ Sembra facile ma ci sono delle complicanze
 	- nel senso, se io voglio ordinare una array di prodotti in base al loro prezzo, nella posizione `Y[4]` (che è di per sé una lista) metterò tutti i `record` (i prodotti) che costano 4.
 
 - concateno le liste `Y[i]` in ordine, così da ottenere una array ordinato correttamente
-![bucketsort.gif](/img/user/ANNO%202/ALGORITMI%201/fotoalg/bucketsort.gif)
+![bucketsort.gif](/img/user/ANNO%202/FOTOANNO2/fotoalg/bucketsort.gif)
 
 ##### PSEUDOCODICE
 ```scss
@@ -82,7 +82,7 @@ complessità uguale a integer sort $O(n+k)$ buona quando k è piccolo
 Il radix prende in input un vettore con k elementi e da in output quegli elementi
 - definisco una base(importante per capire la complessità)
 - prendo i numeri e li ordino dalla cifra meno significativa a quella più significativa
-![Pasted image 20241106172807.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241106172807.png)
+![Pasted image 20241106172807.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241106172807.png)
 - andiamo avanti finché la cifra più significativa è 0 quindi non c'è e siamo alla fine
 - Ogni volta che facciamo una passata di ogni cifra usiamo il bucket per ordinare dei record in cui la chiave sono i numeri di quella cifra e nella lista avremo gli altri numeri
 - se abbiamo una base possiamo capire le chiavi in che range appartengono con $[0,b-1]$
@@ -120,18 +120,18 @@ $$O((n + b) \times log_{b}(k))$$
 
 ### come scelgo b?
 b lo scelgo grande più o meno quanti numeri sono 
-![Screenshot_2024-11-06-18-22-58-89_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-11-06-18-22-58-89_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2024-11-06-18-22-58-89_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-11-06-18-22-58-89_45415775811cea13943236d9369df411.jpg)
 
 ### ESERCIZIO IN AULA
-![Pasted image 20241106182351.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241106182351.png)
+![Pasted image 20241106182351.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241106182351.png)
 Strutture dati= oracolo perché risponde a domande(query)
 Facciamo un IntegerSort che si ricorda quanti valori abbiamo nelle posizioni precedenti
 
-![Pasted image 20241106184353.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241106184353.png)
+![Pasted image 20241106184353.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241106184353.png)
 - ad ogni passaggio sommo l'elemento precedente della struttura dati IntegerSort 
 >[!info] ogni elemento a sua volta avrà la somma del precedente della somma del precedente ecc...
 - metto $a-1$ perché devo contare anche in quel momento quanti numeri ho aggiunto
 
 
 ### ALTRO ESERCIZIO PER CASA
-![Pasted image 20241106184628.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241106184628.png)
+![Pasted image 20241106184628.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241106184628.png)

@@ -23,7 +23,7 @@ mettiamo caso di avere una memoria fisica da 32K, se ogni pagina effettiva occup
 - abbiamo poi 16 pagine, ma non tutte sono mappate fisicamente in memoria
 - la mappatura avviene puntando all'indirizzo della pagina reale 
 - per effettuare la mappatura useremo la MMU memory managment unit(la vediamo poi)
-![Pasted image 20241126111838.jpg|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241126111838.jpg)
+![Pasted image 20241126111838.jpg|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241126111838.jpg)
 - possiamo vedere come il processo crede che abbia più memoria
 #### Cosa succede se una pagina non è mappata?
 - avviene un page fault
@@ -36,7 +36,7 @@ mettiamo caso di avere una memoria fisica da 32K, se ogni pagina effettiva occup
 3. viene applicato un algoritmo che sposta una pagina secondo dei criteri, in memoria disco
 4. la pagina virtuale potrà ora puntare al frame libero 
 
-![Pasted image 20241126112737.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241126112737.jpg)
+![Pasted image 20241126112737.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241126112737.jpg)
 mettiamo di avere `MOV REG,32780`
 ci posizioniamo nella pagina $8$ che sarà $2^{15}$ ovvero $32768$
 - la pagina è un insieme di indirizzi e per capire dove posizionarci esattamente faremo
@@ -45,7 +45,7 @@ poi dobbiamo portare il tutto nella memoria fisica effettiva dei frame
 mettiamo che la pagina che si liberi è la $1$ quindi $4096$ ci sommiamo lo spazio calcolato prima nella singola pagina e ci ritroviamo a scrivere su $4108$
 
 #### Funzionamento interno della MMU Con lo stesso scenario di prima, ma questa volta vogliamo accedere all'**indirizzo virtuale 8196**. Per farlo dobbiamo tradurlo tramite la MMU, in un **indirizzo fisico**. La rappresentazione binaria di `8196` è $$0010 \ 00000000100$$ Dove:
-![Pasted image 20241128154838.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128154838.png)
+![Pasted image 20241128154838.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128154838.png)
 
 - I _**PRIMI 4 BIT**_ rappresentano il numero di **pagina virtuale**
     
@@ -70,7 +70,7 @@ QUINDI **il dato si trova al quarto byte della pagina virtuale 2**. Ora, tramite
     
     - La base del frame fisico ($frame \times 4096$)
     - L'offset ($4$) Quindi per il frame 6: $$Indirizzo \ fisico = (6 \times 4096) + 4 = 24580$$
-![Pasted image 20241128154538.png|600](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128154538.png)
+![Pasted image 20241128154538.png|600](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128154538.png)
 
 ### EVOLUZIONE DEGLI INDIRIZZI E TABELLA DELLE PAGINE
 _**32 BIT**_
@@ -84,7 +84,7 @@ _**64 BIT**_
 - PRIMI 52 BIT = possiamo avere nella tabella $2^{52}$ voci (sono talmente tante che che vengono usate solo $2^{48}$).
 
 #### Come è composta una voce della page table?
-![Pasted image 20241128161115.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128161115.png)
+![Pasted image 20241128161115.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128161115.png)
 - numero del frame quindi la posizione effettiva in memoria 12 bit negli esempi visti fino ad ora
 - un bit che indica se la pagina è in memoria oppure no(PRESENTE/ASSENTE)
 - bit di protezione, quel classico bit che dà ruoli di scrittura lettura esecuzione ecc...
@@ -126,7 +126,7 @@ il TLB è un dispositivo hardware che mappa le recenti conversioni da indirizzi 
 	- una se è stata modificata
 	- una il tipo di accesso
 	- e una il corrispettivo frame in memoria fisica 
-![Pasted image 20241128164934.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128164934.png)
+![Pasted image 20241128164934.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128164934.png)
 ##### Come funziona il TLB?
 1. la MMU prima di fare una conversione da virtuale a fisico controlla la TLB
 2. se è presente la prende sennò no(TLB MISS) e la aggiunge alla TLB
@@ -140,14 +140,14 @@ il TLB è un dispositivo hardware che mappa le recenti conversioni da indirizzi 
 ### Soluzione alle tabelle giga enormi (multi-level page table)
 - queste page table vengono attraversate dall'mmu
 #### 1. PAGE TABLE A 2 LIVELLI X86
-![Pasted image 20241128170632.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128170632.png)
+![Pasted image 20241128170632.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128170632.png)
 ha due livelli di tabelle
 - La top level page table, contiene gli indirizzi che corrispondono alle tabelle di secondo livello
 	- CR3 è un registro che punta alla radice del top level page table
 - la second level page table, contiene gli indirizzi effettivi delle pagine 
 
 #### 2. PAGE TABLE A 4 LIVELLI X64
-![Pasted image 20241128172002.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128172002.png)
+![Pasted image 20241128172002.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128172002.png)
 Le sigle a sinistra sono dei campi che servono per "navigare" nei vari livelli di gerarchia: 
 
 - PGD: livello più alto che contiene i puntatori al livello successivo 
@@ -209,7 +209,7 @@ il primo ad entrare sarà il primo ad uscire
 - R=1 hai ancora una chance 
 - R=0 non hai chance
 
-![Pasted image 20241128180605.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128180605.png)
+![Pasted image 20241128180605.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128180605.png)
 se tutte hanno R=1 non dà seconda chance a nessuno e opera come FIFO
 
 ##### 5. **Clock Algorithm** 👑
@@ -218,7 +218,7 @@ e un puntatore che punta a giro ad ogni elemento della lista collegata
 se R=0 elimina la pagina
 se R=1 azzera R
 +performante di seconda chance
-![Pasted image 20241128181307.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128181307.png)
+![Pasted image 20241128181307.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128181307.png)
 ##### 6. **Least Recently Used (LRU)** 💩
 mettiamo in una lista le pagine in ordine di utilizzo, in testa la più usata in coda la meno usata e le tolgo così
 però non è molto attendibile e molto costosa come operazione perché devi sempre aggiornare la lista
@@ -229,7 +229,7 @@ il discorso è che magari uso in modo concentrato la pagina per 1 giorno e poi n
 shifto di 1 bit in un ciclo di clock e inserisco 1 se utilizzata o 0 se non viene utilizzata
 quindi avrò una sorta di età delle pagine
 elimino chi è più vecchio quindi chi ha numero più basso
-![Pasted image 20241128182207.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128182207.png)
+![Pasted image 20241128182207.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128182207.png)
 ##### 9. **Working Set Algorithm**💩
 Ho il working Set che è un ambiente aggiornato che tiene conto
 - dell'età della singola pagina
@@ -242,7 +242,7 @@ abbiamo 3 casi da analizzare per la singola pagina scelta in quel momento:
 3. R=0 e età della pagina $\leq \tau$ questa viene salvata ma si va a prendere la più vecchia per una possibile rimozioni
 se tutti sono salvi viene selezionata la più vecchia con R=0 sennò una pagina a caso
 ##### 10. **WS Clock Algorithm**👑
-![Pasted image 20241128184522.png|600](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128184522.png)
+![Pasted image 20241128184522.png|600](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128184522.png)
 Ogni pagina ha una età e un bit di Referenziazione
 - Se il bit R=1, la pagina è stata usata nel ciclo del clock. Il bit viene impostato a 0. 
     
@@ -257,5 +257,5 @@ Ogni pagina ha una età e un bit di Referenziazione
 
 
 
-![Pasted image 20241128190153.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241128190153.png)
+![Pasted image 20241128190153.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241128190153.png)
 

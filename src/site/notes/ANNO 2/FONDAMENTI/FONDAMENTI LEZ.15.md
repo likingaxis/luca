@@ -47,7 +47,7 @@ Una macchina riconoscitrice deve:
 📌Quindi l'obiettivo è prendere l'input `ababa` e vedere se la grammatica produce la stessa parola e quindi accetta il linguaggio
 
 allora avremmo una macchina non deterministica $NT(x)$ con la seguente computazione:
-![Pasted image 20250406121647.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406121647.png)
+![Pasted image 20250406121647.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406121647.png)
 i nodi sono le produzioni su $N2$ mentre gli archi indicano che la produzione è stata applicata
 in questo caso accetta e quindi funziona
 
@@ -70,7 +70,7 @@ in questo caso accetta e quindi funziona
 >Però ora chiediti, **quante volte devo applicare la produzione**? *DIPENDE DALLA LUNGHEZZA DELLA PAROLA*.
 >
 >QUINDI ***NON È COSTANTE*** COME NEL CASO DI PRIMA.
->![Pasted image 20250406122026.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406122026.png)
+>![Pasted image 20250406122026.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406122026.png)
 
 
 Per risolvere questi problemi dobbiamo modificare la macchina.
@@ -104,7 +104,7 @@ Progettiamo una macchina di Turing NON DETERMINISTICA  $NT_{G}$ a **3 nastri**
 >
 >in sostanza faccio le produzioni perché voglio ricondurmi alla parola giusto, quindi vado in posizione 1 della parola iniziale, mi accorgo che non posso fare produzioni quindi vado in posizione 2 e così via finché non arrivo alla i finale e posso determinare se ho raggiunto una parola accettabile o no
 >esempio grafico:
->![Pasted image 20250406123325.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406123325.png)
+>![Pasted image 20250406123325.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406123325.png)
 
 Il grado di non determinismo è costante e la computazione non prova le produzioni a casaccio ma con una logica ben definita(si basa sulle i posizioni)
 il grado di non determinismo della macchina rimane costante
@@ -130,6 +130,6 @@ Ma se $x$ **non appartiene a $L(G)$**, nessuna derivazione porterà mai a $x$, e
 - 😵 Quindi **il problema del `q_R`** (cioè sapere se dobbiamo rigettare) **è davvero complicato con grammatiche di tipo 0**
 - 🚫non possiamo dire tipo "stiamo incappando in una situazione dove abbiamo una parola lunga 2000 mentre x era 5" perché potrebbe esserci una produzione che la accorcia a 5
 ## Conclusione
-![Pasted image 20250406124551.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406124551.png)
+![Pasted image 20250406124551.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406124551.png)
 # ESERCIZIO DA FARE
-![Pasted image 20250406124607.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406124607.png)
+![Pasted image 20250406124607.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406124607.png)

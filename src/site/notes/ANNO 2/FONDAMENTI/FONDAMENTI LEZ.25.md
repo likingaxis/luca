@@ -4,17 +4,17 @@
 
 ## Classi complemento
 Oltre ad aver definito le classi computazionali classiche ci sono anche quelle complemento:
-![Pasted image 20250508160948.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508160948.png)
+![Pasted image 20250508160948.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508160948.png)
 Non cambia nulla se stiamo parlando di linguaggi L o $L^c$ perché il teorema 6.11 ci dice che sostanzialmente i costi sono gli stessi
 >[!tip] Teorema 6.11 recap
->![Pasted image 20250508161359.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508161359.png)
+>![Pasted image 20250508161359.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508161359.png)
 >che viene dimostrato:
 >- Si prende una macchina T che decide L tale che, per ogni x, $dtime(T,x) ∈ O(f(|x|))$
 >	- questa cosa vale anche per dspace
 >	- sostanzialmente una macchina che decide una x nel linguaggio L in tempo al più la lunghezza dell'input
 >
 >successivamente si crea una macchina T' che complementa gli stati finali della macchina e ci si rende conto che lo fanno nello stesso tempo o spazio
->![Pasted image 20250508162102.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508162102.png)
+>![Pasted image 20250508162102.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508162102.png)
 
 ### Dal teorema 6.11 possiamo derivare delle definizioni
 ##### Corollario 6.3
@@ -48,7 +48,7 @@ ricordiamo che il linguaggio complementato $L^c$ si crea facendo
 	- se x ∉ L allora x ∈ $L^c$
 in poche parole il contrario
 ##### Come si comporta una macchina $NT^C$?
-![Pasted image 20250508164718.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508164718.png)
+![Pasted image 20250508164718.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508164718.png)
 quindi nel concreto possiamo avere macchine non deterministiche complementari
 
 #### Ora proviamo ad applicare la vera e propria dimostrazione del teorema 6.11 per le non deterministiche
@@ -60,23 +60,23 @@ poi ->
     > (cioè, provare a costruire una macchina che accetta il **complemento** di L)
 
 per sgamare eventuali errori sul seguente teorema, creiamo una macchina $NT_1$ che
-![Pasted image 20250508170212.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508170212.png)
+![Pasted image 20250508170212.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508170212.png)
 in poche parole questa macchina per ogni possibile input avrà comunque uno stato di rigetto
 
 In pratica: abbiamo "iniettato" una computazione finta che **fallisce sempre**,  
 anche se NT accettava x tramite un’altra computazione.
 nella foto sotto vediamo che ora NT rigetta sempre con le nuove quintuple
-![Pasted image 20250508170423.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508170423.png)
+![Pasted image 20250508170423.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508170423.png)
 
 Possiamo inoltre notare anche che 
 - NT₁ accetta **tutto ciò che accettava NT** (cioè il linguaggio L)
 - **Ma in più** ha una computazione che porta a rigetto
-![Pasted image 20250508171030.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508171030.png)
+![Pasted image 20250508171030.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508171030.png)
 oltre a non accettare rigetta anche
 - se tutte le computazioni di NT rigettano
 - anche le computazioni di $NT_1$ rigettano+ quella speciale che rigetta sempre
 questo avviene quando x ∉ L
-![Pasted image 20250508171241.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508171241.png)
+![Pasted image 20250508171241.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508171241.png)
 
 Adesso che abbiamo definito $NT_1$ correttamente possiamo applicare le stesse cose del teorema 6.11
 - proviamo a creare la macchina non deterministica complementare
@@ -89,40 +89,40 @@ Ora andremo a verificare se **NT₁ᶜ accetta il complemento di L**, cioè se d
 
 Dividiamo in 2 casi:
 Se $x \in L^C$ 
-![Pasted image 20250508171748.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508171748.png)
+![Pasted image 20250508171748.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508171748.png)
 ma che succede invece se
 Se $x \notin L^C$ ?
 $NT_1^C$ non dovrebbe accettare
-![Pasted image 20250508171852.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508171852.png)
+![Pasted image 20250508171852.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508171852.png)
 ### Ricapitolando
 visto che con le macchine non deterministiche abbiamo una asimmetria non possiamo dire che
-![Pasted image 20250508172216.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508172216.png)
+![Pasted image 20250508172216.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508172216.png)
 
 ### congetture di classi
 - abbiamo detto che la maggior parte delle inclusioni tra classi di complessità sono deboli
 	- non si dimostra che sono diverse
 	- ma nemmeno uguali
 il caso famoso riguarda soprattutto P e NP
-![Pasted image 20250508173815.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508173815.png)
+![Pasted image 20250508173815.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508173815.png)
 
 
 Da qui nasce un teorema che definisce una relazione tra queste due congetture definite sopra
 ##### Teorema 6.23
 >[!tip] Teorema 6.23
->![Pasted image 20250508173935.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508173935.png)
->![Pasted image 20250508174058.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508174058.png)
+>![Pasted image 20250508173935.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508173935.png)
+>![Pasted image 20250508174058.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508174058.png)
 
 
 ##### Teorema 6.24
 >[!tip] Teorema 6.24
->![Pasted image 20250508174147.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508174147.png)
+>![Pasted image 20250508174147.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508174147.png)
 >Cioè: se prendi un problema in coNP e lo riduci polinomialmente a un altro problema, il problema risultante resta in coNP.
 
 
 ### Come per tutte le classi di complessità, anche per la classe coNP possiamo definire linguaggi completi rispetto alla riducibilità polinomiale
 
 
-![Pasted image 20250508175029.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508175029.png)
+![Pasted image 20250508175029.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508175029.png)
 ### **Cosa abbiamo imparato dalla classe NP:**
 - Quando supponiamo che **P ≠ NP**, allora i **linguaggi NP-completi** non possono appartenere a P.
 - Questi linguaggi sono quindi i **“più difficili”** della classe NP.
@@ -137,13 +137,13 @@ Da qui nasce un teorema che definisce una relazione tra queste due congetture de
 >[!tip] Teorema 6.25
 >Un linguaggio L è NP-completo se e soltanto se il suo complemento $L^c$ è coNP-completo
 >per dimostrarlo facciamo una doppia <= => 
->![Pasted image 20250508180423.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508180423.png)
+>![Pasted image 20250508180423.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508180423.png)
 >Ora dimostriamo l'altra parte
->![Pasted image 20250508180440.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508180440.png)
+>![Pasted image 20250508180440.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508180440.png)
 
 ##### Teorema 6.26
 >[!tip] Teorema 6.26
->![Pasted image 20250508180634.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508180634.png)
->![Pasted image 20250508180647.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508180647.png)
->![Pasted image 20250508180657.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250508180657.png)
+>![Pasted image 20250508180634.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508180634.png)
+>![Pasted image 20250508180647.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508180647.png)
+>![Pasted image 20250508180657.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250508180657.png)
 

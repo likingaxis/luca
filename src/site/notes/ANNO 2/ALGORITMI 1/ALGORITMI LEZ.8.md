@@ -91,7 +91,7 @@ STRUTTURA: l'albero è radicato e
 	- i **nodi interni** (cerchi grigi) sono i **potenziali confronti**
 	- le **foglie** (rettangoli bianchi) sono le **risposte dell'algoritmo**
 
-![Pasted image 20241105200726.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241105200726.png)
+![Pasted image 20241105200726.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241105200726.png)
 
 >[!summary]- spiegazione dettagliata degli step
 >Guardando dalla radice e spostandoci al figlio di sinistra:
@@ -129,9 +129,9 @@ Varie osservazioni utili
 
 
 >[!question]- Esercizio sull'albero
->![Pasted image 20241105201340.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241105201340.png)
+>![Pasted image 20241105201340.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241105201340.png)
 >>[!Solution]- ecco la soluzione
->>![Pasted image 20241105201410.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241105201410.png)
+>>![Pasted image 20241105201410.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241105201410.png)
 > 
 > 
 
@@ -162,7 +162,7 @@ inevitabilmente $v$ deve avere due figli e uno dei due figli potrebbe essere un 
 applico l'ipotesi induttiva e avrò $log_2(k/2)$
 - 1 approssimazione di tutti i nodi prima che arrivi a $v$
 - faccio formule matematiche
-![Screenshot_2024-11-05-21-39-49-35_45415775811cea13943236d9369df411.jpg|700](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-11-05-21-39-49-35_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2024-11-05-21-39-49-35_45415775811cea13943236d9369df411.jpg|700](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-11-05-21-39-49-35_45415775811cea13943236d9369df411.jpg)
 
 >[!bug] TUTTO QUESTO RIGUARDA GLI ALBERI PER CONFRONTO
 
@@ -174,11 +174,11 @@ considerando un albero di decisione di un generico algoritmo di ordinamento avre
 - faccio delle semplificazioni varie e ottengo che
 $$ h \geq n \ log(n)$$
 >[!info]- semplificazioni varie
->![Screenshot_2024-11-05-21-57-32-71_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-11-05-21-57-32-71_45415775811cea13943236d9369df411.jpg)
+>![Screenshot_2024-11-05-21-57-32-71_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-11-05-21-57-32-71_45415775811cea13943236d9369df411.jpg)
 
 
 >[!info]- Esercizio sul lower bound
->![Pasted image 20241105215941.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241105215941.png)
+>![Pasted image 20241105215941.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241105215941.png)
 
 
 ==53 questo all'orale ci sventra==
@@ -191,10 +191,10 @@ in poche parole
 $$Y[x]= numero \ di \ volte \ in \ cui \ appare \ il \ numero \ x \ nell'array \ X$$
 quanti confronti? zero
 #### Inserimento in y
-![integersort_contatore.gif](/img/user/ANNO%202/ALGORITMI%201/fotoalg/integersort_contatore.gif)
+![integersort_contatore.gif](/img/user/ANNO%202/FOTOANNO2/fotoalg/integersort_contatore.gif)
 
 #### Ricostruzione in x
-![integersort_ordinamento.gif](/img/user/ANNO%202/ALGORITMI%201/fotoalg/integersort_ordinamento.gif)
+![integersort_ordinamento.gif](/img/user/ANNO%202/FOTOANNO2/fotoalg/integersort_ordinamento.gif)
 
 #### PSEUDOCODICE
 
@@ -223,7 +223,7 @@ Algoritmo IntegerSort (X, k)
 ### COSTI COMPUTAZIONALI
 - da riga $7 \ a \ 11$ ho costo $1+Y[i]$ $k$ volte perché ogni volta il while lo faccio almeno una volta Ogni iterazione del `while` ha costo $O(1)$, quindi il totale è proporzionale a $1+Y[i]$
 
-![Pasted image 20241105223352.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241105223352.png)
+![Pasted image 20241105223352.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241105223352.png)
 
 #### IntegerSort: analisi
 - Tempo $O(1) + O(k) = O(k)$, per inizializzare `Y` a 0 (righe `2-3` del codice)

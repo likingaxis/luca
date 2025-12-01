@@ -14,9 +14,9 @@
 	- handshaking tra i due(viene stabilita una connessione sicura)
 	- controllo su cose come flusso e congestione adattando le varie velocità di trasmissione e ridurre così il traffico
 #### Foto dettagliata di come funziona 
-![Pasted image 20250408124622.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408124622.png)
+![Pasted image 20250408124622.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408124622.png)
 #### MSS cosa è
-![Pasted image 20250408124654.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408124654.png)
+![Pasted image 20250408124654.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408124654.png)
 in questa immagine abbiamo un segmento TCP diviso in più strati
 -  il primo arancione è il segmento gestito dal TCP diviso tra $H_t$+dati
 	- MSS è la lunghezza solo dei dati
@@ -47,7 +47,7 @@ Se si supera la MTU
 ##### Segmento PDU del TCP
 possiamo vedere in questa foto qua sotto come abbiamo una Protocol Data Unit del TCP 
 - L’immagine rappresenta un vero e proprio segmento TCP, ovvero l’unità di dati del livello di trasporto, che contiene tutte le informazioni necessarie per la comunicazione tra mittente e destinatario — come porte, numeri di sequenza, ACK, flag, dati applicativi — e che viene effettivamente generato, trasmesso e memorizzato da entrambe le parti per garantire un trasferimento affidabile
-![Pasted image 20250408130449.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408130449.png)
+![Pasted image 20250408130449.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408130449.png)
 descriviamo tutte le cose in modo migliore:
 🔹 **1. Porta origine (16 bit)**
 
@@ -124,10 +124,10 @@ descriviamo tutte le cose in modo migliore:
 	- esiste quello selettivo che permette di non confermare in sequenza ma a pezzi
 - non sappiamo definire esattamente cosa succede se i byte vengono inviati non in ordine
 	- dipende dalle implementazioni
-![Pasted image 20250408131940.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408131940.png)
+![Pasted image 20250408131940.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408131940.png)
 in questa foto possiamo vedere come anche qui abbiamo una gestione a finestre che permette di salvare i vari numeri 
 Scambio tra due host evidenziando i vari Seq e ACK -> 
-![Pasted image 20250408132024.png|700](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408132024.png)
+![Pasted image 20250408132024.png|700](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408132024.png)
 
 ## Round Trip Time RTT
 - anche qui abbiamo un valore di timeout che una volta scaduto può ad esempio reinviare un determinato byte 
@@ -139,10 +139,10 @@ Scambio tra due host evidenziando i vari Seq e ACK ->
 ##### Come stimarlo
 - Sample RTT è il tempo che viene misurato della trasmissione di un segmento fino alla ricezione di un ACK, senza contare ritrasmissioni
 - visto che varia abbiamo bisogno di fare una media livellata(pesata) tra più Sample RTT
-![Pasted image 20250408132640.png|600](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408132640.png)
+![Pasted image 20250408132640.png|600](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408132640.png)
 Tutto si può tradurre in una sommatoria dove:
-![Pasted image 20250408132814.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408132814.png)
-![Pasted image 20250408132701.png|600](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408132701.png)
+![Pasted image 20250408132814.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408132814.png)
+![Pasted image 20250408132701.png|600](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408132701.png)
 
 #### Calcolare il Timeout corretto
 Il **timeout** serve per capire **quando ritrasmettere un segmento** se l’ACK non arriva in tempo.
@@ -154,7 +154,7 @@ dove abbiamo:
 	- è un valore che ci dice quanto siamo vicini alla stima rispetto ai singoli $SampleRTT$ calcolati di volta in volta
 	- È moltiplicato per 4 per dare un margine maggiore al singolo $DevRTT$
 Per trovare $DevRTT$ andiamo ad applicare
-![Pasted image 20250408133336.png|600](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408133336.png)
+![Pasted image 20250408133336.png|600](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408133336.png)
 
 ### Eventi di un mittente TCP(semplificato)
 - ricevi i dati dall'applicazione(livello superiore)
@@ -179,27 +179,27 @@ Se il timeout scade:
 | 3        | Riceve **segmento fuori ordine** (numero di sequenza superiore).  <br>🔹 Invia **ACK duplicato**, ripetendo il numero del byte atteso.                  | Riceve ACK duplicato.  <br>Dopo **3 ACK duplicati**, attiva la **Fast Retransmit** e ritrasmette il segmento mancante.                             |
 | 4        | Riceve **segmento che colma il buco** (tutto o parte).  <br>🔹 Se il segmento **inizia esattamente nel punto mancante**, invia **ACK immediato**.       | Riceve ACK.  <br>Conferma nuovi dati e riprende la trasmissione in modo ordinato.                                                                  |
 #### Foto esempi
-![Pasted image 20250408135203.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408135203.png)
-![Pasted image 20250408135212.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408135212.png)
-![Pasted image 20250408135226.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408135226.png)
-![Pasted image 20250408135512.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408135512.png)
+![Pasted image 20250408135203.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408135203.png)
+![Pasted image 20250408135212.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408135212.png)
+![Pasted image 20250408135226.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408135226.png)
+![Pasted image 20250408135512.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408135512.png)
 
 Al terzo ACK invia il segmento subito senza timeout vari
 ## Approfondimento sui controlli 
 ### Il controllo di flusso
 Esso serve quando il livello di rete fornisce dati più velocemente di quanti ne può assimilare il livello applicativo, riempiendo di conseguenza tutto il buffer
 
-![Pasted image 20250408135938.png|450](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408135938.png)
-![Pasted image 20250408135957.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408135957.png)
+![Pasted image 20250408135938.png|450](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408135938.png)
+![Pasted image 20250408135957.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408135957.png)
 Il destinatario riesce a controllare il mittente per ridurre quante cose deve inviare andando a definire una receive window adatta
-![Pasted image 20250408140125.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408140125.png)
+![Pasted image 20250408140125.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408140125.png)
 #### Approfondimento su rwnd
 Fa parte dell'intestazione TCP e appunto serve a indicare quanti byte il destinatario può ancora ricevere esso viene calcolato da questa formula:
 $$rwnd=RcvBuffer−(LastByteRcvd−LastByteRead)$$
 - **`RcvBuffer`** = dimensione totale del buffer di ricezione (es. 4096 byte)
 - **`LastByteRcvd`** = ultimo byte ricevuto
 - **`LastByteRead`** = ultimo byte consegnato all’applicazione
-![Pasted image 20250408141625.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408141625.png)
+![Pasted image 20250408141625.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408141625.png)
 ovviamente abbiamo che 
 $dati non riscontrati ≤ rwnd$ 
 i dati non riscontrati sono quei dati inviati ma che ancora non hanno un ACK di riscontro
@@ -207,17 +207,17 @@ i dati non riscontrati sono quei dati inviati ma che ancora non hanno un ACK di 
 - prima di scambiare i dati entrambi 
 	- accettano di stabilire una connessione
 	- concordano i vari parametri come anche il rcvbuffer
-![Pasted image 20250408141854.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408141854.png)
+![Pasted image 20250408141854.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408141854.png)
 
-![Pasted image 20250408142333.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408142333.png)
+![Pasted image 20250408142333.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408142333.png)
 #### Scenari possibili con handshake a 2 vie
 in questo caso abbiamo uno scambio perfetto di informazioni
-![Pasted image 20250408142419.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408142419.png)
+![Pasted image 20250408142419.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408142419.png)
 qui la la connessione viene stabilita ESTAB
 ma viene inviata una doppia richiesta al server perché non viene dato abbastanza tempo per accettarla
-![Pasted image 20250408142431.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408142431.png)
+![Pasted image 20250408142431.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408142431.png)
 Qui per sbaglio il client invia una nuova richiesta di connessione poiché il server non fa in tempo ad inviare l'ACK 
-![Pasted image 20250408142440.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408142440.png)
+![Pasted image 20250408142440.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408142440.png)
 ### Esempio con 3 way handshake che risolve i problemi sopra
 In questo caso abbiamo un handshake che avviene in 3 passaggi
 - passaggio 1:
@@ -228,7 +228,7 @@ In questo caso abbiamo un handshake che avviene in 3 passaggi
 		- ACKnum
 			- identifica a quale sequenza ci riferiamo
 	- il client rimanda una conferma con ACKnum ovviamente mettendolo anche valido con ACKbit
-![Pasted image 20250408142831.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408142831.png)
+![Pasted image 20250408142831.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408142831.png)
 ### Bit di reset in questo tipo di connessione
 Il bit di reset RST è un flag presente nell'intestazione
 - serve per forzare la chiusura di una connessione
@@ -243,7 +243,7 @@ Un segmento `RST`:
 - Quindi: 
 	- "La porta non è usata da un processo, ma **non è nascosta** da un firewall"
 ### FSM
-![Pasted image 20250408144405.png|700](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408144405.png)
+![Pasted image 20250408144405.png|700](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408144405.png)
 ### Attacco di tipo SYN FLOOD
 - ha come obiettivo quello di saturare le risorse del server mandando tantissime richieste di connessione senza però terminare le 3 fasi dell'handshake
 ##### 🔁 **Fasi dell'attacco :**
@@ -274,5 +274,5 @@ ognuno di loro deve farlo e si può rispondere con un ACK combinato al FIN
 2. **B** riceve e risponde con: `ACK + FIN`
 3. **A** riceve e risponde con: `ACK`
 
-![Pasted image 20250408145137.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250408145137.png)
+![Pasted image 20250408145137.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250408145137.png)
 in questa foto non li manda insieme ma fa due cose a sè

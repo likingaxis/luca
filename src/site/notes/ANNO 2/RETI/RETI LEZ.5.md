@@ -8,7 +8,7 @@ ciò comporta a dei non problemi
 - a nessuno importa di tenere traccia dello stato durante lo scambio
 - tutte le richieste sono indipendenti quindi non serve
 - se si generano errori si rifà la richiesta 
-![Pasted image 20250318185425.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318185425.png)
+![Pasted image 20250318185425.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318185425.png)
 >[!question]- che succede se la connessione di rete o il client si blocca al tempo t'?
 >verrà modificato solo fino a x'' creando delle problematiche di lock della variabile
 ### Utilizzo dei cookie 
@@ -25,7 +25,7 @@ ogni cookie rappresenta un identificativo per il client dell'utente ad esempio
 4️⃣ **Database sul sito**
 - Il server memorizza le informazioni relative a ciascun **sessionID** in un database
 ##### Esempio grafico su come funziona il sistema dei cookie
-![Pasted image 20250318190550.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318190550.png)
+![Pasted image 20250318190550.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318190550.png)
 i cookie vengono usati per 
 - autorizzazioni
 - carrelli degli acquisti
@@ -48,7 +48,7 @@ Serie di regole europee per garantire la privacy riservatezza dei dati ecc...
 ### Web cache
 È un intermediario tra il server d'origine e i client per soddisfare le richieste senza coinvolgerlo
 Il browser ha una sua web cache locale che se ha già salvato la richiesta HTTP la rimanda direttamente altrimenti comunica con il server
-![Pasted image 20250318192553.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318192553.png)
+![Pasted image 20250318192553.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318192553.png)
 ##### Web cache di tipo proxy
 Il proxy funziona come da client perché fa delle richieste al server d'origine e le salva
 poi quando un client comunica con il proxy esso funge da server
@@ -65,7 +65,7 @@ metto una cache locale per ridurre il ritardo
 - funziona evviva che bello
 ### Get condizionale
 Non fare la get(inviare) se nei metadati c'è la stessa data di modifica
-![Pasted image 20250318194725.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318194725.png)
+![Pasted image 20250318194725.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318194725.png)
 ### HTTP 1.1
 Viene introdotta la GET multipla in pipeline su una singola connessione TCP
 >[!bug] problemi
@@ -82,7 +82,7 @@ Per risolvere i problemi di prima viene usato un sistema a priorità
 ##### Esempio di mitigazione con HTTP/2
 Esempio di richiesta da un client di 1 oggetto grande e 3 più piccoli
 essi vengono divisi in frame per fare una trasmissione interlacciata ovvero trasmessi alternando i vari oggetti
-![Pasted image 20250318200004.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318200004.png)
+![Pasted image 20250318200004.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318200004.png)
 #### perché passare da HTTP/2 a HTTP/3
 HTTP/2 cerca di inviare su una singola connessione TCP
 - ciò causa problemi per eventuali recuperi delle informazioni che bloccano tutta la trasmissione degli oggetti

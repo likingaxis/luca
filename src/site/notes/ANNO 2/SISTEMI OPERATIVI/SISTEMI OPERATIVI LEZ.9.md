@@ -43,7 +43,7 @@ Abbiamo 4 principali step
 2. Il compilatore C riceve dal preprocessore un file dopo aver fatto una rapida lettura e aver interpretato(condizioni, librerie, costanti ecc...) per evitargli intoppi
 3. Il compilatore dopo aver compilato il codice butterà in output dei file in linguaggio macchina
 4. Questi file saranno tutti uniti da un linker che creerà il vero e proprio eseguibile prendendo e mettendo in comune funzioni, variabili ecc...
-![Pasted image 20241107185510.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241107185510.png)
+![Pasted image 20241107185510.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241107185510.png)
 
 
 ##### Metodo 2(usando chiamate di sistema in modo astratto)
@@ -110,7 +110,7 @@ Quando non si usa `Libc` è necessario fare uso diretto delle syscall. Ci sono d
 
 ##### Syscall note
 [clicca qui per vederle tutte](https://filippo.io/linux-syscall-table/)
-![Pasted image 20241108183452.png|600](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241108183452.png)
+![Pasted image 20241108183452.png|600](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241108183452.png)
 
 ### Differenza tra i 3
 >[!question]- ma quindi cosa cambia tra queste 3 cose?
@@ -171,7 +171,7 @@ Come abbiamo detto in precedenza syscall è la versione più a basso livello del
 	- Questa funzione è un wrapper per la logica vera e propria della syscall `read`, implementata internamente in un’altra funzione chiamata `ksys_read`, che contiene il codice che interagisce con il file system per leggere effettivamente i dati richiesti. 
 		- La funzione `__x64_sys_read` è implementata nel file `read_write.c`.
 
-![Pasted image 20241108202513.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241108202513.png)
+![Pasted image 20241108202513.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241108202513.png)
 ## CREAZIONE DEI PROCESSI
 #### Cerchiamo attraverso delle funzioni in librerie di creare una shell minimale
 - quali sono le funzionalità BASILARI di una shell?
@@ -559,4 +559,4 @@ Capito? È tipo gioca’ a pallone: se nun chiudi i passaggi che non servono, tu
 
 >[!warning]- ALTRI ESEMPI DI CODICI SUL SUO TEAMS NEI FILE CODING
 ## ESERCIZIO PER CASA
-![Pasted image 20241111140121.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241111140121.png)
+![Pasted image 20241111140121.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241111140121.png)

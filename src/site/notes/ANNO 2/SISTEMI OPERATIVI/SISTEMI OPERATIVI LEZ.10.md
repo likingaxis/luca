@@ -14,7 +14,7 @@ Se non sono sincronizzati in maniera adeguata possiamo incorrere nella RACE COND
 > - Il **processo B** legge lo stesso valore `in=7`, decide di usare quella posizione, e la occupa.
 > - Quando A riprende, sovrascrive il valore in posizione 7, ignorando che B aveva già scritto lì.
 > - Risultato: **errore** o perdita di dati.
->![Pasted image 20241111164127.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241111164127.png)
+>![Pasted image 20241111164127.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241111164127.png)
 
 per evitarle usiamo 
 #### LE CRITICAL REGION
@@ -35,7 +35,7 @@ Le regole:
 	- Qui si usano variabili per "bloccare" l'accesso alla Critical Region (es. variabili che indicano se una risorsa è in uso).
     - Problema: Questo sposta il problema delle Race Condition sulle variabili stesse, perché più processi possono comunque interferire mentre leggono/scrivono la variabile di blocco.
 
-![Pasted image 20241111172246.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241111172246.png)
+![Pasted image 20241111172246.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241111172246.png)
 ### Una non soluzione, esclusione reciproca con BUSY waiting (Alternanza Rigorosa)
 abbiamo due codici uno per il processo1 e uno per il processo2
 Codiceprocesso0:

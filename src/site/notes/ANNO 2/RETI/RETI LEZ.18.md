@@ -14,7 +14,7 @@
 		un canale di tipo broadcast che è condiviso tra più nodi che trasmettono e più nodi che ricevono, ogni frame viene condiviso tra tutti, ad esempio:
 	- Ethernet ai vecchi tempi dove tutto il cavo era condiviso
 	- wireless LAN oppure 4g/5g oppure il satellitare
-![Pasted image 20250521105540.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521105540.png)
+![Pasted image 20250521105540.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521105540.png)
 
 >[!bug] cosa succede però con questi canali broadcast? 
 >se avvengono due trasmissioni in modo simultaneo dai nodi si può incorrere in una collisione o interferenza 
@@ -51,7 +51,7 @@ Fanno parte della categoria dei Channel Partitioning
 - la durata di questo tempo si dice time slot e di solito serve per trasmettere un pacchetto del livello di collegamento
 - gli slot che non vengono utilizzati si dicono idle
 
-![Pasted image 20250521112454.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521112454.png)
+![Pasted image 20250521112454.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521112454.png)
 
 - quando tocca a un determinato nodo esso può trasmettere a velocità R bps 
 - ma visto che tanto può farlo in un lasso temporale di 1/N comunque trasmette a velocità media R/N
@@ -60,7 +60,7 @@ Fanno anche questi parte della categoria dei Channel Partitioning
 - Il canale viene diviso in uno spettro di frequenze
 - ogni nodo prende una determinata frequenza 
 - se un nodo non trasmette sulla sua frequenza semplicemente essa viene inutilizzata
-![Pasted image 20250521112857.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521112857.png)
+![Pasted image 20250521112857.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521112857.png)
 - la velocità è comunque R/N
 ##### SLOTTED ALOHA
 Fa parte della categoria dei segnali ad Accessi Casuali
@@ -72,9 +72,9 @@ Come funziona SLOTTED ALOHA?
 - quando un nodo vuole trasmettere attende l'inizio del nuovo slot temporale e invia
 - se avviene una collisione perché un altro nodo lo stava usando avviene il recupero e quel nodo prova a ritrasmettere il frame allo slot temporale successivo con una probabilità $p$ di successo che ora spiegherò meglio
 	- la collisione rilevabile ad esempio dalla **mancanza di ACK**.
-![Pasted image 20250521114813.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521114813.png)
+![Pasted image 20250521114813.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521114813.png)
 ##### PRO e CONTRO dello SLOTTED ALOHA
-![Pasted image 20250521114843.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521114843.png)
+![Pasted image 20250521114843.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521114843.png)
 
 | ✅ **Pro**                                                                               | ❌ **Contro**                                                                                     |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -90,9 +90,9 @@ Come funziona SLOTTED ALOHA?
 - vengono fatti una serie di calcoli probabilistici che portano a dire che:
 	- può usare il canale in modo efficace solo nel 37% del tempo, al massimo!
 >[!tip]- sezione con i vari calcoli
->![Pasted image 20250521115553.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521115553.png)
->![Pasted image 20250521115601.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521115601.png)
->![Pasted image 20250521115612.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521115612.png)
+>![Pasted image 20250521115553.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521115553.png)
+>![Pasted image 20250521115601.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521115601.png)
+>![Pasted image 20250521115612.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521115612.png)
 
 ##### ALOHA PURO(Unslotted ALOHA)
 - non vi è presente alcuna sincronizzazione
@@ -100,7 +100,7 @@ Come funziona SLOTTED ALOHA?
 - se avviene una collisione lo ritrasmette immediatamente con una probabilità $p$ 
 - la probabilità di collisione senza sincronizzazione aumenta ancora di più
 Efficienza 18%
-![Pasted image 20250521115829.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521115829.png)
+![Pasted image 20250521115829.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521115829.png)
 #### CSMA(Carrier Sense Multiple Access)
 - anche questo tipo è ad accesso Casuale
 	- però risolve parecchie cose
@@ -108,7 +108,7 @@ Efficienza 18%
 "Come una conversazione tra persone: **non parlo se sento che qualcuno sta già parlando**."
 - anche se il tutto è sincronizzato bene possono avvenire lo stesso collisioni
 	- questo perché potrebbero esserci ritardi di propagazione ecc...
-![Pasted image 20250521120808.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521120808.png)
+![Pasted image 20250521120808.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521120808.png)
 
 
 #### CSMA/CD(Carrier Sense Multiple Access)/(Collision Detection)
@@ -119,7 +119,7 @@ Efficienza 18%
 questo funziona bene via cavo ethernet ma difficilmente può funzionare via wireless
 
 "Come se **inizio a parlare**, ma se sento **qualcun altro iniziare a parlare contemporaneamente**, **mi fermo subito**."
-![Pasted image 20250521120825.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521120825.png)
+![Pasted image 20250521120825.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521120825.png)
 
 #### Spiegazione nel dettaglio dell'algoritmo CSMA/CD su una rete Cablata Ethernet
 suddivisione in step:
@@ -143,12 +143,12 @@ suddivisione in step:
 
 ###### Spiegazione grafica
 
-![Pasted image 20250521121704.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521121704.png)
+![Pasted image 20250521121704.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521121704.png)
 
-![Pasted image 20250521121712.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521121712.png)
-![Pasted image 20250521121720.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521121720.png)
+![Pasted image 20250521121712.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521121712.png)
+![Pasted image 20250521121720.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521121720.png)
 ##### Efficienza di questo protocollo
-![Pasted image 20250521121820.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521121820.png)
+![Pasted image 20250521121820.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521121820.png)
 ### Protocolli a rotazione di tipo POLLING
 - i protocolli a suddivisione di canale visti prima 
 	- con Channel Partitioning
@@ -168,16 +168,16 @@ però purtroppo
 	- aumenta il ritardo
 - il fatto che ci sia un solo controllore se esso ha problemi si rompe tutto
 il Bluetooth usa questo sistema
-![Pasted image 20250521122639.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521122639.png)
+![Pasted image 20250521122639.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521122639.png)
 #### Token passing
 
 Viene passato questo token tra i nodi, il nodo può trasmettere quando ha questo token
 - il fatto che questo token debba essere scambiato tra nodo e nodo aumenta overhead
 - anche qui abbiamo un singolo punto di rottura il token
-![Pasted image 20250521122744.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521122744.png)
+![Pasted image 20250521122744.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521122744.png)
 
 #### **accesso a Internet via cavo**, con un mix di **FDM, TDM** e **accesso multiplo casuale**
-![Pasted image 20250521123618.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250521123618.png)
+![Pasted image 20250521123618.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250521123618.png)
 Per fare il downstream vengono usati dei canali FDM in broadcast 
 - un solo CMTS(Cable Modem Termination System) trasmette nei canali quindi nessun problema di accessi multipli
 Per fare l'upstream vengono usati diversi canali che vengono contesi da i diversi utenti con un accesso casuale

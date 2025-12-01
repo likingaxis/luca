@@ -8,7 +8,7 @@ Arriverà sempre qualcuno che dimostrerà che un linguaggio è decidibile in un 
 per definire ciò andiamo ad applicare dei teoremi
 ### Teorema di accelerazione lineare
 >[!tip] Teorema 6.7
->![Pasted image 20250424171859.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424171859.png)
+>![Pasted image 20250424171859.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424171859.png)
 >Questo teorema ci dice che, dato un qualunque algoritmo, esiste sempre un algoritmo più veloce del primo di un fattore costante!
 
 
@@ -24,7 +24,7 @@ per definire ciò andiamo ad applicare dei teoremi
 ### Teorema di compressione lineare
 >[!tip] Teorema 6.6
 >medesimo Teorema del precedente ma con dspace
->![Pasted image 20250424172852.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424172852.png)
+>![Pasted image 20250424172852.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424172852.png)
 >Questo teorema ci dice che, dato un qualunque algoritmo, esiste sempre un algoritmo che usa una frazione costante della memoria del primo!
 >- in questo caso anche se con solo un nastro
 >	- occupiamo $O(|x|)$
@@ -56,14 +56,14 @@ E discorso analogo per "efficienza spaziale".
 #### Effettive classi di complessità deterministiche
 ##### Efficienza temporale - DTIME
 Le classi che misurano "efficienza temporale" nel caso deterministico si chiamano <font color="#ff0000">DTIME</font>: data una <font color="#245bdb">funzione totale e calcolabile f</font> 
-![Pasted image 20250424192546.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424192546.png)
+![Pasted image 20250424192546.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424192546.png)
 ATTENZIONE:
 - <font color="#245bdb">dtime</font> (minuscolo) è la **misura di complessità**, ossia, una <u>funzione</u>
 - <font color="#ff0000">DTIME</font> (MAIUSCOLO) è una **classe di complessità**, ossia, una sorta di <u>insieme</u>
 
 ##### Efficienza spaziale - DSPACE
 Le classi che misurano "efficienza spaziale" nel caso deterministico si chiamano <font color="#ff0000">DSPACE</font>: data una <font color="#245bdb">funzione totale e calcolabile f</font> 
-![Pasted image 20250424192558.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424192558.png)
+![Pasted image 20250424192558.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424192558.png)
 
 
 ---
@@ -72,19 +72,19 @@ Le classi che misurano "efficienza spaziale" nel caso deterministico si chiamano
 Facciamo le stesse considerazioni delle deterministiche.
 ##### Efficienza temporale - NTIME
 Le classi che misurano "efficienza temporale" nel caso non deterministico si chiamano <font color="#ff0000">NTIME</font>: data una <font color="#245bdb">funzione totale e calcolabile f</font>
-![Pasted image 20250424192614.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424192614.png)
+![Pasted image 20250424192614.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424192614.png)
 Qui si parla di ACCETTAZIONE perché sappiamo che se un linguaggio è accettato entro un certo numero di istruzioni, sappiamo che è decidibile; <u>MA NON SAPPIAMO QUANTO CI METTE A RIGETTARE</u>.
 E, per di più, a noi interessa solo accettare le parole del linguaggio.
 
 ##### Efficienza spaziale - NSPACE
 Le classi che misurano "efficienza spaziale" nel caso non deterministico si chiamano <font color="#ff0000">NSPACE</font>: data una <font color="#245bdb">funzione totale e calcolabile f</font>
-![Pasted image 20250424192635.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424192635.png)
+![Pasted image 20250424192635.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424192635.png)
 
 
 ---
 
 ## Classi di complemento
-![Pasted image 20250424192650.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424192650.png)
+![Pasted image 20250424192650.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424192650.png)
 
 
 ---
@@ -99,7 +99,7 @@ Le classi che misurano "efficienza spaziale" nel caso non deterministico si chia
 
 ## Relazioni fra classi di complessità
 >[!lemma] Teorema 6.8
->![Pasted image 20250424192707.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424192707.png)
+>![Pasted image 20250424192707.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424192707.png)
 
 La dimostrazione è facile.
 Una macchina deterministica è **una particolare macchina non deterministica con il grado di non determinismo pari a `1`** e, inoltre
@@ -107,7 +107,7 @@ Una macchina deterministica è **una particolare macchina non deterministica con
 - una parola decisa utilizzando un certo numero di celle è anche accettata in quel certo numero di celle
 
 >[!lemma] Teorema 6.9
->![Pasted image 20250424192721.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250424192721.png)
+>![Pasted image 20250424192721.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250424192721.png)
 
 Questa dimostrazione segue direttamente dal [[ANNO 2/FONDAMENTI/FONDAMENTI LEZ.21#Risoluzione teorema 6.1(in parti)\|teorema 6.1]]
 Sia $L \subseteq \{0,1\}^{*}$ tale che $L \in DTIME[f(n)]$.
@@ -124,7 +124,7 @@ Cioè: $$\text{DTIME}[f(n)] \subseteq \text{DSPACE}[f(n)]$$
 ✅ **Vale anche nel caso non deterministico**: $$\text{NTIME}[f(n)] \subseteq \text{NSPACE}[f(n)]$$
 
 >[!lemma] Teorema 6.10
->![Pasted image 20250425114633.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425114633.png)
+>![Pasted image 20250425114633.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425114633.png)
 
 ##### 📘 Teorema 6.10 (detto in parole semplici)
 
@@ -176,11 +176,11 @@ Ma è comunque **un algoritmo deterministico** che termina!
 
 E lo stesso vale anche nel caso **non deterministico**.
 ### in calcoli
-![Pasted image 20250425115910.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425115910.png)
+![Pasted image 20250425115910.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425115910.png)
 
 ### Teorema 6.11
 >[!tip] Teorema 6.11
->![Pasted image 20250425115947.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425115947.png)
+>![Pasted image 20250425115947.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425115947.png)
 
 🧠 **Cosa significa?**
 
@@ -261,7 +261,7 @@ In parole semplici:
 ---
 
 >[!tip] Teorema 6.12
->![Pasted image 20250425130406.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425130406.png)
+>![Pasted image 20250425130406.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425130406.png)
 >- Ok, allora il Teorema 6.12 ci dice che, se collochiamo un linguaggio L, ad esempio, in $DTIME[f(n)]$, allora L appartiene anche a tutte le classi $DTIME[g(n)]$ tali che, definitivamente, $f(n) ≤ g(n)$
 
 
@@ -328,7 +328,7 @@ Perché, in definitiva, ciò che ci interessa è **poter distinguere** i problem
 
 Da questo problema ci viene incontro il GAP THEOREM
 >[!tip] GAP THEOREM
->![Pasted image 20250425132855.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425132855.png)
+>![Pasted image 20250425132855.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425132855.png)
 
 Significa che **anche se la funzione $2^{f(n)}$ è molto più grande di $f(n)$** non ci sono nuovi problemi che si possono risolvere in $2^{f(n)}$ che **non erano già risolvibili** in $f(n)$
 
@@ -336,11 +336,11 @@ In altre parole: quella differenza di tempo **non ha effetto sulla potenza compu
 
 #### Andiamo a definire due insiemi di definizioni
 >[!tip] Definizione 6.1
->![Pasted image 20250425133450.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425133450.png)
+>![Pasted image 20250425133450.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425133450.png)
 
 
 >[!tip] Definizione 6.2
->![Pasted image 20250425133508.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425133508.png)
+>![Pasted image 20250425133508.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425133508.png)
 
 Per intendere n 1 scriveremo $1^n$
 - $1^5$ = 11111
@@ -384,14 +384,14 @@ Se però **restringiamo l'attenzione** a funzioni:
 
 #### Teorema 6.14
 >[!tip] Teorema 6.14 
->![Pasted image 20250425135002.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425135002.png)
+>![Pasted image 20250425135002.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425135002.png)
 
 🔁 Esistono problemi risolvibili in $f(n)$ spazio ma **non** in $g(n)$.
 
 ---
 #### Teorema 6.15
 >[!tip] Teorema 6.5
-![Pasted image 20250425135048.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250425135048.png)
+![Pasted image 20250425135048.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250425135048.png)
 
 🔁 Esistono problemi risolvibili in tempo $f(n)$ ma **non** in $g(n)$.
 ## 🔍 Significato dei limiti

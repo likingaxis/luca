@@ -31,9 +31,9 @@ Con la grammatica di tipo 0 abbiamo definito una macchina di Turing che <font co
 invece ora con quella di tipo 1 proveremo a definirne una che <font color="#ffff00">decide</font>
 Andiamo ora a modificare la macchina $NT_G$ in modo tale che ciascuna computazione deterministica in NTG(x) rigetti non appena viene generata una parola che contiene più caratteri di $x$
 ### Procediamo con la creazione di questa macchina
-![Pasted image 20250409183750.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250409183750.png)
+![Pasted image 20250409183750.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250409183750.png)
 praticamente queste produzioni ci portano a raggiungere un loop e che non aumenta la dimensione fino a superare x, quindi finiamo in un loop anche se siamo nel tipo 1 quindi nella macchina $NT'_G(x)$ 
-![Pasted image 20250409184118.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250409184118.png)
+![Pasted image 20250409184118.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250409184118.png)
 Anche in questo caso siamo in un loop
 Conseguentemente, poiché x ∉ L(G) e dunque nessuna computazione deterministica di $NT’G(x)$ accetta, la computazione $NT’G(x)$ non termina
 - quindi  $NT’G(x)$ non rigetta
@@ -130,7 +130,7 @@ Mentre i teoremi **G.4** e **G.5** implicano che un linguaggio è accettabile se
 
 
 ### Visione sull'insieme delle varie grammatiche + Linguaggi accettabili o decidibili
-![Pasted image 20250409194405.png|600](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250409194405.png)
+![Pasted image 20250409194405.png|600](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250409194405.png)
 
 
 ### Grammatiche context free di tipo 2
@@ -141,9 +141,9 @@ Ricordando che le Grammatiche di tipo-2
 - possiedono solo produzioni nella forma 
 	- A →$\alpha$  con A ∈ $V_N$ e $\alpha$ $\in (V_T \cup V_N)^*$ 
 ##### ESEMPIO
-![Pasted image 20250409195259.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250409195259.png)
+![Pasted image 20250409195259.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250409195259.png)
 in questo caso a=b perché ogni volta che faccio una produzione che sostituisce a avrò anche una b e viceversa invece c no
 
 
 ### Esercizi da fare in casa da benedetta
-![Pasted image 20250409195313.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250409195313.png)
+![Pasted image 20250409195313.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250409195313.png)

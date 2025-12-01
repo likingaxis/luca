@@ -4,7 +4,7 @@
 
 **Titolo del progetto**:  
 **MyAma – Gestione prenotazioni per rifiuti ingombranti**
-![Pasted image 20250506112951.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250506112951.png)
+![Pasted image 20250506112951.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250506112951.png)
 **Componenti del gruppo**:
 
 - Luca Gugliotta –  luca.gugliotta@students.uniroma2.eu

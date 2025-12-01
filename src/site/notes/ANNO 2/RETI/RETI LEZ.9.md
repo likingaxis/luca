@@ -11,7 +11,7 @@
 - HTTP/3 
 	- usa QUIC di google, una forma specifica di UDP 
 ### Struttura di UDP
-![Pasted image 20250406160244.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406160244.png)
+![Pasted image 20250406160244.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406160244.png)
 - intestazione a 4 campi ognuno da 2 byte:
 	- numeri di porta definiscono con quale processo comunicare
 	- lunghezza specifica quanti byte ha il segmento UDP
@@ -23,7 +23,7 @@ perché UDP non stabilisce nessuna connessione invia direttamente i pacchetti se
 per rilevare gli errori si effettua la checksum
 - per inviare due numeri faccio la loro somma - il risultato
 - l'importante è che io vado a controllare e non escano errori$(ris >0)$
-![Pasted image 20250406160605.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406160605.png)
+![Pasted image 20250406160605.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406160605.png)
 
 >[!tip]- spiegazione in bit
 >- il mittente
@@ -38,12 +38,12 @@ per rilevare gli errori si effettua la checksum
 >		- Se il risultato è diverso, c'è stato un **errore nella trasmissione**.
 >	- **Alternative:** Alcune implementazioni fanno una verifica **ricalcolando la checksum** (come fa il mittente) e la confrontano con il valore ricevuto.
 > 
-> ![Pasted image 20250406161138.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406161138.png)
+> ![Pasted image 20250406161138.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406161138.png)
 > ricapitolando:
 > se avremo tutti 1 allora coincide altrimenti c'è un errore
 
 ### FOTO DI RIASSUNTO DI UDP
-![Pasted image 20250406161756.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406161756.png)
+![Pasted image 20250406161756.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406161756.png)
 ### Problema di affidabilità nei trasferimenti di dati
 >[!bug]- si richiede un trasferimento affidabile che garantisca lo scambio di bit senza nessuna perdita o corruzioni e che arrivino nell'ordine corretto
 
@@ -51,10 +51,10 @@ per rilevare gli errori si effettua la checksum
 
 ##### Modi diversi per rendere un collegamento affidabile
 Nella foto qui sotto possiamo vedere come il canale fin dal principio è affidabile ma difficile da realizzare (pura fibra da una parte all'altra in purezza)
-![Pasted image 20250406162457.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406162457.png)
+![Pasted image 20250406162457.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406162457.png)
 
 qui invece abbiamo un canale che è inaffidabile ma che attraverso il protocollo di trasferimento abbiamo dei risultati affidabili
-![Pasted image 20250406162511.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406162511.png)
+![Pasted image 20250406162511.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406162511.png)
 
 
 Ci tengo a precisare che di solito il mittente non sa lo stato del destinatario e il destinatario non sa quello del mittente
@@ -64,7 +64,7 @@ TCP cerca di dedurre lo stato del destinatario tramite:
 - Controllo di congestione
 ## Un concetto di affidabilità: RDT
 RDT sta per Reliable Data Transfer ed è un concetto  o modello a scopo teorico che viene applicato da diversi protocolli come quello TCP per effettuare connessioni affidabili
-![Pasted image 20250406163055.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406163055.png)
+![Pasted image 20250406163055.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406163055.png)
 Descrizione dell'immagine:
 - il canale è inaffidabile ma bidirezionale
 mittente:
@@ -83,13 +83,13 @@ Esse vengono spiegate attraverso gli stati finiti
 - un sistema che spiega i passaggi in modo chiaro
 #### RDT 1.0
 Il canale è completamente affidabile quindi non abbiamo alcun problema
-![Pasted image 20250406164823.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406164823.png)
+![Pasted image 20250406164823.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406164823.png)
 - attende una chiamata dal processo con i dati da inviare
 - il processo chiama rdt_send(data)
 - il protocollo crea il pacchetto con i dati
 - lo invia a udt_send(packet)
 - ritorna in attesa
-![Pasted image 20250406164832.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406164832.png)
+![Pasted image 20250406164832.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406164832.png)
 - attende il pacchetto dal canale di trasporto
 - una volta fatto esso viene chiamato attraverso rdt_rcv(packet)
 - estrae il pacchetto e lo invia a deliver_data(data)
@@ -102,14 +102,14 @@ inoltre si applica il concetto degli acknowledgements
 e di conseguenza avviene uno stop and wait
 
 I protocolli ARQ sono quei protocolli dove il pacchetto viene ritrasmesso in caso di errori
-![Pasted image 20250406171256.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406171256.png)
+![Pasted image 20250406171256.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406171256.png)
 - abbiamo una attesa di chiamata dall'alto con la stessa prerogativa
 - dopo aver inviato il pacchetto incapsulato
 	- attende ACK o NAK
 	- se è true torna allo stato iniziale
 	- sennò ritrasmette l'ultimo pacchetto
 Il simbolo $\Delta$ indica non inviare nessuna funzione se si è verificata la condizione
-![Pasted image 20250406171503.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406171503.png)
+![Pasted image 20250406171503.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406171503.png)
 - abbiamo un solo stato di attesa
 	- quando riceve i pacchetti e sono corrotti invia un NACK e torna ad attendere
 	- quando riceve i pacchetti e non sono corrotti invia un ACK e torna ad attendere
@@ -123,7 +123,7 @@ per risolverla si aggiunge un nuovo campo dati che numera il pacchetto in modo d
 così il destinatario sa se il pacchetto è uguale a un altro e può eliminarlo
 #### RDT 2.1
 Come il 2.0 ma introduce il numero di sequenza
-![Pasted image 20250406172653.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406172653.png)
+![Pasted image 20250406172653.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406172653.png)
 ha 4 stati che comprendono l'aggunta dei numeri di sequenza e dei vari stati
 1) si attende la chiamata dall'alto di tipo 0, viene creato il pacchetto ecc...
 2) si attende ACK O NACK di tipo 0 
@@ -131,7 +131,7 @@ ha 4 stati che comprendono l'aggunta dei numeri di sequenza e dei vari stati
 4) si passa al tipo 1 di ACK o NACK
 5) si torna in caso alla attesa di tipo 0
 
-![Pasted image 20250406172756.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406172756.png)
+![Pasted image 20250406172756.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406172756.png)
 il ricevente anche ha due numeri di sequenza 0 o 1
 la cosa che succede è la stessa ma dipende con quale sequenza siamo
 - se arriva un pacchetto non corrotto ma siamo con seq=1 allora significa che esso è un duplicato e bisogna inviare ACK ignorando il pacchetto ricevuto
@@ -145,7 +145,7 @@ Esempio: 
 - Il ricevente riceve il pacchetto ma è corrotto, non manda NAK ma ripete l'ultimo ACK valido (es. ACK 1) 
 - Il mittente riceve ACK 1 e capisce che l'ultimo pacchetto a seq=0 non andava bene e ritrasmette. 
 Cambia qualcosa nella logica del mittente sono quasi uguali.
-![Pasted image 20250406175122.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406175122.png)
+![Pasted image 20250406175122.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406175122.png)
 
 #### RDT 3.0
 **RDT 3.0** è una versione del protocollo _Reliable Data Transfer_ progettata per funzionare **anche quando i pacchetti o ACK possono essere persi**, non solo corrotti.
@@ -174,34 +174,34 @@ Il mittente dovrà:
 1) inizializzare il contatore ogni volta che invia un pacchetto
 2) rispondere con una azione appropriata in base al risultato del contatore
 3) fermare il contatore se tutto fila liscio
-![Pasted image 20250406182235.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406182235.png)
+![Pasted image 20250406182235.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406182235.png)
 - si può notare come viene gestito anche il timer stavolta
 Il ricevente è lo stesso di RDT 2.1
-![Pasted image 20250406172756.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406172756.png)
+![Pasted image 20250406172756.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406172756.png)
 #### Carrellata di esempi
 ##### Esempio dove è tutto ok
-![Pasted image 20250406182409.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406182409.png)
+![Pasted image 20250406182409.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406182409.png)
 ##### Esempio dove abbiamo una perdita di un pacchetto
-![Pasted image 20250406182432.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406182432.png)
+![Pasted image 20250406182432.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406182432.png)
 - ptk1 viene perso 
 - il tempo scade
 - viene reinviato pkt1
 ##### Esempio dove abbiamo una perdita di un ACK
-![Pasted image 20250406182459.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406182459.png)
+![Pasted image 20250406182459.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406182459.png)
 - perdita di ack1
 - timeout scade
 - reinvio di pkt1
 - ack1 inviato correttamente
 ##### Esempio dove abbiamo un timeout che termina troppo presto
-![Pasted image 20250406182529.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406182529.png)
+![Pasted image 20250406182529.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406182529.png)
 - il mittente invia due volte lo stesso pacchetto perché il timeout non da tempo al ricevente di inviare ack
 ##### Uso di protocolli per il trasferimento dati affidabile senza pipeline
 anche il 3.0 è stop and wait quindi molto inefficiente
-![Pasted image 20250406184132.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406184132.png)
+![Pasted image 20250406184132.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406184132.png)
 ###### una serie di calcoli per capire l'inefficienza dello stop and wait
-![Pasted image 20250406184231.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406184231.png)
+![Pasted image 20250406184231.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406184231.png)
 1000 byte vengono trasferiti in $30,008 \ ms$ con un troughput di $267 \ kbps$, ma abbiamo $1 \ Gbps$
-![Pasted image 20250406184507.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406184507.png)
+![Pasted image 20250406184507.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406184507.png)
 ##### Uso di protocolli per il trasferimento dati affidabile con pipeline
 >[!success] usare il pipelining consente di migliorare decisamente le cose
 
@@ -212,11 +212,11 @@ Il mittente potrà inviare più pacchetti di fila senza attendere i vari ACK's
 		- dopo li può eliminare
 	- al ricevente potrebbe servire un buffer
 	- si usano protocolli Go-Back-N e selective repeat per gestire questo sistema(ora spiego bene)
-![Pasted image 20250406185011.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406185011.png)
+![Pasted image 20250406185011.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406185011.png)
 $U_{mittente}$= Utilizzazione del mittente
 #### Spiegazione approfondita di GBN
 È un protocollo di trasmissione affidabile con pipeline, il mittente può inviare quanti pacchetti vuole senza attendere ACK's ma può inviare un tot numero di essi prima di dover attendere per forza uno o più ACK's
-![Pasted image 20250406185245.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406185245.png)
+![Pasted image 20250406185245.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406185245.png)
 - la <font color="#ffff00">base</font> è il numero di sequenza del pacchetto più vecchio che non ha ancora ricevuto ACK'S
 - i <font color="#4f81bd">nextseq</font> invece sono quei numeri di sequenza non ancora utilizzati(per inviare altri dati)
 Ci sono 4 intervalli di numeri:
@@ -230,7 +230,7 @@ Ci sono 4 intervalli di numeri:
 | ≥ base + N            | **Numeri di sequenza non utilizzabili** finché il pacchetto con `seq = base` non è confermato | ⚪                         | Bloccati, in attesa di liberare spazio nella finestra |
 Questo protocollo viene detto a finestra scorrevole perché i pacchetti non ancora riconosciuti (senza ACK'S) sono detti finestre 
 - appena avviene l'ACK esse vengono incrementate creando uno scorrimento
-![Pasted image 20250406185645.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406185645.png) 
+![Pasted image 20250406185645.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406185645.png) 
 quindi se poniamo una base tipo 5 un numero compreso tra 0 e 5-1 è già confermato e così via per gli altri...
 
 ##### Le finestre in numeri...
@@ -248,10 +248,10 @@ Questo serve a **gestire correttamente il ciclo** di ritorno a zero.
 Ad esempio: se hai inviato pacchetto `7` e il prossimo è `0`,  
 allora `nextseqnum = (7 + 1) mod 8 = 0`
 Altro esempio
-![Pasted image 20250406190804.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406190804.png)
+![Pasted image 20250406190804.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406190804.png)
 
 #### FSM del mittente
-![Pasted image 20250406190728.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406190728.png)
+![Pasted image 20250406190728.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406190728.png)
 - rdt_send(data) è la chiamata che invia il pacchetto se viene chiamato dall'applicazione sopra
 	- il mittente verifica se può inviare con `if(nextseqnum<base+N)`
 	- costruisce il pacchetto con make
@@ -260,7 +260,7 @@ Altro esempio
 		- in caso avvia il timer
 	- incrementa il prossimo numero seq per la prossima finestra
 	- refuse data se non può essere inviato altro( è tutto pieno)
-![Pasted image 20250406191310.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406191310.png)
+![Pasted image 20250406191310.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406191310.png)
 Deve garantire che i pacchetti vengano consegnati in ordine 
 - il pacchetto viene accettato se
 	- esso è del numero seq aspettato
@@ -272,7 +272,7 @@ questo sopra si chiama ACK cumulativo perché conferma l'arrivo di n-pacchetti
 	- non memorizza nulla
 	- invia l'ultimo ACK fino al pacchetto valido
 ##### ESEMPIO
-![Pasted image 20250406191551.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406191551.png)
+![Pasted image 20250406191551.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406191551.png)
 - il mittente invia i vari pacchetti
 - il ricevente riceve i pacchetti e invia i vari ACK-n 
 - pkt2 non viene preso
@@ -289,7 +289,7 @@ I protocolli a ripetizione selettiva evitano le ritrasmissioni non necessarie 
 Il destinatario SR invia un ACK per i pacchetti correttamente ricevuti sia in ordine che fuori sequenza. Questi vengono memorizzati in un buffer finché non sono stati ricevuti tutti i pacchetti mancanti (che di conseguenza hanno nseq più basso).
 ##### MITTENTE
 Gestisce una finestra di invio con ampiezza N, questi pacchetti possono essere di vari tipi scritti nelle immagini
-![Pasted image 20250406193400.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406193400.png)
+![Pasted image 20250406193400.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406193400.png)
 
 ##### RICEVENTE
 Anche il destinatario possiede una finestra di ricezione di ampiezza **N**, il che significa che può accettare e memorizzare al massimo **N pacchetti** con numeri di sequenza consecutivi, anche se arrivano fuori ordine.
@@ -305,7 +305,7 @@ Questi pacchetti possono trovarsi in diversi stati:
 
 Il destinatario utilizza come riferimento la variabile **rcv_base**, che rappresenta il **primo numero di sequenza atteso**.  
 Quando il pacchetto con numero `rcv_base` arriva, la finestra può avanzare e vengono consegnati tutti i pacchetti consecutivi già presenti nel buffer.
-![Pasted image 20250406193502.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406193502.png)
+![Pasted image 20250406193502.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406193502.png)
 
 >[!bug] tra i due vi è una sorta di asimmetria
 > Il mittente e il destinatario **non condividono la stessa visione dei pacchetti**, anche se usano finestre della stessa ampiezza.  
@@ -330,7 +330,7 @@ Quando il pacchetto con numero `rcv_base` arriva, la finestra può avanzare e ve
 > 
 > ➡️ Le finestre si aggiornano in modo **indipendente**.
 
-![Pasted image 20250406194250.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406194250.png)
+![Pasted image 20250406194250.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406194250.png)
 📌 **Contesto generale**
 
 La finestra ha ampiezza **N = 4**.  
@@ -370,7 +370,7 @@ Nel **Go-Back-N**, invece:
 
 quelli a dx delle foto sotto sono gli ACK'S
 ### 📌 Caso (a): tutto ok
-![Pasted image 20250406195335.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406195335.png)
+![Pasted image 20250406195335.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406195335.png)
 Hai **4 numeri di sequenza possibili** (0, 1, 2, 3) e una **finestra di dimensione N = 3**.
 In Selective Repeat:
 - Ogni pacchetto ha un **numero di sequenza**.
@@ -382,7 +382,7 @@ In Selective Repeat:
 - La finestra del destinatario avanza e ora accetta i pacchetti con numeri `3, 0, 1` → tutto funziona come previsto.
 
 ### ❗ Caso (b): errore dovuto alla perdita degli ACK
-![Pasted image 20250406195405.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406195405.png)
+![Pasted image 20250406195405.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406195405.png)
  ▶️ Cosa succede:
 - Gli ACK inviati dal destinatario **vanno persi**, quindi il mittente **non fa avanzare la sua finestra**.
 - Scatta il **timeout** → il mittente **ritrasmette pkt0** (che pensa non sia mai arrivato).
@@ -395,7 +395,7 @@ Questo accade perché:
 - Il mittente e il destinatario **non sono più sincronizzati**
 - Non c’è abbastanza **spazio numerico** per distinguere pacchetti vecchi da nuovi
 #### Per scegliere la giusta grandezza delle finestre
-![Pasted image 20250406195557.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406195557.png)
+![Pasted image 20250406195557.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406195557.png)
 La finestra deve essere al massimo metà dello spazio dei numeri di sequenza.
 
-![Pasted image 20250406195614.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250406195614.png)
+![Pasted image 20250406195614.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250406195614.png)

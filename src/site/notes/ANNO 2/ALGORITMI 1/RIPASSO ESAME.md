@@ -581,7 +581,7 @@ Il caso SD può essere provocato sia da inserimenti (in $T_2$ o $T_3$), sia da c
 - Ricalcolo il fattore di bilanciamento
 - Se ho un nodo critico eseguo una rotazione (potrebbe essere necessario anche una doppia rotazione)
 ###### ESEMPIO: delete(18)
-![slides_animation_slower-ezgif.com-crop.gif|center](/img/user/ANNO%202/ALGORITMI%201/fotoalg/slides_animation_slower-ezgif.com-crop.gif)
+![slides_animation_slower-ezgif.com-crop.gif|center](/img/user/ANNO%202/FOTOANNO2/fotoalg/slides_animation_slower-ezgif.com-crop.gif)
 
 >[!tip] Nota una cosa
 >L'eliminazione può portare a casi in cui bisogna fare delle rotazioni ANCHE negli antenati del nodo critico iniziale.
@@ -656,7 +656,7 @@ $$T(n) = O(1)$$
 #### Insert
 Inserisco un elemento nella foglia più a sinistra disponibile e, se necessario, eseguo `muovi_in_alto`
 ###### Insert(e, 8)
-![ezgif.com-crop.gif](/img/user/ANNO%202/ALGORITMI%201/fotoalg/ezgif.com-crop.gif)$$T(n) \ = \ O(1) \ + \ O(log_{d}(n)) \ = \ O(log_{d}(n))$$
+![ezgif.com-crop.gif](/img/user/ANNO%202/FOTOANNO2/fotoalg/ezgif.com-crop.gif)$$T(n) \ = \ O(1) \ + \ O(log_{d}(n)) \ = \ O(log_{d}(n))$$
 
 #### Delete
 Scambio il nodo con la foglia più a destra
@@ -669,7 +669,7 @@ Scambio il nodo con la foglia più a destra
 
 #### Decrease Key
 Prendo l'elemento, decremento la sua chiave e eseguo `muovi_in_alto`
-![pages_32_to_36_looping-ezgif.com-speed.gif](/img/user/ANNO%202/ALGORITMI%201/fotoalg/pages_32_to_36_looping-ezgif.com-speed.gif)$$T(n) \ = \ O(1) \ + \ O(log_{d}(n)) \ = \ O(log_{d}(n))$$
+![pages_32_to_36_looping-ezgif.com-speed.gif](/img/user/ANNO%202/FOTOANNO2/fotoalg/pages_32_to_36_looping-ezgif.com-speed.gif)$$T(n) \ = \ O(1) \ + \ O(log_{d}(n)) \ = \ O(log_{d}(n))$$
 
 #### Increase Key
 Incremento ed eseguo `muovi_in_basso`
@@ -708,7 +708,7 @@ Inserisco uno ad uno gli elementi della coda con priorità più piccola nella co
 Un albero binomiale $B_{i}$ è definito ricorsivamente in questo modo
 - $B_{0}$ ha solo la radice
 - $B_{i+1}$ è ottenuto fondendo tra loro due $B_{i}$, ponendo la radice dell'uno come figlio della radice dell'altro
-![Pasted image 20241204185758.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241204185758.png)
+![Pasted image 20241204185758.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241204185758.png)
 #### Proprietà strutturali
 1. In $B_i$, la $i$ è il numero massimo di figli (la `d` di prima)
 2. Il numero totale di nodi: $2^i$

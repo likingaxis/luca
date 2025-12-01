@@ -277,7 +277,7 @@
 
 # ⚙️ FREQUENZA DIFETTI HARDWARE
 
-![Pasted image 20251013183827.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251013183827.png)
+![Pasted image 20251013183827.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251013183827.png)
 
 
 - “Curva a vasca da bagno” 🛁
@@ -293,7 +293,7 @@
 
 # 💾 FREQUENZA DIFETTI SOFTWARE
 
-![Pasted image 20251013183852.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251013183852.png)
+![Pasted image 20251013183852.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251013183852.png)
 
 - **Curva idealizzata:** decrescente.
     

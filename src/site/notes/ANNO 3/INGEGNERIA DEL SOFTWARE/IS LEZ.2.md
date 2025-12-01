@@ -80,7 +80,7 @@ Se non si adotta alcun modello formale, si finisce per applicare il **Build & F
 - **Criticità**: Questo approccio è molto costoso e inefficiente. Come sottolineato dal prof, **il cliente non veniva quasi mai soddisfatto**, portando a fallimenti o a software di bassa qualità. Per questo motivo, l'Ingegneria del Software ha introdotto modelli più rigorosi.
     
 
-![Pasted image 20251024164620.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164620.png)
+![Pasted image 20251024164620.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164620.png)
 
 ---
 
@@ -103,7 +103,7 @@ Rappresenta la prima evoluzione strutturata per superare il caos del "Build & Fi
 - **Consegna e Manutenzione**: Una volta superati i test, il software viene rilasciato. Inizia la fase di manutenzione (correzione bug, implementazione modifiche).
     
 
-![Pasted image 20251024164639.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164639.png)
+![Pasted image 20251024164639.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164639.png)
 
 **Svantaggi del Waterfall:**
 
@@ -125,7 +125,7 @@ Rappresenta la prima evoluzione strutturata per superare il caos del "Build & Fi
     - **Nota del Prof**: Non si certifica il prodotto in sé, ma il **processo** o l'**organizzazione** che lo ha sviluppato.
         
 
-![Pasted image 20251024164658.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164658.png)
+![Pasted image 20251024164658.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164658.png)
 
 ### Modello a Prototipazione Rapida (Rapid Prototyping) 🚀
 
@@ -145,9 +145,9 @@ Il prototipo serve per:
 - Il cliente ha subito un **prototipo da vedere e usare** (es. una GUI), fornendo feedback prezioso.
     
 
-![Pasted image 20251024164716.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164716.png)
+![Pasted image 20251024164716.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164716.png)
 
-![Pasted image 20251024164728.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164728.png)
+![Pasted image 20251024164728.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164728.png)
 
 - **Concetto**: Il prototipo viene creato al solo scopo di definire i requisiti e poi **viene buttato**. Il prodotto finale viene sviluppato da zero.
     
@@ -162,13 +162,13 @@ Il prototipo serve per:
     - **Struttura degradata**: Il codice è spesso di bassa qualità, pensato solo per la rappresentazione.
         
 
-![Pasted image 20251024164745.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164745.png)
+![Pasted image 20251024164745.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164745.png)
 
 #### Programmazione Visuale e Prototipazione
 
 Strumenti di programmazione visuale (drag-and-drop) e CASE (Computer-Aided Software Engineering) sono molto usati per creare prototipi velocemente.
 
-![Pasted image 20251024164805.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164805.png)
+![Pasted image 20251024164805.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164805.png)
 
 **Problemi della programmazione visuale:**
 
@@ -189,7 +189,7 @@ Poiché i requisiti evolvono quasi sempre, sono nati modelli basati sull'**itera
 
 L'idea è di sviluppare e rilasciare il prodotto in **incrementi successivi** e funzionanti, chiamati **build**.
 
-![Pasted image 20251024164819.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164819.png)
+![Pasted image 20251024164819.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164819.png)
 
 #### Versioni con o senza Architettura Generale (Overall Architecture)
 
@@ -202,7 +202,7 @@ L'idea è di sviluppare e rilasciare il prodotto in **incrementi successivi** 
     - **Svantaggio**: Richiede più pianificazione iniziale.
         
     
-    ![Pasted image 20251024164959.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024164959.png)
+    ![Pasted image 20251024164959.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024164959.png)
     
 - **Versione senza Architettura Generale**:
     
@@ -213,18 +213,18 @@ L'idea è di sviluppare e rilasciare il prodotto in **incrementi successivi** 
     - **Svantaggio (Prof)**: **Molto più rischiosa**. Senza una guida comune, coordinare i team e integrare i moduli diventa complesso e può portare a una struttura finale incoerente.
         
     
-    ![Pasted image 20251024165010.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165010.png)
+    ![Pasted image 20251024165010.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165010.png)
     
 
 #### Impatto sui costi
 
 Il costo totale è la somma del **costo dei build** e del **costo di integrazione**. L'obiettivo è trovare il numero di build che si colloca nella **regione di costo minimo**.
 
-![Pasted image 20251024165021.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165021.png)
+![Pasted image 20251024165021.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165021.png)
 
 #### Confronto: Waterfall vs. Incrementale
 
-![Pasted image 20251024165039.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165039.png)
+![Pasted image 20251024165039.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165039.png)
 
 ### Modello a Spirale (Spiral Model) 🌀
 
@@ -241,13 +241,13 @@ Ogni ciclo della spirale attraversa 4 settori:
 4. **Valutazione del Cliente**: Il cliente valuta il risultato e si pianifica il ciclo successivo.
     
 
-![Pasted image 20251024165104.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165104.png)
+![Pasted image 20251024165104.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165104.png)
 
 È molto adatto per progetti grandi e rischiosi, spesso per **software interno**.
 
-![Pasted image 20251024165131.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165131.png)  
-![Pasted image 20251024165153.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165153.png)  
-![Pasted image 20251024165205.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165205.png)
+![Pasted image 20251024165131.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165131.png)  
+![Pasted image 20251024165153.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165153.png)  
+![Pasted image 20251024165205.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165205.png)
 
 ---
 
@@ -263,21 +263,21 @@ Un **rischio** è la probabilità che una circostanza avversa possa avere un i
 - **Rischi di Business (Business Risks)**: Legati a fattori di mercato o tecnologici. Es: un prodotto concorrente esce prima, la tecnologia usata diventa obsoleta.
     
 
-![Pasted image 20251024165217.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165217.png)
+![Pasted image 20251024165217.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165217.png)
 
 Si articola in 4 fasi cicliche:  
-![Pasted image 20251024165243.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165243.png)
+![Pasted image 20251024165243.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165243.png)
 
 1. **Identificazione (Risk Identification)**: Si elencano tutti i possibili rischi.  
-    ![Pasted image 20251024165258.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165258.png)
+    ![Pasted image 20251024165258.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165258.png)
     
 2. **Analisi (Risk Analysis)**: Si valutano **probabilità** e **impatto** di ogni rischio per dargli una priorità.  
-    ![Pasted image 20251024165319.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165319.png)
+    ![Pasted image 20251024165319.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165319.png)
     
 3. **Pianificazione (Risk Planning)**: Si definiscono le strategie per gestire i rischi (Prevenzione, Minimizzazione, Piani di Emergenza).
     
 4. **Monitoraggio (Risk Monitoring)**: Si controllano i rischi a intervalli regolari, tipicamente durante le riunioni **SAL (Stato Avanzamento Lavori)**.  
-    ![Pasted image 20251024165348.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165348.png)
+    ![Pasted image 20251024165348.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165348.png)
     
 
 ---
@@ -291,7 +291,7 @@ Si articola in 4 fasi cicliche:
 - **Nota del Prof**: La fase di **Maintenance** ha un diametro inferiore per evidenziare come un buon design OO riduca lo sforzo di manutenzione.
     
 
-![Pasted image 20251024165401.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165401.png)
+![Pasted image 20251024165401.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165401.png)
 
 #### Modello di Ingegneria Concorrente
 
@@ -318,7 +318,7 @@ Si articola in 4 fasi cicliche:
 2. **Stabilizzazione (Stabilize)**: Rilascio di versioni stabili a intervalli periodici, chiamate **Milestone**.
     
 
-![Pasted image 20251024165452.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165452.png)
+![Pasted image 20251024165452.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165452.png)
 
 #### 3 Fasi di Sviluppo
 
@@ -329,5 +329,5 @@ Si articola in 4 fasi cicliche:
 3. **Stabilization Phase**: Testing intensivo, bug fixing e preparazione per il rilascio, include il **UI Freeze** (l'interfaccia non può più essere modificata).
     
 
-![Pasted image 20251024165435.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165435.png)  
-![Pasted image 20251024165500.png](/img/user/ANNO%203/INGEGNERIA%20DEL%20SOFTWARE/FOTOIS/Pasted%20image%2020251024165500.png)
+![Pasted image 20251024165435.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165435.png)  
+![Pasted image 20251024165500.png](/img/user/ANNO%203/FOTOANNO3/FOTOIS/Pasted%20image%2020251024165500.png)

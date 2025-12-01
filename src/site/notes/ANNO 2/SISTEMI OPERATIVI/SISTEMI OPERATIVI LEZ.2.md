@@ -85,7 +85,7 @@ Il processo è un programma in esecuzione
 >- quindi sono 2 byte
 
 >[!info]- come viene rappresentato in memoria il processo?
->![Pasted image 20241016175303.jpg|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241016175303.jpg)
+>![Pasted image 20241016175303.jpg|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241016175303.jpg)
 > - Stack: le Active call data è una porzione di memoria che viene usata da un processo per metterci dentro informazioni durante la sua esecuzione, come risultati di funzioni che poi una volta finito il processo vengono eliminate
 > - Data: vengono messe le variabili del programma e possono essere locali e globali
 > - Text: viene messo il codice del programma
@@ -105,7 +105,7 @@ processi
 
 
 >[!info] Un albero di processi composto da processi e processi figli
->![Pasted image 20241016181441.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241016181441.jpg)
+>![Pasted image 20241016181441.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241016181441.jpg)
 
 ### CHI POSSIEDE UN PROCESSO?
 Ogni processo e' collegato a un UserId
@@ -129,7 +129,7 @@ Con UNIX abbiamo nodo radice e sotto nodi che sono risorse ecc
 ##### proprietà file con metadati
 
 >[!info]- I file sono protetti da tre bit che corrispondono a diverse entità di una macchina, ogni bit consente o meno determinate attività sul file
->![Pasted image 20241016182926.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241016182926.jpg)
+>![Pasted image 20241016182926.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241016182926.jpg)
 >- r=read
 >- w=write
 >- x=execute
@@ -140,11 +140,11 @@ Il sistema operativo non decide nulla quindi fa le cose in base allo user che lo
 ##### Esempio di organizzazione di un file system 
 Un file system viene organizzato in una certa struttura arborea
 >[!fotoesempio]-
->![Pasted image 20241016185532.jpg|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241016185532.jpg)
+>![Pasted image 20241016185532.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241016185532.jpg)
 
 Quando eseguiamo un montaggio di un dispositivo nel s.o. la sua organizzazione deve essere riconciliata come quella del s.o.
 Non è scontato questo cambiamento di struttura poiché il s.o. potrebbe non riconoscere il tipo di formattazione della chiavetta
-![Pasted image 20241016190243.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241016190243.jpg)
+![Pasted image 20241016190243.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241016190243.jpg)
 - a) Prima del mount la USB non è accessibile
 - b)dopo la mount la USB si è collegata nei file
 ##### ESEMPIO ACCESSO AI FILE
@@ -157,11 +157,11 @@ In Linux i device hardware vengono visti come dei file
 ###### FILE A PIPE
 Processi comunicano tra loro con le pipe, ovvero pseudo file che viaggiano su un canale FIFO
 Scrivere un processo che comunica con altri processi attraverso pipe(chiede a esame)
-![Pasted image 20241016203452.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241016203452.jpg)
+![Pasted image 20241016203452.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241016203452.jpg)
 ## CHIAMATE DI SISTEMA
 Una chiamata di sistema permette ai programmi in user space (spazio utente) di richiedere servizi o risorse direttamente al kernel del sistema operativo. È uno dei meccanismi fondamentali che consentono ai programmi di interagire con l'hardware e le risorse di sistema in modo controllato e sicuro.
 Quando un programma ha bisogno di un servizio che solo il kernel può fornire (ad esempio leggere un file), deve effettuare una chiamata di sistema.
-![Pasted image 20241016205008.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241016205008.jpg)
+![Pasted image 20241016205008.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241016205008.jpg)
 
 - Devono essere estremamente veloci
 - Trap blocca il processo e lo sposta facendogli fare il cambio di contesto
@@ -174,5 +174,5 @@ Quando un programma ha bisogno di un servizio che solo il kernel può fornire (a
 - passaggio a modalità kernel che avviene attraverso una istruzione trap verso il kernel(6)
 - il gestore di chiamate di sistema viene eseguito(8)
 - viene ridato il controllo alla procedura utente(10)
-![Screenshot_2024-10-17-16-19-37-53_f56466bc4bb61e6d2de1f3b0468a89d9.jpg|700](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Screenshot_2024-10-17-16-19-37-53_f56466bc4bb61e6d2de1f3b0468a89d9.jpg)
+![Screenshot_2024-10-17-16-19-37-53_f56466bc4bb61e6d2de1f3b0468a89d9.jpg|700](/img/user/ANNO%202/FOTOANNO2/fotosop/Screenshot_2024-10-17-16-19-37-53_f56466bc4bb61e6d2de1f3b0468a89d9.jpg)
 

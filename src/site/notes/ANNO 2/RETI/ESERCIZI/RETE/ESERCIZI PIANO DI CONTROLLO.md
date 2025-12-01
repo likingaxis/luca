@@ -11,5 +11,5 @@
 	- se non sono raggiungibili si mette infinito
 	- si trascrive la distanza se il nodo non è ancora stato usato per la ricerca infatti tipo D(C),p(C) non è stato aggiornato fino all'ultimo
 	- se un nodo effettua la visita significa che è stato già trovato il percorso migliore per lui
-![Screenshot_2025-07-08-19-49-00-41_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/RETI/fotret/Screenshot_2025-07-08-19-49-00-41_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2025-07-08-19-49-00-41_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Screenshot_2025-07-08-19-49-00-41_45415775811cea13943236d9369df411.jpg)
 ## Distance Vector

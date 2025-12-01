@@ -65,7 +65,7 @@ Per questo, oltre all’encryption, servono strumenti che assicurino che i dati 
     Può alterare i dati, fingere di essere un altro mittente o redirigere la comunicazione verso terzi.  
     Contro questi attacchi servono strumenti che garantiscano **autenticità e integrità**, come **MAC** e **firme digitali**. FIGURA 1.2
 
-![Pasted image 20251007173356.png](/img/user/ANNO%203/CRITTOGRAFIA/CRITTOFOTO/Pasted%20image%2020251007173356.png)
+![Pasted image 20251007173356.png](/img/user/ANNO%203/FOTOANNO3/CRITTOFOTO/Pasted%20image%2020251007173356.png)
 
 Un esempio di vulnerabilità a un attacco attivo è il **bit-flipping attack** nei cifrari a flusso: se un avversario modifica alcuni bit del ciphertext, i corrispondenti bit del plaintext vengono cambiati in modo prevedibile, anche senza conoscere la chiave.
 

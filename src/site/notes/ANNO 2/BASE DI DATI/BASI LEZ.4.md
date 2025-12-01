@@ -15,7 +15,7 @@ ad esempio
 Il prodotto cartesiano è definito come tutte le n-uple (d1,...dn)
 tali che ciascun elemento $d1\in D1$, $d2 \in D2$ ... $dn \in Dn$
 per cui una relazione su una serie di questi domini è un sottoinsieme dei vari prodotti cartesiani
-![Pasted image 20250317180250.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180250.png)
+![Pasted image 20250317180250.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180250.png)
 ?=sottoinsieme
 #### Proprietà dell'insieme
 una relazione è un insieme; quindi: 
@@ -23,7 +23,7 @@ una relazione è un insieme; quindi:
 2. le n-uple sono distinte
 3. ciascuna n-upla è ordinata: l’ i-esimo valore proviene dall’ i-esimo dominio
 ## Esempio pratico
-![Pasted image 20250317180309.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180309.png)
+![Pasted image 20250317180309.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180309.png)
 
 ## Precisazione sulla funzione
 una relazione è una collezione di n-uple dove una n-upla è una associazione tra un attributo e un dominio corrispondente
@@ -55,7 +55,7 @@ Una tabella rappresenta una relazione se
 - l’ordinamento tra le righe è irrilevante
 - l’ordinamento tra le colonne è irrilevante
 ## Esempi e Disempi
-![Pasted image 20250317180346.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180346.png)
+![Pasted image 20250317180346.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180346.png)
 ## Riferimenti
 i riferimenti su relazioni diverse (tabelle) avvengono tramite valori che hanno lo scopo di creare dei riferimenti
 ## studenti
@@ -85,7 +85,7 @@ i riferimenti su relazioni diverse (tabelle) avvengono tramite valori che hanno 
 | 04     | Chimica | Verdi   |
 DELLE TABELLE COSì AVRANNO UNA RELAZIONE COSì -> 
 
-![Pasted image 20250317180404.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180404.png)
+![Pasted image 20250317180404.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180404.png)
 
 ## Vantaggi ecc(riscrivi meglio dopo)
 - indipendenza dalle strutture fisiche (si potrebbe avere anche con puntatori di alto livello) che possono cambiare dinamicamente
@@ -107,20 +107,20 @@ STUDENTI(Matricola, Cognome, Nome, Data di Nascita)
 STUDENTI(Matricola, Cognome, Nome, Data di Nascita)
 ESAMI(Matricola, Voto, Corso)
 CORSO(Codice, Titolo, Docente)
-![Pasted image 20250317181730.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317181730.png)
+![Pasted image 20250317181730.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317181730.png)
 
 Qui abbiamo uno schema R(X) che rappresenta la singola tabella mentre invece r di ennuple su X indica i veri e propri dati al suo interno
 per quanto riguarda l'istanza su uno schema R delle base di dati indica l'insieme delle varie tabelle
-![Pasted image 20250317180427.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180427.png)
+![Pasted image 20250317180427.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180427.png)
 Istanza celestino invece schema la cosa verde
 ## Strutture nidificate
 Voglio rappresentare uno scontrino di questo tipo, possiamo vedere che sono nidificate perché abbiamo una tabella in un'altra
-![Pasted image 20250317180444.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180444.png)
+![Pasted image 20250317180444.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180444.png)
 Per farlo creo delle tabelle di questo tipo con delle relazioni
-![Pasted image 20250317180458.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180458.png)
+![Pasted image 20250317180458.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180458.png)
 ## Struttura rigida conseguenze
 spesso possiamo avere informazioni incomplete dovute alla rigidezza del DBMS
 #### Vari esempi
-![Pasted image 20250317180517.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250317180517.png)
+![Pasted image 20250317180517.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250317180517.png)
 Se l'informazione è incompleta non conviene mettere ad esempio 0
 nelle base di dati viene usato NULL per indicare un valore non presente o mancante

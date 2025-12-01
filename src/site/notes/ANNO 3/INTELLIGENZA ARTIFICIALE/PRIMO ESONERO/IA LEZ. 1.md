@@ -46,7 +46,7 @@ Esempi tipici di IA debole sono i sistemi di **riconoscimento facciale**, i **tr
 
 ## 🧮 Razionalità vs Umanità
 
-![Pasted image 20251013184910.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251013184910.png)
+![Pasted image 20251013184910.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251013184910.png)
 
 L’IA può essere progettata per ispirarsi a due diversi principi:
 

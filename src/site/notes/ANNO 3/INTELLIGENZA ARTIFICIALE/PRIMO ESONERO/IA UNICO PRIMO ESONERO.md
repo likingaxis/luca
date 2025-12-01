@@ -18,7 +18,7 @@ L’IA può essere studiata e progettata da diverse prospettive. Le due principa
 	- L’obiettivo è ottenere *prestazioni efficaci*, anche se il sistema non “comprende” davvero ciò che fa.  
 
 ## UMANITÀ O RAZIONALITÀ
-![Pasted image 20251013184910.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251013184910.png)
+![Pasted image 20251013184910.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251013184910.png)
 L’IA può essere progettata per ispirarsi a due diversi principi:
 
 - il **comportamento umano**, che riflette come le persone pensano e agiscono nella realtà;
@@ -61,7 +61,7 @@ Ogni volta che una tecnologia basata sull’IA diventa di uso comune, **smettiam
 		- esegue l'azione scelta anche mediante gli effettori
 	- *si aggiorna*
 		- aggiorna l'ambiente contando l'azione appena eseguita
-![Pasted image 20251013185628.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251013185628.png)
+![Pasted image 20251013185628.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251013185628.png)
 ## Percezioni e Azioni dell'agente
 - come abbiamo detto l'agente riceve *percezioni* ,ovvero l'**input ricevuto dai sensori** dell'agente
 	- l'insieme di tutte le percezioni passate rappresentano la *Sequenza Percettiva*
@@ -71,7 +71,7 @@ Ogni volta che una tecnologia basata sull’IA diventa di uso comune, **smettiam
 		    - (dove $P^*$ è l'insieme delle sequenze percettive e $A$ è l'insieme delle azioni)
 - Il *programma Agente* è l'**implementazione concreta** della funzione agente, in esecuzione all'interno di un sistema fisico (l'architettura dell'agente)
 ## Struttura di un Agente con Ambiente
-![Pasted image 20251016085815.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016085815.png)
+![Pasted image 20251016085815.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016085815.png)
 
 ## Agenti Razionali
 - quando si parla di *agente intelligente* si intende proprio *agente razionale*
@@ -115,7 +115,7 @@ Il framework **PEAS** fornisce un metodo sistematico per specificare *l'ambiente
 - **Definizione:** I **dispositivi** attraverso i quali l'agente **percepisce** il suo ambiente. Il dato percepito è chiamato **percezione** (_percept_).
 - _Esempio: Autista di taxi automatico:_ Telecamere, radar, tachimetro, GPS.
 #### Esempio con Chat GPT
-![Pasted image 20251016093738.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016093738.png)
+![Pasted image 20251016093738.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016093738.png)
 ## Proprietà dell’ambiente e del problema
 I diversi ambienti di lavoro di un agente si caratterizzano lungo alcune dimensioni che ne influenzano la complessità e la progettazione.
 ### Osservabilità
@@ -169,7 +169,7 @@ I diversi ambienti di lavoro di un agente si caratterizzano lungo alcune dimensi
 	- L'agente **non conosce le regole del gioco**. L'agente non sa come l'ambiente reagirà alle sue azioni.
 	- L'agente **dovrà apprendere come funziona** l'ambiente. Dovrà compiere **azioni esplorative** (sperimentazione) per acquisire la conoscenza dinamica necessaria a prendere buone decisioni.
 #### ESEMPI
-![Pasted image 20251016094914.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016094914.png)
+![Pasted image 20251016094914.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016094914.png)
 
 ## Ambiente simulato
 In un sistema automatizzato o simulato, l’ambiente **non è reale**, ma **modellato da un software** che ne gestisce gli stati e le regole di funzionamento.
@@ -181,31 +181,31 @@ Per farlo, svolge una serie di funzioni fondamentali:
 - attivare altri processi implicati dal cambiamento effettuato
 - valutare le prestazioni degli agenti
 #### Esempio di **ambiente di simulazione** che serve per valutare uno o più **agenti**.
-![Pasted image 20251016140906.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016140906.jpg)
+![Pasted image 20251016140906.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016140906.jpg)
 ## STRUTTURA DI UN AGENTE
 $$ AGENTE=ARCHITETTURA + PROGRAMMA$$
 - l'agente ha una sua funzione ( come spiegato in precedenza)
 - `Agent()`
 $$Agent:Percezioni \rightarrow Azioni$$
 ##### Pseudo programma agente
-![Pasted image 20251016141848.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016141848.jpg)
+![Pasted image 20251016141848.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016141848.jpg)
 
 # Diverse architetture di agenti
 - <u><font color="#4bacc6">Basata su tabella</font></u>
 	- Ogni azione dell'agente viene decisa in base a una **tabella che associa un'azione ad ogni possibile sequenza di percezioni**.  
 	- gli *agenti reattivi semplici* usano questo tipo di architettura
-![Pasted image 20251016143808.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016143808.jpg)
+![Pasted image 20251016143808.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016143808.jpg)
 Partendo dall'ambiente, l'agente
 - riceve delle percezioni tramite i sensori
 	- capisce lo stato dell'ambiente
 - guarda nella sua tabella (percezioni -> azioni)
 	- esegue l'azione  
-![Pasted image 20251016144146.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016144146.jpg)
+![Pasted image 20251016144146.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016144146.jpg)
 
 
 - <u><font color="#4bacc6">Basata su modello</font></u>
 - Gli agenti che usano questa architettura hanno una **memoria interna** che gli permette di rappresentare il mondo in cui si trovano. questi **mantengono e aggiornano uno stato interno** che descrive _cosa credono che stia succedendo_ 
-![Pasted image 20251016144855.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016144855.jpg)
+![Pasted image 20251016144855.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016144855.jpg)
 🔹 1️⃣ Percezione e costruzione del modello del mondo
 L’agente:
 - **riceve le percezioni** dall’ambiente attraverso i **sensori**;
@@ -229,14 +229,14 @@ Infine:
 
 👉 A questo punto il ciclo ricomincia: l’ambiente cambia, genera nuove percezioni e l’agente aggiorna di nuovo il proprio modello interno.
 
-![Pasted image 20251016145402.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016145402.jpg)
+![Pasted image 20251016145402.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016145402.jpg)
 
 
 - <u><font color="#4bacc6">Basata su obiettivo</font></u>
 	- Gli **agenti basati su obiettivo** sono un’evoluzione degli agenti basati su modello.  
 	- Come loro, **mantengono uno stato interno** del mondo (memoria e conoscenza di come si evolve), 
 	- ma in più **hanno un obiettivo da raggiungere (goal)** che guida la scelta delle azioni.
-![Pasted image 20251016145830.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016145830.jpg)
+![Pasted image 20251016145830.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016145830.jpg)
 L’**agente basato su obiettivo**, **va oltre**:  
 → non si limita a prevedere _cosa succederà_, ma **decide cosa vuole che succeda**, e **sceglie le azioni** per raggiungere un _goal_ (obiettivo) desiderato.
 
@@ -249,7 +249,7 @@ $$U(s) = \text{grado di utilità dello stato }$$
 
 - <u><font color="#4bacc6">Basata su apprendimento</font></u>
 	- Questi agenti sono in grado di **migliorare il proprio comportamento nel tempo**, grazie a un meccanismo di apprendimento interno.
-![Pasted image 20251016150117.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150117.jpg)
+![Pasted image 20251016150117.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016150117.jpg)
 - 🔹 **Performance Element**
 	- È il **cuore operativo** dell’agente:
 	- Riceve **le percezioni** dai sensori.
@@ -273,20 +273,20 @@ $$U(s) = \text{grado di utilità dello stato }$$
 Quando un agente deve ragionare o apprendere, ha bisogno di **una rappresentazione interna dello stato del mondo**.  
 
 ##### 1. Rappresentazione atomica
-![Pasted image 20251016150129.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150129.jpg)
+![Pasted image 20251016150129.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016150129.jpg)
 - Ogni **stato** o **situazione** è considerato come un **blocco unico e indivisibile**.
 - L’agente conosce solo _che quello stato esiste_, ma **non ha informazioni sulla sua struttura interna**.
 - È il modello più semplice:
 	→ **stati finiti**, **transizioni semplici**, a volte con **probabilità associate** (se stocastico).
 
 ##### 2. Rappresentazione fattorizzata
-![Pasted image 20251016150349.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150349.jpg)
+![Pasted image 20251016150349.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016150349.jpg)
 - Ogni stato è **descritto tramite un insieme di variabili (fattori)**.
 - Invece di trattare tutto come un unico blocco, l’agente **rappresenta le caratteristiche principali** dello stato (es. posizione, temperatura, velocità, ecc.).
 - Queste variabili possono essere viste come **dimensioni in uno spazio vettoriale**.
 
 ##### 3. Rappresentazione strutturata
-![Pasted image 20251016150400.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150400.jpg)
+![Pasted image 20251016150400.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251016150400.jpg)
 - È la più **ricca e complessa**.
 - Gli oggetti non sono solo elenchi di valori, ma **entità con relazioni tra loro** (come in un grafo o in un linguaggio logico).
 - Permette di descrivere **relazioni, gerarchie e dipendenze**.
@@ -386,8 +386,8 @@ più complessi e legati a contesti pratici.
 ###### 🔸 Problemi ESEMPLIFICATIVI
 ###### 🧹 Esempio: Mondo dell’Aspirapolvere
 Uno dei problemi classici su griglia, usato per testare gli algoritmi di ricerca di base.
-![Pasted image 20251021125057.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021125057.jpg)
-![Pasted image 20251021125109.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021125109.jpg)
+![Pasted image 20251021125057.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021125057.jpg)
+![Pasted image 20251021125109.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021125109.jpg)
 
 
 |Elemento|Descrizione|
@@ -406,7 +406,7 @@ Uno dei problemi classici su griglia, usato per testare gli algoritmi di ricerca
 ###### 🧩 Puzzle dell’Otto
 
 Un classico problema di ricerca usato per confrontare algoritmi come A*, BFS, DFS, ecc.
-![Pasted image 20251021132649.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021132649.jpg)
+![Pasted image 20251021132649.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021132649.jpg)
 
 |Elemento|Descrizione|
 |---|---|
@@ -419,7 +419,7 @@ Un classico problema di ricerca usato per confrontare algoritmi come A*, BFS, DF
 |**Spazio degli stati**|Molto ampio, può contenere cicli; adatto a testare efficienza degli algoritmi.|
 
 ###### 👑 Problema delle Otto Regine
-![Pasted image 20251021132907.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021132907.jpg)
+![Pasted image 20251021132907.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021132907.jpg)
 
 Un altro problema classico per testare **formulazioni diverse** e strategie di ricerca.
 
@@ -515,16 +515,16 @@ L’obiettivo è **minimizzare il costo complessivo**: trovare una soluzione **v
 📌 Ogni strategia cerca un equilibrio tra **tempo**, **spazio**, **completezza** e **ottimalità**.
 
 #### Pseudocodice generico di ricerca albero
-![Pasted image 20251021140935.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021140935.jpg)
+![Pasted image 20251021140935.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021140935.jpg)
 
 #### Pseudocodice più dettagliato
-![Pasted image 20251021141804.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021141804.jpg)
+![Pasted image 20251021141804.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021141804.jpg)
 
 
 #### Ricerca in ampiezza
-![Pasted image 20251021142331.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021142331.jpg)
+![Pasted image 20251021142331.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021142331.jpg)
 ##### Pseudo
-![Pasted image 20251021142416.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021142416.jpg)
+![Pasted image 20251021142416.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021142416.jpg)
 - È una **ricerca non informata** e **sistematica**, completa anche su spazi di stati infiniti (se ogni stato ha un numero finito di successori).
 - Usa una **coda FIFO**: i nuovi nodi vengono aggiunti in fondo, e quelli più vecchi vengono espansi per primi.
 
@@ -560,7 +560,7 @@ $g(n) = k \times \text{profondità}$
 - Usa una **coda con priorità** come frontiera (invece della coda FIFO della BFS).
 - Espande i nodi **in ordine di costo crescente**
 - Si comporta come l’**algoritmo di Dijkstra**: la ricerca si “espande a onde” di costo uniforme
-![Pasted image 20251021143052.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021143052.jpg)
+![Pasted image 20251021143052.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021143052.jpg)
 ## Proprietà
 
 | Proprietà       | Descrizione                                                                 |
@@ -584,7 +584,7 @@ dove:
 |**Costi diversi**|UC esplora prima i cammini a costo minore, garantendo la soluzione più economica.|
 
 #### Ricerca in profondità DFS
-![Pasted image 20251021151954.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021151954.png)
+![Pasted image 20251021151954.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021151954.png)
 #### Analisi costi
 • Se m distanza massima della soluzione nello spazio di ricerca 
 • b fattore di diramazione 
@@ -598,8 +598,8 @@ La Ricerca in Profondità Limitata è una strategia di ricerca non informata che
 - **Esempio di Utilizzo:** È utile per problemi in cui si conosce un **limite superiore** per la profondità della soluzione (es. in un problema di _Route-finding_ tra $N$ città, la soluzione più lunga non può superare $\text{N}-1$ mosse).
 • Complessità tempo: $O(b^d)$
 - Spazio: $O(b*d)$
-![Pasted image 20251021152344.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021152344.png)
-![Pasted image 20251021152421.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021152421.png)
+![Pasted image 20251021152344.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021152344.png)
+![Pasted image 20251021152421.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021152421.png)
 
 #### Ricerca Bidirezionale
 
@@ -617,22 +617,22 @@ fino a far **incontrare le due ricerche** in un punto intermedio dello spazio de
 - Espande **il nodo con costo minore** tra i due lati (strategia best-first).
 - Se la funzione di valutazione è il **costo di cammino**, otteniamo una **ricerca bidirezionale a costo uniforme**, ottimale come UC.
 - Nessun nodo con costo >$C^*/2$ (dove $C^∗$ è il costo ottimo) viene espanso.
-![Pasted image 20251021154403.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154403.png)
+![Pasted image 20251021154403.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021154403.png)
 
 #### TUTTE LE STRATEGIE A CONFRONTO
-![Pasted image 20251021154529.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154529.png)
+![Pasted image 20251021154529.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021154529.png)
 
 #### PROBLEMA DEI CICLI
 ##### Tre soluzioni pratiche
-![Pasted image 20251021154940.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154940.png)
+![Pasted image 20251021154940.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021154940.png)
 
 ##### Esempio di soluzione con i grafi
-![Pasted image 20251021155035.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155035.png)
+![Pasted image 20251021155035.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021155035.png)
 
 ### Fix della ricerca-grafo in ampiezza
-![Pasted image 20251021155104.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155104.png)
+![Pasted image 20251021155104.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021155104.png)
 ### Fix della ricerca-grafo con costo uniforme UC
-![Pasted image 20251021155139.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155139.png)
+![Pasted image 20251021155139.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251021155139.png)
 
 # Ricerca esaustiva
 Nella ricerca **non informata**, come BFS o UC, l’agente esplora tutto lo spazio degli stati “alla cieca”, senza sapere quale strada lo avvicina davvero alla soluzione.  
@@ -651,14 +651,14 @@ $$
 		- si calcola **a partire dallo stato del nodo (`n.Stato`)**, non dalla sua storia.
 
 ### Ricerca Best-First
-![Pasted image 20251025113910.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025113910.png)
+![Pasted image 20251025113910.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025113910.png)
 Ad ogni passo viene scelto il **nodo più promettente**, ossia quello con il **valore di f(n) più basso** (in caso di costi o distanze).
 - “Migliore = minore”, perché un f(n) piccolo indica “più vicino” al goal.
 - L’implementazione usa una **coda con priorità**, ordinata in base al valore di f(n).
 - Quindi tutto dipende da **come definiamo f(n)**
 	- in quello classico lo definiamo uguale a $g(n)$
 #### CLASSICO
-![Pasted image 20251025111757.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025111757.png)
+![Pasted image 20251025111757.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025111757.png)
 - **g(n)** = costo reale del cammino dall’inizio al nodo n.
 - Nessuna euristica: usiamo solo il costo accumulato finora.
 In questo caso, la “Best-First” **coincide esattamente con la Ricerca di Costo Uniforme (Uniform-Cost Search)**.
@@ -668,8 +668,8 @@ Infatti:
 - l’algoritmo sceglie sempre il nodo con il **costo cumulativo minore** (`lowest-cost node in frontier`),
 - e continua ad espandere fino a trovare il goal con costo minimo.
 #### Greedy Best-First
-![Pasted image 20251025112102.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025112102.png)
-![Pasted image 20251025111949.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025111949.png)
+![Pasted image 20251025112102.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025112102.png)
+![Pasted image 20251025111949.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025111949.png)
 - sfrutta **h(n)**
 	- **h(n)** = stima del costo _dal nodo n al goal_ (quanto “manca”).
 		- non è proprio euristica perché vede solo il passato
@@ -750,13 +750,13 @@ Invece di tenere in memoria TUTTI I NODI, l'idea è quella di ricordare solo i *
 >[!tip] LA BEAM SEARCH ***NON* È COMPLETA**
 
 ### Idea e pseudocodice
-![Pasted image 20251025193001.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193001.jpg)
+![Pasted image 20251025193001.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025193001.jpg)
 
-![Pasted image 20251025193007.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193007.jpg)
+![Pasted image 20251025193007.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025193007.jpg)
 
 
 >[!tip]- Esempio
->![Pasted image 20251025193059.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193059.jpg)
+>![Pasted image 20251025193059.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025193059.jpg)
 #### IDA*
 L'algoritmo IDA* combina
 - A*
@@ -806,7 +806,7 @@ $0 \le h(n) \le h^*(n)$
 - Un’euristica **semplice** è veloce da calcolare ma fa esplorare molti nodi.
 - Un’euristica **precisa** riduce la ricerca ma può essere costosa da valutare.
 > L’obiettivo è trovare un equilibrio tra **qualità della stima** e **costo computazionale**
-![Pasted image 20251025193638.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193638.jpg)
+![Pasted image 20251025193638.jpg](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251025193638.jpg)
 ##### Misurare l’efficacia: Fattore di diramazione effettivo $b^*$
 Per misurare quanto è “forte” o efficace un’euristica possiamo utilizzare un valore chiamato **fattore di diramazione effettivo (`b*`)**.
 
@@ -862,7 +862,7 @@ Tuttavia, il paesaggio è complesso e pieno di "trappole" che possono ingannare 
 - **Altopiano (shoulder o plateau) 🏜️**:
     - **Cos'è**: Una zona piatta dove tutti i vicini hanno la stessa altezza.
 
-![Pasted image 20251028154347.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028154347.png)
+![Pasted image 20251028154347.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251028154347.png)
 
 #### ALGORITMO HILL CLIMBING
 L’**Hill Climbing** è l’algoritmo di **ricerca locale** più semplice e intuitivo.  
@@ -875,7 +875,7 @@ a ogni passo, sceglie la direzione che porta **più in alto possibile**, cioè v
 5. **Iterazione** – il nuovo stato diventa corrente e il ciclo ricomincia.
 🧠 L’algoritmo **non memorizza** gli stati passati
 
-![Pasted image 20251028160108.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028160108.png)
+![Pasted image 20251028160108.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251028160108.png)
 
 #### 🔁 Varianti Principali
 
@@ -893,9 +893,9 @@ a ogni passo, sceglie la direzione che porta **più in alto possibile**, cioè v
 | **Massimo Locale(collina)** | Punto più alto dei vicini, ma inferiore al massimo globale | L’agente si ferma troppo presto                         |
 | **Altipiani (Plateau)**     | Area piatta dove tutti i vicini hanno lo stesso valore     | L’agente si muove a caso o si blocca                    |
 | **Crinali (Ridge)**         | Serie di massimi locali separati da discese laterali       | L’agente non riesce a “girare” verso la salita corretta |
-![Pasted image 20251028162118.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028162118.png)
-![Pasted image 20251028162130.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028162130.png)
-![Pasted image 20251028162157.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028162157.png)
+![Pasted image 20251028162118.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251028162118.png)
+![Pasted image 20251028162130.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251028162130.png)
+![Pasted image 20251028162157.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251028162157.png)
 
 📉 In questi casi, l’algoritmo può **fermarsi prematuramente** o “girare in tondo” senza mai raggiungere la soluzione ottimale.
 
@@ -927,7 +927,7 @@ $$T_{k+1} = \alpha \cdot T_k \quad \text{con } 0<α<1$$
 5. **Aggiorna la temperatura:** riduci `T` secondo il piano di raffreddamento.
 6. **Ripeti** finché `T` è prossima a 0. 
 ### Algoritmo
-![Pasted image 20251029193033.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193033.png)
+![Pasted image 20251029193033.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251029193033.png)
 
 ####  Ricerca Local Beam
 È una ricerca locale che mantiene **k stati alla volta** (anziché uno solo, come nell’Hill Climbing).  
@@ -941,12 +941,12 @@ A ogni passo:
 ### ALBERI AND-OR
 Quando ci troviamo in **ambienti non deterministici**, l’albero di ricerca classico (quello usato negli ambienti deterministici) **non basta più**.  
 - si utilizza una struttura chiamata **albero AND–OR**
-![Pasted image 20251029193155.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193155.png)
+![Pasted image 20251029193155.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251029193155.png)
 - NODI OR -> cerchio singolo
 - NODI AND -> cerchio singolo + semicerchio
 - Ogni **foglia** del sottoalbero è un **nodo obiettivo**.
 ### Pseudocodice
-![Pasted image 20251029193206.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193206.png)
+![Pasted image 20251029193206.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251029193206.png)
 #### Gestione dei cicli
 - immaginando una situazione non deterministica 
 	- il robot casualmente potrebbe fallire nelle sue azioni
@@ -958,7 +958,7 @@ Quando ci troviamo in **ambienti non deterministici**, l’albero di ricerca cla
 while (non sei nel riquadro destro)
     esegui Destra
 ```
-![Pasted image 20251029193219.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193219.png)
+![Pasted image 20251029193219.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251029193219.png)
 #### Ricerca con Osservazioni Parziali
 Quando l’agente si trova in un ambiente **parzialmente osservabile**, le sue percezioni **non bastano per sapere con certezza in quale stato si trova**.  
 Deve quindi **gestire l’incertezza**, mantenendo una **rappresentazione interna** di ciò che _potrebbe_ essere vero.
@@ -982,9 +982,9 @@ Deve quindi **gestire l’incertezza**, mantenendo una **rappresentazione intern
 |**Costo**|Può essere medio o prudente (es. il massimo).|
 
 ###### Come vengono aggiornati gli stati credenza (versione deterministica e non)
-![Pasted image 20251029193235.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193235.png)
+![Pasted image 20251029193235.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251029193235.png)
 ###### Spazio degli stati completo
-![Pasted image 20251029193247.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193247.png)
+![Pasted image 20251029193247.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251029193247.png)
 Quando l’agente agisce in un ambiente parzialmente osservabile, il passaggio tra stati-credenza avviene in **tre fasi principali**:
 
 1. **🔸 Predizione**
@@ -1042,8 +1042,8 @@ Algoritmo che simula A*, ma **in tempo reale** e **localmente**:
 - aggiorna il valore `H(s)` dello stato appena lasciato;
 - poi sceglie la **mossa migliore** in base alle nuove stime.
 
-![Pasted image 20251030112816.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251030112816.png)
-![Pasted image 20251030112825.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251030112825.png)
+![Pasted image 20251030112816.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251030112816.png)
+![Pasted image 20251030112825.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251030112825.png)
 ###### 📊 Proprietà
 
 |Proprietà|Descrizione|
@@ -1064,13 +1064,13 @@ La **KB** contiene un insieme di **formule logiche** (proposizioni o predicati) 
 	- dove:
 	-  **α** = singolo fatto (formula)
 	- **Φ** = insieme di fatti e regole (base di conoscenza)
-![Pasted image 20251112115048.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112115048.png)
+![Pasted image 20251112115048.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251112115048.png)
 #### Requisito fondamentale
 > Ogni risposta dell’agente deve essere **una conseguenza logica** di ciò che gli è stato detto in precedenza.  
 > In simboli: se **KB ⊨ α**, allora α è logicamente conseguente da KB.
 #### PSEUDOCODICE DEL PROGRAMMA AGENTE CON KB
 Un agente di questo tipo alterna **percezione, inferenza e azione**, aggiornando continuamente la KB.
-![Pasted image 20251112114302.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112114302.png)
+![Pasted image 20251112114302.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251112114302.png)
 L’agente quindi:
 1. **Osserva** l’ambiente (percezioni → formule logiche);
 2. **Ragiona** deducendo nuove informazioni (inferenza logica);
@@ -1100,7 +1100,7 @@ un agente basato su conoscenza può essere
 - La **semantica** collega formule e mondo:
     - “verso il basso” → formule → fatti reali (interpretazione);
     - “verso l’alto” → nuovi fatti logici → nuovi aspetti veri del mondo.
-![Pasted image 20251112112059.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112112059.png)
+![Pasted image 20251112112059.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251112112059.png)
 
 Un’**interpretazione** I stabilisce la corrispondenza tra simboli e elementi reali.  
 Una formula **A** è **conseguenza logica** di KB se:  
@@ -1121,7 +1121,7 @@ cioè: tutti i modelli che rendono vera KB rendono vera anche A.
 > KB più grande → M(KB) **più piccolo**.
 
 
-![Pasted image 20251112124104.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112124104.png)
+![Pasted image 20251112124104.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251112124104.png)
 
 ### Ragionamento non monotono
 Nella **logica classica** vale la **monotonia**: se $KB ⊨ α$, allora anche $KB ∪ \{β\} ⊨ α$ 
@@ -1139,7 +1139,7 @@ Nel ragionamento umano, invece, **nuove informazioni possono invalidare** conclu
 ### SPIEGAZIONE WUMPUS, 8 REGINE E GIOCO DELL'8
 #### AGENTI REATTIVI=WUMPUS
 #### 8 regine
-![Pasted image 20251116165303.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251116165303.png)
+![Pasted image 20251116165303.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251116165303.png)
 Mettere **8 regine** su una scacchiera **8×8** in modo che **nessuna minacci un’altra**.
 Le regine attaccano:
 - **sulla stessa riga**
@@ -1156,7 +1156,7 @@ Le regine attaccano:
 #### gioco dell'8
 - Hai una griglia **3×3** che contiene 8 tessere numerate e **una casella vuota** (“blank”).
 - L’obiettivo è **raggiungere lo stato finale** (goal state) facendo scorrere le tessere nella casella vuota.
-![Pasted image 20251116172254.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251116172254.png)
+![Pasted image 20251116172254.png](/img/user/ANNO%203/FOTOANNO3/IA%20FOTO/Pasted%20image%2020251116172254.png)
 
 viene usato A*
 A* genera tutti gli stati successori (le mosse possibili) e calcola:

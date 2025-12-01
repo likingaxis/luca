@@ -24,7 +24,7 @@ l'host può ottenerlo:
 	- Questo sistema è ideale per utenti mobili che entrano ed escono spesso dalla rete, come smartphone e portatili.  
 >[!attention] Tuttavia, poiché ogni accesso può dare un IP diverso, **non garantisce la stabilità di una connessione TCP attiva** (che dipende dall’indirizzo IP).
 ### Dove è posizionato?
-![Pasted image 20250418153930.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418153930.png)
+![Pasted image 20250418153930.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418153930.png)
 ##### Il DHCP in 4 passi
 1. **DHCP Discover** (opzionale):  
     L’host invia un messaggio broadcast sulla rete per **scoprire se ci sono server DHCP disponibili**.
@@ -34,7 +34,7 @@ l'host può ottenerlo:
     L’host **richiede formalmente** quell’indirizzo IP, indicando che accetta l’offerta.
 4. **DHCP Ack**:  
     Il server DHCP conferma l’assegnazione, e **l’host può iniziare a usare quell’IP**.
-![dhcp_sequence.gif](/img/user/ANNO%202/RETI/fotret/dhcp_sequence.gif)
+![dhcp_sequence.gif](/img/user/ANNO%202/FOTOANNO2/fotret/dhcp_sequence.gif)
 le chiamate vengono fatte in broadcast perché il client appena entrato non sa con chi sta parlando e il server DHCP non sa con chi sta parlando perché non ha ancora un IP
 - **`src`**: indica l'indirizzo IP e la porta UDP del mittente del messaggio.
 
@@ -56,8 +56,8 @@ il DHCP non fornisce solo IP ma anche:
     
 - **Maschera di rete**(subnet): definisce la parte dell’indirizzo IP che identifica la rete e quella che identifica l’host.
 ### Altri esempi di DHCP
-![Pasted image 20250418155017.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418155017.png)
-![Pasted image 20250418155028.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418155028.png)
+![Pasted image 20250418155017.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418155017.png)
+![Pasted image 20250418155028.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418155028.png)
 ### Rispondiamo alla seconda domanda
 Come fa una _rete_ a ottenere l'indirizzo IP (la parte dell'indirizzo relativa alla rete)?
 Qui parleremo di indirizzi pubblici su una rete ma diciamo che si applica la medesima cosa su indirizzi privati
@@ -84,7 +84,7 @@ Se scelgo di suddividere in blocchi più piccoli:
 > Il blocco `200.23.16.0/20` può essere suddiviso in **8 sotto-blocchi da /23**  
 > Ognuno con **512 indirizzi** ($2^{9}$, perché 32 − 23 = 9)
 
-![Pasted image 20250418160050.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418160050.png)
+![Pasted image 20250418160050.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418160050.png)
 
 ### route aggregation
 Ogni **ISP** o **grande router** su Internet deve **pubblicizzare** agli altri router **quali indirizzi IP è in grado di raggiungere**.  
@@ -111,7 +111,7 @@ Tanti blocchi **vicini** (stessa radice binaria) sono **aggregati in uno solo**.
 - È l’**indirizzo di rete** (tutti gli ultimi 12 bit a 0)
 2. Fine: si aggiungono $2^{12} - 1 = 4095$ indirizzi
 - Ultimo indirizzo: `200.23.31.255` (tutti gli ultimi 12 bit a 1)
-![Pasted image 20250418162511.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418162511.png)
+![Pasted image 20250418162511.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418162511.png)
 
 ### Cambio di percorsi
 
@@ -124,7 +124,7 @@ Tanti blocchi **vicini** (stessa radice binaria) sono **aggregati in uno solo**.
     > “Inviatemi tutto ciò che inizia con **199.31.0.0/16**  
     > oppure con **200.23.18.0/23**” ← (questo è più specifico!)
 
-![Pasted image 20250418162743.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418162743.png)
+![Pasted image 20250418162743.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418162743.png)
 
 ricordiamo che se avviene una richiesta su un indirizzo più specifico
 - essa viene soddisfatta da quello che ci assomiglia di più
@@ -134,7 +134,7 @@ ricordiamo che se avviene una richiesta su un indirizzo più specifico
 - I **router Internet scelgono sempre il percorso più specifico**, se esiste.
 - Quindi il traffico per `200.23.18.0/23` andrà verso **ISPs-R-Us**,  
     nonostante Fly-By-Night-ISP continui a pubblicare il blocco `/20`.
-![Pasted image 20250418162952.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250418162952.png)
+![Pasted image 20250418162952.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250418162952.png)
 
 ## Ultime parole su questo argomenti degli indirizzi IP
 rispondendo a delle domande
@@ -156,7 +156,7 @@ rispondendo a delle domande
 
 ### NAT
 sta per network address translation
-![Pasted image 20250421191015.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421191015.jpg)
+![Pasted image 20250421191015.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421191015.jpg)
 Serve per ridurre il numero di dispositivi che usano l'IPv4 pubblico(per l'esterno)
 - ogni dispositivo ha un suo indirizzo privato
 	- tipo `10.0.0.1`
@@ -175,7 +175,7 @@ Il Router di tipo NAT deve gestire meticolosamente la traduzione degli indirizzi
 	- deve sostituire ad ogni pacchetto in entrata il datagramma corretto
 		- scambiando i vari indirizzi ip pubblici e la porta pubblica con i rispettivi privati
 ## Esempio di router NAT
-![Pasted image 20250421192215.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421192215.jpg)
+![Pasted image 20250421192215.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421192215.jpg)
 I vari step:
 - Abbiamo un PC 10.0.0.1  che vuole accedere ad un sito web 128.119.40.186 sulla porta 80 (HTTP) 
 	- La rete locale ha IP privati come quello sopra 
@@ -208,7 +208,7 @@ nasce per i motivi detti prima:
 questi 64
 
 #### Datagramma IPv6
-![Pasted image 20250421193057.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421193057.jpg)
+![Pasted image 20250421193057.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421193057.jpg)
 Campi principali: 
 - Versione (ver): sempre 6 
 - Classe di traffico: dà priorità ai datagrammi importanti 
@@ -232,22 +232,22 @@ Per comunicare in una rete mista si usa il tunneling dove:
 - un pacchetto IPv6 viene inserito in un pacchetto IPv4(payload)
 - così può viaggiare in IPv4
 - poi un router IPv6 può spacchettarlo senza problemi 
-![Pasted image 20250421193825.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421193825.jpg)
+![Pasted image 20250421193825.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421193825.jpg)
 
 #### Esempio 
-![Pasted image 20250421193837.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421193837.jpg)
+![Pasted image 20250421193837.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421193837.jpg)
 - A ed E sono i router misti
 - loro hanno il compito di impacchettare e spacchettare nei formati corretti
 
 ### visione fisica del tunneling
 
-![Pasted image 20250421194130.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421194130.jpg)
+![Pasted image 20250421194130.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421194130.jpg)
 
 nella visione logica sembra che il pacchetto vada senza problemi da B a E
 Invece nella versione fisica fa vedere anche i vari router intermedi con i vari cambiamenti di indirizzo
 
 ### Utilizzo di IPv6
-![Pasted image 20250421195845.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421195845.jpg)
+![Pasted image 20250421195845.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421195845.jpg)
 fa vedere quanto viene adottato IPv6 nel tempo
 ## Match Plus Action(inoltro generalizzato)
 una tabella di inoltro o dei flussi
@@ -256,7 +256,7 @@ una tabella di inoltro o dei flussi
 		- normale:
 			- fa un inoltro basato sulla destinazione guardando l'ip di destinazione e fa un inoltro verso il router giusto
 		- generalizzato: quando guarda anche altri campi dell'intestazione e può fare oltre all'inoltro anche ulteriori azioni
-![Pasted image 20250421200842.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421200842.jpg)
+![Pasted image 20250421200842.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421200842.jpg)
 in questo esempio inoltra al router numero 3 perché abbiamo `0111` 
 
 ### Tabella di inoltro o dei flussi
@@ -271,16 +271,16 @@ Ogni router può prendere decisioni "semplici" per la gestione dei pacchetti seg
 	- mandarlo al controller (se usi una rete SDN); 
 	- copiarlo, loggarlo, contarne i byte, ecc…
 Esempio 
-![Pasted image 20250421201317.jpg|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421201317.jpg)
+![Pasted image 20250421201317.jpg|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421201317.jpg)
 
 - Se due tabelle si sovrappongono vince quella con priorità più alta
 - presenza di contatori che tengono conto di quanti inoltri hanno usato quella determinata regola, con anche timestamp
 	- praticamente sai anche a che ora è successo
 
-![Pasted image 20250421201640.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421201640.jpg)
+![Pasted image 20250421201640.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421201640.jpg)
 #### Voci tabella dei flussi(Open Flow)
 
-![Pasted image 20250421201658.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250421201658.jpg)
+![Pasted image 20250421201658.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250421201658.jpg)
 OpenFlow rappresenta uno standard usato nelle reti SDN(Software Defined Networking)
 La logica di controllo è separata dall'hardware invece di avere ogni router che decide da solo come inoltrare i vari pacchetti
 - c'è un grande controller centrale che decide per tutti
@@ -318,7 +318,7 @@ Campi che servono per capire quale applicazione ha generato il pacchetto, distin
 
 ### Altri esempi
 #### Esempio 1
-![Pasted image 20250422120604.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422120604.jpg)
+![Pasted image 20250422120604.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422120604.jpg)
 ##### 🔁 Inoltro basato sulla destinazione
 **Descrizione**:  
 Se un pacchetto ha come IP di destinazione `51.6.0.8`, allora deve essere inoltrato sulla porta 6 del router.
@@ -345,7 +345,7 @@ Blocca tutti i pacchetti inviati da `128.119.1.1`.
 **Azione**:  
 `drop`
 #### ESEMPIO 2
-![Pasted image 20250422121659.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422121659.jpg)
+![Pasted image 20250422121659.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422121659.jpg)
 ##### 🎯 Inoltro basato su MAC di destinazione
 **Descrizione**:  
 Se un pacchetto ha `MAC di destinazione = 22:A7:23:11:E1:02`, allora viene inoltrato sulla porta `3`.
@@ -359,17 +359,17 @@ Se un pacchetto ha `MAC di destinazione = 22:A7:23:11:E1:02`, allora viene inolt
 ##### ⚖️ Load Balancing
 **Descrizione**:  
 Con il load balancing si distribuiscono i pacchetti destinati a `10.1.*.*` e provenienti da porta `3` e `4` su porta `2` e `1`.
-![Pasted image 20250422122530.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422122530.jpg)
+![Pasted image 20250422122530.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422122530.jpg)
 > Questa cosa **non si può fare** con l'inoltro basato solo sulla **destinazione IP (IP DST)**, perché andrebbero tutti sulla stessa porta.
 
 
 ### Astrazione di Open Flow 
 Open Flow può comportarsi come diversi dispositivi (router, switch, firewall, NAT) in base al `match + action`
-![Pasted image 20250422123020.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123020.jpg)
-![Pasted image 20250422123026.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123026.jpg)
+![Pasted image 20250422123020.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123020.jpg)
+![Pasted image 20250422123026.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123026.jpg)
 
 #### Esempio di rete Open Flow
-![Pasted image 20250422123503.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123503.jpg)
+![Pasted image 20250422123503.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123503.jpg)
 
 Questa rete ha 
 - **6 host** (`da h1 a h6`)
@@ -381,13 +381,13 @@ Il controller crea delle regole affinché: 
 - Il traffico passi attraverso s1 e poi s2 
 
 Quello che succede è questo:
-![Pasted image 20250422123703.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123703.jpg)
+![Pasted image 20250422123703.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123703.jpg)
 
 
 Spiegazione con i relativi match + action:
-![Pasted image 20250422123723.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123723.jpg)
-![Pasted image 20250422123727.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123727.jpg)
-![Pasted image 20250422123732.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123732.jpg)
+![Pasted image 20250422123723.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123723.jpg)
+![Pasted image 20250422123727.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123727.jpg)
+![Pasted image 20250422123732.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123732.jpg)
 
 
 >[!tip]- In sintesi, inoltro generalizzato perle 
@@ -404,11 +404,11 @@ Spiegazione con i relativi match + action:
 ### MIDDLEBOX
 Cosa è e dove si trova? 
 	"Qualsiasi dispositivo intermedio nella rete che svolge funzioni diverse da quelle normali di un router IP”
-	![Pasted image 20250422123803.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123803.jpg)
+	![Pasted image 20250422123803.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123803.jpg)
 	Non si limita ad inoltrare i pacchetti in base all'IP di destinazione (come un semplice router) ma fa anche altro.
 
 ##### Esempi di MB:
-![Pasted image 20250422123841.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123841.jpg)
+![Pasted image 20250422123841.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123841.jpg)
 
 ---
 
@@ -457,7 +457,7 @@ Le reti usavano:
 ---
 
 ## Cosa cambia tra le due?
-![Pasted image 20250422123901.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123901.jpg)
+![Pasted image 20250422123901.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123901.jpg)
 
 ---
 
@@ -467,18 +467,18 @@ Le reti usavano:
 
 - Tanti protocolli di applicazione, trasporto, collegamento e fisico
 - Solo **uno a livello di rete** → tutti i dispositivi in Internet lo devono supportare
-![Pasted image 20250422123908.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123908.jpg)
+![Pasted image 20250422123908.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123908.jpg)
 ---
 
 ### Con il passare degli anni:
 
 - Sono spuntati nuovi elementi dentro il livello IP (**middlebox**)
 - Più complicata ma molto più scalabile
-![Pasted image 20250422123914.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123914.jpg)
+![Pasted image 20250422123914.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123914.jpg)
 ---
 
 ## Principi architetturali di Internet
-![Pasted image 20250422123942.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422123942.jpg)
+![Pasted image 20250422123942.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422123942.jpg)
 
 - La **rete centrale** (router, switch) fa solo passaggio pacchetti
 - La logica e la complessità (es. controllo errori, sicurezza, affidabilità) sono fatte dai dispositivi **agli estremi** (host di partenza e di arrivo)
@@ -506,11 +506,11 @@ Le reti usavano:
 
 - Ogni nodo intermedio (router) si occupa di garantire il trasferimento
 - Ogni tratto della rete deve essere “intelligente”
-![Pasted image 20250422124002.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422124002.jpg)
+![Pasted image 20250422124002.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422124002.jpg)
 ---
 
 ## Perché Internet ha scelto end-to-end?
 
 - **Più semplice**: la rete è più stupida = più economica, più scalabile
 - **Più robusta**: se un nodo inter
-![Pasted image 20250422124010.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250422124010.jpg)
+![Pasted image 20250422124010.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250422124010.jpg)

@@ -24,12 +24,12 @@ Il sistema operativo mantiene informazioni sulle risorse e sullo stato interno d
 
 Illusione come al cinema ovvero n fotogrammi che ci fanno sembrare che siano in movimento
 foto con processi al fly
-![Pasted image 20241101152012.png|450](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241101152012.png)
+![Pasted image 20241101152012.png|450](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241101152012.png)
 
 - Ogni processo ha una porzione specifica di memoria assegnata.
 - Le frecce indicano il process switch, ossia il passaggio da un processo ad un altro. In questo modo noi abbiamo l'illusione che tutti i processi vengano svolti simultaneamente ma in realtà c'è un continuo switch repentino gestito dalla CPU.
 - In questo esempio il PC(Program Counter) è uno solo.
-![Pasted image 20241101152308.png|250](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241101152308.png)
+![Pasted image 20241101152308.png|250](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241101152308.png)
 
 ### Processi concorrenti
 Tutti i processi sono indipendenti e ognuno di loro ha una sua memoria separata astratta
@@ -40,7 +40,7 @@ Così tutti i processi possono progredire ma solo uno è attivo in un dato momen
 
 #### Gerarchie di processi
 Il s.o. quando viene avviato crea solo un processo chiamato `init` che rimane attivo fino allo spegnimento della macchina, questo processo `init` avrà a cascata tutti sotto processi
-![Pasted image 20241101153947.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241101153947.png)
+![Pasted image 20241101153947.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241101153947.png)
 #### Creazione di un processo
 ci sono degli eventi particolari che generano un processo
 - inizializzazione del sistema
@@ -83,7 +83,7 @@ Rappresenta il modo in cui il s.o. gestisce in modo ottimale i processi con uno 
 >rappresenta l'intervallo massimo di tempo assegnato a ciascun processo o thread in un sistema multitasking
 
 
-![Pasted image 20241101162437.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241101162437.png)
+![Pasted image 20241101162437.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241101162437.png)
 #### Informazioni per un singolo processo
 Un singolo processo ha queste informazioni memorizzate nella tabella dei processi del SO: 
 - PID, UID, GID 
@@ -116,12 +116,12 @@ un vettore che contiene tutte le varie informazioni di ciascun dispositivo di I/
 - gestore di interrupt o interrupt handler che continua l'esecuzione
 
 #### <span style="background:#9254de">Passaggi che fa un s.o. ad un livello basso per gestire un interrupt</span>
-![Pasted image 20241102094402.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102094402.png)
+![Pasted image 20241102094402.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102094402.png)
 UN PROCESSO NON PUO CEDERE LA CPU A UN ALTRO PROCESSO DEVE FARLO SOLO DELLO SCHEDULER NEL S.O.
 
 ##### Tipi di segnali:
 ci sono due tipi di  segnali hardware e software
-![Pasted image 20241102101133.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102101133.png)
+![Pasted image 20241102101133.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102101133.png)
 se premo x mi chiede di salvare
 se premo termina attività esplode tutto
 ###### Passaggi di un segnale
@@ -141,15 +141,15 @@ per ora abbiamo visto:
 - un processo->1 thread
 ora però approfondiremo invece multithread execution:
 - 1 processo-> N thread
-![Pasted image 20241102104147.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102104147.png)
+![Pasted image 20241102104147.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102104147.png)
 <font color="#e36c09">lightweight processes</font>, consentono una maggiore efficienza alleggerendo i singoli sottoprocessi(Thread) 
-![Pasted image 20241102102402.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102102402.png)
+![Pasted image 20241102102402.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102102402.png)
 - un thread gestisce una tastiera
 - un thread il disco
 - e uno il software
 Problema di eseguire queste istruzioni così al fly senza dividere in più processi e che possono esserci sovrascrizioni di variabili, questa cosa va a discapito del programmatore
 <font color="#e36c09">ESEMPIO SERVER CON MULTITHREAD</font>
-![Pasted image 20241102102823.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102102823.png)
+![Pasted image 20241102102823.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102102823.png)
 ==i thread condividono stessa tabella del processo?==
 Il cambio di contesto costa un botto è il male assoluto
 ###### Caratteristiche sui thread
@@ -162,16 +162,16 @@ Il cambio di contesto costa un botto è il male assoluto
 - Tabella dei thread con anche la sua tabella degli interrupt
 - Ciascun Thread può chiamare qualsiasi chiamata di sistema supportata dal sistema operativo per conto del processo di cui è figlioccio
 - Ogni Thread ha i suoi elementi privati(Stack) e i suoi elementi condivisi(Variabili globali)
-![Pasted image 20241102104121.png|200](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102104121.png)
+![Pasted image 20241102104121.png|200](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102104121.png)
 
 #### I THREAD IN POSIX
 <font color="#d83931">CHIEDE A ESAME</font>
-![Pasted image 20241102104411.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102104411.png)
+![Pasted image 20241102104411.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102104411.png)
 Il thread e addestrato per fare un lavoro quindi praticamente esegue una funzione tipo in c
 
 ###### Implementazione dei thread nello spazio utente
 un thread potrebbe essere definito o gestito nello spazio utente, oppure può gestirli il kernel quando magari deve fare particolari chiamate di sistema
-![Pasted image 20241102104903.png|600](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102104903.png)
+![Pasted image 20241102104903.png|600](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102104903.png)
 >[!info]- approfondimento sui thread al livello utente
 >PRO:
 >- sono gestiti dal kernel come dei processi a singolo thread anche se sono più thread
@@ -201,7 +201,7 @@ un thread potrebbe essere definito o gestito nello spazio utente, oppure può ge
 >utente e quanti in spazio kernel
 >Il kernel è a conoscenza solo dei suoi thread nello spazio kernel
 >Ogni thread del kernel può gestire però i thread a livello utente anche se il kernel non li conosce
->![Pasted image 20241102111832.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241102111832.png)
+>![Pasted image 20241102111832.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241102111832.png)
 
 Problemi sui thread: conflitti, sovrascrizione, problemi di implementazione anche di buffer ecc...
 

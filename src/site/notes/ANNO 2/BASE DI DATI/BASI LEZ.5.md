@@ -3,7 +3,7 @@
 ---
 
 I **vincoli d’integrità** sono regole che una base di dati deve rispettare per garantire la correttezza e la coerenza delle informazioni. Esistono basi di dati che, pur essendo sintatticamente corrette, contengono informazioni non valide per l’applicazione. 
-![Pasted image 20250322125510.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125510.png)
+![Pasted image 20250322125510.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125510.png)
 
 I vincoli servono proprio a evitare questi casi, assicurando che i dati riflettano la realtà del sistema che rappresentano.
 
@@ -21,7 +21,7 @@ I vincoli si distinguono in:
 ### **Vincoli di ennupla**
 I vincoli di ennupla garantiscono che i dati all’interno di una riga siano logicamente coerenti tra loro. 
 Un esempio è quello di una tabella di stipendi, dove il valore lordo deve essere sempre la somma di netto e ritenute.
-![Pasted image 20250322125520.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125520.png)
+![Pasted image 20250322125520.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125520.png)
 
 ### **Chiavi e schemi di relazione**
 Le chiavi servono a **identificare univocamente** ogni riga (o **ennupla**) di una tabella. 
@@ -31,7 +31,7 @@ Esistono diverse tipologie di chiavi:
 - **Superchiave**: un insieme di attributi che distingue univocamente ogni ennupla.
 - **Chiave primaria**: una superchiave scelta per identificare le righe, su cui non sono ammessi valori nulli.
 - **Chiavi alternative**: altre superchiavi possibili ma non scelte come chiave primaria
-	![Pasted image 20250322125534.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125534.png)
+	![Pasted image 20250322125534.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125534.png)
 	La chiave in questo caso è TUTTA {Cognome, Nome, Nascita} perché: 
 	- **Rossi, Mario, 5/12/78** compare solo una volta. ✅
 	- **Rossi, Mario, 3/11/76** compare solo una volta. ✅
@@ -59,7 +59,7 @@ Un database rappresenta una parte del mondo reale e deve rispettare alcune regol
 - **Istanza**: un insieme di dati che devono rispettare i vincoli dello schema.
 Un'istanza è considerata **valida** se soddisfa i vincoli, anche se può rispettare accidentalmente altri vincoli "per caso".
 	es. magari impongo come vincolo solo la matricola, ma a culo anche il cognome può essere usato (quindi "per caso").
-![Pasted image 20250322125551.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125551.png)
+![Pasted image 20250322125551.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125551.png)
 
 
 Una relazione (tabella) **non può avere due righe uguali**, quindi deve sempre esistere **almeno una chiave** per distinguerle.
@@ -73,23 +73,23 @@ Per questo motivo, **nelle chiavi primarie non sono ammessi valori nulli**.
 ### **Vincoli di integrità referenziale**
 I dati tra tabelle diverse devono essere coerenti. 
 Per esempio, una tabella delle infrazioni stradali deve contenere solo codici di vigili presenti nella tabella dei vigili. 
-![Pasted image 20250322125623.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125623.png)
+![Pasted image 20250322125623.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125623.png)
 Se un valore della colonna "Vigile" non trova corrispondenza nella tabella "Vigili", si ha una **violazione del vincolo di integrità referenziale**.
 
-![Pasted image 20250322125635.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125635.png)
+![Pasted image 20250322125635.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125635.png)
 Oppure stessa cosa con provincia e numero.
 
 Quindi, un vincolo di integrità referenziale fra gli attributi `X` di una relazione `R1` e un'altra relazione `R2` impone ai valori su `X` in `R1` di comparire come valori della chiave primaria di `R2`.
 
 ###### VIOLAZIONE
-![Pasted image 20250322125648.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125648.png)
+![Pasted image 20250322125648.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125648.png)
 
 ### **Gestione delle violazioni dei vincoli referenziali**
 Quando un’operazione minaccia l’integrità referenziale, il sistema può adottare diverse strategie:
 1. **Rifiutare l’operazione**, bloccando la modifica.
 2. **Eliminazione in cascata**, rimuovendo tutti i dati correlati.
-	![Pasted image 20250322125703.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125703.png)
+	![Pasted image 20250322125703.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125703.png)
 3. **Introduzione di valori nulli**, per mantenere il riferimento senza violare il vincolo.
-	![Pasted image 20250322125714.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125714.png)Così non devo eliminare TUTTA la riga nelle varie tabelle ma posso far sì che dalla tabella principale non posso accedere a quella secondaria.
+	![Pasted image 20250322125714.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125714.png)Così non devo eliminare TUTTA la riga nelle varie tabelle ma posso far sì che dalla tabella principale non posso accedere a quella secondaria.
 
 Questi meccanismi garantiscono che il database rimanga coerente anche in presenza di operazioni di aggiornamento o eliminazione.

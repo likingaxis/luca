@@ -22,7 +22,7 @@ Quello che faccio è dare un numero ad ogni quintupla dell'insieme P per tenerle
 
 Ora la quintupla $H-esima$ sarà ad esempio formata da $<q_{h1},S_{h1},q_{h2},m_h>$
 Definisco le prime P e mi accorgo che se le divido in strati posso creare degli array 
-![Screenshot_2025-03-27-19-11-25-10_45415775811cea13943236d9369df411.jpg|500](/img/user/ANNO%202/FONDAMENTI/fotofond/Screenshot_2025-03-27-19-11-25-10_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2025-03-27-19-11-25-10_45415775811cea13943236d9369df411.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotofond/Screenshot_2025-03-27-19-11-25-10_45415775811cea13943236d9369df411.jpg)
 ad esempio posso avere la prima fetta che è un array di tutti gli stati iniziali
 posso quindi fare $Q_1[h]$ e giungere alla posizione di quel determinato stato iniziale di quella determinata quintupla
 quindi avrò
@@ -50,7 +50,7 @@ quindi per farlo in Pascal minimo abbiamo l'obbligo di creare un while che termi
 In input viene fornita la descrizione di T
 - (negli array $Q1, S1, S2, Q2$ e $M$ e nelle variabili $q0, qA \ e \ qR$) 
 - e del suo input (nell’array N)
-![Pasted image 20250327192246.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250327192246.png)
+![Pasted image 20250327192246.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250327192246.png)
 
 ### Codice
 
@@ -105,12 +105,12 @@ La chiamiamo $U_{ND}$ , esso avrà i seguenti dettagli:
 	- altrimenti; se tutte rigettano, allora rigetta
 - se non fa nulla delle due incrementa $i$
 #### Codice in PascalMinimo
-![Pasted image 20250327195044.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250327195044.png)
+![Pasted image 20250327195044.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250327195044.png)
 #### Schema di come funziona la Ricorsione
-![Pasted image 20250327195114.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250327195114.png)
+![Pasted image 20250327195114.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250327195114.png)
 
 # Codice pazzurdo da NON ricordare
-![Pasted image 20250327195151.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250327195151.png)
+![Pasted image 20250327195151.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250327195151.png)
 # Cosa bisogna ricordare?
 - ESISTONO LE FUNZIONI RICORSIVE IN PascalMinimo
 - ESISTONO LE FUNZIONI IN PascalMinimo

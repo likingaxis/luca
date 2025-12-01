@@ -34,16 +34,16 @@ chiunque può avere la sua soluzione elementare poiché dipende dal soggetto(se 
 1) una istruzione è elementare se la scelgo in un insieme di esse di piccole dimensioni
 2) l'istruzione deve scegliere poche soluzioni possibili
 3) Ogni istruzione deve poter essere eseguita utilizzando quantità di memoria limitata
-![Pasted image 20250305164259.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250305164259.png)
+![Pasted image 20250305164259.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250305164259.png)
 ###### Cosa significa <font color="#f79646">poco</font>?
 significa che deve essere <font color="#f79646">costante</font> <font color="#f79646">indipendentemente</font> dall'istanza e <font color="#f79646">dall'input</font>
 Data una istruzione essa sarà composta da 
 - una sola condizione
 - una sola azione
 L'insegnante fa un esempio sulla somma dei numeri e ci mostra come per farla abbiamo bisogno di passi elementari definiti e generici che ci portano a questo
-![Pasted image 20250305162142.png|600](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250305162142.png)
-![Pasted image 20250305162208.png|600](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250305162208.png)
-![Pasted image 20250305162435.png|500](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250305162435.png)
+![Pasted image 20250305162142.png|600](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250305162142.png)
+![Pasted image 20250305162208.png|600](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250305162208.png)
+![Pasted image 20250305162435.png|500](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250305162435.png)
 
 In questo <font color="#f79646">esempio</font> è necessario <font color="#f79646">rispettare</font> caratteristiche come leggere scrivere e interpretare
 indipendentemente da quanto siano grandi i numeri dobbiamo effettuare una somma dovuto al confronto in una tabella $10*10$ e eventualmente sommare un resto quindi avremo $10*10*2$ e per sommare abbiamo bisogno di ricordare 3 cose, numero1 numero2 e il resto
@@ -62,7 +62,7 @@ non è proprio una macchina di Turing perché non stiamo specificando cosa fare 
 ## Macchina di Turing 
 ho $3$ nastri che scorrono all'infinito con delle celle alcune vuote alcune piene
 Le frecce indicano testine di lettura e scrittura
-![Pasted image 20250305163912.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250305163912.png)
+![Pasted image 20250305163912.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250305163912.png)
 avremo quindi definite le varie istruzioni per Turing con $<q_0,(9,5,[]),(9,5,4),q_1,(S,S,S)>$
 Le varie q si chiamano <font color="#f79646">stati interni</font>
 le prime $2$ sono di lettura le ultime 3 di scrittura 

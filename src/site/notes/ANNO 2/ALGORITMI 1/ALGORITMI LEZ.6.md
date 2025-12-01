@@ -5,17 +5,17 @@
 [[cap4.pdf|pdf della lezione 6]]
 ## Algoritmi di ordinamento
 gli algoritmi di ordinamento hanno un insieme di n numeri in input e in output devono stamparli in ordine crescente quindi dove ogni numero precedente deve essere più piccolo del successivo
-![Pasted image 20241028115319.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241028115319.png)
+![Pasted image 20241028115319.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241028115319.png)
 
 ### Algoritmo 1 _**Selection Sort**_
 - Algoritmo semplice da applicare ma poco efficiente
 #### Come funziona?
 Ci scorriamo il nostro array e ad ogni elemento facciamo un controllo su qual è l'elemento più piccolo in quella determinata posizione
-![Pasted image 20241028124756.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241028124756.png)
-![selection-600.gif|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/selection-600.gif)
+![Pasted image 20241028124756.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241028124756.png)
+![selection-600.gif|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/selection-600.gif)
 
 #### PSEUDOCODICE
-![Pasted image 20241028123608.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241028123608.png)
+![Pasted image 20241028123608.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241028123608.png)
 
 - Il primo ciclo for scorrerà tutto l'array partendo da una posizione definita
 - Ad ogni posizione del primo ciclo for faremo un confronto tra tutti i successivi dettati da `j` e li confrontiamo con la posizione m, se troviamo un numero più piccolo di quello in posizione m la nuova m diventerà la posizione che abbiamo trovato essere la più piccola
@@ -36,13 +36,13 @@ Vedremo solo upper-bound e lower-bound
 - e quello dentro anche al più n volte in modo molto approssimato
 per il nostro modello RAM ogni riga di codice ci costa tempo costante
 noi avremo quindi 5 righe di codice che saranno eseguite al più $n^2$ volte
-![Pasted image 20241028151816.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241028151816.png)
+![Pasted image 20241028151816.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241028151816.png)
 ##### caso lower-bound
 prendiamo per fare il lower-bound la parte che ci esegue più operazioni
 - ovviamente è il for interno 
 per calcolare il numero di passaggi dentro a quel for faremo una sommatoria che va da k=0 a n-2 ovvero il numero dei passaggi del for superiore,
 successivamente so che il primo elemento dell'array non viene confrontato quindi ho n-1 confronti quindi so che il ciclo for dentro è $n-(k+2)$ ma visto che il nostro array lo prendiamo come se partisse da 1 sommiamo 1 e quindi avremmo $n-k-1$
-![Screenshot_2024-10-28-15-49-20-13_45415775811cea13943236d9369df411.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-10-28-15-49-20-13_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2024-10-28-15-49-20-13_45415775811cea13943236d9369df411.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-10-28-15-49-20-13_45415775811cea13943236d9369df411.jpg)
 
 quindi abbiamo in tutto $\Theta (n^2)$
 
@@ -51,9 +51,9 @@ quindi abbiamo in tutto $\Theta (n^2)$
 - Algoritmo simile al precedente funziona tipo con le carte
 #### Come funziona?
 Si scorre l'array fino a n-1 confrontando l'elemento nella posizione corrente con i precedenti finché non trova un punto in cui risulta maggiore del precedente controllato
-![Pasted image 20241028160418.png|450](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241028160418.png)
+![Pasted image 20241028160418.png|450](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241028160418.png)
 
-![insertion-600.gif|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/insertion-600.gif)
+![insertion-600.gif|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/insertion-600.gif)
 
 #### PSEUDOCODICE
 
@@ -63,8 +63,8 @@ $\Theta(n^2)$
 - gli elementi più grandi vengono spinti verso destra confrontando gli elementi adiacenti tra loro
 #### Come funziona?
 Si scorre l'array n-1 volte per un numero di i volte, dovuto al fatto che dobbiamo ogni volta scorrere il nostro array diverse volte, ad ogni posizione nell'array confrontiamo il numero di quella posizione con il numero nella posizione precedente, e andiamo avanti così finché l'array non è ordinato
-![Pasted image 20241028163330.png|450](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241028163330.png)
-![bubble-640.gif|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/bubble-640.gif)
+![Pasted image 20241028163330.png|450](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241028163330.png)
+![bubble-640.gif|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/bubble-640.gif)
 
 #### PSEUDOCODICE
 
@@ -75,7 +75,7 @@ $\Theta(n^2)$
 ### Algoritmo 4 _**Merge Sort**_
 - Il merge sort è un algoritmo che applica il divide et impera e ha un costo più basso degli altri
 #### Come funziona?
-![merge-sort-400.gif|center](/img/user/ANNO%202/ALGORITMI%201/fotoalg/merge-sort-400.gif)
+![merge-sort-400.gif|center](/img/user/ANNO%202/FOTOANNO2/fotoalg/merge-sort-400.gif)
 
 PSEUDO-CODICE
 ```scss (MESSO A CASO)
@@ -109,10 +109,10 @@ MergeSort(A, i, f)
 - estrai ripetutamente il minimo di A e B e copialo nell’array di output, finché A oppure B non diventa vuoto 
 - copia gli elementi dell’array non vuoto alla fine dell’array di output
 ![[ciao/content/UNI/ANNO 2/ALGORITMI 1/fotoalg/ezgif.com-animated-gif-maker.gif\|ciao/content/UNI/ANNO 2/ALGORITMI 1/fotoalg/ezgif.com-animated-gif-maker.gif]]
-![ezgif.com-animated-gif-maker 1.gif|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/ezgif.com-animated-gif-maker%201.gif)
+![ezgif.com-animated-gif-maker 1.gif|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/ezgif.com-animated-gif-maker%201.gif)
 
 ##### PSEUDOCODICE
-![Pasted image 20241028222805.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241028222805.png)
+![Pasted image 20241028222805.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241028222805.png)
 - La funzione Merge prende come argomento 
 	- l'array($A$)
 	- la posizione iniziale($i_1$)
@@ -133,7 +133,7 @@ quindi alla fine avremmo $\Theta (n_1+n_2)$
 #### Complessità temporale del Merge Sort
 Abbiamo due chiamate ricorsive che ogni volta diminuiscono proporzionalmente di $n/2$ e ad ogni chiamata di funzione faremo un merge che costa $O(n)$ $O$ perché alle ultime chiamate non facciamo esattamente n
 poi applichiamo il teorema master per svolgere questa equazione di ricorrenza
-![Screenshot_2024-10-29-17-53-26-01_45415775811cea13943236d9369df411.jpg|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Screenshot_2024-10-29-17-53-26-01_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2024-10-29-17-53-26-01_45415775811cea13943236d9369df411.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Screenshot_2024-10-29-17-53-26-01_45415775811cea13943236d9369df411.jpg)
 
 #### Quanta memoria (ausiliaria) usiamo?
 $\Theta(n)$ perché l'unica cosa che occupa memoria è la creazione dell'array ausiliario ad ogni chiamata del merge, ogni chiamata del merge avviene singolarmente e non se ne eseguono più di una nello stesso tempo perciò il costo rimarrà sempre $\Theta (n)$, anche se vedessimo il costo di tutte le chiamate contemporanee di merge sort avremmo $logn$ dato dal $T(n/2)$, comunque $logn$ è asintoticamente più lento di $n$ e quindi non lo consideriamo in memoria
@@ -148,12 +148,12 @@ ricorsivamente chiamo _***Partition***_ dove si pone un perno e si fanno scorrer
 1. da sinistra verso destra dell'array controllo se il numero preso in quel momento è maggiore del perno
 2. da destra verso sinistra dell'array se il numero preso in quel momento è minore del perno
 se si verificano quelle condizioni avviene uno scambio tra i due 
-![quicksort-600-1.gif|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/quicksort-600-1.gif)
+![quicksort-600-1.gif|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/quicksort-600-1.gif)
 ##### Funzionamento algoritmo **Partition**
-![Pasted image 20241029194955.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241029194955.png)
+![Pasted image 20241029194955.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241029194955.png)
 
 ##### PSEUDOCODICE **Partition**
-![Pasted image 20241029200738.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241029200738.png)
+![Pasted image 20241029200738.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241029200738.png)
 - ogni volta viene creato un perno $x$ dato dalla posizione $A[i]$
 	- la parte inferiore è data da i
 	- la parte superiore dalla fine +1
@@ -165,13 +165,13 @@ se si verificano quelle condizioni avviene uno scambio tra i due
 - se si incrociano usciamo e mettiamo il perno "al centro" ovvero il punto dove doveva stare perché sup sarà arrivato dove doveva arrivare
 - restituiamo la posizione del perno
 #### PSEUDOCODICE **Quick Sort**
-![Pasted image 20241029201649.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241029201649.png)
+![Pasted image 20241029201649.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241029201649.png)
 
 Il quicksort principalmente serve per andare a fare il partition e le varie chiamate ricorsive una a sx dell'array e una a dx, partition ogni volta inserisce nella posizione corretta il perno mettendo nell'emisfero sinistro dell'array i numeri più piccini del perno e a dx i più grandicelli
 
 
 ##### Funzionamento algoritmo **Quick Sort**
-![Pasted image 20241030164542.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241030164542.png)
+![Pasted image 20241030164542.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241030164542.png)
 - applica il partition e ordina in base al perno facendo quella cosa sx e dx
 - chiama ricorsivamente due chiamate quick una con gli elementi a sx e una con gli elementi a dx del perno
 - fa la cosa ricorsivamente modificando l'array
@@ -186,7 +186,7 @@ $$T(n) = T(n-1) + T(0) + O(n)$$ $$= T(n-1) + O(1)+O(n)$$ $$= T(n-1) + O(n)$$
 È facile intuire che il miglioramento di costo avviene quando le partizioni sono bilanciate ovvero il perno viene posto al centro dell'array, mentre all'aumentare dello sbilanciamento il tutto si complica.
 #### Caso Medio
 
-![Pasted image 20241030180955.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241030180955.png)
+![Pasted image 20241030180955.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241030180955.png)
 Nel caso medio si osserva che anche se il 90% degli elementi sta a sinistra del perno e il restante 10% a destra il QuickSort ha comunque un costo di $nlog(n)$
 Tutti i vari casi medi dello stesso problema avranno la medesima altezza dell'albero.
 
@@ -194,4 +194,4 @@ Tutti i vari casi medi dello stesso problema avranno la medesima altezza dell'al
 - Scegli un perno a caso
 - il costi non cambiano
 - ma il caso medio non esiste
-![Pasted image 20241030181503.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241030181503.png)
+![Pasted image 20241030181503.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241030181503.png)

@@ -7,10 +7,10 @@ Dati due insiemi A e B, questi hanno $|A|$ = $|B|$ se $$\exists \ biezione \ \be
 ## Infiniti
 Cantor ha dimostrato che esistono infiniti più piccoli e infiniti più grandi.
 Per esempio ha dimostrato che $|\mathbb{R}| > |\mathbb{N}|$.
-![Pasted image 20250321101628.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321101628.png)
+![Pasted image 20250321101628.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321101628.png)
 Cantor ha dimostrato che non esiste una corrispondenza biunivoca di questo tipo nell'insieme ${0, 1}$.
 
-![Pasted image 20250321101647.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321101647.png)
+![Pasted image 20250321101647.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321101647.png)
 
 >[!danger] I numeri NATURALI sono numerabili; i numeri REALI ***non*** sono numerabili.
 
@@ -23,18 +23,18 @@ Turing ha dimostrato l'esistenza di un problema irrisolvibile, usando questo sch
 
 
 #### Riprendiamo il concetto di parola codificata
-![Pasted image 20250321101726.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321101726.png)
-![Pasted image 20250321103355.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321103355.png)
+![Pasted image 20250321101726.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321101726.png)
+![Pasted image 20250321103355.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321103355.png)
 Vogliamo trasformare tutto questo in un numero, dobbiamo quindi cambiare TUTTI i caratteri non codificati
-![Pasted image 20250321101736.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321101736.png)
+![Pasted image 20250321101736.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321101736.png)
 Abbiamo quindi associato ad una macchina di Turing un numero naturale, e quindi ora ogni macchina di Turing sarà identificata con un numero differente dalle altre.
 
 Quindi possiamo chiamare una macchina generica $$T_{h}$$e possiamo scrivere $$T_{h} < T_{k} \ \ se \ \ h<k$$In questo modo avremo una "prima" macchina, una "seconda" macchina e così via.
 
 Allora
-![Pasted image 20250321101758.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321101758.png)
+![Pasted image 20250321101758.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321101758.png)
 
-![Pasted image 20250321101810.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321101810.png)
+![Pasted image 20250321101810.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321101810.png)
 L'output sono le singole celle con 1 e 0.
 
 $M$ rappresenta TUTTI i linguaggi ACCETTATI dalle Macchine di Turing 
@@ -58,7 +58,7 @@ E quindi abbiamo dimostrato che esiste un problema che non può essere risolto c
 
 ## Halting Problem
 Turing considerò il seguente linguaggio:
-![Pasted image 20250321101838.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250321101838.png)
+![Pasted image 20250321101838.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250321101838.png)
 chiamato **Halting Problem**.
 Turing dimostrò che $L_{h}$ è accettabile MA non decidibile.
 	il che vuol dire che $L_{h}^{c}$ NON È ACCETTABILE.

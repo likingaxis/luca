@@ -12,12 +12,12 @@ ad esempio
 - VoIP
 I dispositivi che eseguono le applicazioni di rete non sono quelle nel nucleo bensì quelle che confinano al nucleo
 
-![Pasted image 20250318130926.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318130926.png)
+![Pasted image 20250318130926.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318130926.png)
 #### Come architettare le nostre applicazioni di rete
 abbiamo due approcci principali
 ## client-server
 abbiamo due attori principali
-![Pasted image 20250318131113.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318131113.png)
+![Pasted image 20250318131113.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318131113.png)
 - server
 	- macchina che deve essere sempre attiva per soddisfare le richieste dei client
 	- indirizzo IP ben noto
@@ -40,7 +40,7 @@ Ha una scalabilità intrinseca:
 - aggiungere un peer aumenta carico perché chiedo dei chunk ma aumento anche le disponibilità quindi si deve avere un certo equilibrio
 i peer sono degli host che possono apparire o sparire e quindi non devono avere per forza stesso indirizzo IP
 chunk: singolo pezzetto di un file
-![Pasted image 20250318131542.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318131542.png)
+![Pasted image 20250318131542.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318131542.png)
 ## Processi comunicanti
 Come comunicano i processi
 Nel contesto delle reti un processo è un programma in esecuzione su un host
@@ -60,7 +60,7 @@ Socket è una interfaccia software che permette a un processo di inviare e ricev
 - funziona come una porta comunicante per cui il mittente può inviare il messaggio e avere una struttura dati che finirà nelle mani del destinatario
 - I livelli fino a quello di trasporto sono gestiti dal SO 
 - i livelli di applicazione sono controllati dallo sviluppatore dell'applicazione
-![Pasted image 20250318133006.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318133006.png)
+![Pasted image 20250318133006.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318133006.png)
 ## Indirizzamento
 Se vogliamo mandare un messaggio a un processo dobbiamo poterlo <font color="#f79646">identificare </font>
 - Un host ha il uso Indirizzo IP univoco a 32 o 128 in base al ipv4-6
@@ -110,7 +110,7 @@ altre possono tollerare ad esempio app che gestiscono contenuti multimediali com
 - sicurezza
 	- riservatezza, integrità dei dati, autenticazione
 Tabella interessante sui vari requisiti
-![Pasted image 20250318143024.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318143024.png)
+![Pasted image 20250318143024.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318143024.png)
 ## Servizi e protocolli forniti da internet
 ### Servizio TCP
 Servizio affidabile che consente il trasferimento e il controllo del flusso di dati da una parte a un'altra
@@ -122,7 +122,7 @@ manda un messaggio a un processo ma non offre affidabilità
 - non fornisce correzioni, si limita a rinviare l'informazione
 (per la correzione vedremo ECC o Ritrasmissioni)
 a fronte di minori garanzie offre maggiore velocita 
-![Pasted image 20250318144546.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318144546.png)
+![Pasted image 20250318144546.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318144546.png)
 ### Rendere sicuro TCP
 nessuno dei due è sicuro ma per TCP venne ideato un protocollo di wrap al TCP che aggiunge un livello di sicurezza detto TLS
 La libreria TLS cifra e decifra il messaggio facendo da "intermediario" al TCP, controllando inoltre l'integrità dei dati
@@ -131,7 +131,7 @@ altrimenti sarebbe tutto in chiaro
 Concetto di hypertext: è un sistema di organizzazione delle informazioni in cui i contenuti sono divisi in **pagine collegate tra loro tramite link**
 Accedo a oggetti(risorse) che sono gli elementi che compongono una pagina web come anche un file HTML o il CSS o gif
 ognuno di questi oggetti e diviso da un URL
-![Pasted image 20250318145635.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318145635.png)
+![Pasted image 20250318145635.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318145635.png)
 - il nome dell'host non è l'indirizzo IP ma viene convertito dal DNS in indirizzo IP il DNS non è nel nucleo infatti il nucleo ha solo inoltro e instradamento
 - il percorso dell'oggetto è come un file system da remoto 
 ## Panoramica su http
@@ -140,7 +140,7 @@ ognuno di questi oggetti e diviso da un URL
 dove un client richiede un oggetto al server che lo restituisce
 il client è uno user agent il server è un server agent
 il web è indipendente dal dispositivo usato ad esempio basta che ho un browser con http
-![Pasted image 20250318150258.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318150258.png)
+![Pasted image 20250318150258.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318150258.png)
 
 #### Cosa usa http
 usa TCP fino alla versione 2.0 per trasferire i dati sulla porta 80
@@ -175,7 +175,7 @@ connessioni persistenti
 - senza disconnessione istantanea
 - praticamente potevi scambiare più oggetti
 #### esempio grafico di non persistenti
-![Pasted image 20250318151526.png|600](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318151526.png)
+![Pasted image 20250318151526.png|600](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318151526.png)
 ##### RTT Definizione
 per calcolare il tempo di risposta bisogna introdurre il RTT
 indica quanto tempo impiega un piccolo pacchetto per andare dal client al server e ritornare al client
@@ -185,7 +185,7 @@ L'intervallo $richiesta-risposta$ è indicato da un singolo RTT
 il tempo di risposta è dato da 
 $2RTT+tempo \ di \ trasmissione \ del \ file$
 in questo caso abbiamo $2$ $RTT$ quindi abbiamo $2$
-![Pasted image 20250318151455.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318151455.png)
+![Pasted image 20250318151455.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318151455.png)
 #### Connessioni persistenti 
 Le connessioni persistenti rispetto alle connessioni non persistenti
 ci consentono di pagare 1 RTT per tutti gli oggetti richiesti quando invece prima ne servivano 2 per oggetto 
@@ -217,7 +217,7 @@ Connection: keep-alive\r\n
 
 #### Struttura generale di una richiesta HTTP
 principalmente la struttura generale è divisa in 3 punti
-![Pasted image 20250318183006.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250318183006.png)
+![Pasted image 20250318183006.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250318183006.png)
 1️⃣ **Riga di richiesta (Request Line)**
 - Contiene il **metodo HTTP**, l' **URL richiesto** e la **versione HTTP**.
 2️⃣ **Intestazioni (Header Lines)**

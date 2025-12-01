@@ -46,7 +46,7 @@ Il più noto è il **modello Entità-Relazione (ER)**, che descrive:
 - Modello logico → descrive il modo attraverso il quale i dati sono organizzati negli archivi del calcolatore; 
 - Modello fisico → descrive come i dati sono registrati nelle memorie di massa.
 #### Come passare da un modello all'altro
-![Pasted image 20250322110805.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322110805.png)
+![Pasted image 20250322110805.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322110805.png)
 La progettazione di un database avviene in **3 fasi**, che rappresentano **livelli crescenti di dettaglio**:
 1. **Progettazione Concettuale**
     - Cosa vogliamo rappresentare?
@@ -94,14 +94,14 @@ Oppure in un autosalone:
 - _Persona_ e _Automobile_ sono collegate dalla relazione _Possiede_.
     - Una persona può possedere più auto.
     - Ogni auto è posseduta da una persona.
-![Pasted image 20250322112403.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322112403.png)
+![Pasted image 20250322112403.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322112403.png)
 Le relazioni possono anche:
 - Essere **unidirezionali** (si rappresenta un solo verso)
 - Essere **ricorsive**: un’entità si collega con sé stessa.
 - ad esempio manager è una istanza dell'entità dipendente e può avere una relazione con un'altra istanza
-![Pasted image 20250322113639.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322113639.png)
+![Pasted image 20250322113639.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322113639.png)
 - Coinvolgere più di due entità (relazioni **ternarie** o più).
-![Pasted image 20250322113710.png|400](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322113710.png)
+![Pasted image 20250322113710.png|400](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322113710.png)
 ---
 ## 📎 ATTRIBUTI: cosa descrive un'entità o relazione?
 
@@ -116,10 +116,10 @@ Per l’entità _Automobile_, possiamo avere:
 - `cilindrata`
 - `prezzo`
 
-![Pasted image 20250322115309.png|500](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322115309.png)
+![Pasted image 20250322115309.png|500](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322115309.png)
 in questo caso abbiamo studente che ha $cognome+nome$ con chiave primaria
 #### Attributi nelle relazioni
-![Pasted image 20250322115501.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322115501.png)
+![Pasted image 20250322115501.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322115501.png)
 Nella relazione tu hai gli attributi che riguardano la singola azione
 
 ---
@@ -152,14 +152,14 @@ Chiave esterna: 
 
 - Entità forti → Hanno una chiave primaria e possono esistere senza dipendere da altre entità. 
 - Entità deboli → Non hanno una chiave primaria e devono essere collegate a un'entità forte per avere senso. 
-![Pasted image 20250322121353.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322121353.png)
+![Pasted image 20250322121353.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322121353.png)
 - Movimento non ha senso se sta da sola deve per forza dipendere da altro
 Un’entità debole esiste solo se esiste l’entità forte a cui è collegata.
 
 ## 🔐 CHIAVI: come si identificano le entità?
 Una **chiave primaria** è un attributo (o più) che **identifica univocamente** ogni istanza dell’entità.
 ### 🧾 Esempi:
-![Pasted image 20250322120404.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322120404.png)
+![Pasted image 20250322120404.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322120404.png)
 ## 🔐 CHIAVI ARTIFICIALI E IDENTIFICATORI PROGRESSIVI
 Spesso, anche quando abbiamo attributi che potrebbero identificare univocamente un'entità (come il numero di telaio di un'auto o il codice fiscale di una persona), si preferisce usare un **identificatore numerico progressivo**, detto **chiave artificiale**.
 
@@ -188,7 +188,7 @@ Le **entità forti** sono quelle che **possono esistere da sole**, mentre le **e
 - _Cliente_ → entità forte: esiste a prescindere.
 - _Conto_ → anch’essa forte: identificata da `num_conto`.
 - _Movimento_ → entità debole: un versamento o un prelievo **ha senso solo se associato a un conto**.
-![Pasted image 20250322123107.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322123107.png)
+![Pasted image 20250322123107.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322123107.png)
 Spesso si può trasformare un'entità debole in forte **aggiungendo un ID numerico progressivo**.
 
 ---
@@ -209,21 +209,21 @@ Da questa combinazione derivano **tre tipi di relazioni**:
 Un'istanza di una entità può essere collegata **al massimo a una** dell’altra, e viceversa.
 ### 🧾 Esempio:
 
-![Pasted image 20250322124257.png|600](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322124257.png)
+![Pasted image 20250322124257.png|600](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322124257.png)
 ---
 
 ### 🔀 RELAZIONI 1:N
 Un’istanza di una entità può essere collegata a **più istanze** dell’altra, ma non viceversa.
 ### 🧾 Esempio:
 
-![Pasted image 20250322124338.png|500](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322124338.png)
+![Pasted image 20250322124338.png|500](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322124338.png)
 
 ---
 
 ### 🔁 RELAZIONI N:N
 Un’istanza può essere collegata a **più istanze** da entrambi i lati.
 ### 🧾 Esempio:
-![Pasted image 20250322124407.png|500](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322124407.png)
+![Pasted image 20250322124407.png|500](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322124407.png)
 
 ---
 
@@ -233,6 +233,6 @@ Nel mondo reale, alcune entità sono **sottoinsiemi** di altre: sono **più spec
 
 La relazione **IS-A** (è un) serve per rappresentare questo.
 ### 🧾 Esempi:
-![Pasted image 20250322125115.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125115.png)
-![Pasted image 20250322125127.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250322125127.png)
+![Pasted image 20250322125115.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125115.png)
+![Pasted image 20250322125127.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250322125127.png)
 La proprietà è **transitiva**: un _FuoriCorso_ è anche uno _Studente_ e quindi una _Persona_.

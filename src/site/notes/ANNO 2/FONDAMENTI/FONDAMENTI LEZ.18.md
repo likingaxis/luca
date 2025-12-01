@@ -3,7 +3,7 @@
 ---
 
 #### Questa lezione riprende due teoremi principali e i conseguenti concetti
-![Pasted image 20250415101811.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415101811.png)
+![Pasted image 20250415101811.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415101811.png)
 
 ## Ora procediamo a vedere due esempi di PDA per i due tipi di accettazione
 
@@ -15,7 +15,7 @@ Questa PDA riconosce per pila vuota perché come stato finale ha un insieme vuot
 - può terminare solo con pila vuota
 - riconosce le parole di $L_{PPAL}$ 
 queste sono le varie transizioni della funzione:
-![Pasted image 20250415103131.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415103131.png)
+![Pasted image 20250415103131.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415103131.png)
 
 - riempie la pila finché:
 	- non raggiungiamo metà della parola da leggere
@@ -27,32 +27,32 @@ queste sono le varie transizioni della funzione:
 >Il cambio di comportamento (da “accumulo” a “controllo”) **non è scritto 
 >esplicitamente nel testo o nella struttura del PDA**, ma **è gestito dal non 
 >determinismo** grazie alle transizioni:
->![Pasted image 20250415103800.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415103800.png)
+>![Pasted image 20250415103800.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415103800.png)
 > È il PDA che decide “quando basta” e passa a controllare.  
 > Non c’è un contatore della lunghezza, **non ne ha bisogno**.
 
 - praticamente una volta raggiunta la metà inizia a svuotare la pila ma continua a leggere a destra ciò che avviene nella stringa di input
 	- se i caratteri corrispondono allora significa che si può eliminare il tutto
 
-![Pasted image 20250415104003.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415104003.png)
+![Pasted image 20250415104003.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415104003.png)
 >[!attention] quindi una PDA può essere non deterministico
 >- quando non sa che fare crea due rami della stessa istanza per fare due scelte diverse
 
 #### ESEMPIO 2: PDA che accetta per stato finale
 Ora, costruiamo un PDA $$〈 \{a,b\}, \ \{Z_{0}, A, B\}, \ Z_{0} , \ \{q_{0} , q_{1}, q_{2} \} , \ \{q_{2}\}, \ q_{0} , \ δ 〉$$che riconosce **PER STATO FINALE** ($q_{2}$) il linguaggio $L_{PPAL}$ delle parole palindrome pari sull'alfabeto $\{a,b\}$ 
 queste sono le varie transizioni della funzione:
-![Pasted image 20250415104720.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415104720.png)
+![Pasted image 20250415104720.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415104720.png)
 Quindi
 - finché si trova PRIMA della metà aggiunge parole alla pila (NON CANCELLANDO $Z_{0}$)
 - quando arriva alla metà, se può, cancella
 - se cancella tutto e arriva a leggere, di nuovo, $Z_{0}$, entra in $q_{2}$ **e accetta**
 anche qui si applica il non determinismo perché "a una certa" deve cambiare modo di fare
-![Pasted image 20250415104836.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415104836.png)
+![Pasted image 20250415104836.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415104836.png)
 ## Vogliamo simulare un PDA con una Macchina di Turing
 Visto che si assomigliano, hanno nastri ecc...
 si possono fare simulazioni di questo genere
 è a titolo di esempio quindi penso sia un po' inutile
-![Pasted image 20250415105239.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415105239.png)
+![Pasted image 20250415105239.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415105239.png)
 >[!tip]- spiegazione chiara di tutto ciò che sta sopra:
 > 🎯 Obiettivo
 > Dimostrare che una Macchina di Turing (TM) può simulare un PDA, cioè che ogni linguaggio accettato da un PDA per pila vuota può essere accettato da una TM deterministica.
@@ -245,7 +245,7 @@ che rappresenta il processo di derivazione di una parola secondo le regole della
 >- ti mostra quali produzioni l'hanno generata
 
 ## ESEMPIO PRATICO
-![Pasted image 20250415112143.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415112143.png)
+![Pasted image 20250415112143.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415112143.png)
 >[!tip] L'osservazione è molto importante perché dice uno stesso albero sintattico corrisponde a più di una derivazione.
 
 Significa che una stessa parola può essere generata in modi diversi, cioè seguendo derivazioni diverse, ma che alla fine portano allo stesso albero sintattico.
@@ -255,7 +255,7 @@ Quindi da un albero sintattico possono corrispondere più derivazioni
 >[!bug] però c'è un problema ovvero che una singola parola può corrispondere più di un albero sintattico
 >- ecco un esempio
 >- questo può causare ambiguità di lettura della parola
->![Pasted image 20250415112448.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250415112448.png)
+>![Pasted image 20250415112448.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250415112448.png)
 
 
 è un problema perché gli alberi sintattici sono usati anche per capire il significato delle parole al livello anche semantico, questi due alberi danno un significato differente

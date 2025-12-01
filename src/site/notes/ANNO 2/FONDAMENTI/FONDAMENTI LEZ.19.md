@@ -10,11 +10,11 @@
 
 ## Grammatiche di tipo 3
 In questa lezione parleremo principalmente di [[ANNO 2/FONDAMENTI/FONDAMENTI LEZ.13#Definiamo le varie grammatiche\|grammatiche di tipo 3]], se vuoi ripassarle ecco una rapida spiegazione:
-![Pasted image 20250416192034.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250416192034.png)
+![Pasted image 20250416192034.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250416192034.png)
 >[!tip] Tutti i linguaggi di tipo 3 sono REGOLARI
 
 ecco un esempio:
-![Pasted image 20250416192120.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250416192120.png)
+![Pasted image 20250416192120.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250416192120.png)
 
 ## La domanda è sempre quella:
 >[!question]  G3 $\subset$G2 oppure è $\subseteq$
@@ -55,7 +55,7 @@ ecco un esempio:
 >		- quel linguaggio non è regolare
 
 #### Esempio di uso del pumping lemma per far scoppiare tutta la parola
-![Pasted image 20250416195310.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250416195310.png)
+![Pasted image 20250416195310.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250416195310.png)
 >[!tip]- questo esempio in poche parole
 >abbiamo una parola formata da due caratteri a e b ripetuti n-volte prima uno poi l'altro
 >- se prendiamo la parola e la suddividiamo in uvw possiamo dire con certezza che uv sicuramente contengono solo caratteri a
@@ -121,7 +121,7 @@ La notazione $\delta(q, a) = q'$ è **equivalente** alla quintupla della Macchin
 - Lo **stato iniziale** ha una **freccia entrante con etichetta "start"**
 - Gli **stati finali** sono indicati con un **doppio cerchio**
 Esempio:
-![Pasted image 20250416205317.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250416205317.png)
+![Pasted image 20250416205317.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250416205317.png)
 > Gli archi sono etichettati con i simboli letti (es. `a`, `b`, `a,b`), e i cerchi doppi rappresentano gli **stati finali**.
 
 ### Concetti delle MT trasposti sulle ASFD
@@ -134,9 +134,9 @@ Poiché un automa a stati finiti è una particolare macchina di Turing, possiamo
 tali definizioni risultano semplificate per gli automi a stati finiti perché hanno funzionalità più limitate
 
 #### Esempio di stato globale per le ASFD
-![Pasted image 20250416205839.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250416205839.png)
+![Pasted image 20250416205839.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250416205839.png)
 #### Esempio di transizione per le ASFD
-![Pasted image 20250416205945.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250416205945.png)
+![Pasted image 20250416205945.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250416205945.png)
 >[!tip] la prof ha detto che se non ti ricordi di scrivere $|-$ va bene uguale perché tanto la $\rightarrow$ è praticamente la stessa cosa
 
 ### Definizione formale di computazione e transizioni
@@ -191,14 +191,14 @@ Sottolineiamo che, poiché tutte le computazioni di un ASFD <u>terminano sempre<
 > Un linguaggio è _deciso_ se l'automa **termina sempre** e dice **sì o no** per ogni parola.  
 > Poiché un ASFD **termina sempre**, ogni linguaggio accettato da un ASFD è anche **deciso** da esso.
 ##### Esempio
-![Pasted image 20250417151543.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250417151543.png)
+![Pasted image 20250417151543.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250417151543.png)
 ## Macchina di Turing vs Automa a stati finiti
 Abbiamo detto prima che un ASFD è una MT con dei deficit.
 
 Tuttavia, le descrizioni dei due modelli differiscono in due aspetti
 1. Un ASFD è descritto mediante una funzione di transizione $\delta$; mentre una MdT è descritta mediante un insieme di quintuple
 	- SOLUZIONE: l'abbiamo già vista prima, fai in modo che la quintupla riscriva letteralmente il carattere letto e si sposti a destra
-![Pasted image 20250417152032.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250417152032.png)
+![Pasted image 20250417152032.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250417152032.png)
 2. In un ASFD ci possono essere transizioni che partono da uno stato finale, in una MT questa cosa non è possibile
 	- SOLUZIONE
 		- fai in modo che gli unici stati finali della MT rimangano $q_{A}$ e $q_{R}$
@@ -209,9 +209,9 @@ Tuttavia, le descrizioni dei due modelli differiscono in due aspetti
 		Stessa cosa vale per i gli stati NON FINALI.
 
 #### in definitiva possiamo dire che:
-![Pasted image 20250417152916.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250417152916.png)
+![Pasted image 20250417152916.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250417152916.png)
 ### Cosa resta da dimostrare
-![Pasted image 20250417154630.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250417154630.png)
+![Pasted image 20250417154630.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250417154630.png)
 
 ##### In questa lezione vedremo solo il PASSO 1)
 
@@ -221,11 +221,11 @@ Tuttavia, le descrizioni dei due modelli differiscono in due aspetti
 Ogni **automa a stati finiti** può essere tradotto in una **grammatica regolare** equivalente.
 
 
-![Pasted image 20250417155228.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250417155228.png)
+![Pasted image 20250417155228.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250417155228.png)
 >N.B.: Dal punto due abbiamo che ogni stato ho un simbolo non terminale corrispondente A
 
 >[!tip]- spiegazione degli ultimi 3 punti
->![Pasted image 20250417155521.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250417155521.png)
+>![Pasted image 20250417155521.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250417155521.png)
 
 ### Iniziamo la dimostrazione vera e propria
 $$x \in L(A) \Leftarrow\Rightarrow x \in L(G_A)$$

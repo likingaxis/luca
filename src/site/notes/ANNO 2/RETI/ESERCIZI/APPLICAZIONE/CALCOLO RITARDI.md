@@ -45,7 +45,7 @@ dove rispettivamente abbiamo
 Insomma quando si hanno tanti pacchetti si può fare sta roba
 #### Troughput end-end con un singolo tunnel
 $$ MIN\{R_C,R_S,R/LINK\}$$ 
-![Pasted image 20250713123038.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250713123038.png)
+![Pasted image 20250713123038.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250713123038.png)
 #### Calcolare il tempo di utilizzo di un collegamento
 $$ R_S/R_C$$ se $R_S\leq R_C$ o viceversa per il collegamento di $R_S$ fare $R_S/R_S$ 
 al num metti il collo di bottiglia 

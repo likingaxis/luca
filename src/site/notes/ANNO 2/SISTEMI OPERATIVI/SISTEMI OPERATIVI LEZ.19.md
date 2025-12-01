@@ -29,7 +29,7 @@ schermi mappati in memoria
 
 alcuni dispositivi per semplificazione vengono messi nel file system dal sistema operativo
 ### Velocita dei dispositivi che hanno impatti importanti
-![Pasted image 20250107183643.png|600](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107183643.png)
+![Pasted image 20250107183643.png|600](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107183643.png)
 
 
 ## panoramica generale dei dispositivi e i vari controller
@@ -39,7 +39,7 @@ il s.o. comunica con i controller dei dispositivi
 La scheda madre è divisa in northbridge e southbridge
 northbridge è il piu veloce e interagisce con il pci-e
 il southbridge è il piu lento e interagisce con le cose più lente
-![Pasted image 20250107184722.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107184722.png)
+![Pasted image 20250107184722.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107184722.png)
 ### Standard delle interfacce
 tipo sata scsi thunderbolt ecc...
 consentono di utilizzare dispositivi da diverse aziende
@@ -47,29 +47,29 @@ consentono di utilizzare dispositivi da diverse aziende
 sono le ultime interfacce possibili e si occupano della gestione dei veri e propri bit
 effettuano verifiche e controlli per gli errori dei bit con ad esempio ECC(Error Correction Code)
 ## Una vecchia porta parallela
-![Pasted image 20250107185303.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107185303.png)
-![Pasted image 20250107185318.png|200](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107185318.png)
+![Pasted image 20250107185303.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107185303.png)
+![Pasted image 20250107185318.png|200](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107185318.png)
 vecchia interfaccia per stampanti ecc
 8 spinotti per scambiare i dati
 8 per i comandi effettivi
 altri per la gnd e alimentazione
 ## porta usb
-![Pasted image 20250107190238.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107190238.png)
+![Pasted image 20250107190238.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107190238.png)
 la vecchia porta usb è una interfaccia standardizzata per effettuare una connessione con il computer e i dispositivi 
-![Pasted image 20250107190048.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107190048.png)
+![Pasted image 20250107190048.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107190048.png)
 2 pin per alimentazione e 2 per i dati 
 in base alle onde positive o negative si codifica e decodifica il segnale
-![Pasted image 20250107190035.png|700](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107190035.png)
+![Pasted image 20250107190035.png|700](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107190035.png)
 diverse versioni di usb portano una forte retrocompatibilità e sono plug-play
 ### tabella di porte usb
-![Pasted image 20250107190501.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107190501.png)
+![Pasted image 20250107190501.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107190501.png)
 
 ### un disco hdd come è fatto
 PCB è il circuito che ha
 - al centro una MCU (micro controller unit)
 - cache una ram usata per una cache
 - VCM controlla la rotazione del motore del disco
-![Pasted image 20250107190540.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250107190540.png)
+![Pasted image 20250107190540.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250107190540.png)
 
 ## Come comunicano dispositivi e CPU
 ogni dispositivo ha un controller che fa da intermediario tra cpu e dispositivo
@@ -89,9 +89,9 @@ uso istruzioni differenti dal solito assembly
 - `IN REG, PORT ` per la lettura di port e salva in reg 
 - `OUT PORT,REG` per scrivere
 due spazi di indirizzi uno per la ram e uno per i dispositivi di I/O
-![Pasted image 20250108171938.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250108171938.png)
+![Pasted image 20250108171938.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250108171938.png)
 #### Memory mapped I/O
-![Pasted image 20250108173252.png|200](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250108173252.png)
+![Pasted image 20250108173252.png|200](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250108173252.png)
 ma perché non mettiamo tutto insieme?
 ogni dispositivo viene mappato in memoria insieme alle altre cose con degli indirizzi univoci
 i registri hardware sono accessibili solo dal kernel, garantisce maggiore sicurezza
@@ -99,7 +99,7 @@ i registri hardware sono accessibili solo dal kernel, garantisce maggiore sicure
 Attraverso la gestione delle pagine di memoria, il sistema può controllare dispositivi in modo selettivo. 
 potrebbe esserci un problema relativo all'utilizzo della cache
 dove un registro viene salvato in cache e non subisce cambiamenti dal dispositivo e quindi il dato non si aggiorna
-![Pasted image 20250108181001.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250108181001.png)
+![Pasted image 20250108181001.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250108181001.png)
 di questo sistema c'è una problematica che prevede 2 soluzioni
 il sistema non sa se ha a che fare con un indirizzo in memoria o che appartiene a un dispositivo hardware
 - prima soluzione a tentativi lenta ma facile da scrivere
@@ -107,7 +107,7 @@ il sistema non sa se ha a che fare con un indirizzo in memoria o che appartiene 
 necessità di bilanciare prestazioni e efficienza
 
 #### IBRIDO
-![Pasted image 20250108183047.png|200](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250108183047.png)
+![Pasted image 20250108183047.png|200](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250108183047.png)
 si usano entrambi i metodi uno per operazioni più rapide l'altro per operazioni più lente
 PMIO e MMIO, il primo per fare roba più lenta l'altro roba più veloce
 
@@ -116,7 +116,7 @@ PMIO e MMIO, il primo per fare roba più lenta l'altro roba più veloce
 Il controller DMA consente lo scambio di dati dei dispositivi senza uso della CPU
 - senza DMA il controller del disco legge i dati e li memorizza nel suo buffer e li invia al SO
 - con DMA la CPU dice al DMA attivati e dice al controller del disco attivati e li fa lavorare
-![Pasted image 20250108185829.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250108185829.png)
+![Pasted image 20250108185829.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250108185829.png)
 Il controller DMA può essere
 - semplice(1 trasferimento per volta)
 - complesso(+ trasferimenti)
@@ -134,7 +134,7 @@ tutti i blocchi citati riguardano un conflitto di bus
 - interrupt hardware segnali inviati da dispositivi come stampanti alla CPU
 l'interrupt viene gestito da un controller
 se ho piu interrupt li gestisco con delle code e algoritmi
-![Pasted image 20250108192445.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250108192445.png)
+![Pasted image 20250108192445.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250108192445.png)
 #### STEP interrupt
 1. un dispositivo richiede attenzione alla CPU inviando un interrupt alla CPU, il controller assegna un numero a quel dispositivo per identificarlo
 2. la CPU interrompe ciò che fa e ha un vettore degli interrupt dove ad ogni numero corrisponde un indirizzo di quello che deve eseguire a seconda dell'interrupt. Quando un dispositivo corrisponde a un numero la CPU prende quel numero e lo confronta con l'array e esegue quella determinata riga di codice 
@@ -145,7 +145,7 @@ se ho piu interrupt li gestisco con delle code e algoritmi
 7. ci sono due tipi di stack, uno nel kernel uno invece che appartiene al processo utente, con quello utente si possono creare errori, quello del kernel richiede cambi di contesto che rallentano un po' le cose
 
 ### interrupt precisi vs imprecisi
-![Pasted image 20250109102914.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020250109102914.png)
+![Pasted image 20250109102914.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020250109102914.png)
 la CPU grazie a pipeline può gestire più processi senza che debbano per forza finire
 questo complica la gestione degli interrupt
 abbiamo due tipi di interrupt:

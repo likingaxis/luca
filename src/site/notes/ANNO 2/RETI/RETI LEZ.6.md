@@ -12,7 +12,7 @@ Ci sono tre componenti principali
 	- sotto ho fatto un esempio
 - simple mail transfer protocol: SMTP
 	- protocollo che consente il trasferimento di messaggi tra server di posta
-![Pasted image 20250321175516.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321175516.png)
+![Pasted image 20250321175516.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321175516.png)
 ## Esempio di posta elettronica
 - io paolo@sbors.it invio al mio server di posta sbors.it la mail con SMTP
 - successivamente il server di posta usa SMTP per inviare la lettera al server di posta del destinatario che lo riceverà con SMTP 
@@ -30,12 +30,12 @@ Per fare il trasferimento ci sono 3 step:
 - handshaking smtp per presentare le due parti client server con i vari codici di stato
 - il trasferimento dei messaggi veri e propri 
 - poi la chiusura
-![Pasted image 20250321180434.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321180434.png)
+![Pasted image 20250321180434.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321180434.png)
 ### Esempio stupido con Alice e Bob
-![Pasted image 20250321181228.png|600](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321181228.png)
+![Pasted image 20250321181228.png|600](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321181228.png)
 #### Esempio dettagliato
 server di posta crepes.fr invia al server di posta hamburger.edu possiamo vedere tutti gli step
-![Pasted image 20250321181449.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321181449.png)
+![Pasted image 20250321181449.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321181449.png)
 spiegazione 
 Qui possiamo vedere come il . venga usato per indicare la fine del messaggio 
 MAIL FROM E RCPT vengono usate per indicare il mittente e il destinatario
@@ -54,9 +54,9 @@ per indicare la terminazione del messaggio:
 - smtp: usa CRLF (`\r\n`) per terminare ogni riga. La fine del messaggio è indicata da `\r\n.\r\n`, cioè una riga con solo un punto (`.`) dopo un CRLF
 
 ##### Formato dei messaggi di posta elettronica
-![Pasted image 20250321183134.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321183134.png)
+![Pasted image 20250321183134.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321183134.png)
 #### ACCEDERE ALLA MAIL DI POSTA CON IMAP
-![Pasted image 20250321183245.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321183245.png)
+![Pasted image 20250321183245.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321183245.png)
 protocollo che permette di scaricare i messaggi sul server di posta elettronica
 - consente di recuperare cancellare e archiviare i messaggi memorizzati nel server
 IMAP sta per Internet Mail Access Protocol
@@ -69,7 +69,7 @@ Gli host su internet sono definiti da indirizzi IP da 32 o 128 bit
 anche gli host hanno diversi identificatori non solo indirizzi IP, quest'ultimi sono difficili da digitare
 ### Soluzione vecchia e pasticciona cogliona
 un tempo si usava un file con indirizzi IP che corrispondevano a nomi
-![Pasted image 20250321185128.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321185128.png)
+![Pasted image 20250321185128.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321185128.png)
 il problema di questo file è che deve crescere costantemente
 questo file era registrato da NIC un ente che aveva il compito di tenere conto dei vari indirizzi IP 
 #### Soluzione
@@ -95,7 +95,7 @@ quasi tutte le interazioni su internet passano per il DNS
 il DNS deve essere affidabile e sicuro
 
 #### Gerarchia nel dettaglio  del DNS
-![Pasted image 20250321190924.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321190924.png)
+![Pasted image 20250321190924.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321190924.png)
 C'è una divisione dei livelli dei server del DNS
 - la root dove ci sono i server che indirizzano ai server DNS più specifici
 - TLP dove abbiamo i domini più usati e sono infatti strettamente collegati alla radice
@@ -115,10 +115,10 @@ Ogni DNS locale è in ogni ISP(Internet Service Provider)
 ### Interrogazione DNS come funziona?
 ci sono di due tipi
 ###### di tipo iterativo
-![Pasted image 20250321192921.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321192921.png)
+![Pasted image 20250321192921.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321192921.png)
 - il DNS server locale deve interrogare tutti i vari server se non ha nella cache l'ip convertito
 ###### di tipo ricorsivo
-![Pasted image 20250321192958.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321192958.png)
+![Pasted image 20250321192958.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321192958.png)
 - in questo caso si "risolvono" tra di loro
 ## Caching del DNS
 Anche il DNS ha una cache che ha un time to live delle conversioni
@@ -142,10 +142,10 @@ dove rispettivamente abbiamo:
 | MX             | Specifica il mail server per il dominio              | Il dominio 'esempio.com' gestisce le email attraverso 'mail.esempio.com |
 
 #### Messaggi DNS
-![Pasted image 20250321210303.png|700](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321210303.png)
+![Pasted image 20250321210303.png|700](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321210303.png)
 
 ### Mettere un nostro sito nel sistema
-![Pasted image 20250321210406.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250321210406.png)
+![Pasted image 20250321210406.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250321210406.png)
 
 #### Sicurezza nel DNS
 - Deve essere sicuro da attacchi DDoS 

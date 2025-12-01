@@ -12,10 +12,10 @@ iniziamo a precisare che non si può fare fin dall'inizio $S \rightarrow X$ poic
 - non potremmo mai togliere il non terminale X
 - non potremmo più aggiungere caratteri a o b a sinistra di X
 andiamo però a fare n produzioni di tipo 
-![Pasted image 20250403193135.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250403193135.png)
+![Pasted image 20250403193135.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250403193135.png)
 quello che poi possiamo fare è slidare le lettere dell'alfabeto oppure togliere la X,(puoi vederlo nella lezione scorsa)
 una volta fatti i vari swap ecc... appena arrivo alla sitauzione
-![Pasted image 20250403194659.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250403194659.png)
+![Pasted image 20250403194659.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250403194659.png)
 Sull'ultimo devo utilizzare una tra le due produzioni
 - $U_{x1}X \rightarrow x1$
 
@@ -91,7 +91,7 @@ Se la simulazione termina in $q_A$ non ci serve sapere altro quindi togliamo tut
 (Ricordiamo che la macchina vuole ):
 Riconoscere se una stringa è della forma `xx`, cioè due copie consecutive di una parola x.
 Per generare quanto detto creiamo le seguenti produzioni
-![Pasted image 20250403220226.png|500](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250403220226.png)
+![Pasted image 20250403220226.png|500](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250403220226.png)
 >[!tip]- spiegazione delle produzioni passo per passo
 > #### **1') S → 0 U₀ A ◻ | 1 U₁ A ◻ | a Q₀ ◻**
 > 
@@ -292,7 +292,7 @@ Per ogni quintupla `<qᵢ₁, h₁, h₂, qᵢ₂, ds>` in $P_{T}$
 1) Le produzioni della fase 2 **possono essere applicate solo a parole che contengono `Q₀`**  
 	(cioè: solo dopo che `X` è stato rimosso dalla parola iniziale generata nella fase 1)
 	Se noti, guarda le varie produzioni
-![Pasted image 20250406113114.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406113114.png)
+![Pasted image 20250406113114.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406113114.png)
 	CON LA VERDE genero `X`
 	CON LA ROSSA rimuovo `X` e ho `Q₀`
 
@@ -376,7 +376,7 @@ dopo avremmo solo
 	`a C → ε`
 		Dopo aver eliminato tutti i caratteri rimane solo `a` con `C`, che trasformo in una **parola vuota** (`ε`) e quindi le **cancello definitivamente**
 #### ESEMPIO GRAFICO
-![Pasted image 20250406113950.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406113950.png)
+![Pasted image 20250406113950.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406113950.png)
 
 #### Altre osservazioni
 1) Le produzioni della fase 3 possono essere applicate **solo se** nella parola c’è `qₐ`.
@@ -385,5 +385,5 @@ dopo avremmo solo
 2) Se applichi le produzioni della fase 3 a una parola che contiene solo `qₐ` come non terminale e termina con `▯`,  allora ottieni una parola **composta solo dai simboli a sinistra di `a`**, cioè proprio l’input `x`.
 
 #### Mega conclusione (e sintesi)
-![Pasted image 20250406114029.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406114029.png)
-![Pasted image 20250406114041.png](/img/user/ANNO%202/FONDAMENTI/fotofond/Pasted%20image%2020250406114041.png)
+![Pasted image 20250406114029.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406114029.png)
+![Pasted image 20250406114041.png](/img/user/ANNO%202/FOTOANNO2/fotofond/Pasted%20image%2020250406114041.png)

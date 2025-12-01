@@ -23,7 +23,7 @@
 		- prendi l'indirizzo della sottorete e a tutti gli altri metti 255
 
 ## Esercizio 2
-![Pasted image 20250708174838.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250708174838.png)
+![Pasted image 20250708174838.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250708174838.png)
 - ordina in base al numero di bit della sottorete più grande 
 - confronta i byte della parte di host e vedi se sono simili
 	- nel primo caso hai /24 quindi 8-16-24 3 byte, devi vedere corrispondenza tra primi 3 byte
@@ -31,7 +31,7 @@
 	- e così via...
 	- se trovi corrispondenza con uno allora hai trovato la soluzione corretta perché prendi il numero di bit della sottorete più grande
 ## Esercizio 3
-![Pasted image 20250708175308.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250708175308.png)
+![Pasted image 20250708175308.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250708175308.png)
 - per trovare il piano di partizionamento prendi tutte le sottoreti che sono collegate senza router
 	- anche un router che è collegato a un altro router è una sottorete
 	- per calcolare le interfacce devi fare numero host+ numero di router della singola sottorete
@@ -39,7 +39,7 @@
 		- devi fare $2^x-2\geq \ interfacce$ 
 		- per capire il numero di bit della parte della sottorete fai 32-x
 ## ESERCIZIO 4
-![Pasted image 20250708175938.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250708175938.png)
+![Pasted image 20250708175938.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250708175938.png)
 - data la subnet mask puoi dedurre il numero di bit della parte della sottorete
 	- ad esempio alla prima sono 3 byte ovvero 8-16-24 allora avremo indirizzo/24
 	- all'ultima abbiamo 8-16-23 perché abbiamo 255-1 quindi indirizzo/23
@@ -48,11 +48,11 @@
 	- ogni destinazione con next hop uguale e /x può essere raggruppato modificando lo /x 
 	- metteremo lo /x della subnet- quanti bit meno significativi cambiano
 ### ESERCIZIO 5
-![Pasted image 20250713160358.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250713160358.png)
+![Pasted image 20250713160358.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250713160358.png)
 1. calcola numero di bit minimi per poi fare $2^x-2\geq interfacce$ 
 	- poi $32-2^x$
 2. parti da /25 fai 8-16-24 e poi prendi il primo bit di 128 
-![Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/RETI/fotret/Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg)
+![Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Screenshot_2025-07-13-16-08-14-65_45415775811cea13943236d9369df411.jpg)
 3. divide in 
 - a) $2^{32-x}$
 - b) calcoli intervallo di indirizzi prendendo dal prefisso di rete al prefisso di broadcast, senza contarli

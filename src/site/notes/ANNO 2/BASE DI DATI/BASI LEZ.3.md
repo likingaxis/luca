@@ -27,23 +27,23 @@ Ha lo scopo di descrivere il modo in cui i dati sono organizzati nel DBMS in un 
 
 ### Concettuale
 Un modello definito è lo schema E-R e il modello classi associazioni UML
-![Pasted image 20250313213952.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250313213952.png)
+![Pasted image 20250313213952.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250313213952.png)
 
 # Schemi e istanze
 in ogni base di dati esistono schemi e istanze
 ### Schema 
 - descrive la struttura del database non varia troppo nel tempo
 	- le intestazioni ad esempio
-![Pasted image 20250313214324.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250313214324.png)
+![Pasted image 20250313214324.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250313214324.png)
 
 ### Istanza
 - I valori stessi che variano molto nel tempo
 	- ad esempio il corpo di ciascuna tabella
-![Pasted image 20250313214341.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250313214341.png)
+![Pasted image 20250313214341.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250313214341.png)
 
 # Architettura standard di un DBMS
 È a tre livelli
-![Pasted image 20250313214549.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250313214549.png)
+![Pasted image 20250313214549.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250313214549.png)
 - schema logico
 	- descrizione della base di dati nel modello logico del DBMS
 - schema fisico

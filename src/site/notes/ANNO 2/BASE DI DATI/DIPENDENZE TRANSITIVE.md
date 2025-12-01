@@ -143,4 +143,4 @@ Perché:
 > La **3NF è più flessibile**, ma può nascondere **anomalie**  
 > La **BCNF elimina tutte le dipendenze “sospette”**, anche se servono più tabelle
 
-![Pasted image 20250612154522.png](/img/user/ANNO%202/BASE%20DI%20DATI/fotobasi/Pasted%20image%2020250612154522.png)
+![Pasted image 20250612154522.png](/img/user/ANNO%202/FOTOANNO2/fotobasi/Pasted%20image%2020250612154522.png)

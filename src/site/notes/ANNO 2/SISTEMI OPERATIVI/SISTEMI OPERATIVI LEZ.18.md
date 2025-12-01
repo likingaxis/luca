@@ -27,14 +27,14 @@ più il blocco è grande meno impiego nel cercare le varie informazioni di un fi
 più è piccolo più impiego a cercare i blocchi ma risolvo la cosa detta prima
 Ovviamente quando si parla di ricerca di un blocco si parla proprio di ->
 Latenza: tempo che perdi nel far girare la testina
-![Pasted image 20241219174832.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241219174832.png)
+![Pasted image 20241219174832.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241219174832.png)
 
 Avendo dischi da TB oggi si preferisce creare blocchi +grandi
 
 
 ##### Come tracciamo i blocchi liberi?
 Metodo 1:potrei avere una lista di indici di blocchi liberi.
-![Pasted image 20241219175443.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241219175443.png)
+![Pasted image 20241219175443.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241219175443.png)
 - ha una rappresentazione sparsa(rivedi differenza tra sparso e denso)
 - ogni blocco può contenere
 	- indirizzo di inizio del blocco libero
@@ -47,8 +47,8 @@ Metodo 2: bitmap, 1 indica libero 0 indica pieno
 rimane sempre in memoria rispetto al metodo 1 che si svuota a secondo del numero dei blocchi pieni o liberi
 - tutta la bitmap indica tutta la memoria
 - ogni rettangolo una sua porzione
-![Pasted image 20241219183656.png|150](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241219183656.png)
-![Pasted image 20241219190319.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241219190319.png)
+![Pasted image 20241219183656.png|150](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241219183656.png)
+![Pasted image 20241219190319.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241219190319.png)
 #### Gestione e assegnazione delle quote nei sistemi multiutente
 L'amministratore assegna per ogni utente una quota
 - si intende un numero massimo di blocchi liberi e file
@@ -61,10 +61,10 @@ La tabella delle quote è una tabella che tiene traccia delle quote di ogni uten
 Abbiamo due limitazioni
 soft: io singolo utente posso superare quel limite di quota per poco tempo
 Hard: se lo supero mi viene fatta una restrizione in termini di accesso
-![Pasted image 20241219191036.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241219191036.png)
+![Pasted image 20241219191036.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241219191036.png)
 
 #### Come è organizzato Ext2
-![Pasted image 20241221175350.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241221175350.png)
+![Pasted image 20241221175350.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241221175350.png)
 Ext2 viene usato principalmente in Linux ed è un File System
 - suddiviso in gruppi di blocchi 
 - ogni gruppo di blocchi ha
@@ -80,7 +80,7 @@ Ext2 viene usato principalmente in Linux ed è un File System
 		- contengono i file e le directory del file system, non sono necessariamente contigui sul disco
 nella scrittura di file Ext2 si tende a minimizzare la frammentazione cercando di scrivere il più possibile nell'area di blocchi della stessa directory genitore finché non si esaurisce lo spazio 
 - per determinare le aree libere Ext2 usa le bitmap
-![Pasted image 20241222075517.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222075517.png)
+![Pasted image 20241222075517.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222075517.png)
 una voce di questi blocchi si legge così
 - "Colossale" è un file (Tipo, F) 
 - con nome lungo 9 
@@ -95,12 +95,12 @@ tutto il computer è molto più veloce del disco quindi bisogna ottimizzare le c
 All'interno del sistema operativo vengono usate delle cache
 - buffer cache: memorizza i blocchi del disco in RAM per ridurre gli accessi ai blocchi in disco
 - page cache: prima di essere blocchi ovviamente in modo più virtuale e astratto sono pagine dei file, qui in questo caso vengono salvate le pagine più utilizzate collegate al VFS virtual file system(spiego sotto)
-![Pasted image 20241222084633.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222084633.png)
+![Pasted image 20241222084633.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222084633.png)
 ###### Precisazione sulla cache
 è sempre la stessa struttura dove ho dei blocchi con uso di hash per identificare rapidamente se un blocco è nella cache 
 se si cerca un file nella cache e non c'è viene messo dal disco alla cache
 Ogni elemento della cache viene messo in questa lista doppiamente collegata
-![Pasted image 20241222085650.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222085650.png)
+![Pasted image 20241222085650.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222085650.png)
 Se ho la memoria cache piena che faccio?
 applico degli algoritmi come quelli già visti con dei vantaggi e svantaggi
 se ad esempio volessi usare LRU potrei avere limiti di inconsistenza in caso di crash
@@ -142,7 +142,7 @@ ci sono due tipi di backup
 	- copio in base alle ultime modifiche apportate all'albero dei file
 	- oppure uno specifico file
 	- si effettua una copia ad alto livello basandosi su database o strutture dati astratte
-![Pasted image 20241222101927.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222101927.png)
+![Pasted image 20241222101927.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222101927.png)
 wayback machine di apple fatta bene
 
 
@@ -180,7 +180,7 @@ Il VFS ha due livelli principali: 
     - Interagisce con le chiamate di sistema POSIX come OPEN, READ E WRITE    
 - Inferiore: 
     - Decine di funzioni che il VFS invia ai file system sottostanti
-![Pasted image 20241222220015.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222220015.png)
+![Pasted image 20241222220015.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222220015.png)
 
 #### Struttura del VFS
 - Superblock: tipo di file system, nome, dimensione e dove si trova
@@ -192,7 +192,7 @@ Il VFS ha due livelli principali: 
 - Directory del FS: 
 	- permette al VFS di mappare i nomi dei file ai loro v-node indipendentemente dal FS in cui questi file si trovano.
 	- facilita la navigazione e l'accesso ai file.
-![Pasted image 20241222221253.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222221253.png)
+![Pasted image 20241222221253.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222221253.png)
 Quando viene aggiunto un nuovo file system questo deve registrarsi al VFS fornendo un serie di funzioni specifiche (lettura, scrittura, montaggio, ecc... )
 
 Quando viene montato un nuovo file system (es. USB), il VFS crea un v-node per i file presenti e mappa le operazioni richieste a quel file system. 
@@ -203,7 +203,7 @@ Disaster recovery: backup in un altro posto
 è decisamente a basso livello legato all'hardware
 [[ANNO 1/ARCHITETTURA/LEZIONI/3.Le memorie#RAID\|lezione RAID]]
 ### FILE SYSTEM V7 UNIX
-![Pasted image 20241222221827.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222221827.png)
+![Pasted image 20241222221827.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222221827.png)
 Ha reso UNIX famoso con una gestione con il numero di i-node e il nome del file
 Da notare che per ogni i-node vi era un contatore incrementato o decrementato in base al numero di link con esso. 
 Anche in questo file system era possibile muoversi attraverso 
@@ -239,4 +239,4 @@ tipo
 sudo mount /dev/sda1 /mnt/mydisk
 ```
 quindi dev monta mnt
-![Pasted image 20241222222528.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241222222528.png)
+![Pasted image 20241222222528.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241222222528.png)

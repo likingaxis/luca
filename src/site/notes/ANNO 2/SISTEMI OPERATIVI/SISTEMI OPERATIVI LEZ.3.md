@@ -71,11 +71,11 @@ Per rappresentare un sistema monolitico con gerarchia venne usato il sistema THE
 con livelli che gestivano l'allocazione del processore, la memoria, la comunicazione, l'I/O, I dispositivi e gli utenti
 >[!quote] di solito il singolo livello può parlare solo con chi gli sta sopra e chi sotto sennò sarebbe un puttanaio
 
-![Pasted image 20241018132619.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241018132619.jpg)
+![Pasted image 20241018132619.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241018132619.jpg)
 Questo sistema venne usato da MULTICS anche se ideato per uno scopo educativo, aveva più programmi che lavoravano singolarmente senza darsi fastidio tra loro e usava degli anelli per definire i privilegi(più eri dentro agli anelli più avevi privilegi)
 Con queste strutture si definivano meglio I compiti e aumentava la protezione delle risorse
 ###### RAPPRESENTAZIONE MENO STILIZZATA DI UN S.O. MONOLITICO
-![Pasted image 20241018133308.jpg|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241018133308.jpg)
+![Pasted image 20241018133308.jpg|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241018133308.jpg)
 - Kernel Unificato: tutte le funzionalità sono centralizzate in un unico kernel
 - Interconnessione: Ogni componente può chiamare qualsiasi altro componente
 - Scalabilità: eccessivamente contorto al livello di codice e quindi un po' rognoso da scalare
@@ -89,7 +89,7 @@ Virtualizzare una macchina significa aggiungere uno strato aggiuntivo per cui ch
 - tipo 2 senza hypervisor, uso un sistema operativo nato per essere generalista e sopra metto una app che esegue e traduce le operazioni sopra o sotto
 	- b. È un software che traduce semplicemente le istruzioni in un linguaggio che puo' capire il s.o. sottostante, questa cosa è più lenta dell'hypervisor di tipo 1 ma è piu' semplice da applicare
 	- c. Molto simile al tipo b ma ha un accesso diretto al livello kernel con un modulo e quindi molte risorse le prende direttamente senza essere schermato dal s.o. sottostante, ciò gli consente di fare chiamate di sistema direttamente al livello kernel
-![Pasted image 20241018150141.jpg|450](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241018150141.jpg)
+![Pasted image 20241018150141.jpg|450](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241018150141.jpg)
 
 Ovviamente aggiungere uno strato porta a una diminuzione delle performance
 
@@ -103,7 +103,7 @@ Invece di installare sulla macchina app che richiedono librerie da scaricare ecc
 Si usano i container poiché sono istanze complete già con librerie per eseguire l'app
 Esiste il gestore del container che gestirà tutti i container che possono esplodere con un click
 Quasi tutte le funzionalità di Google si installano con container di tipo docker
-![Pasted image 20241018164822.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241018164822.png)
+![Pasted image 20241018164822.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241018164822.png)
 #### EXOKERNEL
 Non emula l'hardware sottostante ma dà accesso diretto alle macchine virtuali al di sopra però limitando e gestendo notevolmente le risorse in modo che siano spartite nel modo corretto
 Garantisce maggiore sicurezza e maggiori performance
@@ -122,7 +122,7 @@ Le Service procedure vengono chiamate non nel kernel ma al livello utente
 >Ogni processo del s.o. può fare solo ciò che serve per svolgere il compito
 
 Queste comunicazioni non avvengono in una rete ma all'interno del s.o.
-![Pasted image 20241018162206.jpg|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241018162206.jpg)
+![Pasted image 20241018162206.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241018162206.jpg)
 Visto che nella struttura interna del kernel c'è poco e niente ed è tutto al livello user si aumenta di molto la sicurezza del sistema poiché è difficile accedere alla parte sottostante che ha poco e niente
 Il passaggio di messaggi è più lento 
 

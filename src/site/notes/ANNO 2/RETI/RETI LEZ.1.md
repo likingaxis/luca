@@ -12,7 +12,7 @@ all'interno della rete abbiamo i vari router e switch e ci consentono di <font c
 >[!tip] per commutare si intende l'instradamento e la gestione dei vari pacchetti all'interno di una rete
 
 
-![Pasted image 20250303174455.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303174455.png)
+![Pasted image 20250303174455.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303174455.png)
 
 per far comunicare tra loro i vari router switch host ecc... abbiamo bisogno di 
 #### reti di collegamento
@@ -33,7 +33,7 @@ il protocollo di un messaggio indica esattamente
 - il loro formato
 - l'ordine di invio
 - azioni intraprese in fase di trasmissione o ricezione di un messaggio o un evento
-![Pasted image 20250303180317.png|700](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303180317.png)
+![Pasted image 20250303180317.png|700](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303180317.png)
 
 Standard che danno delle garanzie sulle varie compatibilità di internet
 - RFC
@@ -50,16 +50,16 @@ cosa importa?
 - velocità di trasmissione
 una forma primitiva di rete di accesso internet è sicuramente quella con il modem 56k
 poi ci fu una evoluzione con la DSL
-![Pasted image 20250303181839.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303181839.png)
+![Pasted image 20250303181839.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303181839.png)
 Il provider darà un DSLAM un dispositivo che collega più linee da parte del provider
 viene usato quindi un doppino per le basse frequenze le chiamate per le alte frequenze internet chiamato multiplexing a divisione di frequenza
 noi abbiamo un collegamento dedicato con la centrale operativa
 è normale ci sia differenza tra download e upload dovuto a un limite fisico
 ## Differenza tra i vari punti di accesso FTTx
-![Pasted image 20250303182107.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303182107.png)
+![Pasted image 20250303182107.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303182107.png)
 ## FTTH di tipo PON
 sistemi non alimentati passivi
-![Pasted image 20250303182308.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303182308.png)
+![Pasted image 20250303182308.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303182308.png)
 sono composti dai seguenti dispositivi OLT e ONT
 - OLT: è da parte del provider e viene usato per fare da intermediario tra internet della centrale locale e i vari ONT 
 - Viene usato uno splitter ottico per indirizzare i pacchetti ad ogni ONT, essendo passivo lo invia ad ogni ONT
@@ -68,13 +68,13 @@ la potenza viene suddivisa quindi per ogni ONT
 per l'upload viene usato il TDM Time division multiplexing per dividere il tempo di uso di upload dal ONT al OLT
 FWA(Fixed Wireless Access)
 wireless != mobile
-![Pasted image 20250303183134.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303183134.png)
+![Pasted image 20250303183134.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303183134.png)
 
 # Reti locali wireless o Accesso wireless su scala geografica
 <font color="#f79646">Locali</font> centinaia di metri di copertura
-![Pasted image 20250303183752.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303183752.png)
+![Pasted image 20250303183752.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303183752.png)
 <font color="#f79646">Geografica</font> kilometri di copertura
-![Pasted image 20250303183817.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303183817.png)
+![Pasted image 20250303183817.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303183817.png)
 # INVIO DEI PACCHETTI DI DATI
 Il tutto viene suddiviso in sotto pacchetti con un tempo di trasmissione R e una lunghezza dei pacchetti L quindi abbiamo un ritardo di trasmissione dato da $\frac{L}{R}$
 ###### Mezzi vincolati e mezzi non vincolati
@@ -107,5 +107,5 @@ Il tutto viene suddiviso in sotto pacchetti con un tempo di trasmissione R e una
 			- orbita media
 		- GEO
 			- orbita geostazionaria ad alta distanza quindi rimane sempre nello stesso punto
-![Pasted image 20250303183458.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250303183458.png)
+![Pasted image 20250303183458.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250303183458.png)
 

@@ -27,7 +27,7 @@ Il **cambio di contesto** non deve essere per forza efficiente solo nell'ambito 
 >[!question]- cosa è il cpu burst
 >(il cpu burst è una unità di tempo che definisce quando la CPU è in uso)
 
-![Pasted image 20241115154712.png|600](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115154712.png)
+![Pasted image 20241115154712.png|600](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115154712.png)
 
 ###### PRECISAZIONI SULLO SCHEDULING
 - con CPU più veloci i processi tendono a essere più I/O bound 
@@ -36,7 +36,7 @@ Il **cambio di contesto** non deve essere per forza efficiente solo nell'ambito 
 - Non tutti gli scheduling funzionano su tutti i dispositivi
 
 ##### GLI STATI DI UN PROCESSO
-![Pasted image 20241115155817.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115155817.png)
+![Pasted image 20241115155817.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115155817.png)
 un processo ha principalmente 3 stati:
 - Esecuzione: sta eseguendo il codice e usa la CPU
 - Ready: è pronto per eseguire il codice ma non lo fa
@@ -109,7 +109,7 @@ si può incorrere in attese lunghe
 - algoritmo senza prelazione
 - i tempi di esecuzione si devono sapere prima
 
-![Pasted image 20241115165039.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115165039.png)
+![Pasted image 20241115165039.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115165039.png)
 
 è ottimale per ridurre il tempo di turnaround quando tutti i job sono disponibili
 se alcuni arrivano dopo non è ottimale perché
@@ -128,7 +128,7 @@ se alcuni arrivano dopo non è ottimale perché
 - trasforma gli ambienti batch in circa preemptive
 ## SCHEDULING IN SISTEMI INTERATTIVI
 il tempo di risposta é fondamentale e abbiamo diversi algoritmi:
-![Pasted image 20241115171221.png|300](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115171221.png)
+![Pasted image 20241115171221.png|300](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115171221.png)
 #### 1. ROUND ROBIN (RR)
 - è il più vecchio ma 
 	- semplice
@@ -138,7 +138,7 @@ il tempo di risposta é fondamentale e abbiamo diversi algoritmi:
 è prevista una lista di processi eseguibili(Ready)
 quando un processo termina un quanto si sposta alla fine della lista
 
-![Pasted image 20241115171351.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115171351.png)
+![Pasted image 20241115171351.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115171351.png)
 ##### Cose importanti del Round Robin
 - è importante scegliere un quanto perché se avviene troppo spesso avrò troppi cambi di contesto e un overhead eccessivo, ovvero uno spreco della cpu sgravatus
 - abbiamo un Trade-off sul quanto da definire e la reattività del sistema
@@ -146,7 +146,7 @@ quando un processo termina un quanto si sposta alla fine della lista
 #### 2. SCHEDULING A PRIORITÀ (SAP)
 - il round robin vede tutti i processi uguali ma magari ce ne sono alcuni che hanno maggiore priorità
 - ogni processo ha una sua priorità e viene eseguito il processo con priorità più alta
-![Pasted image 20241115171835.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115171835.png)
+![Pasted image 20241115171835.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115171835.png)
 
 >[!question]- gestione delle priorità
 >se una priorità viene subentrata da un altro processo 
@@ -159,7 +159,7 @@ quando un processo termina un quanto si sposta alla fine della lista
 >[!question]- se ho$3$ processi con priorità $4$ come li gestisco?
 >raggruppo i processi in gruppi in base alle priorità
 >poi sul singolo gruppo posso usare tipo il round-robin
->![Pasted image 20241115173014.png|350](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115173014.png)
+>![Pasted image 20241115173014.png|350](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115173014.png)
 
 
 #### 3. SHORTEST PROCESS NEXT CON AGING(SPNCA)
@@ -168,7 +168,7 @@ noi vogliamo applicare shortest job first ai sistemi interattivi dove
 **soluzione**
 - creiamo delle stime dando un peso $a$ ogni volta che un processo viene eseguito
 - così facendo abbiamo una stima e non abbiamo bisogno di sapere prima i vari quanti
-![Pasted image 20241115174050.png|500](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115174050.png)
+![Pasted image 20241115174050.png|500](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115174050.png)
 
 #### 4. GUARANTEED SCHEDULING(GS)
 cerca di creare una cosa più equa possibile garantendo a tutti del tempo sulla CPU
@@ -179,7 +179,7 @@ se un processo l'ho creato da 100 secondi e ho 10 processi farò $100/10$ così 
 Esegue prima quello con il rapporto più basso
 
 #### 5. SCHEDULING A LOTTERIA(SAL)
-![1RUO.gif|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/1RUO.gif)
+![1RUO.gif|400](/img/user/ANNO%202/FOTOANNO2/fotosop/1RUO.gif)
 - creo dei biglietti della lotteria e li do randomicamente ad ogni processo
 - chi vince si esegue e faccio $n$ estrazioni al secondo
 se voglio creare una sorta di priorità posso dare più biglietti a chi ha una priorità maggiore
@@ -187,11 +187,11 @@ se ho processi figli posso fare in modo che il processo padre dia un po' dei suo
 
 #### 6. SCHEDULING FAIR-SHARE(SFS)
 L'idea è dare una frazione predefinita di CPU ad ogni utente e si assicura che ogni utente riceva la sua frazione indipendentemente dal numero di processi posseduti. LETTERALMENTE DEFINIZIONE DI "**EQUITÀ**"
-![Pasted image 20241115180401.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241115180401.png)
+![Pasted image 20241115180401.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241115180401.png)
 
 ## SCHEDULING IN SISTEMI REAL-TIME
 vengono utilizzati in sistemi operativi che necessitano un tempo di risposta immediata
-![Pasted image 20241120165915.png](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241120165915.png)
+![Pasted image 20241120165915.png](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241120165915.png)
 ###### ESISTONO DUE TIPI DI SISTEMI REAL-TIME
 - Hard Real-Time: le scadenze devono obbligatoriamente essere rispettate
 - **Soft Real-Time**: le scadenze devono essere rispettate ma in modo più tollerabile
@@ -247,7 +247,7 @@ Lo scheduling varia a seconda che si tratti di **thread a livello utente** o **t
 il kernel non è consapevole di ciò che si cela dietro un processo e lo vede come un unico blocco
 - i thread sono una cosa interna al processo ed è il processo a gestirli
 - lo scheduler assegnerà quantum di tempo a un processo e non a un singolo thread
-![Pasted image 20241120180934.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241120180934.png)
+![Pasted image 20241120180934.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241120180934.png)
 
 In questo esempio un possibile ordine è `A1` -> `A2` -> `A3` -> (ricomincia il giro) `A1` -> `A2` -> `A3` 
 Ciò che non può MAI succedere è questo `A1` -> `B1`, perché prima eseguo SOLO `A` 
@@ -256,7 +256,7 @@ Il problema però si verifica se un thread consuma tutto il quanto di tempo, in 
 #### Thread a livello kernel
 Qui i thread sono visibili dal kernel e possono essere scelti da esso per l'esecuzione
 Se un thread eccede il quanto viene sospeso
-![Pasted image 20241120181216.png|400](/img/user/ANNO%202/SISTEMI%20OPERATIVI/fotosop/Pasted%20image%2020241120181216.png)
+![Pasted image 20241120181216.png|400](/img/user/ANNO%202/FOTOANNO2/fotosop/Pasted%20image%2020241120181216.png)
 Qui i casi possibili sono 
 - `A1` -> `A2` -> `A3` -> (ricomincia il giro) `A1` -> `A2` -> `A3` 
 - `A1` -> `B1` -> `A2` -> `B2`

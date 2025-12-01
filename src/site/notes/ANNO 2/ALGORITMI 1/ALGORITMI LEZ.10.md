@@ -68,7 +68,7 @@ Ci sono due tipi di tecniche di rappresentazione:
 >- proprietà debole
 >	- gli indirizzi non sono per forza consecutivi
 >esempi grafici
->![Pasted image 20241118120857.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118120857.png)
+>![Pasted image 20241118120857.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118120857.png)
 
 
 
@@ -94,10 +94,10 @@ uso un array non ordinato in base alle chiavi
 >	- delete $O(n)$
 
 ## ESERCIZIO
-![Pasted image 20241118124310.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118124310.png)
+![Pasted image 20241118124310.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118124310.png)
 
 ## DEFINIZIONI SUGLI ALBERI
-![Pasted image 20241118124837.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118124837.png)
+![Pasted image 20241118124837.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118124837.png)
 - il ***grado*** di un nodo é il numero dei figli
 - un ***antenato*** è quando ho un nodo $u$ e se scendo di padre in padre raggiungo un figlio $v$ 
 - un ***discendente*** è come antenato ma visto al contrario
@@ -109,8 +109,8 @@ una generica cella $i$ conterrà:
 - il contenuto del nodo $i$
 - l'indice nell'array del rispettivo padre 
 
-![Pasted image 20241118150152.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118150152.png)
-![Pasted image 20241118150210.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118150210.png)
+![Pasted image 20241118150152.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118150152.png)
+![Pasted image 20241118150210.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118150210.png)
 quindi dentro la singola posizione avremmo `(P[i].info, P[i].parent)`
 - `P[i].info`: contenuto informativo nodo 
 - `P[i].parent`: indice del nodo padre
@@ -119,7 +119,7 @@ quindi dentro la singola posizione avremmo `(P[i].info, P[i].parent)`
 - il numero di figli può essere un numero arbitrario
 #### STRUTTURA 2. VETTORE POSIZIONALE
 ###### Come mi trovo gli elementi dell'albero?
-![Pasted image 20241118155454.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118155454.png)
+![Pasted image 20241118155454.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118155454.png)
 si possono fare due operazioni per trovare o i figli o i padri
 ##### 1. come trovare i figli di un determinato padre
 applichi la seguente formula partendo da 0:
@@ -142,28 +142,28 @@ dove:
 ### Rappresentazione delle due strutture ma usando liste collegate
 
 ###### 1. struttura vettore dei padri
-![Pasted image 20241118163423.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118163423.png)
+![Pasted image 20241118163423.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118163423.png)
 ###### 2. struttura vettore posizionale
-![Pasted image 20241118163442.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118163442.png)
+![Pasted image 20241118163442.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118163442.png)
 ###### 3. struttura primo figlio-> fratelli successivi
-![Pasted image 20241118163841.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118163841.png)
+![Pasted image 20241118163841.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118163841.png)
 ## VISITE DI ALBERI
 ci sono algoritmi che consentono di visitare alberi in modo sistematico, ovvero una sola volta 
 per una sola volta intende che arrivo al mio risultato senza scorrere l'albero più volte
 ci sono due tipi di visite che si visitano tutto l'albero:
 #### Visita in profondità
-![Pasted image 20241118170424.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118170424.png)
+![Pasted image 20241118170424.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118170424.png)
 ha come obiettivo quello di partire dalla radice $r$ fino visitando di figlio in figlio fino a raggiungere la foglia, una volta raggiunta la foglia si passa agli antenati e si visitano i figli dei rispettivi antenati se esistono
 ##### PSEUDOCODICE DI VISITA IN PROFONDITÀ
 questo pseudocodice vale per un albero binario
 le informazioni che visitiamo le inseriamo in una pila
-![Pasted image 20241118170553.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118170553.png)
+![Pasted image 20241118170553.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118170553.png)
 
-![ezgif.com-speed_3.gif](/img/user/ANNO%202/ALGORITMI%201/fotoalg/ezgif.com-speed_3.gif)
+![ezgif.com-speed_3.gif](/img/user/ANNO%202/FOTOANNO2/fotoalg/ezgif.com-speed_3.gif)
 #### COSTO
 avrò un costo $O(1)$ per un singolo nodo, quindi per ogni nodo avrò $O(n)$
 #### La sua versione ricorsiva
-![Pasted image 20241118172316.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118172316.png)
+![Pasted image 20241118172316.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118172316.png)
 
 così con la **visita in preordine** si fa 
 - radice
@@ -180,33 +180,33 @@ ci sono altri due tipi di visita che si fanno scambiando delle righe di codice
 - sottoalbero destro
 - radice
 **si scambia riga 2 con 4**
-![Pasted image 20241118173255.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118173255.png)
+![Pasted image 20241118173255.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118173255.png)
 in Preordine sarebbe:` A L E R B O `
 in Simmetrica sarebbe: `E L R A B O` 
 in Post-ordine sarebbe: `E R L O B A`
 ##### ALGORITMO DI VISITA IN AMPIEZZA
-![Pasted image 20241118175818.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118175818.png)
+![Pasted image 20241118175818.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118175818.png)
 parte da $r$ e visita i nodi per livello
 ##### PSEUDOCODICE DI VISITA IN AMPIEZZA
 questo pseudocodice vale per un albero binario
-![Pasted image 20241118175942.png|600](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118175942.png)
+![Pasted image 20241118175942.png|600](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118175942.png)
 se non ti ricordi le code guarda [[ANNO 2/ALGORITMI 1/ALGORITMI LEZ.10#3. LA CODA\|guarda qua]]
 - enqueue aggiunge all'ultima posizione la radice
 - poi in un while ogni volta andiamo a prelevare il primo elemento della coda e visitiamo il nodo mettendo nella coda il figlio $sx$ e $dx$
 non avrò mai dei null nella coda perché non torno mai indietro
-![Pasted image 20241118180346.png](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118180346.png)
+![Pasted image 20241118180346.png](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118180346.png)
 
 #### COSTO
 avrò un costo $O(1)$ per un singolo nodo, quindi per ogni nodo avrò $O(n)$
 ## ESEMPIO SULL'UTILITÀ DI QUESTI ALGORITMI DI VISITA
 ### Calcolo dell'altezza
-![Pasted image 20241118182559.png|400](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118182559.png)
+![Pasted image 20241118182559.png|400](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118182559.png)
 - in maniera ricorsiva mi calcolo l'altezza dei due sottoalberi e mi prendo il massimo
 - mi calcolo $1$+ il massimo dei sottoalberi, 1 è la radice
 ##### PSEUDOCODICE DEL CALCOLO DELL'ALTEZZA 
-![Pasted image 20241118182739.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118182739.png)
+![Pasted image 20241118182739.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118182739.png)
 - $r=null$ ci serve anche per definire 
 #### COSTO
 scendiamo in profondità fino a $O(n)$ sia sin che des sono $O(n)$
 
-![Pasted image 20241118183351.png|500](/img/user/ANNO%202/ALGORITMI%201/fotoalg/Pasted%20image%2020241118183351.png)
+![Pasted image 20241118183351.png|500](/img/user/ANNO%202/FOTOANNO2/fotoalg/Pasted%20image%2020241118183351.png)

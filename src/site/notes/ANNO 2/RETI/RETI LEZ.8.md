@@ -15,7 +15,7 @@ I protocolli di trasposto vengono eseguiti nei sistemi periferici
 
 I router non si preoccupano dei segmenti, ma guardano solo l'intestazione del datagramma IP per capire dove deve andare il pacchetto (tipo i corrieri).
 
-![ms-teams_SIDRVEjMKW.png](/img/user/ANNO%202/RETI/fotret/ms-teams_SIDRVEjMKW.png)
+![ms-teams_SIDRVEjMKW.png](/img/user/ANNO%202/FOTOANNO2/fotret/ms-teams_SIDRVEjMKW.png)
 
 ### Due metodi per la comunicazione
 #### UDP (User Datagram Protocol)
@@ -49,11 +49,11 @@ Il livello di trasposto allora deve
 - raccogliere i dati di ciascun processo (attraverso le socket)
 - aggiungere un'intestazione per indicare la provenienza del dato
 Questo è il multiplexing.
-![ms-teams_hVpBKBk0sN.png](/img/user/ANNO%202/RETI/fotret/ms-teams_hVpBKBk0sN.png)
+![ms-teams_hVpBKBk0sN.png](/img/user/ANNO%202/FOTOANNO2/fotret/ms-teams_hVpBKBk0sN.png)
 ##### Demultiplexing
 All'arrivo dei dati, questi devono essere smistati ai giusti destinatari.
 Il livello di trasporto ha ora un nuovo compito: deve leggere le intestazioni e capire a quale processo (socket) consegnarli.
-![ms-teams_j0jUvWaTsw.png](/img/user/ANNO%202/RETI/fotret/ms-teams_j0jUvWaTsw.png)
+![ms-teams_j0jUvWaTsw.png](/img/user/ANNO%202/FOTOANNO2/fotret/ms-teams_j0jUvWaTsw.png)
 ##### Funzionamento effettivo
 Ogni pacchetto è un datagramma IP, che contiene dentro di sé un segmento del livello di trasporto (TCP o UDP) e in questo segmento ci sono due informazioni fondamentali
 - indirizzo IP del mittente e destinatario
@@ -77,7 +77,7 @@ Vengono inviate le stesse identiche informazioni di un Demultiplexing normale, s
 >[!question] E allora perché IP e porta del mittente vengono comunque inviati?
 >Servono esclusivamente per far sì che il destinatario possa rispondere se necessario.
 
-![Pasted image 20250331193731.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250331193731.png)
+![Pasted image 20250331193731.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250331193731.png)
 
 #### Demultiplexing con TCP
 Qui abbiamo una connessione e quindi la trasmissione diventa più "complessa" ma molto più sicura.
@@ -103,4 +103,4 @@ Quando un pacchetto arriva, viene controllato sia il destinatario ma anche il mi
 >Anche se entrambe le connessioni vanno allo stesso IP e porta del server, il server le distingue grazie alla quadrupla.
 
 
-![Pasted image 20250331193757.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250331193757.png)
+![Pasted image 20250331193757.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250331193757.png)

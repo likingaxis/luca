@@ -22,19 +22,19 @@ Presentano 2 tipi di instradamento
 1. intra AS tutti i router usano stesso protocollo 
 2. inter AS routing tra AS diversi, per comunicare ci sono i gateway router che gestiscono quello interno e esterno
 ##### esempi di AS interconnessi tra loro
-![Pasted image 20250503124817.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503124817.png)
+![Pasted image 20250503124817.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503124817.png)
 Ci sono 3 AS, ogni AS ha più router.
 
-![Pasted image 20250503124841.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503124841.png)
+![Pasted image 20250503124841.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503124841.png)
 I router dentro un AS comunicano tra solo tramite intra-AS
-![Pasted image 20250503124855.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503124855.png)
+![Pasted image 20250503124855.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503124855.png)
 I gateway router sono quelli che collegano i vari AS tra loro (connessioni Inter-AS)
-![Pasted image 20250503125628.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503125628.png)
+![Pasted image 20250503125628.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503125628.png)
 - qui ogni router ha una sua tabella di inoltro riempita utilizzando degli algoritmi che dicono ->
 - come raggiungere un router in intra-AS
 - se vuoi mandare fuori da AS devi usare sia intra-As che inter-As
 ###### Esempio
-![Pasted image 20250503125758.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503125758.png)
+![Pasted image 20250503125758.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503125758.png)
 - L'instradamento inter-AS in AS1 deve imparare quali destinazioni sono raggiungibili attraverso AS2 e quali attraverso AS3 e dare queste informazioni a tutti i router in AS1
 ##### tipi di protocolli di instradamento intra-AS
 - quelli intra sono quelli dentro il sistema
@@ -56,7 +56,7 @@ OSPF è divisa in due livelli
 2. Backbone: la dorsale che collega tutte le varie aree tra di loro
 **Queste aree OSPF sono comunque tutte intra-AS**, ma suddivise internamente in sottosezioni chiamate **aree**.
 - ogni router ha solo conoscenza della sua area e come raggiungere le altre aree, ma senza troppe informazioni
-![Pasted image 20250503131511.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503131511.png)
+![Pasted image 20250503131511.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503131511.png)
 queste aree sono tutte collegate dalla rete dorsale quella in azzurro
 
 #### come avviene nello specifico l'instradamento inter-AS con BGP
@@ -71,12 +71,12 @@ queste aree sono tutte collegate dalla rete dorsale quella in azzurro
 | **iBGP** | _Internal BGP_ | **Dentro un AS**   | Propaga internamente le informazioni ricevute da eBGP                 |
 - Un router di confine riceve annunci BGP da AS esterni tramite **eBGP**.
 - Poi **distribuisce l’informazione** a tutti gli altri router del suo AS tramite **iBGP**.
-![Pasted image 20250503134824.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503134824.png)
+![Pasted image 20250503134824.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503134824.png)
 
 Una sessione BGP
 È una connessione TCP semi permanente tra due router BGP che sono detti peer
 questo tipo di sessione rappresenta il vero e proprio scambio di info sui percorsi
-![Pasted image 20250503135022.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503135022.png)
+![Pasted image 20250503135022.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503135022.png)
 Il path vector è la lista degli AS attraversati per arrivare a una rete
 
 ##### Come sono fatti i messaggi BGP
@@ -110,7 +110,7 @@ La rotta è composta da:
 >[!attention] Non basta comunque il percorso più corto, BGP segue precise regole decise dagli amministratori
 
 ##### Esempio
-![Pasted image 20250503135947.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503135947.png)
+![Pasted image 20250503135947.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503135947.png)
  1️⃣ **AS3 → AS2 (eBGP)**
 - Il **router 3a** in AS3 annuncia al **router 2c** in AS2 la rotta verso la rete **X**, usando **eBGP**.
 - Il messaggio contiene:
@@ -133,7 +133,7 @@ La rotta è composta da:
 > - I **messaggi iBGP** **non modificano il NEXT-HOP**.
 > - Gli **AS-PATH vengono aggiornati** solo nei passaggi tra AS (eBGP).
 ##### Esempio con percorsi multipli
-![Pasted image 20250503135901.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503135901.png)
+![Pasted image 20250503135901.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503135901.png)
 📌 Riepilogo:
 abbiamo più percorsi e li sceglie secondo le policy 
 - (tipo preferire meno AS nel cammino o evitare certi AS, costi ecc…)
@@ -151,26 +151,26 @@ I router 1a, 1b e 1d devono sapere **come raggiungere la rete X** (situata in AS
 - Il router **1c modifica il NEXT-HOP** e lo imposta su sé stesso quando inoltra l'annuncio BGP agli altri router interni (via iBGP).
 - Questo **semplifica il routing interno**: gli altri router (1a, 1b, 1d) devono solo sapere come raggiungere **1c**.
 - 🧠 **Comportamento attivo di BGP: modifica il NEXT-HOP**
-![Pasted image 20250503140441.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503140441.png)
+![Pasted image 20250503140441.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503140441.png)
 
 #### Caso 2 – Next-Hop NON modificato (default)
 - Il router **1c NON modifica il NEXT-HOP**, quindi lo lascia impostato su **3a** (router esterno).
 - I router interni devono sapere come raggiungere **3a** (indirizzo esterno) → più complesso.
 - 🧠 **Comportamento passivo di BGP: non tocca il NEXT-HOP**
-![Pasted image 20250503141657.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503141657.png)
+![Pasted image 20250503141657.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503141657.png)
 #### Caso 3 – Dettaglio sul forwarding OSPF
 - Stesso comportamento di **caso 1** (cioè `next-hop-self` attivo), **ma focalizzato sull'effetto pratico**:
     - Mostra come **router diversi usano interfacce diverse** per arrivare a 1c → e quindi a X.
     - Evidenzia **il ruolo dell’OSPF intra-AS** nel determinare i percorsi effettivi per inoltrare i pacchetti.
 - 🧠 **Focus sul calcolo della tabella di inoltro (dati forwarding)**, non su un comportamento diverso di BGP.
-![Pasted image 20250503142050.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503142050.png)
+![Pasted image 20250503142050.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503142050.png)
 #### Caso 4 – Instradamento a patata bollente (hot potato routing)
 - Quando un AS ha **più possibili NEXT-HOP esterni** per raggiungere una rete (es. X), e **i percorsi sono equivalenti dal punto di vista BGP (AS-PATH ecc.)**, allora:
 - L'instradamento **sceglie il NEXT-HOP con il minimo costo intra-AS.
 - Ovvero: **“butta fuori il traffico il prima possibile”**, senza preoccuparsi del percorso esterno.
 
 ### Implementare determinate politiche attraverso gli annunci
-![Pasted image 20250503143131.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503143131.png)
+![Pasted image 20250503143131.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503143131.png)
 
 Gli ISP possono voler "forzare" determinati percorsi
 - per farlo vengono privati determinati annunci così da evitare instradamenti per determinati AS
@@ -179,7 +179,7 @@ Gli ISP possono voler "forzare" determinati percorsi
     - È una **scelta politica**, **non tecnica**.
 
 altro esempio
-![Pasted image 20250503143412.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503143412.png)
+![Pasted image 20250503143412.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503143412.png)
 - **x** è una rete **cliente** collegata sia a **B** che a **C** (quindi è _dual-homed_).
 - **A, B, C** sono **provider** (reti di ISP).
 - **x** vuole controllare **come viene usata come punto di transito**.
@@ -214,7 +214,7 @@ quali criteri usano i router BGP per scegliere le rotte da seguire?
 **Anycast** è una tecnica di **instradamento IP** in cui **più server condividono lo stesso indirizzo IP pubblico** (es. `8.8.8.8`) e:
 - il **traffico viene inviato automaticamente al server “più vicino”** secondo la metrica di routing (es. minor numero di AS da attraversare).
 - **il client non sa quale server riceverà il traffico**: usa semplicemente quell’IP.
-![Pasted image 20250503143925.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503143925.png)
+![Pasted image 20250503143925.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503143925.png)
 
 ## Controllo distribuito prima degli SDN
 (Software-Defined-Networking)
@@ -228,7 +228,7 @@ Dal 2005 si pensa che i router devono essere flessibili e programmabili e che no
 ### modello classico non SDN
 Ogni router ha il proprio algoritmo di instradamento e fa i calcoli in autonomia
 - ha anche una tabella di forwarding locale
-![Pasted image 20250503144431.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503144431.png)
+![Pasted image 20250503144431.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503144431.png)
 ### modello con SDN
 - I router (o switch) **non hanno intelligenza interna**: eseguono solo le regole ricevute.
 - Il **piano di controllo è centralizzato**: esiste un **controller remoto** che:
@@ -237,7 +237,7 @@ Ogni router ha il proprio algoritmo di instradamento e fa i calcoli in autonomia
     - **installa direttamente le regole** negli switch
 - Gli switch **guardano i pacchetti** e, se non sanno cosa fare, **chiedono al controller** remoto.
 
-![Pasted image 20250503144842.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503144842.png)
+![Pasted image 20250503144842.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503144842.png)
 
 #### Vantaggi di averlo logicamente centralizzato
 Centralizzando il controllo:
@@ -248,7 +248,7 @@ Centralizzando il controllo:
 - Le reti non sono più chiuse nei sistemi di un singolo produttore
 	- possono esserci standard più aperti come OPENFlow(vedrai tra poco)
 ### Analogia per spiegare SDN
-![Pasted image 20250503145108.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503145108.png)
+![Pasted image 20250503145108.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503145108.png)
 
 ### Concetto di ingegneria del traffico
 è l’insieme delle tecniche e conoscenze per:
@@ -277,7 +277,7 @@ sostanzialmente viene detto che:
 	- Funziona **senza SDN**, ma **con logica simile** ma resta comunque distribuito
 
 ## Torniamo a parlare di SDN
-![Pasted image 20250503150332.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150332.png)
+![Pasted image 20250503150332.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503150332.png)
 è centralizzato e formato così
 1. Inoltro generalizzato "basato sui flussi" 
     - Es. OpenFlow: il controller decide come gestire ogni flusso di pacchetti, non solo in base alla destinazione. 
@@ -290,7 +290,7 @@ sostanzialmente viene detto che:
     - Si possono scrivere app che controllano la rete (es. per routing dinamico, sicurezza, ottimizzazione).
 
 #### Come è suddiviso correttamente SDN
-![Pasted image 20250503150640.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150640.png)
+![Pasted image 20250503150640.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503150640.png)
 - Nel piano dei dati abbiamo semplicemente gli switch che eseguono ciò che gli viene ordinato dall'alto
 	-  La comunicazione tra controller e switch usa API standard tipo Open Flow
 - Poi abbiamo un controller che fa da intermediario e comunica con i due livelli attraverso delle API
@@ -299,7 +299,7 @@ sostanzialmente viene detto che:
 - Poi ci sono le vere e proprie applicazioni che effettuano "i calcoli"
 
 ##### Come è fatto un controller SDN dentro
-![Pasted image 20250503150921.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503150921.png)
+![Pasted image 20250503150921.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503150921.png)
 
 Presenta tre livelli principali
 1. Livello di interfaccia con le applicazioni
@@ -318,7 +318,7 @@ Presenta tre livelli principali
 	- Usa protocolli come OpenFlow o SNMP per inviare regole agli switch. 
 	- È la parte che parla direttamente con l’hardware.
 ### Precisazione sul protocollo OpenFlow
-![Pasted image 20250503151241.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151241.png)
+![Pasted image 20250503151241.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503151241.png)
 È un protocollo di comunicazione tra controller e switch SDN
 Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3 categorie: 
 1. Controller-to-switch: es. installa o aggiorna una regola. 
@@ -347,7 +347,7 @@ Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3
 | **flow-removed** | Avvisa che una regola è stata rimossa dalla tabella di flusso             |
 | **port status**  | Informa il controller di **cambiamenti su una porta** (es. guasti, stato) |
 ### **interazione completa tra il piano dei dati e il piano di controllo** in una rete SDN
-![Pasted image 20250503151815.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151815.png)
+![Pasted image 20250503151815.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503151815.png)
 **1️⃣ Guasto segnalato (piano dei dati → controller)**
 - Lo **switch S1 rileva un guasto** e invia un messaggio `port status` (OpenFlow) al **controller SDN**.
 **2️⃣ Aggiornamento del controller**
@@ -359,7 +359,7 @@ Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3
     - la **mappa della rete (network graph)**
     - le **informazioni aggiornate sullo stato dei link**
 - Calcola **nuove rotte** per evitare il collegamento guasto.
-![Pasted image 20250503151839.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503151839.png)
+![Pasted image 20250503151839.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503151839.png)
  **5️⃣ Creazione delle nuove tabelle**
 - L'applicazione interagisce col modulo **flow-table computation** del controller per **creare le nuove tabelle di inoltro**.
 **6️⃣ Aggiornamento degli switch**
@@ -367,7 +367,7 @@ Usa TCP per inviare i messaggi (opzionalmente cifrati), questi si dividono i 3
 
 #### Concetto di Intent-Based Networking(IBN)
 È un modello in cui l’**utente non definisce più “come” gestire la rete**, ma **cosa vuole ottenere**. L’infrastruttura si occupa del “come”.
-![Pasted image 20250503152338.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250503152338.png)
+![Pasted image 20250503152338.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250503152338.png)
 **1️⃣ L’utente esprime un intento**
 - In **forma dichiarativa** (cioè il risultato desiderato, non il metodo).
 - Esempi:

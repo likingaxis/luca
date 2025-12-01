@@ -17,18 +17,18 @@ Ogni router:
 - Quando riceve un pacchetto, consulta la tabella e decide dove inoltrarlo.
 
 💡 In questo modello, ogni router partecipa attivamente all'elaborazione delle decisioni di instradamento.
-![Pasted image 20250429102216.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429102216.png)
+![Pasted image 20250429102216.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429102216.png)
 ##### PIANO DI CONTROLLO di tipo SDN
 Con **SDN (Software Defined Networking)**:
 - Il **controllo è centralizzato**: un **controller remoto** (software) calcola le tabelle di instradamento.
 - I router non prendono decisioni: ricevono le tabelle già pronte e si limitano all’inoltro.
 💡 Questo approccio separa completamente il **piano di controllo** (gestito dal controller centrale) dal **piano dei dati** (nei router/switch).
-![Pasted image 20250429102400.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429102400.png)
+![Pasted image 20250429102400.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429102400.png)
 ## Algoritmi di instradamento
 servono per trovare il percorso migliore da far fare al pacchetto
 - Percorso: sequenza di router che i pacchetti attraversano dall'origine alla destinazione 
 - Migliore: con meno costo
-![Pasted image 20250429105050.png|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429105050.png)
+![Pasted image 20250429105050.png|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429105050.png)
 #### Uso dei grafi per rappresentare il tutto
 Per rappresentare una rete si usano i grafi dove:
 - i nodi
@@ -36,10 +36,10 @@ Per rappresentare una rete si usano i grafi dove:
 - gli archi
 	- sono il collegamento con un peso
 	- possono avere una direzione
-![Pasted image 20250429105432.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429105432.png)
+![Pasted image 20250429105432.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429105432.png)
 ###### Collegamento diretto
 per collegamento diretto si intende un collegamento che non ha nodi intermezzi
-![Pasted image 20250429105525.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429105525.png)
+![Pasted image 20250429105525.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429105525.png)
 ## Classificazione degli algoritmi di instradamento
 Si basa su due criteri fondamentali
 - **1. Tipo di informazione usata**
@@ -73,9 +73,9 @@ in questa lezione vedremo due tipi di algoritmi
 - Ad ogni passo aggiunge un nuovo nodo a `N'`, quello raggiungibile con il **minimo costo attuale**.
 - Dopo `k` passi, avrà trovato i cammini migliori verso `k` nodi.
 Notazioni utilizzate:
-![Pasted image 20250429111622.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429111622.png)
+![Pasted image 20250429111622.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429111622.png)
 #### Pseudocodice dell'algoritmo
-![Pasted image 20250429111830.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429111830.png)
+![Pasted image 20250429111830.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429111830.png)
 - inizializzazione
 	- parte da `u`
 	- mette il costo di quelli vicini ad `u`
@@ -90,50 +90,50 @@ Notazioni utilizzate:
 ### Esempio
 ###### passo 0
 - aggiorno le distanze da u per ogni nodo adiacente
-![Pasted image 20250429112912.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429112912.png)
+![Pasted image 20250429112912.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429112912.png)
 ###### passo 1.1
 - prendo la distanza minima da u
 	- quindi x
-![Pasted image 20250429113017.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113017.png)
+![Pasted image 20250429113017.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113017.png)
 ###### passo 1.2
 - vedo se a partire da x ho un costo inferiore
 	- tipo da v mi conviene rimanere con u
 	- con w no
 	- con y no
-![Pasted image 20250429113119.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113119.png)
+![Pasted image 20250429113119.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113119.png)
 ###### passo 2.1
 - ora prende la distanza minima da x e rifà i calcoli
 	- tocca a y
-![Pasted image 20250429113313.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113313.png)
+![Pasted image 20250429113313.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113313.png)
 ###### passo 2.2
 - calcolo nuovi possibili distanze migliori
-![Pasted image 20250429113400.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113400.png)
+![Pasted image 20250429113400.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113400.png)
 ###### passo 3.1
 - prendo le distanze adiacenti a v e vedo se sono migliori
-![Pasted image 20250429113652.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113652.png)
+![Pasted image 20250429113652.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113652.png)
 ###### passo 3.2
 - notiamo che sono tutte uguali o peggiori
-![Pasted image 20250429113741.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113741.png)
+![Pasted image 20250429113741.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113741.png)
 ###### passo 4.1
 - prendo il nodo minore adiacente a v
 - in questo caso w
-![Pasted image 20250429113842.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113842.png)
+![Pasted image 20250429113842.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113842.png)
 
 ###### passo 4.2
 - mi accorgo che sono tutti uguali o peggiori
-![Pasted image 20250429113938.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429113938.png)
+![Pasted image 20250429113938.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429113938.png)
 ###### passo 5.1
 - cerco nodo minimo adiacente
 - in questo caso z
-![Pasted image 20250429114133.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114133.png)
+![Pasted image 20250429114133.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429114133.png)
 ###### passo 5.2
 - mi accorgo che non posso migliorare nulla da z
 - il risultato finale sarà:
-![Pasted image 20250429114209.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114209.png)
-![Pasted image 20250429114300.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114300.png)
+![Pasted image 20250429114209.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429114209.png)
+![Pasted image 20250429114300.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429114300.png)
 
 ### Altro esempio
-![Pasted image 20250429114240.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429114240.png)
+![Pasted image 20250429114240.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429114240.png)
 
 #### Costi di questo algoritmo
 - ogni volta vado a visitare n-1 nodi quindi costo $O(n^2)$
@@ -148,14 +148,14 @@ Notazioni utilizzate:
 	- visto che abbiamo $n$ router costa $O(n^2)$
 ### Algoritmo distance vector (decentralizzato)
 si basa su un'equazione ideata da Bellman-Ford
-![Pasted image 20250429115720.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429115720.png)
+![Pasted image 20250429115720.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429115720.png)
 Dove: 
 - $dₓ(y)$ → costo del percorso minimo da x a y 
 - $Cₓ,ᵥ$ → costo collegamento diretto da x a v 
 - $dᵥ(y)$ → costo cammino minimo da v a y
 #### Esempio
 Nodo `x` vuole raggiungere `y`. 
-![Pasted image 20250429115814.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429115814.png)
+![Pasted image 20250429115814.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429115814.png)
 Ha tre vicini diretti:
 1. **Via `v₁`**:
     - `c(x,v₁) = 4`
@@ -180,7 +180,7 @@ Ha tre vicini diretti:
 - Il processo si ferma quando nessuna tabella cambia più → la rete ha **convergenza**.
 ### Esempio specifico ma astratto
 #### T=0 inizializzazione
-![Pasted image 20250429120235.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429120235.png)
+![Pasted image 20250429120235.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429120235.png)
 - La tabella in alto a sx mostra il distance vector di a cioè quanto a stima che costi raggiungere ogni altro nodo. 
 - Ovviamente come per prima per raggiungere sé stesso è 0, per raggiungere i suoi vicini è 8 e 1. Gi altri li mette a inf perché non sa chi sono
 Cosa succede: 
@@ -189,14 +189,14 @@ Cosa succede: 
 - Ecc…
 
 #### T=1 Ascolto e aggiornamento e invio dei nuovi vettori
-![Pasted image 20250429121959.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429121959.png)
+![Pasted image 20250429121959.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429121959.png)
 i nodi ricevono le tabelle dai loro vicini
-![Pasted image 20250429122043.png|500](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429122043.png)
+![Pasted image 20250429122043.png|500](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429122043.png)
 
 step successivo -> aggiornamento delle varie tabelle dopo il ricalcolo con la formula detta prima
-![Pasted image 20250429122201.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429122201.png)
+![Pasted image 20250429122201.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429122201.png)
 ora avviene un reinvio con i calcoli aggiornati
-![Pasted image 20250429122416.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429122416.png)
+![Pasted image 20250429122416.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429122416.png)
 questa cosa andrà in loop con T=1-> 2 -> 3 ecc... finché non ci saranno più aggiornamenti da fare
 ### Esempio decente fatto da chat gpt
 🧪 **Esempio di aggiornamento del Distance Vector – Nodo `d`**
@@ -208,7 +208,7 @@ Riceve i rispettivi distance vector:
 - Da `e`: sa che `e → b = 1`
 - Da `g`: **non ha informazioni su `b`** → considera ∞
 #### ✏️ **Applicazione della formula Bellman-Ford:**
-![Pasted image 20250429122852.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429122852.png)
+![Pasted image 20250429122852.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429122852.png)
 #### 🔍 **Valutiamo le opzioni:**
 1. **Via `a`:**
     - `c(d,a) = 1`, `dₐ(b) = 8` → totale = 9
@@ -227,21 +227,21 @@ Il nodo `d` ora conosce una nuova stima più efficiente per raggiungere `b`, pas
 cosa avviene esattamente al livello di calcoli?
 - qui sotto b riceve i distance vector dai suoi vicini
 	- per poi fare un ricalcolo adeguato alla sua tabella
-![Pasted image 20250429123521.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429123521.png)
+![Pasted image 20250429123521.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429123521.png)
 - effettua i calcoli
 - possiamo vedere come dopo i ricalcoli la tabella cambi(quella sotto)
-![Pasted image 20250429123558.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429123558.png)
+![Pasted image 20250429123558.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429123558.png)
 visto che siamo ancora in t=1
 - se c riceve il DV da b non otterrà la tabella aggiornata
-![Pasted image 20250429123622.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429123622.png)
+![Pasted image 20250429123622.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429123622.png)
 - c effettua i calcoli e cambia la tabella
-![Pasted image 20250429124011.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429124011.png)
+![Pasted image 20250429124011.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429124011.png)
 - poi tocca ad e che si chiederà...
-![Pasted image 20250429124054.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429124054.png)
+![Pasted image 20250429124054.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429124054.png)
 e così va avanti...
 
 ### Comunicazione iterativa sullo stato
-![Pasted image 20250429124307.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429124307.png)
+![Pasted image 20250429124307.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429124307.png)
 possiamo vedere che ad ogni t 
 - le informazioni di un singolo router vengono diffuse a più router
 #### Aggiornamento costi dei collegamenti
@@ -249,7 +249,7 @@ ogni nodo ha una tabella con i vari costi degli altri nodi
 - se un nodo cambia il suo costo
 - il nodo deve aggiornare la sua tabella delle distanze e rinviarla a tutti gli altri
 ### le buone notizie viaggiano in fretta
-![Pasted image 20250429124538.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429124538.png)
+![Pasted image 20250429124538.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429124538.png)
 ora vediamo cosa succede se il collegamento da x-y passa da 4 a 1:
 - a tempo 0
 	- y si accorge che il collegamento x-y è cambiato
@@ -266,7 +266,7 @@ si dice che:
 - Il Distance Vector **reagisce solo quando qualcosa cambia**.
 - Le buone notizie (cioè percorsi migliori) **si propagano in fretta** perché ogni aggiornamento genera altri aggiornamenti **solo se migliorativi**.
 ### le cattive notizie viaggiano piano
-![Pasted image 20250429125120.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429125120.png)
+![Pasted image 20250429125120.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429125120.png)
 qui il percorso x-y peggiora da 4-> 60
 - a tempo 0
 	- y deve cercare una soluzione migliore per arrivare a x
@@ -285,7 +285,7 @@ in poche parole si crea un loop infinito chiamato
 "problema del conteggio infinito"
 
 ##### Altro problema
-![Pasted image 20250429132054.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429132054.png)
+![Pasted image 20250429132054.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429132054.png)
 in questo caso viene rotto il collegamento x-y
 sia y che z non capiscono cosa stia succedendo perché ognuno pende dall'altro nell'aggiornamento del DV
 `y` prova a raggiungere `x` passando per `z`, che a sua volta si basa su `y`.
@@ -296,14 +296,14 @@ sia y che z non capiscono cosa stia succedendo perché ognuno pende dall'altro n
 - Così `y` **non viene ingannato** nel momento in cui perde il collegamento diretto con `x`.
 👉 Questo **blocca il ciclo prima che inizi**.  
 Ma funziona **solo se il ciclo è tra due nodi adiacenti.**
-![Pasted image 20250429132354.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429132354.png)
-![Pasted image 20250429132427.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429132427.png)
+![Pasted image 20250429132354.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429132354.png)
+![Pasted image 20250429132427.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429132427.png)
 ### Quando invece non funziona(fail)
 - Con topologie più complesse (più di due nodi nel ciclo), **l’inversione avvelenata non riesce a bloccare tutto**.
 - L’esempio mostra un ciclo tra `x`, `y`, `z`, `w`.
 	- Anche con poisoned reverse, si forma un **loop a tre nodi**, e i costi continuano a salire
-![Pasted image 20250429132542.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429132542.png)
+![Pasted image 20250429132542.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429132542.png)
 🛑 Per reti più grandi si usano **altri meccanismi**: limite di costo massimo, split horizon, ecc.
 
 ### confronto
-![Pasted image 20250429133605.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250429133605.png)
+![Pasted image 20250429133605.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250429133605.png)

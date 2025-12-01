@@ -6,10 +6,10 @@
 internet di base è nato senza includere la sua sicurezza
 ### Analisi dei pacchetti 
  - una interfaccia di rete legge e registra tutti i pacchetti che l'attraversa
-![Pasted image 20250314183026.jpg|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314183026.jpg)
+![Pasted image 20250314183026.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314183026.jpg)
 ### identità falsa
 - attraverso un IP spoofer che inietta pacchetti con indirizzi ip falsi
-![Pasted image 20250314183100.jpg|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314183100.jpg)
+![Pasted image 20250314183100.jpg|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314183100.jpg)
 ### Negazione del servizio
 - attraverso attacchi Dos(Denial of Service)
 	- rendono una rete, un host o altri elementi di infrastruttura non disponibili per gli utenti
@@ -19,9 +19,9 @@ internet di base è nato senza includere la sua sicurezza
 			- avviene in una situazione in cui il client invia un numero di bit al secondo maggiore di quelli che può ricevere il server
 		- 3) connection flooding connessioni in massa TCP al servizio impedendogli di accettare le connessioni da parte di utenti legittimi 
 foto del bandwidth flooding
-![Pasted image 20250314184506.jpg|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314184506.jpg)
+![Pasted image 20250314184506.jpg|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314184506.jpg)
 foto del connection flooding
-![Pasted image 20250314184926.jpg|300](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314184926.jpg)
+![Pasted image 20250314184926.jpg|300](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314184926.jpg)
 ### Linee di difesa
 - autenticazione: attraverso identità hardware ad esempio una carta SIM
 - riservatezza: attraverso la cifratura
@@ -40,9 +40,9 @@ Le reti sono complesse e composte da diverse componenti, per gestirle e collegar
 - un livello superiore può duplicare un livello inferiore
 	- come la correzione di errori che è presente in più livelli
 ### Pila di protocolli di internet
-![Pasted image 20250314192324.jpg](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314192324.jpg)
+![Pasted image 20250314192324.jpg](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314192324.jpg)
 ## Servizi, Stratificazione e Incapsulamento
-![Pasted image 20250314204807.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314204807.png)
+![Pasted image 20250314204807.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314204807.png)
 Questa slide ci fa vedere come i livelli siano usati sia da sorgente che destinazione ovvero client e server
 ad ogni livello abbiamo un aggiunta di quello che era il pacchetto nel livello precedente 
 possiamo vedere la cosa come
@@ -65,20 +65,20 @@ il datagramma è il nome del tipo di dato che si trova nel livello di rete, in t
 ## I servizi 
 Ogni livello ha i suoi servizi che fornisce al livello superiore in modo indipendente ogni livello di solito ha più protocolli per fornire diversi sistemi come TCP o UDP per quello di trasporto
 ### Da qui prendiamo il concetto di matrioska (incapsulamento)
-![Pasted image 20250314211620.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314211620.png)
-![Pasted image 20250314211654.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314211654.png)
+![Pasted image 20250314211620.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314211620.png)
+![Pasted image 20250314211654.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314211654.png)
 si può tutto vedere come una matrioska e i vari livelli che aggiungono informazioni al pacchetto finale
 ## Visione end-to-end incapsulamento (senza intermediari)
-![Pasted image 20250314211942.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314211942.png)
+![Pasted image 20250314211942.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314211942.png)
 ### n-PDU cosa è e come vengono implementati i livelli
 possiamo da questa immagine notare come il livello di rete faccia da intermediario tra hardware e software
-![Pasted image 20250314212354.png|400](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314212354.png)
+![Pasted image 20250314212354.png|400](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314212354.png)
 l'unità di dati definita prima prende il nome generico in PDU(Protocol Data Unit)
 ogni PDU ha come nome quello che era presente nella tabella precedente ed è composto da
 - informazioni di controllo sono dati aggiuntivi (metadati) che aiutano il protocollo a gestire la comunicazione.
 - payload il contenuto effettivo
 # modello TCP/IP vs ISO/OSI
-![Pasted image 20250314212722.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314212722.png)
+![Pasted image 20250314212722.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314212722.png)
 possiamo vedere come esista il modello ISO/OSI che presenta 2 livelli in più
 - presentazione
 	- aggiunge l'interpretazione di un determinato dato prima che venga dato ai livelli sottostanti(discorsi di crittografia dei dati ecc...)
@@ -87,5 +87,5 @@ possiamo vedere come esista il modello ISO/OSI che presenta 2 livelli in più
 internet non prevede questi strati vanno messi nelle applicazioni
 
 ### parentesi su Wireshark
-![Pasted image 20250314212904.png](/img/user/ANNO%202/RETI/fotret/Pasted%20image%2020250314212904.png)
+![Pasted image 20250314212904.png](/img/user/ANNO%202/FOTOANNO2/fotret/Pasted%20image%2020250314212904.png)
 Wireshark lavora al livello applicativo analizzando i vari pacchetti che arrivano in rete attraverso il packet capture del computer
