@@ -20,5 +20,3 @@ Mi chiamo Luca Gugliotta e studio presso [l'università di Tor Vergata informati
 ### [[ANNO 1/ANNO 1 INDICE\|CORSI ANNO 1]]
 
 ### [[ANNO 2/ANNO 2 INDICE\|CORSI ANNO 2]]
-
-ciao
