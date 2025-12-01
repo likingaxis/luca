@@ -2,11 +2,7 @@
 {"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"]}
 ---
 
----
-dg-publish: true
-dg-home: true
 
----
 # Chi sono?👨🏻‍💻
 Mi chiamo Luca Gugliotta e studio presso [l'università di Tor Vergata informatica](https://web.uniroma2.it/)
 
@@ -24,3 +20,4 @@ Mi chiamo Luca Gugliotta e studio presso [l'università di Tor Vergata informati
 ### [[ANNO 1/ANNO 1 INDICE\|CORSI ANNO 1]]
 
 ### [[ANNO 2 INDICE\|CORSI ANNO 2]]
+
