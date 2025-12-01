@@ -80,8 +80,8 @@ L'agente passa dalla simulazione all'azione nel **mondo reale**.
 	- Trovare una soluzione ha un costo
 	- Costo totale= costo della ricerca+costo del cammino soluzione
 ### Esempio
-![Pasted image 20251021123557.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021123557.jpg)
-![Pasted image 20251021123607.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021123607.jpg)
+![Pasted image 20251021123557.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021123557.jpg)
+![Pasted image 20251021123607.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021123607.jpg)
 
 
 ## 🧩 Problemi Esemplificativi: Standardizzati vs. Reali  
@@ -89,8 +89,8 @@ L'agente passa dalla simulazione all'azione nel **mondo reale**.
 ​La distinzione tra queste due categorie di problemi è fondamentale per illustrare come i principi di risoluzione vengano prima testati in ambienti controllati (standardizzati) e poi applicati a contesti complessi (reali).
 ### 1. Problemi esemplificativi
 ​Questi problemi sono astratti, semplici da definire e vengono utilizzati per illustrare o mettere alla prova diversi metodi di risoluzione.
-![Pasted image 20251021125057.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021125057.jpg)
-![Pasted image 20251021125109.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021125109.jpg)
+![Pasted image 20251021125057.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021125057.jpg)
+![Pasted image 20251021125109.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021125109.jpg)
 ​
 - Scopo: Mettere alla prova algoritmi di ricerca e ottimizzazione di base.  
 - Stati: Uno stato indica la posizione dell'agente e la presenza di sporco in ogni cella.  
@@ -105,7 +105,7 @@ L'agente passa dalla simulazione all'azione nel **mondo reale**.
 ## Altri esempi
 Dai frammenti di immagine che hai caricato, posso analizzare e spiegare la formulazione di due problemi classici utilizzati per illustrare le tecniche di ricerca nello spazio degli stati: il Puzzle dell'Otto e il problema delle Otto Regine.
 #### 🧩 1. Puzzle dell'Otto: Formulazione Standard
-![Pasted image 20251021132649.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021132649.jpg)
+![Pasted image 20251021132649.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021132649.jpg)
 
 Il Puzzle dell'Otto è un classico problema standardizzato utilizzato per testare algoritmi di ricerca . È un esempio di problema con costo di cammino non nullo.
  * Stati: Tutte le possibili configurazioni della scacchiera $3 \times 3$  con i numeri da 1 a 8 e la casella vuota (lo spazio).
@@ -120,7 +120,7 @@ Il Puzzle dell'Otto è un classico problema standardizzato utilizzato per testar
  * Costo Cammino: Ogni passo costa 1 (costo uniforme).
  * Spazio degli Stati: È un grafo in cui si possono verificare cicli.
 #### 👑 2. Il Problema delle Otto Regine: 
-![Pasted image 20251021132907.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021132907.jpg)
+![Pasted image 20251021132907.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021132907.jpg)
 
 - Formulazioni
 	- L'obiettivo è collocare 8 regine su una scacchiera $8 \times$
@@ -157,7 +157,7 @@ Questa formulazione non "aggiunge" regine, ma parte da una configurazione comple
 	- Si vuole dimostrare la proposizione p.
 - La Regola di Inferenza
 - Nel calcolo proposizionale, per dimostrare nuovi teoremi a partire dalle premesse, è sufficiente utilizzare un'unica regola fondamentale, il Modus Ponens (MP)
-![Pasted image 20251021134751.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021134751.jpg)
+![Pasted image 20251021134751.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021134751.jpg)
 
 🔍 Formulazione come Problema di Ricerca
 Per far sì che un agente risolva il problema, lo si modella in termini di stati, obiettivo e operatori:
@@ -176,13 +176,13 @@ Per far sì che un agente risolva il problema, lo si modella in termini di stati
 - L'agente inizia con lo stato iniziale (le premesse) e applica ripetutamente l'operatore Modus Ponens in tutte le combinazioni possibili fino a quando non genera uno stato che contiene la proposizione obiettivo p.
 - La soluzione è la sequenza di applicazioni del Modus Ponens che parte dalle premesse e conduce a p.
 #### Spazio degli stati
-![Pasted image 20251021135104.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021135104.jpg)
+![Pasted image 20251021135104.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021135104.jpg)
 
 #### I problemi applicativi sono quelli reali
 
 #### Ricerca della soluzione
 
-![Pasted image 20251021140538.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021140538.jpg)
+![Pasted image 20251021140538.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021140538.jpg)
 #### Ricerca ad albero
 - prima voglio specificare che:
 	- frontiera: lista dei nodi in attesa di essere espansi(foglie dell'albero di ricerca)
@@ -197,10 +197,10 @@ Per far sì che un agente risolva il problema, lo si modella in termini di stati
 			- una azione per generarlo n.azione
 		- costo del cammino dal nodo iniziale al nodo n.costo-cammino indicato come $g(n)$ 
 #### Pseudocodice
-![Pasted image 20251021140935.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021140935.jpg)
+![Pasted image 20251021140935.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021140935.jpg)
 
 ### Ricerca X 
-![Pasted image 20251021141804.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021141804.jpg)
+![Pasted image 20251021141804.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021141804.jpg)
 
 ##### Diversi tipi di strategie
 - FIFO
@@ -228,9 +228,9 @@ i quattro criteri fondamentali utilizzati per valutare l'efficacia e l'efficienz
 • Complessità nello spazio: 
 -  quanta memoria viene richiesta dal completamento di una elaborazione completa dell’AdR
 ##### Ricerca in ampiezza
-![Pasted image 20251021142331.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021142331.jpg)
+![Pasted image 20251021142331.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021142331.jpg)
 ##### Pseudo
-![Pasted image 20251021142416.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021142416.jpg)
+![Pasted image 20251021142416.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021142416.jpg)
 ##### Complessità e analisi
 - b= numero max di successori detto anche fattore di ramificazione
 - d= profondità del nodo obiettivo più superficiale
@@ -240,21 +240,21 @@ se gli operatori hanno tutti costo k ovvero $g(n)=k*depth(n)$
 	- $T(b,d)=b+b^2+...+b^d \ \rightarrow O(b^d)$
 ### Una miglioria: Ricerca di costo uniforme (UC) oppure Best-First
 - tipo dijkstra
-![Pasted image 20251021142933.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021142933.jpg)
+![Pasted image 20251021142933.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021142933.jpg)
 
 #### PSEUDOCODICE
 
-![Pasted image 20251021143052.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021143052.jpg)
+![Pasted image 20251021143052.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021143052.jpg)
 
 #### Analisi dei costi e ottimalità
 - se il costo degli archi è $\epsilon>0$ l'algoritmo è ottimo e completo  
 - $C^*$ è il costo della soluzione ottima
-![Pasted image 20251021143529.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021143529.jpg)
+![Pasted image 20251021143529.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021143529.jpg)
 
 Aggiungendo $1$, si tiene conto del fatto che si sta contando il **numero totale di livelli** (o passi) espansi, **compreso il livello zero** (la radice stessa).
 - L'esponente $\left(1 + \lfloor C^*/\epsilon \rfloor\right)$ può essere interpretato come la **profondità massima** dell'albero di ricerca che deve essere esplorato per garantire che il nodo obiettivo con costo $C^*$ venga trovato per primo, assicurando l'**ottimalità**.
 ### Ricerca in profondità
-![Pasted image 20251021151954.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021151954.png)
+![Pasted image 20251021151954.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021151954.png)
 
 #### Analisi costi
 
@@ -272,8 +272,8 @@ La Ricerca in Profondità Limitata è una strategia di ricerca non informata che
 - **Esempio di Utilizzo:** È utile per problemi in cui si conosce un **limite superiore** per la profondità della soluzione (es. in un problema di _Route-finding_ tra $N$ città, la soluzione più lunga non può superare $\text{N}-1$ mosse).
 • Complessità tempo: $O(b^d)$
 - Spazio: $O(b*d)$
-![Pasted image 20251021152344.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021152344.png)
-![Pasted image 20251021152421.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021152421.png)
+![Pasted image 20251021152344.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021152344.png)
+![Pasted image 20251021152421.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021152421.png)
 
 ### Direzione di una ricerca
 da quale punto dello spazio degli stati si inizia l'esplorazione: 
@@ -295,41 +295,41 @@ Si preferisce la ricerca *in avanti* quando la **diramazione dallo stato inizial
 
 ##### Ricerca bidirezionale
 Si procede nelle due direzioni fino ad incontrarsi
-![Pasted image 20251021154403.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021154403.png)
+![Pasted image 20251021154403.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154403.png)
 - Complessità tempo: $O(b^ {d/2})$ (test intersezione in tempo costante, es. hash table) 
 - Complessità spazio: $O(b^ {d/2})$ (almeno tutti i nodi in una direzione in memoria, 
 
 es. usando BF) NOTA: non sempre applicabile, es. predecessori non definiti, troppi stati obiettivo …
 
 #### TUTTE LE STRATEGIE A CONFRONTO
-![Pasted image 20251021154529.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021154529.png)
+![Pasted image 20251021154529.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154529.png)
 
 ### Cosa comporta dei cicli in generale?
 - Avere un grafo con dei cicli
-![Pasted image 20251021154647.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021154647.png)
+![Pasted image 20251021154647.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154647.png)
 
 - Su spazi di stati a grafo si generano più volte gli stessi nodi nella ricerca, anche in assenza di cicli.
-![Pasted image 20251021154713.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021154713.png)
+![Pasted image 20251021154713.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154713.png)
 
 - pure nelle griglie
-![Pasted image 20251021154739.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021154739.png)
+![Pasted image 20251021154739.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154739.png)
 
 
 #### Soluzione:
 • Ricordare gli stati già visitati occupa spazio ma ci consente di evitare di visitarli di nuovo 
 • Gli algoritmi che dimenticano la propria storia sono destinati a ripeterla!
 ##### Tre soluzioni pratiche
-![Pasted image 20251021154940.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021154940.png)
+![Pasted image 20251021154940.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021154940.png)
 
 ##### Esempio di soluzione con i grafi
-![Pasted image 20251021155035.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021155035.png)
+![Pasted image 20251021155035.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155035.png)
 
 ### Fix della ricerca-grafo in ampiezza
-![Pasted image 20251021155104.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021155104.png)
+![Pasted image 20251021155104.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155104.png)
 ### Fix della ricerca-grafo con costo uniforme UC
-![Pasted image 20251021155139.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021155139.png)
+![Pasted image 20251021155139.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155139.png)
 
 ## Ripasso da sapere assolutamente
-![Pasted image 20251021155242.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021155242.png)
-![Pasted image 20251021155252.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251021155252.png)
+![Pasted image 20251021155242.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155242.png)
+![Pasted image 20251021155252.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251021155252.png)
 

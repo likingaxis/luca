@@ -11,7 +11,7 @@ Prima si definisce la **concettualizzazione**, cioè di quali elementi vogliamo 
 La FOL consente di rappresentare strutture più ricche rispetto alla logica proposizionale, permettendo inferenze più complesse.
 
 #### Esempio del mondo dei blocchi
-![Pasted image 20251126195647.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251126195647.png)
+![Pasted image 20251126195647.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251126195647.png)
 - Il **dominio** 
 	- è l’insieme degli oggetti del mondo:
 		- **{a, b, c, d, e}**  
@@ -32,7 +32,7 @@ La FOL consente di rappresentare strutture più ricche rispetto alla logica prop
 				- → **Block = {a, b, c, d, e}**
 - Le concettualizzazioni possibili sono infinite: un aspetto importante è il livello di astrazione giusto per gli scopi della rappresentazione.
 ### Simboli e interpretazioni
-![Pasted image 20251126200116.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251126200116.png)
+![Pasted image 20251126200116.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251126200116.png)
 >[!hint]- differenze tra Predicato, Funzione, Relazione
 > - **Funzione:** prende uno o più oggetti e restituisce **un oggetto**.  
 >     Es.: `Madre(x)` → la madre di x.
@@ -46,16 +46,16 @@ Un termine è un’espressione logica che si riferisce a un oggetto.
 Un termine può essere: Termine ⇒ Costante | Variabile | Funzione (Termine, …) 
 (un numero di termini pari alla arità della funzione 
 esempi di termini ben formati:
-![Pasted image 20251126200956.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251126200956.png)
+![Pasted image 20251126200956.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251126200956.png)
 
 ### Formule
 Ci sono 2 tipi di formule
 - Formula-atomica ⇒ True | False | Termine = Termine | Predicato (Termine, …) 
 - Formula-complessa ⇒ Formula-atomica | Formula Connettivo Formula | Quantificatore Variabile Formula | not-Formula | (Formula) 
-![Pasted image 20251126201314.png|400](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251126201314.png)
+![Pasted image 20251126201314.png|400](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251126201314.png)
 
 ### Quantificatori
-![Pasted image 20251126201440.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251126201440.png)
+![Pasted image 20251126201440.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251126201440.png)
 - **Ordine dei quantificatori**
 	- È fondamentale:
 		- `∀x ∃y Ama(x,y)` → _tutti amano qualcuno_
@@ -78,7 +78,7 @@ Definisce come il linguaggio logico “aggancia” il mondo.
 Stabilisce una corrispondenza tra:
 - **termini ↔ oggetti del dominio**
 - **formule chiuse ↔ valori di verità**
-![Pasted image 20251126202055.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251126202055.png)
+![Pasted image 20251126202055.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251126202055.png)
 ### Interpretazione (I)
 Una interpretazione assegna significato ai simboli del linguaggio:
 - **Costanti → elementi del dominio**  

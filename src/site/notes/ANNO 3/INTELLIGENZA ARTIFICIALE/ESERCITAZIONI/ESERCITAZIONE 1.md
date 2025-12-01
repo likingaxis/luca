@@ -9,4 +9,4 @@
 nel codice
 - in percept dobbiamo noi costruire la percezione
 # CERCA LA SOLUZIONE MIGLIORE? ⬇️🙂‍↕️
-![Pasted image 20251017114328.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251017114328.jpg)
+![Pasted image 20251017114328.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251017114328.jpg)

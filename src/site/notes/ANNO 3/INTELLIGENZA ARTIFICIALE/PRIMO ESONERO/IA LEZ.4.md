@@ -31,13 +31,13 @@ In pratica:
 ---
 
 ##### Alcuni esempi di euristica
-![Pasted image 20251025111157.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025111157.png)
+![Pasted image 20251025111157.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025111157.png)
 
 
 #### Algoritmo di ricerca Best-first
 #### Best-First classico
-![Pasted image 20251025113910.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025113910.png)
-![Pasted image 20251025111757.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025111757.png)
+![Pasted image 20251025113910.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025113910.png)
+![Pasted image 20251025111757.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025111757.png)
 
 - **g(n)** = costo reale del cammino dall’inizio al nodo n.
 - Nessuna euristica: usiamo solo il costo accumulato finora.
@@ -48,9 +48,9 @@ Infatti:
 - e continua ad espandere fino a trovare il goal con costo minimo.
 
 #### Best-First Greedy
-![Pasted image 20251025112102.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025112102.png)
+![Pasted image 20251025112102.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025112102.png)
 
-![Pasted image 20251025111949.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025111949.png)
+![Pasted image 20251025111949.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025111949.png)
 - **h(n)** = stima euristica del costo _dal nodo n al goal_ (quanto “manca”).
 - L’algoritmo ignora completamente il costo già speso **(g(n))**, guarda solo _chi sembra più vicino alla meta_.
 
@@ -120,8 +120,8 @@ A* è una **famiglia di algoritmi “A”**, e in base a come scegli h(n) o g(n)
 
 - quando la h ha certe caratteristiche diventa A* altrimenti è solo A
 #### Esempi algoritmi A
-![Pasted image 20251025114716.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025114716.png)
-![Pasted image 20251025114733.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025114733.png)
+![Pasted image 20251025114716.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025114716.png)
+![Pasted image 20251025114733.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025114733.png)
 
 ## A è  completo
 >[!lemma] Teorema: L'algoritmo `A` con la condizione $$g(n) \ge d(n) \cdot \epsilon$$è completo. 
@@ -267,11 +267,11 @@ Questa proprietà ha due effetti pratici fondamentali per A*:
 
 
 >[!tip]- Esempi euristiche ammissibile
->![Pasted image 20251025192755.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025192755.jpg)
+>![Pasted image 20251025192755.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025192755.jpg)
 
 
 ## Bilancio su A*
-![Pasted image 20251025192844.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025192844.jpg)
+![Pasted image 20251025192844.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025192844.jpg)
 
 
 >[!problem] PROBLEMA DI A* -> occupa troppo a livello di memoria $(O(b^{d+1}))$ 
@@ -287,25 +287,25 @@ Invece di tenere in memoria TUTTI I NODI, l'idea è quella di ricordare solo i *
 >[!tip] LA BEAM SEARCH ***NON* È COMPLETA**
 
 ### Idea e pseudocodice
-![Pasted image 20251025193001.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193001.jpg)
+![Pasted image 20251025193001.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193001.jpg)
 
-![Pasted image 20251025193007.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193007.jpg)
+![Pasted image 20251025193007.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193007.jpg)
 
 
 >[!tip]- Esempio
->![Pasted image 20251025193059.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193059.jpg)
+>![Pasted image 20251025193059.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193059.jpg)
 
 
 
 >[!tip] Diverse applicazioni
->![Pasted image 20251025193237.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193237.jpg)
+>![Pasted image 20251025193237.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193237.jpg)
 Tutti questi processi processi devono **scegliere una sequenza ottimale** di output fra milioni di possibilità.  
 → Qui entra in gioco **Beam Search**, che esplora solo le migliori _K_ continuazioni invece di tutte.
 >
->![Pasted image 20251025193250.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193250.jpg)
+>![Pasted image 20251025193250.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193250.jpg)
 >Qui abbiamo un `beam = 2` (è un'applicazione diretta dell'algoritmo)
 >
->![Pasted image 20251025193302.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193302.jpg)
+>![Pasted image 20251025193302.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193302.jpg)
 >Questa mostra **l’applicazione pratica** del beam search durante l’addestramento di un modello di _Speech Recognition_ o _Machine Translation_.
 
 
@@ -356,7 +356,7 @@ Abbiamo due casi principali
 
 
 ## Considerazioni
-![Pasted image 20251025193501.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193501.jpg)
+![Pasted image 20251025193501.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193501.jpg)
 
 ## Valutazioni funzioni euristiche
 A parità di ammissibilità, una euristica può essere più efficiente di un'altra nel trovare il cammino soluzione migliore (visitare meno nodi) IN BASE A QUANTO È INFORMATA
@@ -382,12 +382,12 @@ Questo perché
 
 
 >[!tip]- Esempio
->![Pasted image 20251025193619.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193619.jpg)
+>![Pasted image 20251025193619.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193619.jpg)
 >La **distanza Manhattan** tra due caselle è il **numero di mosse orizzontali e verticali** (non diagonali) necessarie per spostarsi da una posizione all’altra.
 
 
 ## Compromesso tra costo del calcolo dell'euristica e il costo delle ricerca
-![Pasted image 20251025193638.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193638.jpg)
+![Pasted image 20251025193638.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193638.jpg)
 
 Questo grafico mostra il compromesso tra quanto è informata un’euristica e il costo totale della ricerca.  
 - Un’euristica poco informata è veloce da calcolare ma fa esplorare molti nodi, quindi la ricerca è lenta.  
@@ -410,11 +410,11 @@ Più **b*** è basso, **più l’euristica è efficace**, perché l’algoritmo 
 In generale, una buona euristica ha **b*** vicino a 1 (di solito sotto 1.5).
 
 >[!tip]- Esempi
->![Pasted image 20251025193652.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193652.jpg)
+>![Pasted image 20251025193652.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193652.jpg)
 
 #### Esempio utile
-![Pasted image 20251025193704.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193704.jpg)
-![Pasted image 20251025193709.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193709.jpg)
+![Pasted image 20251025193704.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193704.jpg)
+![Pasted image 20251025193709.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193709.jpg)
 
 
 ---
@@ -428,7 +428,7 @@ Se il problema originale è difficile da risolvere, possiamo “semplificarlo”
 
 >[!tip]- Esempio
 >
->![Pasted image 20251025193724.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193724.jpg)
+>![Pasted image 20251025193724.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193724.jpg)
 
 
 ## Massimizzazione di euristiche
@@ -473,7 +473,7 @@ Invece di scrivere a mano un’euristica (come la distanza Manhattan, ecc.), pos
 
 Quindi l’euristica non è più definita da noi, ma **appresa automaticamente**.
 
-![Pasted image 20251025193757.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251025193757.jpg)
+![Pasted image 20251025193757.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251025193757.jpg)
 
 ## Combinazione di euristiche
 A volte **una sola euristica non basta** per descrivere la difficoltà di uno stato.  

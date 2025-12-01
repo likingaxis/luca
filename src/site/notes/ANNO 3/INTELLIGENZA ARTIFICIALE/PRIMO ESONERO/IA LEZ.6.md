@@ -19,7 +19,7 @@ La **KB** contiene un insieme di **formule logiche** (proposizioni o predicati) 
 > In simboli: se **KB ⊨ α**, allora α è logicamente conseguente da KB.
 #### Agente basato su conoscenza – ciclo operativo
 Un agente di questo tipo alterna **percezione, inferenza e azione**, aggiornando continuamente la KB.
-![Pasted image 20251112114302.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251112114302.png)
+![Pasted image 20251112114302.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112114302.png)
 L’agente quindi:
 1. **Osserva** l’ambiente (percezioni → formule logiche);
 2. **Ragiona** deducendo nuove informazioni (inferenza logica);
@@ -53,7 +53,7 @@ L’agente quindi:
 - La **semantica** collega formule e mondo:
     - “verso il basso” → formule → fatti reali (interpretazione);
     - “verso l’alto” → nuovi fatti logici → nuovi aspetti veri del mondo.
-![Pasted image 20251112112059.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251112112059.png)
+![Pasted image 20251112112059.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112112059.png)
 
 Un’**interpretazione** I stabilisce la corrispondenza tra simboli e elementi reali.  
 Una formula **A** è **conseguenza logica** di KB se:  
@@ -73,7 +73,7 @@ cioè: tutti i modelli che rendono vera KB rendono vera anche A.
 > KB più grande → M(KB) **più piccolo**.
 
 
-![Pasted image 20251112124104.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251112124104.png)
+![Pasted image 20251112124104.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112124104.png)
 
 ### Ragionamento non monotono
 Nella **logica classica** vale la **monotonia**: se $KB ⊨ α$, allora anche $KB ∪ \{β\} ⊨ α$ 

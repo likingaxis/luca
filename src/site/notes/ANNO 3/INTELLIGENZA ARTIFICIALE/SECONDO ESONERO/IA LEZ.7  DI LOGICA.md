@@ -41,7 +41,7 @@ $$KB ⊢ A$$
 - Le regole di deduzione naturale
 	- sono schemi deduttivi che permettono di _derivare nuove formule_ a partire da formule già presenti nella KB.
 	- un esempio è il **Modus Ponens** o anche detto eliminazione dell'implicazione
-![Pasted image 20251116151756.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251116151756.png)
+![Pasted image 20251116151756.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251116151756.png)
 
 - Il **model checking** è un metodo di **inferenza diretta** nella logica proposizionale per verificare se una formula (o una conclusione) è **conseguenza logica** di una base di conoscenza.
 	- $KB ⊨ α$ 
@@ -57,10 +57,10 @@ $$KB ⊢ A$$
 	- processo ottimo solo se si applica la refutazione e 
 - $KB∪{¬α}$ è insoddisfacibile
 	- abbiamo un insieme vuoto {}, quindi non è mai vera e non esiste una interpretazione in cui è vera
-![Pasted image 20251116160247.png|400](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251116160247.png)
+![Pasted image 20251116160247.png|400](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251116160247.png)
 
-![Pasted image 20251112153428.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251112153428.png)
-![Pasted image 20251112153518.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251112153518.png)
+![Pasted image 20251112153428.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112153428.png)
+![Pasted image 20251112153518.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251112153518.png)
 
 ### Logica Proposizionale (PROP)
 ### Sintassi

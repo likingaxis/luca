@@ -35,7 +35,7 @@ Le sue caratteristiche principali sono:
 - **Ideale per problemi di ottimizzazione**: 
 	- È perfetta per trovare lo stato "migliore" secondo una **funzione obiettivo** (che vogliamo massimizzare) o lo stato a **costo minore** (che vogliamo minimizzare).
 ### Lo spazio degli stati
-![Pasted image 20251028154347.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251028154347.png)
+![Pasted image 20251028154347.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028154347.png)
 L'algoritmo non vede tutta la mappa in una volta. Agisce come un esploratore che può solo sondare il terreno immediatamente circostante.
 - **La Superficie (il "terreno")**: Rappresenta l'intero **spazio degli stati**. Ogni singolo punto sulla superficie è una possibile configurazione del problema.
 - **L'Altitudine (l'asse verticale)**: È il valore della **funzione obiettivo** (o di valutazione). Misura la "bontà" di uno stato. Più alto è il punto, migliore è la soluzione (in un problema di massimizzazione).
@@ -74,7 +74,7 @@ Esistono diversi modi per scegliere il "passo" successivo. La prima slide ne ele
 - **🎲 Stocastico (Stochastic)**: Si sceglie **a caso** tra tutti i vicini che rappresentano un miglioramento. Non garantisce il passo migliore, ma è più veloce se valutare tutti i vicini è costoso.
 - **👆 Prima Scelta (First-Choice)**: Si generano i vicini uno alla volta e ci si sposta sul **primo** che risulta essere migliore dello stato attuale, senza esaminare gli altri. È molto efficiente se ci sono tanti successori.
 #### 🔍 Analisi dell'Algoritmo (Pseudocodice)
-![Pasted image 20251028160108.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251028160108.png)
+![Pasted image 20251028160108.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028160108.png)
 #### 🛑 Il Punto Debole: Il Fallimento
 Come menzionato nella prima slide: "Se non ci sono stati successori migliori l'algoritmo termina con fallimento".
 
@@ -84,7 +84,7 @@ Come menzionato nella prima slide: "Se non ci sono stati successori migliori l'a
 
 Il problema delle 8 Regine è l'esempio perfetto per vedere l'Hill Climbing al lavoro, con i suoi pregi e i suoi difetti. L'obiettivo è posizionare 8 regine su una scacchiera in modo che nessuna possa attaccarne un'altra.
 
-![Pasted image 20251028161005.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251028161005.png)
+![Pasted image 20251028161005.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028161005.png)
 
 #### 🎯 Preparare il Terreno: La Formulazione per la Ricerca Locale
 
@@ -140,19 +140,19 @@ Abbiamo visto che l'Hill Climbing è veloce ma spesso fallisce. La prima slide r
 1. **⛰️ Massimi Locali (le "colline")**:
     
     - **Il problema**: L'algoritmo raggiunge un picco (collina) che non è il più alto in assoluto (montagna). Da lì, ogni mossa è in discesa, quindi l'algoritmo si ferma, convinto di aver finito. È la trappola più comune.
-![Pasted image 20251028162118.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251028162118.png)
+![Pasted image 20251028162118.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028162118.png)
 
         
 2. **🏜️ Altipiani (Plateaux)**:
     
     - **Il problema**: L'algoritmo arriva in una zona piatta, dove tutte le mosse vicine hanno lo stesso valore. Non essendoci una "salita" chiara, non sa dove andare e potrebbe vagare a caso o terminare prematuramente.
 
-![Pasted image 20251028162130.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251028162130.png)
+![Pasted image 20251028162130.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028162130.png)
 
 2. **🔪 Crinali (o Creste)**:
     
     - **Il problema**: Una situazione più rara e complessa. Immagina di essere sulla cresta di una montagna. Per continuare a salire lungo la cresta, potresti dover fare una serie di mosse coordinate (es. due passi in diagonale). Un algoritmo che esamina una sola mossa alla volta (es. solo Nord, Sud, Est, Ovest) vedrà solo discese ripide su entrambi i lati e si bloccherà, non riuscendo a vedere il percorso complesso che gli permetterebbe di salire.
-![Pasted image 20251028162157.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251028162157.png)
+![Pasted image 20251028162157.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251028162157.png)
 ### 💪 Estensioni e Miglioramenti: Come Rendere l'Alpinista più Intelligente
 
 Dato che l'Hill Climbing di base è inaffidabile, sono state sviluppate diverse strategie per aiutarlo a superare queste trappole.
@@ -217,7 +217,7 @@ Man mano che l’algoritmo avanza, `T` **decresce gradualmente** secondo un pian
 - Alla fine, quando `T` è molto bassa, il comportamento converge a un **Hill Climbing deterministico**.
 
 ### Algoritmo
-![Pasted image 20251029193033.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251029193033.png)![Pasted image 20251029193044.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251029193044.png)
+![Pasted image 20251029193033.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193033.png)![Pasted image 20251029193044.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193044.png)
 
 # Ricerca local beam
 L’idea della **ricerca local beam** nasce per affrontare i limiti di memoria della ricerca locale tradizionale, che di solito mantiene un solo stato alla volta (come nell’Hill Climbing).  
@@ -321,7 +321,7 @@ Questi due tipi di nodi **si alternano** nell’albero:
 
 Il risultato è un **albero di ricerca AND–OR**, dove la ricerca deve tener conto sia delle proprie scelte che delle reazioni dell’ambiente.
 
-![Pasted image 20251029193155.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251029193155.png)
+![Pasted image 20251029193155.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193155.png)
 - NODI OR -> cerchio singolo
 - NODI AND -> cerchio singolo + semicerchio
 
@@ -334,7 +334,7 @@ Una **soluzione** non è una semplice sequenza di azioni (come nei problemi dete
 
 
 ### Pseudocodice
-![Pasted image 20251029193206.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251029193206.png)
+![Pasted image 20251029193206.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193206.png)
 
 
 ## Soluzioni cicliche per problemi non deterministici
@@ -358,7 +358,7 @@ while (non sei nel riquadro destro)
 ```
 
 ### Esempio visivo
-![Pasted image 20251029193219.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251029193219.png)
+![Pasted image 20251029193219.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193219.png)
 
 ### ⚙️ Condizioni di correttezza
 Perché un piano ciclico sia valido, devono valere due condizioni:
@@ -432,10 +432,10 @@ In questo nuovo spazio:
 
 
 ### Come vengono aggiornati gli stati credenza (versione deterministica e non)
-![Pasted image 20251029193235.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251029193235.png)
+![Pasted image 20251029193235.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193235.png)
 
 ### Spazio degli stati completo
-![Pasted image 20251029193247.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251029193247.png)
+![Pasted image 20251029193247.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251029193247.png)
 Quando si lavora con stati-credenza, lo spazio cresce esponenzialmente: nel caso dell’aspirapolvere con 8 stati fisici si avrebbero 2⁸ = 256 stati-credenza, ma solo 12 realmente raggiungibili.  
 Per evitare esplorazioni inutili si usa una **ricerca su grafo**, ignorando gli stati già visitati.  
 
@@ -590,8 +590,8 @@ L’algoritmo LRTA* simula il comportamento di A*, ma **in tempo reale** e **in 
 - aggiorna la **stima del costo** dello stato appena lasciato;
 - poi sceglie la **mossa apparentemente migliore** in base alle stime correnti della funzione euristica `H`.  
     In questo modo l’agente impara progressivamente a valutare meglio i costi reali del percorso.
-![Pasted image 20251030112816.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251030112816.png)
-![Pasted image 20251030112825.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251030112825.png)
+![Pasted image 20251030112816.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251030112816.png)
+![Pasted image 20251030112825.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251030112825.png)
 
 
 ### 📊 Proprietà di LRTA

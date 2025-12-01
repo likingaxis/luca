@@ -21,7 +21,7 @@
 	- si aggiorna
 		- aggiorna l'ambiente contando l'azione appena eseguita
 
-![Pasted image 20251013185628.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251013185628.png)
+![Pasted image 20251013185628.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251013185628.png)
 ### Percezione e Azioni
 ### 1. Percezione (Percept)
 -  L'**input ricevuto dai sensori** dell'agente
@@ -37,7 +37,7 @@
 - A differenza della funzione agente (che considera l'intera sequenza percettiva), il programma agente **prende in input solo la percezione corrente** e deve preoccuparsi di memorizzare lo stato interno per tenere traccia della storia passata, se necessario
 
 ### AGENTE E AMBIENTE
-![Pasted image 20251016085815.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016085815.png)
+![Pasted image 20251016085815.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016085815.png)
 
 ## Agenti Razionali
 - Per ogni possibile sequenza di percezioni, un agente razionale dovrebbe scegliere un'azione che **massimizzi il valore atteso della sua misura di prestazione**, date le informazioni fornite dalla sequenza percettiva e da ogni ulteriore conoscenza dell'agente
@@ -91,7 +91,7 @@ Il framework **PEAS** fornisce un metodo sistematico per specificare l'ambiente 
 - _Esempio: Autista di taxi automatico:_ Telecamere, radar, tachimetro, GPS.
 
 ##### ESEMPIO CON CHAT GPT
-![Pasted image 20251016093738.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016093738.png)
+![Pasted image 20251016093738.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016093738.png)
 ## Proprietà dell’ambiente e del problema
 I diversi ambienti di lavoro di un agente si caratterizzano lungo alcune dimensioni che ne influenzano la complessità e la progettazione.
 ### Osservabilità
@@ -151,7 +151,7 @@ I diversi ambienti di lavoro di un agente si caratterizzano lungo alcune dimensi
 	- L'agente **non conosce le regole del gioco**. L'agente non sa come l'ambiente reagirà alle sue azioni.
 	- L'agente **dovrà apprendere come funziona** l'ambiente. Dovrà compiere **azioni esplorative** (sperimentazione) per acquisire la conoscenza dinamica necessaria a prendere buone decisioni.
 ## ESEMPI
-![Pasted image 20251016094914.png](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016094914.png)
+![Pasted image 20251016094914.png](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016094914.png)
 
 
 # Ambiente e automazione
@@ -162,7 +162,7 @@ L’ambiente richiede la simulazione attraverso uno strumento software che si oc
 - attivare altri processi implicati dal cambiamento effettuato
 - valutare le prestazioni degli agenti
 #### Esempio di simulatore
-![Pasted image 20251016140906.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016140906.jpg)
+![Pasted image 20251016140906.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016140906.jpg)
 
 --- 
 
@@ -173,7 +173,7 @@ $$ AGENTE=ARCHITETTURA + PROGRAMMA$$
 - `Agent()`
 $$Agent:Percezioni \rightarrow Azioni$$ 
 ##### Pseudo programma agente
-![Pasted image 20251016141848.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016141848.jpg)
+![Pasted image 20251016141848.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016141848.jpg)
 
 # Diverse architetture di agenti
 
@@ -185,7 +185,7 @@ In ambito IA è **molto difficile da costruire**, e soprattutto NON é autonomo.
 
 ## Un esempio: Schema di agenti reattivi semplici
 
-![Pasted image 20251016143808.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016143808.jpg)
+![Pasted image 20251016143808.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016143808.jpg)
 
 Partendo dall'ambiente, l'agente
 - riceve delle percezioni tramite i sensori
@@ -195,12 +195,12 @@ Partendo dall'ambiente, l'agente
 
 
 ## Programma agenti reattivi
-![Pasted image 20251016144146.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016144146.jpg)
+![Pasted image 20251016144146.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016144146.jpg)
 
 >[!tip]- Esempio col Wumpus
->![Pasted image 20251016144405.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016144405.jpg)
+>![Pasted image 20251016144405.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016144405.jpg)
 >IL WUMPUS GENERA Il puzzo mentre il buco genera il venticello
->![Pasted image 20251016144415.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016144415.jpg)
+>![Pasted image 20251016144415.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016144415.jpg)
 
 
 # 🧠 Agenti basati sul modello
@@ -208,7 +208,7 @@ Gli **agenti basati su modello** hanno una **memoria interna** che gli permette 
 A differenza di quelli reattivi semplici (che agiscono solo in base alla percezione immediata), questi **mantengono e aggiornano uno stato interno** che descrive _cosa credono che stia succedendo_ 
 
 ## Struttura logica
-![Pasted image 20251016144855.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016144855.jpg)
+![Pasted image 20251016144855.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016144855.jpg)
 
 L’agente riceve le **percezioni dai sensori** e aggiorna il proprio **stato interno** in base a:
 - la percezione attuale,
@@ -222,7 +222,7 @@ Le azioni vengono infine inviate agli **attuatori**, che le eseguono nell’ambi
 
 ## Codice
 
-![Pasted image 20251016145402.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016145402.jpg)
+![Pasted image 20251016145402.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016145402.jpg)
 
 
 - l’agente **ricorda cosa è successo prima**,
@@ -244,7 +244,7 @@ In generale, i _goals_ sono una **rappresentazione o approssimazione** dell’ob
 
 
 ## Struttura logica
-![Pasted image 20251016145830.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016145830.jpg)
+![Pasted image 20251016145830.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016145830.jpg)
 
 - **Percepiscono** l’ambiente tramite i sensori,  
     aggiornano lo **stato interno** (cioè cosa credono che stia succedendo).
@@ -307,7 +307,7 @@ La funzione di utilità considera anche la **probabilità di successo**:
 Questi agenti sono in grado di **migliorare il proprio comportamento nel tempo**, grazie a un meccanismo di apprendimento interno.
 
 ## Struttura logica
-![Pasted image 20251016150117.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016150117.jpg)
+![Pasted image 20251016150117.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150117.jpg)
 
 
 ###### **Performance Element**
@@ -355,7 +355,7 @@ Quando un agente deve ragionare o apprendere, ha bisogno di **una rappresentazio
 Questa rappresentazione può essere più o meno complessa a seconda del tipo di informazione che deve gestire.
 
 ##### 1. Rappresentazione atomica
-![Pasted image 20251016150129.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016150129.jpg)
+![Pasted image 20251016150129.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150129.jpg)
 
 - Ogni **stato** o **situazione** è considerato come un **blocco unico e indivisibile**.
 - L’agente conosce solo _che quello stato esiste_, ma **non ha informazioni sulla sua struttura interna**.
@@ -364,7 +364,7 @@ Questa rappresentazione può essere più o meno complessa a seconda del tipo di 
 
 
 ##### 2. Rappresentazione fattorizzata
-![Pasted image 20251016150349.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016150349.jpg)
+![Pasted image 20251016150349.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150349.jpg)
 
 - Ogni stato è **descritto tramite un insieme di variabili (fattori)**.
 - Invece di trattare tutto come un unico blocco, l’agente **rappresenta le caratteristiche principali** dello stato (es. posizione, temperatura, velocità, ecc.).
@@ -372,7 +372,7 @@ Questa rappresentazione può essere più o meno complessa a seconda del tipo di 
 
 
 ##### 3. Rappresentazione strutturata
-![Pasted image 20251016150400.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016150400.jpg)
+![Pasted image 20251016150400.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150400.jpg)
 
 - È la più **ricca e complessa**.
 - Gli oggetti non sono solo elenchi di valori, ma **entità con relazioni tra loro** (come in un grafo o in un linguaggio logico).
@@ -380,8 +380,8 @@ Questa rappresentazione può essere più o meno complessa a seconda del tipo di 
 
 >[!tip]- Digressione su Semantic Embedding (Wordspace)
 >
->![Pasted image 20251016150450.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016150450.jpg)
->![Pasted image 20251016150513.jpg](/img/user/ANNO%203/INTELLIGENZA%20ARTIFICIALE/IA%20FOTO/Pasted%20image%2020251016150513.jpg)
+>![Pasted image 20251016150450.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150450.jpg)
+>![Pasted image 20251016150513.jpg](/img/user/ANNO%203/IA%20FOTO/Pasted%20image%2020251016150513.jpg)
 >
 >Queste slide mostrano un esempio pratico di **rappresentazione strutturata basata sul linguaggio**.
 >
